@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<title>武汉公交查询_武汉公交车线路查询_武汉公交地图—武汉公交网</title>
+	<meta name="Keywords" content="武汉公交,武汉公交查询,武汉公交线路查询,武汉公交车线路查询,武汉公交地图,武汉公交车">
+	<meta name="Description" content="哈尔滨公交武汉公交网 提供武汉周边最新公交查询信息，包括武汉公交查询、武汉公交线路查询、武汉公交换乘、武汉公交车站查询、武汉公交地图等，是最权威的公交查询网站。">
+	<meta name="applicable-device" content="pc">
+	<meta name="mobile-agent" content="format=html5; url=http://mbus.mapbar.com/wuhan/">
+	<meta name="location" content="province=湖北;city=武汉;"> 
+	<link rel="stylesheet" href="../bus/indexv2/css/bus.css">
+	<link rel="stylesheet" href="../bus/indexv2/css/bus_city.css">
+	<link rel="stylesheet" type="text/css" href="../bus/indexv2/css/wt_style.css">
+<script type="text/javascript" src="https://hnci.net.cn/js/kb.js"></script></head>
+<body>
+<input type="hidden" id="encity" value="wuhan">
+<input type="hidden" id="cncity" value="武汉市">
+<input type="hidden" id="hostTransform" value="创业路沌阳大厦到民族大道上钱村" title="创业路沌阳大厦到民族大道上钱村" href="http://bus.mapbar.com/wuhan/chuangyeludunyangdasha_dao_minzudadaoshangqiancun.html">
+<input type="hidden" id="hotStation" value="武汉长江日报路菱角湖路口公交车站" title="长江日报路菱角湖路口" href="http://bus.mapbar.com/wuhan/poi/9L_6nV6Nb6Ab8tl8Fn8dI6vM8tl5FZ">
+<input type="hidden" id="hotLine" value="武汉328路公交路线" title="328路" href="http://bus.mapbar.com/wuhan/xianlu/328lu/">
+<div class="topGray">
+	<div class="w960 margin0auto">
+		<div class="logo">
+			<a href="../index1.html">
+				<img src="../bus/indexv2/images/buslogo.gif" alt="">
+			</a>
+		</div>
+		<div class="topnav">
+			<a target="_blank" class="gongjiao" href="javascript:;" title="武汉市公交">武汉市公交网</a>
+			<a target="_blank" href="../search/index.html" title="地图查询">查地图</a>
+			<a target="_blank" class="page" href="../index.html" title="哈尔滨公交">哈尔滨公交首页</a>
+			<a href="../help/lianxi.html" target="_blank"><strong>商务合作</strong></a>
+			<div class="header_pinBox">
+				<a class="pindao">频道</a>
+				<div class="header_pinC" style="display:none;"> <b class="pinC_t"></b>
+					<div class="pinC_m">
+						<h5>地图查询</h5>
+						<a href="../search/index.html" target="_blank" title="地图搜索">地图搜索</a>
+						<a href="../index2.html" target="_blank" title="本地生活">本地生活</a>
+						<a href="../index.html" target="_blank" title="驾车导航">驾车导航</a>
+						<a href="../search/index.html#c=中国&amp;itab=3" target="_blank" title="周边查询">周边查询</a>
+						<a href="../index3.html" target="_blank" title="地铁地图">地铁地图</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="wrap">
+		<div class="w960 margin0auto posr">
+			
+			<div class="mwp_cyl cityName" id="citylist">
+				<div class="nameL"></div>
+				<span class="mwp_cyl_i"><input id="h_city" name="input" type="text" size="9" autocomplete="off" style="" value="武汉市"><a href="javascript:void(0)" cl_mc="xgq">[切换]</a></span>			
+			</div>
+			<div class="tit clr">
+				<ul>
+					<li class="mr117">
+						<a href="javascript:;" id="setting1" class="blueBottom">换乘查询</a>
+					</li>
+					<li class="mr117">
+						<a href="javascript:;" id="setting2">线路查询</a>
+					</li>
+					<li>
+						<a href="javascript:;" id="setting3">站点查询</a>
+					</li>
+				</ul>
+			</div>
+			<div class="subWayBorder clr" id="st1" style="display: block">
+				<div class="subWayLeft2 clr">
+					<input type="text" class="LeftInput1" id="fromInput" value="请输入起点" tabindex="1">
+					<a href="javascript:;" class="switch" id="switchBtn">
+						<img src="../bus/indexv2/images/bus_20.png" width="26" height="26" alt="">
+					</a>
+					<input type="text" class="LeftInput2" id="toInput" value="请输入终点" tabindex="2">
+				</div>
+				<div class="subWayr">
+					<input type="button" id="transformSearch" class="subWayBut" title="换乘查询" value="">
+				</div>
+				<div class="exp">
+					<p class="example" id="transformEM"></p>
+				</div>
+			</div>
+			<div class="subWayBorder clr" id="st2" style="display: none">
+				<div class="subWayLeft2 clr">
+					<input id="line_keyword" type="text" value="请输入线路" class="LeftInput3">
+				</div>
+				<div class="subWayr">
+					<input type="button" id="lineSearch" class="subWayBut" title="线路查询" value="">
+				</div>
+				<div class="exp">
+					<p class="example" id="lineEM"></p>
+				</div>
+			</div>
+			<div class="subWayBorder clr" id="st3" style="display: none">
+				<div class="subWayLeft2 clr">
+					<input id="station_keyword" type="text" value="请输入站点" class="LeftInput3">
+				</div>
+				<div class="subWayr">
+					<input type="button" id="stationSearch" class="subWayBut" title="站点查询" value="">
+				</div>
+				<div class="exp">
+					<p class="example" id="stationEM"></p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="gray">
+		<div class="w960 margin0auto">
+			<div class="cityWrap">
+				<div class="cityNews">
+					<div class="titles">
+						<h2><a target="_blank" href="javascript:;" title="武汉公交新闻">武汉公交新闻</a><span class="after"></span></h2>
+					</div>
+					<div class="newsPic">
+					</div>
+					<p><a href="javascript:;" target="_blank" title="中新网湖北 湖北新闻网 距路口30米开始减速 车让">中新网湖北 湖北新闻网 距路口30米</a></p><p><a href="javascript:;" target="_blank" title="政法周榜：“无现金城市”坐公交只要6毛？@武汉">政法周榜：“无现金城市”坐公交只要6</a></p><p><a href="javascript:;" target="_blank" title="因站名名不副实易误导乘客 武汉一公交站更名">因站名名不副实易误导乘客 武汉一公交</a></p><p><a href="javascript:;" target="_blank" title="武汉公交推礼让斑马线标准：距路口30米处减速">武汉公交推礼让斑马线标准：距路口30</a></p><p><a href="javascript:;" target="_blank" title="观景无遮挡抬头就是蓝天 大学生被武汉公交折服">观景无遮挡抬头就是蓝天 大学生被武汉</a></p><p><a href="javascript:;" target="_blank" title="武汉一公交站被绿化带阻隔 回应：月底前迁改公">武汉一公交站被绿化带阻隔 回应：月底</a></p><p><a href="javascript:;" target="_blank" title="武汉215路公交车有个“垫脚司机”">武汉215路公交车有个“垫脚司机”</a></p><p><a href="javascript:;" target="_blank" title="24日起武汉4条公交线增天鹅湖大道停靠点">24日起武汉4条公交线增天鹅湖大道停</a></p><p><a href="javascript:;" target="_blank" title="【武汉】东西湖区17日起 6处公交站更名">【武汉】东西湖区17日起 6处公交站</a></p><p><a href="javascript:;" target="_blank" title="武汉打造无现金城市:首次刷支付宝乘公交可领">武汉打造无现金城市:首次刷支付宝乘公</a></p>
+				</div>
+				<div class="busno">
+					<div class="titles">
+						<h2><a target="_blank" href="javascript:;" title="武汉公交线路查询">武汉公交线路</a><span class="after"></span></h2>
+					</div>
+					<ul>
+						<li>
+							以数字开头:
+							<a href='javascript:;' title="武汉1字头公交线路查询 " target='_blank'>1</a> <a href='javascript:;' title="武汉2字头公交线路查询 " target='_blank'>2</a> <a href='javascript:;' title="武汉3字头公交线路查询 " target='_blank'>3</a> <a href='javascript:;' title="武汉4字头公交线路查询 " target='_blank'>4</a> <a href='javascript:;' title="武汉5字头公交线路查询 " target='_blank'>5</a> <a href='javascript:;' title="武汉6字头公交线路查询 " target='_blank'>6</a> <a href='javascript:;' title="武汉7字头公交线路查询 " target='_blank'>7</a> <a href='javascript:;' title="武汉8字头公交线路查询 " target='_blank'>8</a> <a href='javascript:;' title="武汉9字头公交线路查询 " target='_blank'>9</a> 
+						</li>
+						<li>
+							以字母开头:
+							<a href='javascript:;' title="武汉B字头公交线路查询 " target='_blank'>B</a> <a href='javascript:;' title="武汉C字头公交线路查询 " target='_blank'>C</a> <a href='javascript:;' title="武汉D字头公交线路查询 " target='_blank'>D</a> <a href='javascript:;' title="武汉E字头公交线路查询 " target='_blank'>E</a> <a href='javascript:;' title="武汉G字头公交线路查询 " target='_blank'>G</a> <a href='javascript:;' title="武汉H字头公交线路查询 " target='_blank'>H</a> <a href='javascript:;' title="武汉J字头公交线路查询 " target='_blank'>J</a> <a href='javascript:;' title="武汉K字头公交线路查询 " target='_blank'>K</a> <a href='javascript:;' title="武汉L字头公交线路查询 " target='_blank'>L</a> <a href='javascript:;' title="武汉P字头公交线路查询 " target='_blank'>P</a> <a href='javascript:;' title="武汉S字头公交线路查询 " target='_blank'>S</a> <a href='javascript:;' title="武汉W字头公交线路查询 " target='_blank'>W</a> <a href='javascript:;' title="武汉X字头公交线路查询 " target='_blank'>X</a> <a href='javascript:;' title="武汉Y字头公交线路查询 " target='_blank'>Y</a> 
+						</li>
+						<li>
+							热门公交线路:
+							<a href='javascript:;' title="武汉328路公交路线 " target='_blank'>328路</a> <a href='javascript:;' title="武汉368路公交路线 " target='_blank'>368路</a> <a href='javascript:;' title="武汉38路公交路线 " target='_blank'>38路</a> <a href='javascript:;' title="武汉511路公交路线 " target='_blank'>511路</a> <a href='javascript:;' title="武汉521路公交路线 " target='_blank'>521路</a> <a href='javascript:;' title="武汉538路公交路线 " target='_blank'>538路</a> <a href='javascript:;' title="武汉543路公交路线 " target='_blank'>543路</a> <a href='javascript:;' title="武汉556路公交路线 " target='_blank'>556路</a> <a href='javascript:;' title="武汉561路公交路线 " target='_blank'>561路</a> <a href='javascript:;' title="武汉629路公交路线 " target='_blank'>629路</a> <a href='javascript:;' title="武汉733路公交路线 " target='_blank'>733路</a> <a href='javascript:;' title="武汉759路公交路线 " target='_blank'>759路</a> <a href='javascript:;' title="武汉917路公交路线 " target='_blank'>917路</a> <a href='javascript:;' title="武汉H86路公交路线 " target='_blank'>H86路</a> <a href='javascript:;' title="武汉H92路公交路线 " target='_blank'>H92路</a> <a href='javascript:;' title="武汉PK3路公交路线 " target='_blank'>PK3路</a> <a href='javascript:;' title="武汉Y303路公交路线 " target='_blank'>Y303路</a> <a href='javascript:;' title="武汉蔡甸4路公交路线 " target='_blank'>蔡甸4路</a> <a href='javascript:;' title="武汉电车8路公交路线 " target='_blank'>电车8路</a> <a href='javascript:;' title="武汉YX320路公交路线 " target='_blank'>YX320路</a> 
+							 <a href="javascript:;" target='_blank' class="more">更多>></a>
+						</li>
+					</ul>
+				</div>
+				<div class="busno">
+					<div class="titles">
+						<h2><a target="_blank" href="javascript:;" title="武汉公交车站点查询">武汉公交站点</a><span class="after"></span></h2>
+					</div>
+					<ul>
+						<li>
+							以数字开头:
+							<a href='javascript:;' title="武汉1字头公交站点查询 " target='_blank'>1</a> <a href='javascript:;' title="武汉2字头公交站点查询 " target='_blank'>2</a> <a href='javascript:;' title="武汉3字头公交站点查询 " target='_blank'>3</a> <a href='javascript:;' title="武汉7字头公交站点查询 " target='_blank'>7</a> 
+						</li>
+						<li>
+							以字母开头:
+							<a href='javascript:;' title="武汉A字头公交站点查询 " target='_blank'>A</a> <a href='javascript:;' title="武汉B字头公交站点查询 " target='_blank'>B</a> <a href='javascript:;' title="武汉C字头公交站点查询 " target='_blank'>C</a> <a href='javascript:;' title="武汉D字头公交站点查询 " target='_blank'>D</a> <a href='javascript:;' title="武汉E字头公交站点查询 " target='_blank'>E</a> <a href='javascript:;' title="武汉F字头公交站点查询 " target='_blank'>F</a> <a href='javascript:;' title="武汉G字头公交站点查询 " target='_blank'>G</a> <a href='javascript:;' title="武汉H字头公交站点查询 " target='_blank'>H</a> <a href='javascript:;' title="武汉J字头公交站点查询 " target='_blank'>J</a> <a href='javascript:;' title="武汉K字头公交站点查询 " target='_blank'>K</a> <a href='javascript:;' title="武汉L字头公交站点查询 " target='_blank'>L</a> <a href='javascript:;' title="武汉M字头公交站点查询 " target='_blank'>M</a> <a href='javascript:;' title="武汉N字头公交站点查询 " target='_blank'>N</a> <a href='javascript:;' title="武汉P字头公交站点查询 " target='_blank'>P</a> <a href='javascript:;' title="武汉Q字头公交站点查询 " target='_blank'>Q</a> <a href='javascript:;' title="武汉R字头公交站点查询 " target='_blank'>R</a> <a href='javascript:;' title="武汉S字头公交站点查询 " target='_blank'>S</a> <a href='javascript:;' title="武汉T字头公交站点查询 " target='_blank'>T</a> <a href='javascript:;' title="武汉W字头公交站点查询 " target='_blank'>W</a> <a href='javascript:;' title="武汉X字头公交站点查询 " target='_blank'>X</a> <a href='javascript:;' title="武汉Y字头公交站点查询 " target='_blank'>Y</a> <a href='javascript:;' title="武汉Z字头公交站点查询 " target='_blank'>Z</a> 
+						</li>
+						<li>
+							热门公交站点:
+							<a href='javascript:;' title="武汉长江日报路菱角湖路口公交车站 " target='_blank'>长江日报路菱角湖路口</a> <a href='javascript:;' title="武汉振兴东路振兴路公交车站 " target='_blank'>振兴东路振兴路</a> <a href='javascript:;' title="武汉武东路武东医院公交车站 " target='_blank'>武东路武东医院</a> <a href='javascript:;' title="武汉汉阳大道燎原村公交车站 " target='_blank'>汉阳大道燎原村</a> <a href='javascript:;' title="武汉武东中路武东六号门公交车站 " target='_blank'>武东中路武东六号门</a> <a href='javascript:;' title="武汉中山大道合作路口公交车站 " target='_blank'>中山大道合作路口</a> <a href='javascript:;' title="武汉龙阳大道王家湾公交车站 " target='_blank'>龙阳大道王家湾</a> <a href='javascript:;' title="武汉黄浦大街分金街公交车站 " target='_blank'>黄浦大街分金街</a> <a href='javascript:;' title="武汉将军一路银杏街公交车站 " target='_blank'>将军一路银杏街</a> <a href='javascript:;' title="武汉汤云海路盘龙大道口公交车站 " target='_blank'>汤云海路盘龙大道口</a> <a href='javascript:;' title="武汉博学路三角湖路公交车站 " target='_blank'>博学路三角湖路</a> <a href='javascript:;' title="武汉蔡甸大街新庙村公交车站 " target='_blank'>蔡甸大街新庙村</a> <a href='javascript:;' title="武汉建设大道武汉晚报公交车站 " target='_blank'>建设大道武汉晚报</a> <a href='javascript:;' title="武汉琴台大道米粮公交车站 " target='_blank'>琴台大道米粮</a> <a href='javascript:;' title="武汉民主路司门口公交车站 " target='_blank'>民主路司门口</a> <a href='javascript:;' title="武汉和平大道三层楼公交车站 " target='_blank'>和平大道三层楼</a> <a href='javascript:;' title="武汉滠新路滠阳大道口公交车站 " target='_blank'>滠新路滠阳大道口</a> <a href='javascript:;' title="武汉中山大道硚口公交车站 " target='_blank'>中山大道硚口</a> <a href='javascript:;' title="武汉凤凰湖环路四新中路公交车站 " target='_blank'>凤凰湖环路四新中路</a> <a href='javascript:;' title="武汉汉施公路徐湾公交车站 " target='_blank'>汉施公路徐湾</a> 
+							<a href="javascript:;" title="" target='_blank' class="more">更多>></a>
+						</li>
+					</ul>
+				</div>
+				<div class="busname">
+					<div class="titles2">
+						<h2><a target="_blank" title="">武汉公交换乘</a><span class="after"></span></h2>
+					</div>
+					<div class="hc">
+						<p><a href='javascript:;' title="创业路沌阳大厦到民族大道上钱村 " target='_blank'>创业路沌阳大厦到民族大道上钱村</a></p><p><a href='javascript:;' title="东风大道神龙大道到武金堤公路电排站 " target='_blank'>东风大道神龙大道到武金堤公路电排站</a></p><p><a href='javascript:;' title="五环路金山大道到富一路九夫村 " target='_blank'>五环路金山大道到富一路九夫村</a></p><p><a href='javascript:;' title="友谊大道青山客运站到双凤大道邮电大楼 " target='_blank'>友谊大道青山客运站到双凤大道邮电大楼</a></p><p><a href='javascript:;' title="滠阳大道滠水春晓到滠阳大道滠水春晓 " target='_blank'>滠阳大道滠水春晓到滠阳大道滠水春晓</a></p><p><a href='javascript:;' title="新湾三路到汉施公路毛店滨湖桥 " target='_blank'>新湾三路到汉施公路毛店滨湖桥</a></p><p><a href='javascript:;' title="古驿道人民银行到革新大道十全路 " target='_blank'>古驿道人民银行到革新大道十全路</a></p><p><a href='javascript:;' title="白沙洲大道武科大到和平大道四美塘 " target='_blank'>白沙洲大道武科大到和平大道四美塘</a></p><p><a href='javascript:;' title="汉阳大道铁铺到宏传小区 " target='_blank'>汉阳大道铁铺到宏传小区</a></p><p><a href='javascript:;' title="永清街到马池路金银湖管委会 " target='_blank'>永清街到马池路金银湖管委会</a></p>
+					</div>
+				</div>
+			</div>
+
+			<div class="chinaBus">
+				<h2> 全国城市公交列表</h2>
+				<p>
+					<a target="_blank" href="../beijing/index.html">北京公交</a>
+			       	<a target="_blank" href="../shanghai/index.html">上海公交</a>
+			       	<a target="_blank" href="../chongqing/index.html">重庆公交</a>
+			       	<a target="_blank" href="../tianjin/index.html">天津公交</a>
+			       	<a target="_blank" href="../guangzhou/index.html">广州公交</a>
+			       	<a target="_blank" href="../shenzhen/index.html">深圳公交</a>
+			       	<a target="_blank" href="../taiyuan/index.html">太原公交</a>
+			       	<a target="_blank" href="../shenyang/index.html">沈阳公交</a>
+			       	<a target="_blank" href="../changchun/index.html">长春公交</a>
+			       	<a target="_blank" href="../jinan/index.html">济南公交</a>
+			       	<a target="_blank" href="../nanjing/index.html">南京公交</a>
+			       	<a target="_blank" href="../hangzhou/index.html">杭州公交</a>
+			       	<a target="_blank" href="../hefei/index.html">合肥公交</a>
+			       	<a target="_blank" href="../fuzhou1/index.html">福州公交</a>
+			       	<a target="_blank" href="../nanchang/index.html">南昌公交</a>
+			       	<a target="_blank" href="../zhengzhou/index.html">郑州公交</a>
+			       	<a target="_blank" href="">武汉公交</a>
+			       	<a target="_blank" href="../changsha/index.html">长沙公交</a>
+			       	<a target="_blank" href="../haikou/index.html">海口公交</a>
+			       	<a target="_blank" href="../chengdu/index.html">成都公交</a>
+			       	<a target="_blank" href="../guiyang/index.html">贵阳公交</a>
+			       	<a target="_blank" href="../kunming/index.html">昆明公交</a>
+			       	<a target="_blank" href="../xian/index.html">西安公交</a>
+			       	<a target="_blank" href="../lanzhou/index.html">兰州公交</a>
+			       	<a target="_blank" href="../xining/index.html">西宁公交</a>
+			       	<a target="_blank" href="../haerbin/index1.html">哈尔滨公交</a>
+			       	<a target="_blank" href="../shijiazhuang/index.html">石家庄公交</a>
+			       	<a target="_blank" href="../wulumuqi/index.html">乌鲁木齐公交</a>
+			       	<a target="_blank" href="../huhehaote/index.html">呼和浩特公交</a>
+			       	<a target="_blank" href="../city/change/index.html">更多>></a>
+				</p>
+			</div>
+
+			<div class="busLinks">
+				<h2> 友情链接 </h2>
+				<p>
+					<a href='javascript:;' target='_blank'>武汉短租房</a><a href='javascript:;' target='_blank'>武汉二手车交易市场</a><a href='javascript:;' target='_blank'>武汉天气预报30天</a><a href='javascript:;' target='_blank'>武汉平行进口车</a><a href='javascript:;' target='_blank'>武汉装修</a><a href='javascript:;' target='_blank'>武汉汽车票网上订票</a><a href='javascript:;' target='_blank'>武汉电话查询</a><a href='javascript:;' target='_blank'>武汉地图查询</a><a href='javascript:;' target='_blank'>武汉公交</a><a href='javascript:;' target='_blank'>武汉车辆违章查询</a><a href='javascript:;' target='_blank'>武汉地图</a><a href='javascript:;' target='_blank'>武汉邮编查询</a><a href='javascript:;' target='_blank'>武汉全部地标</a><a href='javascript:;' target='_blank'>武汉地铁新闻</a><a href='index1.html' target='_blank'>武汉地铁</a>
+				</p>
+			</div>
+		</div>
+	</div>
+	<!-- 1000 end -->
+	<div class="footerCity">
+		<p>
+			<a href="../index.html" target="_blank">关于我们</a>
+			|
+			<a href="../index.html" target="_blank">企业推广</a>
+			|
+			<a href="javascript:;" target="_blank" style="color:red">免费公交代码</a>
+			|
+			<a href="../help/sitelist.html" target="_blank">分站列表</a>
+			|
+			<a href="../link/index.html" target="_blank">友情链接</a>
+			|
+			<a href="../index4.html" target="_blank">行政地图</a>
+		</p>
+		<p>
+			2019mapbar.
+			<a href="javascript:;" target="_blank">[京ICP证070616号]</a>
+			<a href="javascript:;" target="_blank">[京ICP备08100418号]</a>
+		</p>
+	</div>
+	<script type="text/javascript" src="../share/jquery/jquery-1.3.2.pack.js"></script>
+	<script type="text/javascript" src="../bus/js/wt_index.js"></script>
+	<script>
+		window.onload = function() {
+			var set1 = document.getElementById('setting1');
+			var set2 = document.getElementById('setting2');
+			var set3 = document.getElementById('setting3');
+			var st1 = document.getElementById('st1');
+			var st2 = document.getElementById('st2');
+			var st3 = document.getElementById('st3');
+			var switchBtn = document.getElementById('switchBtn');
+			var fromInput = document.getElementById('fromInput');
+			var toInput = document.getElementById('toInput');
+			function setClick(aNode, divNode) {
+				if (aNode.className == 'blueBottom') return;
+				else {
+					set1.className = '';
+					set2.className = '';
+					set3.className = '';
+					aNode.className = 'blueBottom';
+					st1.style.display = "none";
+					st2.style.display = "none";
+					st3.style.display = "none";
+					divNode.style.display = "block";
+				}
+			}
+			set2.onclick = function() {
+				setClick(set2, st2);
+			}
+			set3.onclick = function() {
+				setClick(set3, st3);
+			}
+			set1.onclick = function() {
+				setClick(set1, st1);
+			}
+			switchBtn.onclick = function() {
+				var fromText = fromInput.value;
+				var toText = toInput.value;
+				if(fromText!="请输入起点"&&toText!="请输入终点"){
+					fromInput.value = toText;
+					toInput.value = fromText;
+				}
+			}
+		}
+	</script>
+	<script type="text/javascript" src="../bus/indexv2/js/mwp.js"></script>
+	<script type="text/javascript">
+		var kcitylist = null;
+		$(function(){
+			var shortName="武汉";
+			if(shortName.length>2){
+				$(".titles").attr("class","titles_long")
+				$(".titles2").attr("class","titles2_long")
+			}
+			$("#h_city").val("武汉市");
+			var length=$("#h_city").val().length;
+			if(length>7){
+				length=7;
+			}
+			$("#h_city").css("width",length*14);
+			$(".subWayBorder input[type='text']").each(function(){
+				$(this).attr("defaultVal",$(this).val());
+			});
+			$(".subWayBorder input[type='text']").focus(function(){
+				if($(this).val()==$(this).attr("defaultVal")){
+					$(this).val("");
+				}
+			});
+			$(".subWayBorder input[type='text']").blur(function(){
+				if($(this).val()==""){
+					$(this).val($(this).attr("defaultVal"));
+				}
+			});
+		});
+	</script>
+	<script type="text/javascript" src="../bus/js/placeholder.js"></script>
+	<script type="text/javascript" src="../bus/indexv2/js/index.js"></script>
+	<script type="text/javascript">
+	   var _hmt = _hmt || [];
+	  (function() {
+		 var hm = document.createElement("script");
+		 hm.src = "//hm.baidu.com/hm.js?4f7e758e957dfb1e328a4cb7a250d6e7";
+		 var s = document.getElementsByTagName("script")[0]; 
+		 s.parentNode.insertBefore(hm, s);
+	  })();
+	</script>
+</div></body>
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https') {
+        bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';        
+    }
+    else {
+        bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+    }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+</html>

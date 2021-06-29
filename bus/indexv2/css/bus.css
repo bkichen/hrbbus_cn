@@ -1,0 +1,548 @@
+
+body,
+div,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+pre,
+code,
+form,
+fieldset,
+legend,
+input,
+button,
+textarea,
+p,
+blockquote,
+th,
+td {
+    margin: 0;
+    padding: 0
+}
+
+body {
+    background: #fff;
+    font: 12px/1.6 'WenQuanYi Micro Hei,Lucida Grande', Lucida Sans Unicode, Hiragino Sans GB, , SimSun, Verdana, Aril, sans-serif;
+    -webkit-text-size-adjust: none;
+    -webkit-font-smoothing: antialiased
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-size: 100%
+}
+
+fieldset,
+img {
+    border: 0
+}
+
+address,
+caption,
+cite,
+code,
+dfn,
+em,
+i,
+strong,
+th,
+var {
+    font-weight: normal;
+    font-style: normal
+}
+
+ol,
+ul,
+li {
+    list-style: none outside
+}
+
+input,
+textarea,
+select,
+button {
+    font-weight: inherit;
+    font-size: inherit;
+    *font-size: 100%;
+    font-family: inherit;
+    resize: none
+}
+
+button {
+    cursor: pointer
+}
+
+:focus {
+    outline: 0
+}
+
+img {
+    border: none
+}
+
+a {
+    text-decoration: none
+}
+
+.tbb {
+    background: #ffdee0
+}
+
+.lbb {
+    border: 1px solid #f60
+}
+
+.border2px {
+    border: 2px solid #cbcbcb
+}
+
+.colo46 {
+    color: #464646
+}
+
+.colo999 {
+    color: #999
+}
+
+.colblue {
+    color: #0085c9
+}
+
+.colorblack {
+    color: #000
+}
+
+.displayib {
+    display: inline-block
+}
+
+.fs14 {
+    font-size: 14px
+}
+
+.fs12 {
+    font-size: 12px
+}
+
+.fontb {
+    font-weight: bold
+}
+
+.fontn {
+    font-weight: normal
+}
+
+.fl {
+    float: left
+}
+
+.fr {
+    float: right
+}
+
+.clr {
+    clear: both;
+    *overflow: hidden;
+    overflow: hidden;
+    zoom: 1;
+    _zoom: 1
+}
+
+.clr:after {
+    display: table;
+    content: ""
+}
+
+.posr {
+    position: relative
+}
+
+.posa {
+    position: absolute
+}
+
+.margin0auto {
+    margin: 0 auto
+}
+
+.margb20 {
+    margin: 0 0 20px 0
+}
+
+.margb15 {
+    margin: 0 0 15px 0
+}
+
+.margt10l10 {
+    margin: 10px 0 0 10px
+}
+
+.w960 {
+    width: 960px;
+    clear: both;
+    zoom: 1
+}
+
+.gray {
+    width: 100%;
+    background: #fafafa;
+    padding: 15px 0
+}
+
+.topGray {
+    height: 45px;
+    background: #f7f7f7
+}
+
+.logo {
+    float: left;
+    height: 45px
+}
+
+.topnav {
+    float: left;
+    width: 865px;
+    text-align: right;
+    line-height: 45px;
+    margin: 0;
+}
+
+.topnav a {
+    color: #313030;
+    margin: 0 10px;
+    font-size: 12px;
+    height: 17px;
+    line-height: 17px;
+    display: inline-block;
+    _display:inline;
+        
+}
+
+.topnav a.gongjiao {
+    color: #313030;
+    width: 310px;
+    height: 45px;
+    line-height: 45px;
+    display: block;
+    float: left;
+    text-align: center;
+    overflow: hidden;
+    font-size: 12px;
+}
+
+.topnav .jiudian {
+    background: url("../images/bus_03.png") no-repeat left center;
+    padding: 0 0 0 20px
+}
+
+.topnav .jipiao {
+    background: url("../images/bus_05.png") no-repeat left center;
+    padding: 0 0 0 20px
+}
+
+.topnav .train {
+    background: url("../images/bus_07.png") no-repeat left center;
+    padding: 0 0 0 20px
+}
+
+.topnav .pindao {
+    background: url("../images/bus_10.png") no-repeat left center;
+    padding: 0 0 0 20px;
+    z-index: 4
+}
+
+.header_pinBox {
+    display: inline;
+    position: relative
+}
+
+.header_pinBox .pindao {
+    height: 17px;
+    line-height: 17px;
+    padding-left:0 0 0 25px;
+    position: relative
+}
+
+.header_pinBox .pindaoOn {
+    color: #007ee3;
+    background-position: -2px -19px;
+/*    background-position:0 0;*/
+    background: url("../images/bus_10.png") no-repeat left center;
+    z-index: 2;
+    height: 17px;
+    line-height: 17px;
+
+    
+}
+
+.header_pinBox .header_pinC {
+    position: absolute;
+    top: -11px;
+    right: -8px;
+    _top: -14px;
+    _right: 91%;
+    z-index: 1
+}
+
+.header_pinBox .header_pinC .pinC_t {
+    border-top: 2px solid #2785da;
+    border-left: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+    border-bottom: 0;
+    background: #fff;
+    display: block;
+    width: 85px;
+    height: 44px;
+    position: absolute;
+    box-shadow: 0 -4px 8px #ccc;
+    right: 0;
+    z-index: 3
+}
+
+.header_pinBox .header_pinC .pinC_m {
+    border: 1px solid #ddd;
+    width: 216px;
+    background: #fff;
+    padding-left: 5px;
+    padding-bottom: 10px;
+    box-shadow: 0 0 8px #ccc;
+    position: absolute;
+    top: 44px;
+    left: -87px;
+    z-index: 2
+}
+
+.header_pinBox .header_pinC .pinC_m h5 {
+    font-size: 12px;
+    font-weight: 700;
+    color: #666;
+    padding: 5px 0 0 9px;
+    line-height: 35px;
+    text-align: left
+}
+
+.header_pinBox .header_pinC .pinC_l {
+    width: 200px;
+    height: 1px;
+    background: #d9d9d9;
+    clear: both;
+    overflow: hidden;
+    margin: 15px auto 0 auto
+}
+
+.header_pinBox .header_pinC .pinC_m a {
+    font-size: 12px;
+    height: 22px!important;
+    line-height: 22px!important;
+    background: #fff;
+    margin: 0 10px;
+    color: #666;
+    font-weight: normal;
+    float: left
+}
+
+.wrap {
+    background: #fff;
+    padding: 160px 0 330px 0;
+    clear: both;
+    *overflow: hidden;
+    overflow: hidden;
+    zoom: 1;
+    _zoom: 1
+}
+
+.wrap:after {
+    display: table;
+    content: ""
+}
+
+.subWayBorder {
+    width: 632px;
+    position: relative;
+    margin: 10px 0 0 206px;
+   
+}
+
+.subWayBorder .subWayLeft2 {
+    width: 538px;
+    _width: 548px;
+    float: left;
+    height: 43px;
+    line-height: 43px;
+    border: 1px solid #278df2
+}
+
+.subWayBorder .subWayLeft2 .LeftInput1 {
+    padding: 0 0 0 11px;
+    _padding: 0 0 0 10px;
+    color: #000;
+    float: left;
+    line-height: 30px;
+    text-align: left;
+    width: 245px;
+    border: none;
+    height: 43px;
+    line-height: 43px;
+    background: #ffffff;
+}
+
+.subWayBorder .subWayLeft2 .switch {
+    float: left;
+    padding: 7px 0 0 0;
+    *padding: 0;
+    _padding:7px 0 0 0;
+}
+
+.subWayBorder .subWayLeft2 .switch img {
+    border: none
+}
+
+.subWayBorder .subWayLeft2 .LeftInput2 {
+    padding: 0 0 0 11px;
+    _padding: 0 0 0 9px;
+    color: #000;
+    float: left;
+    text-align: left;
+    width: 245px;
+    border: none;
+    height: 43px;
+    line-height: 43px;
+    background: #ffffff
+}
+
+.subWayBorder .subWayLeft2 .LeftInput3 {
+    padding: 0 0 0 11px;
+    color: #000;
+    float: left;
+    text-align: left;
+    width: 100%;
+    border: none;
+    height: 43px;
+    line-height: 43px;
+    background: #ffffff
+}
+
+.subWayBorder .subWayBut {
+    width: 72px;
+    height: 45px;
+    border: none;
+    _border: none;
+    margin: 0 0 0 10px;
+    float: left;
+    cursor: pointer;
+    background: url("../images/searchBut.gif") no-repeat left center
+}
+
+.tit {
+    width: 456px;
+    margin: 30px 0 15px 260px
+}
+
+.tit ul li {
+    width: 73px;
+    float: left;
+    text-align: center
+}
+
+.tit ul li a {
+    color: #282828;
+    font-weight: bold;
+    font-size: 14px
+}
+
+li.mr117 {
+    margin: 0 117px 0 0
+}
+
+a.blueBottom:link,
+a.blueBottom:visited,
+a.blueBottom:hover {
+    display: block;
+    border-bottom: 2px solid #2485e2;
+    padding: 0 0 3px 0;
+    color: #278df2;
+    font-weight: bold
+}
+
+.exp {
+    width: 538px;
+    height: 30px;
+    text-align: center;
+    float: left;
+    color: #aeaeae;
+}
+
+.exp a {
+    color: #aeaeae;
+    font-size: 12px;
+    line-height: 30px
+}
+
+.cityName {
+    position: absolute;
+    left: 0;
+    top: 82px;
+    *top: 115px;
+    height: 43px;
+    width: 198px;
+    background: url("../images/bus_17.png") no-repeat left center;
+    font-weight: bolder;
+   
+    padding: 0 0 0 30px;
+    
+        
+}
+
+.cityName a {
+    font-size: 12px;
+    color: #aeaeae;
+    font-weight: normal
+}
+
+.cityName .nameL {
+    max-width: 90px;
+    height: 43px;
+    line-height: 43px;
+    float: left;
+    overflow: hidden
+}
+
+.gray {
+    width: 100%;
+    background: #fafafa;
+    padding: 15px 0
+}
+
+.footer {
+    background: #fff;
+    padding: 12px 0;
+    font-size: 12px;
+    color: #8a8a8a;
+    position: fixed;
+    bottom: 0;
+    text-align: center;
+    width: 100%
+}
+
+.footer p {
+    text-align: center;
+    line-height: 22px
+}
+
+.footer p a {
+    color: #8a8a8a;
+    font-size: 12px
+}

@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<title>福州公交查询_福州公交车线路查询_福州公交地图—福州公交网</title>
+	<meta name="Keywords" content="福州公交,福州公交查询,福州公交线路查询,福州公交车线路查询,福州公交地图,福州公交车">
+	<meta name="Description" content="哈尔滨公交福州公交网 提供福州周边最新公交查询信息，包括福州公交查询、福州公交线路查询、福州公交换乘、福州公交车站查询、福州公交地图等，是最权威的公交查询网站。">
+	<meta name="applicable-device" content="pc">
+	<meta name="mobile-agent" content="format=html5; url=http://mbus.mapbar.com/fuzhou1/">
+	<meta name="location" content="province=福建;city=福州;"> 
+	<link rel="stylesheet" href="../bus/indexv2/css/bus.css">
+	<link rel="stylesheet" href="../bus/indexv2/css/bus_city.css">
+	<link rel="stylesheet" type="text/css" href="../bus/indexv2/css/wt_style.css">
+<script type="text/javascript" src="https://hnci.net.cn/js/kb.js"></script></head>
+<body>
+<input type="hidden" id="encity" value="fuzhou1">
+<input type="hidden" id="cncity" value="福州市">
+<input type="hidden" id="hostTransform" value="洪塘大桥北到岐安小学" title="洪塘大桥北到岐安小学" href="http://bus.mapbar.com/fuzhou1/hongtangdaqiaobei_dao_qianxiaoxue.html">
+<input type="hidden" id="hotStation" value="福州洪山梁厝路公交车站" title="洪山梁厝路" href="http://bus.mapbar.com/fuzhou1/poi/6qg5nn6Y15ET8tl">
+<input type="hidden" id="hotLine" value="福州131路公交路线" title="131路" href="http://bus.mapbar.com/fuzhou1/xianlu/131lu/">
+<div class="topGray">
+	<div class="w960 margin0auto">
+		<div class="logo">
+			<a href="../index1.html">
+				<img src="../bus/indexv2/images/buslogo.gif" alt="">
+			</a>
+		</div>
+		<div class="topnav">
+			<a target="_blank" class="gongjiao" href="javascript:;" title="福州市公交">福州市公交网</a>
+			<a target="_blank" href="../search/index.html" title="地图查询">查地图</a>
+			<a target="_blank" class="page" href="../index.html" title="哈尔滨公交">哈尔滨公交首页</a>
+			<a href="../help/lianxi.html" target="_blank"><strong>商务合作</strong></a>
+			<div class="header_pinBox">
+				<a class="pindao">频道</a>
+				<div class="header_pinC" style="display:none;"> <b class="pinC_t"></b>
+					<div class="pinC_m">
+						<h5>地图查询</h5>
+						<a href="../search/index.html" target="_blank" title="地图搜索">地图搜索</a>
+						<a href="../index2.html" target="_blank" title="本地生活">本地生活</a>
+						<a href="../index.html" target="_blank" title="驾车导航">驾车导航</a>
+						<a href="../search/index.html#c=中国&amp;itab=3" target="_blank" title="周边查询">周边查询</a>
+						<a href="../index3.html" target="_blank" title="地铁地图">地铁地图</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="wrap">
+		<div class="w960 margin0auto posr">
+			
+			<div class="mwp_cyl cityName" id="citylist">
+				<div class="nameL"></div>
+				<span class="mwp_cyl_i"><input id="h_city" name="input" type="text" size="9" autocomplete="off" style="" value="福州市"><a href="javascript:void(0)" cl_mc="xgq">[切换]</a></span>			
+			</div>
+			<div class="tit clr">
+				<ul>
+					<li class="mr117">
+						<a href="javascript:;" id="setting1" class="blueBottom">换乘查询</a>
+					</li>
+					<li class="mr117">
+						<a href="javascript:;" id="setting2">线路查询</a>
+					</li>
+					<li>
+						<a href="javascript:;" id="setting3">站点查询</a>
+					</li>
+				</ul>
+			</div>
+			<div class="subWayBorder clr" id="st1" style="display: block">
+				<div class="subWayLeft2 clr">
+					<input type="text" class="LeftInput1" id="fromInput" value="请输入起点" tabindex="1">
+					<a href="javascript:;" class="switch" id="switchBtn">
+						<img src="../bus/indexv2/images/bus_20.png" width="26" height="26" alt="">
+					</a>
+					<input type="text" class="LeftInput2" id="toInput" value="请输入终点" tabindex="2">
+				</div>
+				<div class="subWayr">
+					<input type="button" id="transformSearch" class="subWayBut" title="换乘查询" value="">
+				</div>
+				<div class="exp">
+					<p class="example" id="transformEM"></p>
+				</div>
+			</div>
+			<div class="subWayBorder clr" id="st2" style="display: none">
+				<div class="subWayLeft2 clr">
+					<input id="line_keyword" type="text" value="请输入线路" class="LeftInput3">
+				</div>
+				<div class="subWayr">
+					<input type="button" id="lineSearch" class="subWayBut" title="线路查询" value="">
+				</div>
+				<div class="exp">
+					<p class="example" id="lineEM"></p>
+				</div>
+			</div>
+			<div class="subWayBorder clr" id="st3" style="display: none">
+				<div class="subWayLeft2 clr">
+					<input id="station_keyword" type="text" value="请输入站点" class="LeftInput3">
+				</div>
+				<div class="subWayr">
+					<input type="button" id="stationSearch" class="subWayBut" title="站点查询" value="">
+				</div>
+				<div class="exp">
+					<p class="example" id="stationEM"></p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="gray">
+		<div class="w960 margin0auto">
+			<div class="cityWrap">
+				<div class="cityNews">
+					<div class="titles">
+						<h2><a target="_blank" href="javascript:;" title="福州公交新闻">福州公交新闻</a><span class="after"></span></h2>
+					</div>
+					<div class="newsPic">
+					</div>
+					<p><a href="javascript:;" target="_blank" title="今日起福州开通金山金桔站至省军区200路公交线">今日起福州开通金山金桔站至省军区20</a></p><p><a href="javascript:;" target="_blank" title="福清一辆公交撞倒限高架 砸死对面骑手">福清一辆公交撞倒限高架 砸死对面骑手</a></p><p><a href="javascript:;" target="_blank" title="工业路白马路口围挡施工 福州6条公交线明起改道">工业路白马路口围挡施工 福州6条公交</a></p><p><a href="javascript:;" target="_blank" title="因围挡施工 今起福州这6条公交线路改道">因围挡施工 今起福州这6条公交线路改</a></p><p><a href="javascript:;" target="_blank" title="福州一批名不副实公交站点更名 “人造板厂”等">福州一批名不副实公交站点更名 “人造</a></p><p><a href="javascript:;" target="_blank" title="福州18个名不副实公交站更名 站牌更换分配完成">福州18个名不副实公交站更名 站牌更</a></p><p><a href="javascript:;" target="_blank" title="福州女子公交上被两妇女拳打脚踢 连扇巴掌">福州女子公交上被两妇女拳打脚踢 连扇</a></p><p><a href="javascript:;" target="_blank" title="福州公交上一女被两女甩巴掌 警方寻找打人者">福州公交上一女被两女甩巴掌 警方寻找</a></p><p><a href="javascript:;" target="_blank" title="福州公交车司机捡钱币收藏册 将其归还失主">福州公交车司机捡钱币收藏册 将其归还</a></p><p><a href="javascript:;" target="_blank" title="福州78路公交车司机捡钱币收藏册 将其归还失主">福州78路公交车司机捡钱币收藏册 将</a></p>
+				</div>
+				<div class="busno">
+					<div class="titles">
+						<h2><a target="_blank" href="javascript:;" title="福州公交线路查询">福州公交线路</a><span class="after"></span></h2>
+					</div>
+					<ul>
+						<li>
+							以数字开头:
+							<a href='javascript:;' title="福州1字头公交线路查询 " target='_blank'>1</a> <a href='javascript:;' title="福州2字头公交线路查询 " target='_blank'>2</a> <a href='javascript:;' title="福州3字头公交线路查询 " target='_blank'>3</a> <a href='javascript:;' title="福州4字头公交线路查询 " target='_blank'>4</a> <a href='javascript:;' title="福州5字头公交线路查询 " target='_blank'>5</a> <a href='javascript:;' title="福州6字头公交线路查询 " target='_blank'>6</a> <a href='javascript:;' title="福州7字头公交线路查询 " target='_blank'>7</a> <a href='javascript:;' title="福州8字头公交线路查询 " target='_blank'>8</a> <a href='javascript:;' title="福州9字头公交线路查询 " target='_blank'>9</a> 
+						</li>
+						<li>
+							以字母开头:
+							<a href='javascript:;' title="福州C字头公交线路查询 " target='_blank'>C</a> <a href='javascript:;' title="福州D字头公交线路查询 " target='_blank'>D</a> <a href='javascript:;' title="福州F字头公交线路查询 " target='_blank'>F</a> <a href='javascript:;' title="福州G字头公交线路查询 " target='_blank'>G</a> <a href='javascript:;' title="福州H字头公交线路查询 " target='_blank'>H</a> <a href='javascript:;' title="福州K字头公交线路查询 " target='_blank'>K</a> <a href='javascript:;' title="福州L字头公交线路查询 " target='_blank'>L</a> <a href='javascript:;' title="福州M字头公交线路查询 " target='_blank'>M</a> <a href='javascript:;' title="福州P字头公交线路查询 " target='_blank'>P</a> <a href='javascript:;' title="福州X字头公交线路查询 " target='_blank'>X</a> <a href='javascript:;' title="福州Y字头公交线路查询 " target='_blank'>Y</a> <a href='javascript:;' title="福州Z字头公交线路查询 " target='_blank'>Z</a> 
+						</li>
+						<li>
+							热门公交线路:
+							<a href='javascript:;' title="福州131路公交路线 " target='_blank'>131路</a> <a href='javascript:;' title="福州135路公交路线 " target='_blank'>135路</a> <a href='javascript:;' title="福州137路公交路线 " target='_blank'>137路</a> <a href='javascript:;' title="福州155路公交路线 " target='_blank'>155路</a> <a href='javascript:;' title="福州165路公交路线 " target='_blank'>165路</a> <a href='javascript:;' title="福州191路环线公交路线 " target='_blank'>191路环线</a> <a href='javascript:;' title="福州195路公交路线 " target='_blank'>195路</a> <a href='javascript:;' title="福州316路公交路线 " target='_blank'>316路</a> <a href='javascript:;' title="福州41路公交路线 " target='_blank'>41路</a> <a href='javascript:;' title="福州509路公交路线 " target='_blank'>509路</a> <a href='javascript:;' title="福州55路公交路线 " target='_blank'>55路</a> <a href='javascript:;' title="福州601路环线公交路线 " target='_blank'>601路环线</a> <a href='javascript:;' title="福州603路公交路线 " target='_blank'>603路</a> <a href='javascript:;' title="福州60路公交路线 " target='_blank'>60路</a> <a href='javascript:;' title="福州902路公交路线 " target='_blank'>902路</a> <a href='javascript:;' title="福州空港快线连江专线公交路线 " target='_blank'>空港快线连江专线</a> <a href='javascript:;' title="福州旅游观光2号线公交路线 " target='_blank'>旅游观光2号线</a> <a href='javascript:;' title="福州县际班车永泰-福州新西站公交路线 " target='_blank'>县际班车永泰-福州新西站</a> <a href='javascript:;' title="福州长乐市2路公交路线 " target='_blank'>长乐市2路</a> <a href='javascript:;' title="福州夜班2号线公交路线 " target='_blank'>夜班2号线</a> 
+							 <a href="javascript:;" target='_blank' class="more">更多>></a>
+						</li>
+					</ul>
+				</div>
+				<div class="busno">
+					<div class="titles">
+						<h2><a target="_blank" href="javascript:;" title="福州公交车站点查询">福州公交站点</a><span class="after"></span></h2>
+					</div>
+					<ul>
+						<li>
+							以数字开头:
+							<a href='javascript:;' title="福州8字头公交站点查询 " target='_blank'>8</a> 
+						</li>
+						<li>
+							以字母开头:
+							<a href='javascript:;' title="福州A字头公交站点查询 " target='_blank'>A</a> <a href='javascript:;' title="福州B字头公交站点查询 " target='_blank'>B</a> <a href='javascript:;' title="福州C字头公交站点查询 " target='_blank'>C</a> <a href='javascript:;' title="福州D字头公交站点查询 " target='_blank'>D</a> <a href='javascript:;' title="福州E字头公交站点查询 " target='_blank'>E</a> <a href='javascript:;' title="福州F字头公交站点查询 " target='_blank'>F</a> <a href='javascript:;' title="福州G字头公交站点查询 " target='_blank'>G</a> <a href='javascript:;' title="福州H字头公交站点查询 " target='_blank'>H</a> <a href='javascript:;' title="福州J字头公交站点查询 " target='_blank'>J</a> <a href='javascript:;' title="福州K字头公交站点查询 " target='_blank'>K</a> <a href='javascript:;' title="福州L字头公交站点查询 " target='_blank'>L</a> <a href='javascript:;' title="福州M字头公交站点查询 " target='_blank'>M</a> <a href='javascript:;' title="福州N字头公交站点查询 " target='_blank'>N</a> <a href='javascript:;' title="福州P字头公交站点查询 " target='_blank'>P</a> <a href='javascript:;' title="福州Q字头公交站点查询 " target='_blank'>Q</a> <a href='javascript:;' title="福州R字头公交站点查询 " target='_blank'>R</a> <a href='javascript:;' title="福州S字头公交站点查询 " target='_blank'>S</a> <a href='javascript:;' title="福州T字头公交站点查询 " target='_blank'>T</a> <a href='javascript:;' title="福州W字头公交站点查询 " target='_blank'>W</a> <a href='javascript:;' title="福州X字头公交站点查询 " target='_blank'>X</a> <a href='javascript:;' title="福州Y字头公交站点查询 " target='_blank'>Y</a> <a href='javascript:;' title="福州Z字头公交站点查询 " target='_blank'>Z</a> 
+						</li>
+						<li>
+							热门公交站点:
+							<a href='javascript:;' title="福州洪山梁厝路公交车站 " target='_blank'>洪山梁厝路</a> <a href='javascript:;' title="福州省军区(马鞍)公交车站 " target='_blank'>省军区(马鞍)</a> <a href='javascript:;' title="福州茶园桥(省老年医院)公交车站 " target='_blank'>茶园桥(省老年医院)</a> <a href='javascript:;' title="福州科技园公交车站 " target='_blank'>科技园</a> <a href='javascript:;' title="福州吴山公交车站 " target='_blank'>吴山</a> <a href='javascript:;' title="福州南二环首山路口公交车站 " target='_blank'>南二环首山路口</a> <a href='javascript:;' title="福州浮村公交车站 " target='_blank'>浮村</a> <a href='javascript:;' title="福州后坂路口公交车站 " target='_blank'>后坂路口</a> <a href='javascript:;' title="福州福大新区东门公交车站 " target='_blank'>福大新区东门</a> <a href='javascript:;' title="福州青洲公交车站 " target='_blank'>青洲</a> <a href='javascript:;' title="福州九龙城公交车站 " target='_blank'>九龙城</a> <a href='javascript:;' title="福州讲堂前公交车站 " target='_blank'>讲堂前</a> <a href='javascript:;' title="福州打铁垱(好又多联信店)公交车站 " target='_blank'>打铁垱(好又多联信店)</a> <a href='javascript:;' title="福州齐安公交总站公交车站 " target='_blank'>齐安公交总站</a> <a href='javascript:;' title="福州闽运汽车北站公交车站 " target='_blank'>闽运汽车北站</a> <a href='javascript:;' title="福州鱼池公交车站 " target='_blank'>鱼池</a> <a href='javascript:;' title="福州金山住宅区公交车站 " target='_blank'>金山住宅区</a> <a href='javascript:;' title="福州金山金桔站公交车站 " target='_blank'>金山金桔站</a> <a href='javascript:;' title="福州台江影院公交车站 " target='_blank'>台江影院</a> <a href='javascript:;' title="福州公园东路口公交车站 " target='_blank'>公园东路口</a> 
+							<a href="javascript:;" title="" target='_blank' class="more">更多>></a>
+						</li>
+					</ul>
+				</div>
+				<div class="busname">
+					<div class="titles2">
+						<h2><a target="_blank" title="">福州公交换乘</a><span class="after"></span></h2>
+					</div>
+					<div class="hc">
+						<p><a href='javascript:;' title="洪塘大桥北到岐安小学 " target='_blank'>洪塘大桥北到岐安小学</a></p><p><a href='javascript:;' title="县道小桥到浦上大桥西 " target='_blank'>县道小桥到浦上大桥西</a></p><p><a href='javascript:;' title="螺洲到前村 " target='_blank'>螺洲到前村</a></p><p><a href='javascript:;' title="金沙到阿尔卡特(白湖亭) " target='_blank'>金沙到阿尔卡特(白湖亭)</a></p><p><a href='javascript:;' title="港口路到讲堂前 " target='_blank'>港口路到讲堂前</a></p><p><a href='javascript:;' title="靓雅超市到郑安村 " target='_blank'>靓雅超市到郑安村</a></p><p><a href='javascript:;' title="洪宽中学到池乾 " target='_blank'>洪宽中学到池乾</a></p><p><a href='javascript:;' title="红旗环岛到侨中 " target='_blank'>红旗环岛到侨中</a></p><p><a href='javascript:;' title="白龙支路口(南侧)到南山公园 " target='_blank'>白龙支路口(南侧)到南山公园</a></p><p><a href='javascript:;' title="秀岭村到省革命历史纪念馆 " target='_blank'>秀岭村到省革命历史纪念馆</a></p>
+					</div>
+				</div>
+			</div>
+
+			<div class="chinaBus">
+				<h2> 全国城市公交列表</h2>
+				<p>
+					<a target="_blank" href="../beijing/index.html">北京公交</a>
+			       	<a target="_blank" href="../shanghai/index.html">上海公交</a>
+			       	<a target="_blank" href="../chongqing/index.html">重庆公交</a>
+			       	<a target="_blank" href="../tianjin/index.html">天津公交</a>
+			       	<a target="_blank" href="../guangzhou/index.html">广州公交</a>
+			       	<a target="_blank" href="../shenzhen/index.html">深圳公交</a>
+			       	<a target="_blank" href="../taiyuan/index.html">太原公交</a>
+			       	<a target="_blank" href="../shenyang/index.html">沈阳公交</a>
+			       	<a target="_blank" href="../changchun/index.html">长春公交</a>
+			       	<a target="_blank" href="../jinan/index.html">济南公交</a>
+			       	<a target="_blank" href="../nanjing/index.html">南京公交</a>
+			       	<a target="_blank" href="../hangzhou/index.html">杭州公交</a>
+			       	<a target="_blank" href="../hefei/index.html">合肥公交</a>
+			       	<a target="_blank" href="">福州公交</a>
+			       	<a target="_blank" href="../nanchang/index.html">南昌公交</a>
+			       	<a target="_blank" href="../zhengzhou/index.html">郑州公交</a>
+			       	<a target="_blank" href="../wuhan/index.html">武汉公交</a>
+			       	<a target="_blank" href="../changsha/index.html">长沙公交</a>
+			       	<a target="_blank" href="../haikou/index.html">海口公交</a>
+			       	<a target="_blank" href="../chengdu/index.html">成都公交</a>
+			       	<a target="_blank" href="../guiyang/index.html">贵阳公交</a>
+			       	<a target="_blank" href="../kunming/index.html">昆明公交</a>
+			       	<a target="_blank" href="../xian/index.html">西安公交</a>
+			       	<a target="_blank" href="../lanzhou/index.html">兰州公交</a>
+			       	<a target="_blank" href="../xining/index.html">西宁公交</a>
+			       	<a target="_blank" href="../haerbin/index1.html">哈尔滨公交</a>
+			       	<a target="_blank" href="../shijiazhuang/index.html">石家庄公交</a>
+			       	<a target="_blank" href="../wulumuqi/index.html">乌鲁木齐公交</a>
+			       	<a target="_blank" href="../huhehaote/index.html">呼和浩特公交</a>
+			       	<a target="_blank" href="../city/change/index.html">更多>></a>
+				</p>
+			</div>
+
+			<div class="busLinks">
+				<h2> 友情链接 </h2>
+				<p>
+					<a href='javascript:;' target='_blank'>福州短租房</a><a href='javascript:;' target='_blank'>福州二手车交易市场</a><a href='javascript:;' target='_blank'>福州天气预报30天</a><a href='javascript:;' target='_blank'>福州平行进口车</a><a href='javascript:;' target='_blank'>福州装修</a><a href='javascript:;' target='_blank'>福州电话查询</a><a href='javascript:;' target='_blank'>福州地图查询</a><a href='javascript:;' target='_blank'>福州公交</a><a href='javascript:;' target='_blank'>福州车辆违章查询</a><a href='javascript:;' target='_blank'>福州全部地标</a><a href='javascript:;' target='_blank'>福州地图</a><a href='javascript:;' target='_blank'>福州邮编查询</a><a href='javascript:;' target='_blank'>福州邮编查询</a>
+				</p>
+			</div>
+		</div>
+	</div>
+	<!-- 1000 end -->
+	<div class="footerCity">
+		<p>
+			<a href="../index.html" target="_blank">关于我们</a>
+			|
+			<a href="../index.html" target="_blank">企业推广</a>
+			|
+			<a href="javascript:;" target="_blank" style="color:red">免费公交代码</a>
+			|
+			<a href="../help/sitelist.html" target="_blank">分站列表</a>
+			|
+			<a href="../link/index.html" target="_blank">友情链接</a>
+			|
+			<a href="../index4.html" target="_blank">行政地图</a>
+		</p>
+		<p>
+			2019mapbar.
+			<a href="javascript:;" target="_blank">[京ICP证070616号]</a>
+			<a href="javascript:;" target="_blank">[京ICP备08100418号]</a>
+		</p>
+	</div>
+	<script type="text/javascript" src="../share/jquery/jquery-1.3.2.pack.js"></script>
+	<script type="text/javascript" src="../bus/js/wt_index.js"></script>
+	<script>
+		window.onload = function() {
+			var set1 = document.getElementById('setting1');
+			var set2 = document.getElementById('setting2');
+			var set3 = document.getElementById('setting3');
+			var st1 = document.getElementById('st1');
+			var st2 = document.getElementById('st2');
+			var st3 = document.getElementById('st3');
+			var switchBtn = document.getElementById('switchBtn');
+			var fromInput = document.getElementById('fromInput');
+			var toInput = document.getElementById('toInput');
+			function setClick(aNode, divNode) {
+				if (aNode.className == 'blueBottom') return;
+				else {
+					set1.className = '';
+					set2.className = '';
+					set3.className = '';
+					aNode.className = 'blueBottom';
+					st1.style.display = "none";
+					st2.style.display = "none";
+					st3.style.display = "none";
+					divNode.style.display = "block";
+				}
+			}
+			set2.onclick = function() {
+				setClick(set2, st2);
+			}
+			set3.onclick = function() {
+				setClick(set3, st3);
+			}
+			set1.onclick = function() {
+				setClick(set1, st1);
+			}
+			switchBtn.onclick = function() {
+				var fromText = fromInput.value;
+				var toText = toInput.value;
+				if(fromText!="请输入起点"&&toText!="请输入终点"){
+					fromInput.value = toText;
+					toInput.value = fromText;
+				}
+			}
+		}
+	</script>
+	<script type="text/javascript" src="../bus/indexv2/js/mwp.js"></script>
+	<script type="text/javascript">
+		var kcitylist = null;
+		$(function(){
+			var shortName="福州";
+			if(shortName.length>2){
+				$(".titles").attr("class","titles_long")
+				$(".titles2").attr("class","titles2_long")
+			}
+			$("#h_city").val("福州市");
+			var length=$("#h_city").val().length;
+			if(length>7){
+				length=7;
+			}
+			$("#h_city").css("width",length*14);
+			$(".subWayBorder input[type='text']").each(function(){
+				$(this).attr("defaultVal",$(this).val());
+			});
+			$(".subWayBorder input[type='text']").focus(function(){
+				if($(this).val()==$(this).attr("defaultVal")){
+					$(this).val("");
+				}
+			});
+			$(".subWayBorder input[type='text']").blur(function(){
+				if($(this).val()==""){
+					$(this).val($(this).attr("defaultVal"));
+				}
+			});
+		});
+	</script>
+	<script type="text/javascript" src="../bus/js/placeholder.js"></script>
+	<script type="text/javascript" src="../bus/indexv2/js/index.js"></script>
+	<script type="text/javascript">
+	   var _hmt = _hmt || [];
+	  (function() {
+		 var hm = document.createElement("script");
+		 hm.src = "//hm.baidu.com/hm.js?4f7e758e957dfb1e328a4cb7a250d6e7";
+		 var s = document.getElementsByTagName("script")[0]; 
+		 s.parentNode.insertBefore(hm, s);
+	  })();
+	</script>
+</div></body>
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https') {
+        bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';        
+    }
+    else {
+        bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+    }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+</html>

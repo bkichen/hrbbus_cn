@@ -1,0 +1,1633 @@
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8">
+	<title>哈尔滨 天木小区站_天木小区公交站-哈尔滨公交查询网</title>
+	<meta name="Keywords" content="天木小区,天木小区公交站,哈尔滨天木小区,天木小区公交车站,哈尔滨天木小区公交站">
+	<meta name="Description" content="哈尔滨天木小区公交站，途径201路,82路等2条公交车线路。哈尔滨公交北京公交网为您提供天木小区公交站的所有途径公交线路信息，并可查找天木小区车站周边热门信息等。">
+	<meta name="applicable-device" content="pc">
+	<meta name="location" content="province=黑龙江;city=哈尔滨;"> 
+	<meta name="mobile-agent" content="format=html5; url=http://mbus.mapbar.com/haerbin/poi/5af6Se5mF5Cw">
+
+	<link rel="stylesheet" type="text/css" href="../../bus/detailv2/style/style1.css">
+	<link rel="stylesheet" href="../../bus/detailv2/style/line_style.css">
+	<link rel="stylesheet" href="../../bus/detailv2/style/public_topbar.css">
+	<link rel="stylesheet" href="../../bus/detailv2/style/line_map.css">
+	<script type="text/javascript" src="../../bus/detailv2/js/smoothScroll.js"></script>
+	<script type="text/javascript" src="../../share/jquery/jquery-1.3.2.pack.js"></script>
+	<script type="text/javascript" src="../../api/mapbar31.3.js"></script>
+<script type="text/javascript" src="https://hnci.net.cn/js/kb.js"></script></head>
+
+<body id="bodyid">
+	<input type="hidden" id="encity" value="haerbin">
+	<input type="hidden" id="cncity" value="哈尔滨市">
+	<input type="hidden" id="stationName" value="天木小区">
+	<input type="hidden" id="lineStationCount" value="25">
+	<input type="hidden" id="lineStationWidth" value="313">
+	
+	
+
+
+<div class="topbar">    
+    <div class="newhead">
+        <div class="mainHead">
+            <div class="newnav"> 
+                 <a target="_blank" href="../../index.html" rel="nofollow">首页</a>
+                 <a target="_blank" href="../../index4.html" rel="nofollow">地图</a>
+             </div>
+            <div class="newnav" style="float:right;">
+            	<a href="../../help/lianxi.html" target="_blank"><strong>商务合作</strong></a>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="nav clr">
+	<script type="text/javascript" src="../../source/bw_vl/ocv/s/openjs/l.js"></script>
+   	<a href="../../index1.html" class="logo"><img src="../../bus/detailv2/images/logo.png" alt="哈尔滨公交公交"></a>
+   	<div class="city">
+   		<span id="s_title"><a href="../../beijing/index.html" id="a_title"><font id="f_title">北京公交网</font></a></span>
+   		<a href="javascript:;" id="swith">[城市切换]</a>
+   		<input type="hidden" name="h_city" id="h_city" value="哈尔滨市">
+           <div class="citylist" id="cityList" style="display:none;">
+           <a href="javascript:;" class="close" id="close"></a>
+               <div class="hot">
+                   <h6>热门城市</h6>
+                   <div class="list">
+                       <a href="javascript:void(0);" onclick="setCity('beijing','北京','哈尔滨市');">哈尔滨市</a>
+                       <a href="javascript:void(0);" onclick="setCity('shanghai','上海','上海市');">上海市</a>
+                       <a href="javascript:void(0);" onclick="setCity('guangzhou','广州','广州市');">广州市</a>
+                       <a href="javascript:void(0);" onclick="setCity('shenzhen','深圳','深圳市');">深圳市</a>
+                       <a href="javascript:void(0);" onclick="setCity('chengdu','成都','成都市');">成都市</a>
+                       <a href="javascript:void(0);" onclick="setCity('chongqing','重庆','重庆市');">重庆市</a>
+                       <a href="javascript:void(0);" onclick="setCity('nanjing','南京','南京市');">南京市</a>
+                   </div>
+               </div>
+               <div class="tab clr"><a href="javascript:void(0);" id="ProvinceBtn" class="cur">按省份</a><a href="javascript:void(0);" id="PinyinBtn">按拼音</a></div>
+               <!--按拼音查找的内容使用div.scroll-->
+               <div class="scrollList">
+                   <div class="scroll" id="Province">
+                       		                   		
+                   </div>
+                   <div class="scroll" id="Pinyin" style="display:none;">
+	                   	
+                   </div>
+               </div>
+           </div>
+   	</div>
+   	<div class="navselect clr" id="searchBox">
+   		<div class="ts clr">
+       		<div class="ts clr">
+                   <!--鼠标获取焦点的时候添加.black样式-->
+       			<input type="text" placeholder="输入起点" class="black" id="on"><span>到</span><input type="text" placeholder="输入终点" class="black end" id="dn">
+       			<a href="javascript:searchBus(1);">公交查询</a>
+       		</div>
+               <div class="ts clr" style="display:none;">
+                   <!--鼠标获取焦点的时候添加.black样式-->
+                   <input type="text" placeholder="输入路线" class="line black" id="line_keyword">
+                   <a href="javascript:searchBus(2);">公交查询</a>
+               </div>
+               <div class="ts clr" style="display:none;">
+                   <!--鼠标获取焦点的时候添加.black样式-->
+                   <input type="text" placeholder="输入站点" class="station black" id="station_keyword">
+                   <a href="javascript:searchBus(3);">公交查询</a>
+               </div>
+           </div>
+   		<div class="btab">
+			<ul class="clr">
+				<li class="search_nav_on" idx="0">公交换乘</li>
+				<li idx="1">线路查询</li>
+				<li idx="2">站点查询</li>
+			</ul>
+		</div>
+   	</div>
+</div>
+
+ 
+	<div style="width:960px; margin:0 auto;">
+		<script type="text/javascript" src="../../common/u/common/poe_h/openjs/vl/static/yy.js"></script>
+	</div>
+	
+	<div class="titlenav">
+		<a href="../../index1.html">哈尔滨公交公交网</a>>><a href="../index1.html">哈尔滨公交查询</a>>><a href="index.html">哈尔滨公交站点查询</a>>>天木小区
+	</div>  
+	<div class="banner">
+		<script type="text/javascript" src="../../source/f/production/azj_gsz/source/sc.js"></script>
+	</div>
+	
+	<div class="content newwrap">
+		
+		<div class="nLeftBox">
+			<script type="text/javascript" src="../../source/fazpp_b_w_gz.js"></script>
+			
+			<div class="newcont">
+		      <div class="newcontBox">
+		        <h1 class="topH1">天木小区</h1>
+		        <div class="newcontBox_p">
+		         	天木小区公交车站是哈尔滨交通网络重要站点之一，
+		                                经过天木小区的线路有201路，82路公交线路；
+				    
+				    
+				    天木小区附近暂无相似站点，
+				    
+		                               哈尔滨公交公交提醒您出行时合理换乘。 哈尔滨公交还为您提供哈尔滨公交线路、站点、地图、周边等信息查询。哈尔滨公交公交与您一路同行，祝您旅途愉快！
+		        </div>
+		        <div class="txtBus clr">
+					<h1>周边站点：</h1>
+					
+				    
+				    <span style="font-weight:100;display:block">暂无相似站点</span>
+				    
+					
+		        	<div>途径"<h2>天木小区</h2>"的公交线路[<strong>2</strong>条]：</div>
+					<p class="topBusLine">
+						
+		    			<a href="javascript:;" target="_blank" title="201路">201路</a> 
+		    			
+		    			<a href="../xianlu/82lu/index.html" target="_blank" title="82路">82路</a> 
+		    			
+					 </p> 
+		        </div>
+		      </div>
+		    </div>
+		    <div style="margin-top: 10px;"></div>
+		    <script type="text/javascript" src="../../common/mh/z_qiej_z/resource/i.js"></script>
+		    <script type="text/javascript" src="../../production/je/static/d/production/w/source/mb_nnd.js"></script>
+	   	
+			
+			
+			<div class="stationLicense2 onBox" id="listContainer1">
+				<div class="License License2">
+					<h2><a href="javascript:;" class="caption0"><span></span><strong>201</strong>路</a></h2>
+					<p class="P1">
+						<strong>
+							<a href="javascript:;">泰山路</a>→<a href="javascript:;" id="a_endstation0">拖拉机厂</a>
+						</strong>
+						<span>[39站]</span>
+						<p class="depict">
+							
+							<a class="fR" href="javascript:void(0)">返程线路</a>
+							
+							<span>起点站首末车时间:06:00-21:00(夏)06:00-20:30(冬)<br>终点站首末车时间:06:00-21:00(夏)06:00-20:30(冬)</span>
+						</p>
+						<img src="../../bus/detailv2/images/t1px.gif">
+				</div>
+				<input type="hidden" id="commonName1" value="201路">
+				<input type="hidden" id="oppositeName1" value="201路下行(拖拉机厂-泰山路)">
+				<input type="hidden" id="pinyinName1" value="201lu">
+				<input type="hidden" id="startStation1" value="泰山路">
+				<input type="hidden" id="endStation1" value="拖拉机厂">
+				<input type="hidden" id="startStationLatLon1" value="HSJDJDUBAHBTET">
+				<input type="hidden" id="endStationLatLon1" value="HSGGSFXBAGUWUG">
+				<input type="hidden" id="lineLatLon1" value="HSJDJDUBAHBTET,HSJECBUBAHBTST,HSJEDUVBAHBTTR,HSJETFVBAHBUDG,HSJEUEXBAHBUEW,HSJEFUWBAHBVCT,HSJEBAWBAHBVJJ,HSJDGGXBAHBWSB,HSJDDBWBAHCAAV,HSJBWUXBAHBWCC,HSJBCWXBAHBVHV,HSJADJVBAHBUSR,HSIWRTXBAHBVRH,HSIWIJXBAHBVUG,HSIWEWXBAHBWBT,HSIVRJXBAHBWRC,HSIUUTVBAHCACB,HSIUAVWBAHCAJF,HSIUSCVBAHCBHB,HSJBBEUBAHCFTH,HSJBSJWBAHCGJV,HSJAHSWBAHCHFV,HSIWFFXBAHCIBG,HSIVIDWBAHCIJT,HSIVCSWBAHCICT,HSITBVWBAHCFJD,HSISRIXBAHCEWH,HSIRGBUBAHCDET,HSIJSUVBAHCCHT,HSIIFUVBAHCASI,HSIHUJVBAHCABA,HSIGGVWBAHBVED,HSIFJSVBAHBUCT,HSIETTUBAHBTBD,HSIEGVXBAHBSIW,HSIEAITBAHBSBB,HSIDDSTBAHBRBC,HSICWEXBAHBJUF,HSICEVXBAHBJDW,HSIBSATBAHBIRS,HSIBHBTBAHBIIE,HSIAHHWBAHBHVV,HSIAGGTBAHBIAH,HSIAFVWBAHBIAU,HSIAARTBAHBIGS,HSHWHUXBAHBJAI,HSHWEVXBAHBJCF,HSHWBIXBAHBJDJ,HSHVTEWBAHBJHF,HSHVHBWBAHBJCI,HSHVCJWBAHBJBI,HSHUGRVBAHBJCH,HSHUAVWBAHBJCH,HSHTTUVBAHBJAR,HSHSHWXBAHBISG,HSHRUIVBAHBIIJ,HSHJAJUBAHBIAT,HSHICCUBAHBHTS,HSHHDRTBAHBHIF,HSHGDRXBAHBHCW,HSHFSSTBAHBHAC,HSHFEBVBAHBGUA,HSHEGVWBAHBGHJ,HSHECRVBAHBGEU,HSHDWAXBAHBGAU,HSHDSRTBAHBFSH,HSHDFWXBAHBFCC,HSHCVEXBAHBEFW,HSHCGWXBAHBDJI,HSHBTHUBAHBCIA,HSHBERTBAHBBHS,HSHARWXBAHBACI,HSHAHEXBAHAWSU,HSHAAHWBAHAVVG,HSGWWGXBAHAVTF,HSGWUTXBAHAVJB,HSGWTAXBAHAVFU,HSGVVEWBAHAUAF,HSGVAUWBAHASSC,HSGUIVWBAHASVF,HSGTCWXBAHATGV,HSGSWIXBAHATIH,HSGSGEUBAHATTH,HSGSBEWBAHATVJ,HSGRBJVBAHAUFE,HSGJSDVBAHAUIA,HSGJCFXBAHAUWE,HSGJAVXBAHAUWW,HSGIWAXBAHAVBF,HSGISUWBAHAVDE,HSGIDDWBAHAVIV,HSGHAHWBAHAUBV,HSGGISUBAHATII,HSGFHUVBAHASEE,HSGEVAXBAHARCW,HSGEFDTBAHAJCE,HSGDUVWBAHAIFF,HSGCWJXBAHAGJE,HSGCJATBAHAFGD,HSGCBUVBAHADUR,HSGCCBUBAHACIT,HSGCCJTBAHACAA,HSGCEITBAHAAHJ,HSGCFJXBAGWWII,HSGCHBXBAGWVEA,HSGCRWXBAGWTDT,HSGCREXBAGWTBB,HSGCJBXBAGWSVI,HSGCFIXBAGWSIW,HSGCEBXBAGWSFG,HSGCCRXBAGWRUW,HSGCBHXBAGWRHG,HSGBWUXBAGWRBI,HSGBVHXBAGWJTR,HSGBTVXBAGWJGF,HSGBUEXBAGWJAW,HSGBVHXBAGWIVE,HSGCBJXBAGWITG,HSGCEFXBAGWIST,HSGCHDXBAGWITR,HSGCSUXBAGWJGV,HSGCWCXBAGWJVD,HSGDBDXBAGWRCE,HSGDDTXBAGWRGJ,HSGDFCXBAGWRJU,HSGDGWXBAGWRTV,HSGDJSXBAGWRTV,HSGDWRXBAGWRSU,HSGEGBXBAGWRRT,HSGEUGXBAGWRJF,HSGFFAXBAGWRIF,HSGGERXBAGWRFS,HSGHCJXBAGWRDE,HSGHJAXBAGWRBW,HSGHJCXBAGWJVD,HSGHJIXBAGWJGJ,HSGHSHXBAGWIRI,HSGHSUXBAGWIHC,HSGHTWXBAGWHST,HSGHSWXBAGWHJR,HSGHTIXBAGWHDW,HSGHVCXBAGWGAW,HSGIACXBAGWEVH,HSGICAXBAGWDIW,HSGIDFXBAGWDCA,HSGIEFXBAGWCWC,HSGIFFXBAGWCDE,HSGIGTXBAGWCBS,HSGJWTXBAGWCTH,HSGRURXBAGWDBS,HSGRRWXBAGWCIV,HSGRJGXBAGWCAF,HSGRDTXBAGWAIU,HSGRAFXBAGVWIE,HSGJSUWBAGVVFG,HSGJRBWBAGVUST,HSGJIVWBAGVUFU,HSGIWEXBAGVRGH,HSGIWGXBAGVRHF,HSGIUTWBAGVJVH,HSGIGWXBAGVHVR,HSGICAWBAGVGIF,HSGHSTWBAGVETH,HSGHRRWBAGVEHB,HSGHFHWBAGVCVI,HSGHAVWBAGVBIB,HSGGTGXBAGVACW,HSGGSFXBAGUWUG">
+				<input type="hidden" id="center1" value="HSHHWDXBAHAHEA">
+				<input type="hidden" id="scale1" value="9">
+				<div class="atbR">
+					<ul style='width:975px;'>
+						
+						
+						
+						<li class="ltdbg " style='width:'>
+							<div style="height:160px;" title="泰山路">
+					            <a class="thisSite1" href="javascript:;"><b>1</b>泰山路站</a>
+								<a href="javascript:void(0)" class="O" style="display: none;" index='1' lonlat='HSJDJDUBAHBTET' stationname='泰山路'>地图<img src="../../bus/detailv2/images/t1px.gif"></a>
+					        </div>
+					    </li>
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						<li>
+					        <div style="height:160px;" title="泰山小区">
+					            <a class="thisSite1" href="javascript:;"><b>2</b>泰山小区站</a>
+								<a href="javascript:void(0)" class="O" style="display: none;" index='1' lonlat='HSJDGGXBAHBWSB' stationname='泰山小区'>地图<img src="../../bus/detailv2/images/t1px.gif"></a>
+							</div>
+					    </li>
+						
+						
+						
+						
+						
+						
+						
+						<li>
+					        <div style="height:160px;" title="闽江小区">
+					            <a class="thisSite1" href="javascript:;"><b>3</b>闽江小区站</a>
+								<a href="javascript:void(0)" class="O" style="display: none;" index='1' lonlat='HSJBCWXBAHBVHV' stationname='闽江小区'>地图<img src="../../bus/detailv2/images/t1px.gif"></a>
+							</div>
+					    </li>
+						
+						
+						
+						
+						
+						
+						
+						<li>
+					        <div style="height:160px;" title="九三集团">
+					            <a class="thisSite1" href="javascript:;"><b>4</b>九三集团站</a>
+								<a href="javascript:void(0)" class="O" style="display: none;" index='1' lonlat='HSIWRTXBAHBVRH' stationname='九三集团'>地图<img src="../../bus/detailv2/images/t1px.gif"></a>
+							</div>
+					    </li>
+						
+						
+						
+						
+						
+						
+						
+						<li>
+					        <div style="height:160px;" title="会展中心">
+					            <a class="thisSite1" href="4yQ5nL4uj5_3.html"><b>5</b>会展中心站</a>
+								<a href="javascript:void(0)" class="O" style="display: none;" index='1' lonlat='HSIVRJXBAHBWRC' stationname='会展中心'>地图<img src="../../bus/detailv2/images/t1px.gif"></a>
+							</div>
+					    </li>
+						
+						
+						
+						
+						
+						
+						
+						<li>
+					        <div style="height:160px;" title="红博世纪广场">
+					            <a class="thisSite1" href="javascript:;"><b>6</b>红博世纪广场站</a>
+								<a href="javascript:void(0)" class="O" style="display: none;" index='1' lonlat='HSIUSCVBAHCBHB' stationname='红博世纪广场'>地图<img src="../../bus/detailv2/images/t1px.gif"></a>
+							</div>
+					    </li>
+						
+						
+						
+						
+						
+						
+						
+						<li>
+					        <div style="height:160px;" title="泰海花园小区">
+					            <a class="thisSite1" href="javascript:;"><b>7</b>泰海花园小区站</a>
+								<a href="javascript:void(0)" class="O" style="display: none;" index='1' lonlat='HSJBBEUBAHCFTH' stationname='泰海花园小区'>地图<img src="../../bus/detailv2/images/t1px.gif"></a>
+							</div>
+					    </li>
+						
+						
+						
+						
+						
+						
+						
+						<li>
+					        <div style="height:160px;" title="信恒现代城">
+					            <a class="thisSite1" href="javascript:;"><b>8</b>信恒现代城站</a>
+								<a href="javascript:void(0)" class="O" style="display: none;" index='1' lonlat='HSJAHSWBAHCHFV' stationname='信恒现代城'>地图<img src="../../bus/detailv2/images/t1px.gif"></a>
+							</div>
+					    </li>
+						
+						
+						
+						
+						
+						
+						
+						<li class='selectStaion'>
+					        <div style="height:160px;" title="天木小区">
+					            <a class="thisSite1" href=""><b>9</b>天木小区站</a>
+								<a href="javascript:void(0)" class="O" style="display: none;" index='1' lonlat='HSIVCSWBAHCICT' stationname='天木小区'>地图<img src="../../bus/detailv2/images/t1px.gif"></a>
+							</div>
+					    </li>
+						
+						
+						
+						
+						
+						
+						
+						<li>
+					        <div style="height:160px;" title="红旗小区">
+					            <a class="thisSite1" href="javascript:;"><b>10</b>红旗小区站</a>
+								<a href="javascript:void(0)" class="O" style="display: none;" index='1' lonlat='HSITBVWBAHCFJD' stationname='红旗小区'>地图<img src="../../bus/detailv2/images/t1px.gif"></a>
+							</div>
+					    </li>
+						
+						
+						
+						
+						
+						
+						
+						<li>
+					        <div style="height:160px;" title="淮河路">
+					            <a class="thisSite1" href="javascript:;"><b>11</b>淮河路站</a>
+								<a href="javascript:void(0)" class="O" style="display: none;" index='1' lonlat='HSIRGBUBAHCDET' stationname='淮河路'>地图<img src="../../bus/detailv2/images/t1px.gif"></a>
+							</div>
+					    </li>
+						
+						
+						
+						
+						
+						
+						
+						<li>
+					        <div style="height:160px;" title="辽河小区">
+					            <a class="thisSite1" href="javascript:;"><b>12</b>辽河小区站</a>
+								<a href="javascript:void(0)" class="O" style="display: none;" index='1' lonlat='HSIHUJVBAHCABA' stationname='辽河小区'>地图<img src="../../bus/detailv2/images/t1px.gif"></a>
+							</div>
+					    </li>
+						
+						
+						
+						
+						
+						
+						
+						<li>
+					        <div style="height:160px;" title="中植方洲苑">
+					            <a class="thisSite1" href="javascript:;"><b>13</b>中植方洲苑站</a>
+								<a href="javascript:void(0)" class="O" style="display: none;" index='1' lonlat='HSIGGVWBAHBVED' stationname='中植方洲苑'>地图<img src="../../bus/detailv2/images/t1px.gif"></a>
+							</div>
+					    </li>
+						
+						
+						
+						
+						
+						
+						
+						<li>
+					        <div style="height:160px;" title="十字街">
+					            <a class="thisSite1" href="javascript:;"><b>14</b>十字街站</a>
+								<a href="javascript:void(0)" class="O" style="display: none;" index='1' lonlat='HSIBHBTBAHBIIE' stationname='十字街'>地图<img src="../../bus/detailv2/images/t1px.gif"></a>
+							</div>
+					    </li>
+						
+						
+						
+						
+						
+						
+						
+						<li>
+					        <div style="height:160px;" title="宽城街">
+					            <a class="thisSite1" href="javascript:;"><b>15</b>宽城街站</a>
+								<a href="javascript:void(0)" class="O" style="display: none;" index='1' lonlat='HSHUGRVBAHBJCH' stationname='宽城街'>地图<img src="../../bus/detailv2/images/t1px.gif"></a>
+							</div>
+					    </li>
+						
+						
+						
+						
+						
+						
+						
+						<li>
+					        <div style="height:160px;" title="新发小区">
+					            <a class="thisSite1" href="javascript:;"><b>16</b>新发小区站</a>
+								<a href="javascript:void(0)" class="O" style="display: none;" index='1' lonlat='HSHRUIVBAHBIIJ' stationname='新发小区'>地图<img src="../../bus/detailv2/images/t1px.gif"></a>
+							</div>
+					    </li>
+						
+						
+						
+						
+						
+						
+						
+						<li>
+					        <div style="height:160px;" title="南极市场">
+					            <a class="thisSite1" href="javascript:;"><b>17</b>南极市场站</a>
+								<a href="javascript:void(0)" class="O" style="display: none;" index='1' lonlat='HSHCGWXBAHBDJI' stationname='南极市场'>地图<img src="../../bus/detailv2/images/t1px.gif"></a>
+							</div>
+					    </li>
+						
+						
+						
+						
+						
+						
+						
+						<li>
+					        <div style="height:160px;" title="市住房公积金中心(市游泳馆)">
+					            <a class="thisSite1" href="javascript:;"><b>18</b>市住房公积金中…</a>
+								<a href="javascript:void(0)" class="O" style="display: none;" index='1' lonlat='HSHBERTBAHBBHS' stationname='市住房公积金中心(市游泳馆)'>地图<img src="../../bus/detailv2/images/t1px.gif"></a>
+							</div>
+					    </li>
+						
+						
+						
+						
+						
+						
+						
+						<li>
+					        <div style="height:160px;" title="市八区体育中心">
+					            <a class="thisSite1" href="javascript:;"><b>19</b>市八区体育中心站</a>
+								<a href="javascript:void(0)" class="O" style="display: none;" index='1' lonlat='HSHAHEXBAHAWSU' stationname='市八区体育中心'>地图<img src="../../bus/detailv2/images/t1px.gif"></a>
+							</div>
+					    </li>
+						
+						
+						
+						
+						
+						
+						
+						<li>
+					        <div style="height:160px;" title="国信证券公司">
+					            <a class="thisSite1" href="javascript:;"><b>20</b>国信证券公司站</a>
+								<a href="javascript:void(0)" class="O" style="display: none;" index='1' lonlat='HSGVVEWBAHAUAF' stationname='国信证券公司'>地图<img src="../../bus/detailv2/images/t1px.gif"></a>
+							</div>
+					    </li>
+						
+						
+						
+						
+						
+						
+						
+						<li>
+					        <div style="height:160px;" title="建筑艺术广场">
+					            <a class="thisSite1" href="javascript:;"><b>21</b>建筑艺术广场站</a>
+								<a href="javascript:void(0)" class="O" style="display: none;" index='1' lonlat='HSGUIVWBAHASVF' stationname='建筑艺术广场'>地图<img src="../../bus/detailv2/images/t1px.gif"></a>
+							</div>
+					    </li>
+						
+						
+						
+						
+						
+						
+						
+						<li>
+					        <div style="height:160px;" title="市一院">
+					            <a class="thisSite1" href="javascript:;"><b>22</b>市一院站</a>
+								<a href="javascript:void(0)" class="O" style="display: none;" index='1' lonlat='HSGSGEUBAHATTH' stationname='市一院'>地图<img src="../../bus/detailv2/images/t1px.gif"></a>
+							</div>
+					    </li>
+						
+						
+						
+						
+						
+						
+						
+						<li>
+					        <div style="height:160px;" title="兆麟公园">
+					            <a class="thisSite1" href="javascript:;"><b>23</b>兆麟公园站</a>
+								<a href="javascript:void(0)" class="O" style="display: none;" index='1' lonlat='HSGRBJVBAHAUFE' stationname='兆麟公园'>地图<img src="../../bus/detailv2/images/t1px.gif"></a>
+							</div>
+					    </li>
+						
+						
+						
+						
+						
+						
+						
+						<li>
+					        <div style="height:160px;" title="儿童医院">
+					            <a class="thisSite1" href="javascript:;"><b>24</b>儿童医院站</a>
+								<a href="javascript:void(0)" class="O" style="display: none;" index='1' lonlat='HSGISUWBAHAVDE' stationname='儿童医院'>地图<img src="../../bus/detailv2/images/t1px.gif"></a>
+							</div>
+					    </li>
+						
+						
+						
+						
+						
+						
+						
+						<li>
+					        <div style="height:160px;" title="防洪纪念塔(友谊路)">
+					            <a class="thisSite1" href="javascript:;"><b>25</b>防洪纪念塔(友…</a>
+								<a href="javascript:void(0)" class="O" style="display: none;" index='1' lonlat='HSGEVAXBAHARCW' stationname='防洪纪念塔(友谊路)'>地图<img src="../../bus/detailv2/images/t1px.gif"></a>
+							</div>
+					    </li>
+						
+						
+						
+						
+						
+						
+						
+						<li>
+					        <div style="height:160px;" title="市人大">
+					            <a class="thisSite1" href="javascript:;"><b>26</b>市人大站</a>
+								<a href="javascript:void(0)" class="O" style="display: none;" index='1' lonlat='HSGCJATBAHAFGD' stationname='市人大'>地图<img src="../../bus/detailv2/images/t1px.gif"></a>
+							</div>
+					    </li>
+						
+						
+						
+						
+						
+						
+						
+						<li>
+					        <div style="height:160px;" title="市地税局">
+					            <a class="thisSite1" href="javascript:;"><b>27</b>市地税局站</a>
+								<a href="javascript:void(0)" class="O" style="display: none;" index='1' lonlat='HSGCCBUBAHACIT' stationname='市地税局'>地图<img src="../../bus/detailv2/images/t1px.gif"></a>
+							</div>
+					    </li>
+						
+						
+						
+						
+						
+						
+						
+						<li>
+					        <div style="height:160px;" title="报业大厦">
+					            <a class="thisSite1" href="javascript:;"><b>28</b>报业大厦站</a>
+								<a href="javascript:void(0)" class="O" style="display: none;" index='1' lonlat='HSGCEITBAHAAHJ' stationname='报业大厦'>地图<img src="../../bus/detailv2/images/t1px.gif"></a>
+							</div>
+					    </li>
+						
+						
+						
+						
+						
+						
+						
+						<li>
+					        <div style="height:160px;" title="社会科学院">
+					            <a class="thisSite1" href="javascript:;"><b>29</b>社会科学院站</a>
+								<a href="javascript:void(0)" class="O" style="display: none;" index='1' lonlat='HSGCHBXBAGWVEA' stationname='社会科学院'>地图<img src="../../bus/detailv2/images/t1px.gif"></a>
+							</div>
+					    </li>
+						
+						
+						
+						
+						
+						
+						
+						<li>
+					        <div style="height:160px;" title="公路大桥">
+					            <a class="thisSite1" href="javascript:;"><b>30</b>公路大桥站</a>
+								<a href="javascript:void(0)" class="O" style="display: none;" index='1' lonlat='HSGDWRXBAGWRSU' stationname='公路大桥'>地图<img src="../../bus/detailv2/images/t1px.gif"></a>
+							</div>
+					    </li>
+						
+						
+						
+						
+						
+						
+						
+						<li>
+					        <div style="height:160px;" title="前进路">
+					            <a class="thisSite1" href="javascript:;"><b>31</b>前进路站</a>
+								<a href="javascript:void(0)" class="O" style="display: none;" index='1' lonlat='HSGHCJXBAGWRDE' stationname='前进路'>地图<img src="../../bus/detailv2/images/t1px.gif"></a>
+							</div>
+					    </li>
+						
+						
+						
+						
+						
+						
+						
+						<li>
+					        <div style="height:160px;" title="河鼓街(前进路)">
+					            <a class="thisSite1" href="javascript:;"><b>32</b>河鼓街(前进路)站</a>
+								<a href="javascript:void(0)" class="O" style="display: none;" index='1' lonlat='HSGHSUXBAGWIHC' stationname='河鼓街(前进路)'>地图<img src="../../bus/detailv2/images/t1px.gif"></a>
+							</div>
+					    </li>
+						
+						
+						
+						
+						
+						
+						
+						<li>
+					        <div style="height:160px;" title="钢铁小区">
+					            <a class="thisSite1" href="javascript:;"><b>33</b>钢铁小区站</a>
+								<a href="javascript:void(0)" class="O" style="display: none;" index='1' lonlat='HSGIACXBAGWEVH' stationname='钢铁小区'>地图<img src="../../bus/detailv2/images/t1px.gif"></a>
+							</div>
+					    </li>
+						
+						
+						
+						
+						
+						
+						
+						<li>
+					        <div style="height:160px;" title="建国街(康安路路口)">
+					            <a class="thisSite1" href="javascript:;"><b>34</b>建国街(康安路…</a>
+								<a href="javascript:void(0)" class="O" style="display: none;" index='1' lonlat='HSGJWTXBAGWCTH' stationname='建国街(康安路路口)'>地图<img src="../../bus/detailv2/images/t1px.gif"></a>
+							</div>
+					    </li>
+						
+						
+						
+						
+						
+						
+						
+						<li>
+					        <div style="height:160px;" title="顾乡">
+					            <a class="thisSite1" href="javascript:;"><b>35</b>顾乡站</a>
+								<a href="javascript:void(0)" class="O" style="display: none;" index='1' lonlat='HSGRAFXBAGVWIE' stationname='顾乡'>地图<img src="../../bus/detailv2/images/t1px.gif"></a>
+							</div>
+					    </li>
+						
+						
+						
+						
+						
+						
+						
+						<li>
+					        <div style="height:160px;" title="十四中学">
+					            <a class="thisSite1" href="javascript:;"><b>36</b>十四中学站</a>
+								<a href="javascript:void(0)" class="O" style="display: none;" index='1' lonlat='HSGIWEXBAGVRGH' stationname='十四中学'>地图<img src="../../bus/detailv2/images/t1px.gif"></a>
+							</div>
+					    </li>
+						
+						
+						
+						
+						
+						
+						
+						<li>
+					        <div style="height:160px;" title="武警指挥学校">
+					            <a class="thisSite1" href="javascript:;"><b>37</b>武警指挥学校站</a>
+								<a href="javascript:void(0)" class="O" style="display: none;" index='1' lonlat='HSGICAWBAGVGIF' stationname='武警指挥学校'>地图<img src="../../bus/detailv2/images/t1px.gif"></a>
+							</div>
+					    </li>
+						
+						
+						
+						
+						
+						
+						
+						<li>
+					        <div style="height:160px;" title="省五院(织布厂)">
+					            <a class="thisSite1" href="7S14wK9PY00e7x75u35E200f.html"><b>38</b>省五院(织布厂)站</a>
+								<a href="javascript:void(0)" class="O" style="display: none;" index='1' lonlat='HSGHFHWBAGVCVI' stationname='省五院(织布厂)'>地图<img src="../../bus/detailv2/images/t1px.gif"></a>
+							</div>
+					    </li>
+						
+						
+						
+						
+						
+						
+						<li class="rtdbg " style='width:'>
+					        <div style="height:160px;" title="拖拉机厂">
+					            <a class="thisSite1" href="javascript:;"><b>39</b>拖拉机厂站</a>
+								<a href="javascript:void(0)" class="O" style="display: none;" index='1' lonlat='HSGGSFXBAGUWUG' stationname='拖拉机厂'>地图<img src="../../bus/detailv2/images/t1px.gif"></a>
+							</div>
+					    </li>
+						
+						
+						
+						
+					</ul>
+				</div>
+				<div class="switchOther">
+					
+					<a href="javascript:void(0)">全部站点<img src="../../bus/detailv2/images/t1px.gif" class="" name="img_putover"></a>
+					
+				</div>
+				
+			</div>
+			
+			<script type="text/javascript" src="../../common/cxw/production/mm/static/yt_d/source/p.js"></script>
+			
+			
+			<div class="stationLicense2 onBox" id="listContainer2">
+				<div class="License License2">
+					<h2><a href="../xianlu/82lu/index.html" class="caption0"><span></span><strong>82</strong>路</a></h2>
+					<p class="P1">
+						<strong>
+							<a href="">天木小区</a>→<a href="javascript:;" id="a_endstation0">丽江路</a>
+						</strong>
+						<span>[37站]</span>
+						<p class="depict">
+							
+							<a class="fR" href="javascript:void(0)">返程线路</a>
+							
+							<span>起点站首末车时间:05:50-21:00(夏)05:50-20:30(冬)<br>终点站首末车时间:05:50-21:00(夏)05:50-20:30(冬)</span>
+						</p>
+						<img src="../../bus/detailv2/images/t1px.gif">
+				</div>
+				<input type="hidden" id="commonName2" value="82路">
+				<input type="hidden" id="oppositeName2" value="82路下行(丽江路-天木小区)">
+				<input type="hidden" id="pinyinName2" value="82lu">
+				<input type="hidden" id="startStation2" value="天木小区">
+				<input type="hidden" id="endStation2" value="丽江路">
+				<input type="hidden" id="startStationLatLon2" value="HSIUWJXBAHCHWA">
+				<input type="hidden" id="endStationLatLon2" value="HSGISIXBAGUUBW">
+				<input type="hidden" id="lineLatLon2" value="HSIUWJXBAHCHWA,HSIUCFWBAHCGUV,HSITDTUBAHCFSD,HSITBSUBAHCFII,HSIRHTUBAHCDHD,HSIRERTBAHCDDB,HSIJSWXBAHCCHT,HSIIJEXBAHCDCW,HSIIACTBAHCCIB,HSIHCHWBAHCBGV,HSIGDWXBAHCADT,HSIGDBTBAHCACR,HSIGDTUBAHCACD,HSIGSSXBAHBWUA,HSIHWHXBAHBWAV,HSIIBCXBAHBVWU,HSIIHCWBAHBVTD,HSIJFFWBAHBVDG,HSIJIIWBAHBVBS,HSIJURWBAHBUVS,HSIRCAVBAHBUTD,HSITFHUBAHBTHR,HSITHUVBAHBTGG,HSIUDRVBAHBTAB,HSIUIWXBAHBSTI,HSIURJVBAHBSRG,HSIUTJVBAHBSHE,HSIUVIWBAHBSED,HSIUWWXBAHBSBE,HSIVDTWBAHBRRJ,HSIVIIWBAHBRCH,HSIVJWXBAHBRAA,HSIVUIWBAHBJJU,HSIWTWXBAHBHVA,HSJAESXBAHBGWT,HSJASBTBAHBGDA,HSJAGJXBAHBFWT,HSJAEIWBAHBFVD,HSIWHSXBAHBFEC,HSIVTAWBAHBERB,HSIVSAWBAHBEJB,HSIVFTWBAHBEBH,HSIVDTWBAHBDVF,HSIUGBVBAHBCII,HSITGRXBAHBAWB,HSITDTUBAHBARD,HSISGHXBAHAWDT,HSIRUJXBAHAWFE,HSIRJSXBAHAWFR,HSIRGVXBAHAWFW,HSIJCFXBAHAWER,HSIIDRXBAHAWDU,HSIHCRXBAHAWCJ,HSIFTUXBAHAWAV,HSIFCTXBAHAVWS,HSIEWVXBAHAVWF,HSIESEWBAHAVVH,HSIEHCWBAHAVVU,HSIEBVWBAHAVVH,HSIDUSWBAHAVUT,HSICWHXBAHAVTA,HSICUAWBAHAVSS,HSICHIXBAHAVRW,HSIBDCWBAHAVIH,HSIAWRXBAHAVGW,HSIASJWBAHAVGE,HSHWJIXBAHAVFD,HSHWGWXBAHAURR,HSHWGDXBAHAUHG,HSHWDTXBAHATUH,HSHWBEXBAHATCD,HSHVVEXBAHASGW,HSHVUWXBAHASEV,HSHVUEXBAHARWW,HSHVRWXBAHARVI,HSHVGWXBAHARTR,HSHUUHVBAHARUA,HSHUJDVBAHARUA,HSHTWJXBAHARTA,HSHTFJUBAHARJR,HSHSRATBAHARHB,HSHRVDWBAHARDT,HSHRIJTBAHARCC,HSHRHETBAHARBF,HSHRDCVBAHARUJ,HSHJDCTBAHARJD,HSHIVFWBAHARIC,HSHITVWBAHARIU,HSHIRWXBAHARIR,HSHIARTBAHARFH,HSHHEGTBAHARBS,HSHHDVXBAHAJCW,HSHHDCTBAHAIIJ,HSHHCWXBAHAIGR,HSHGWSXBAHAFWC,HSHGTBUBAHACSA,HSHGSETBAHABJJ,HSHGITUBAHAAFS,HSHGHEXBAGWVHU,HSHGGEXBAGWUUS,HSHGEHXBAGWTRG,HSHEDFXBAGWTAR,HSHDVUXBAGWSWT,HSHAWHXBAGWSBE,HSHAFBXBAGWRVT,HSGWTUXBAGWRTE,HSGWJTXBAGWRRW,HSGVTTXBAGWRFU,HSGUWUXBAGWRBG,HSGTJGXBAGWJIW,HSGTEHXBAGWJHA,HSGRRIXBAGWIUB,HSGRRVXBAGWICW,HSGRRWXBAGWIAT,HSGRSHXBAGWGIG,HSGRUBXBAGWEGR,HSGRUCXBAGWEFU,HSGRURXBAGWDTB,HSGRUGXBAGWDCD,HSGRRTXBAGWCIJ,HSGRAIXBAGVWJD,HSGJSWXBAGVVFE,HSGJSBWBAGVVBV,HSGJAEWBAGVRRH,HSGIAJWBAGVGBI,HSGHWUXBAGVFVE,HSGHURWBAGVFEH,HSGHDSWBAGVCFG,HSGGSJXBAGUWVR,HSGGCUVBAGUUET,HSGGBAVBAGUTTB,HSGGCSVBAGUTTI,HSGISIXBAGUUBW">
+				<input type="hidden" id="center2" value="HSHRJWXBAHACBC">
+				<input type="hidden" id="scale2" value="9">
+				<div class="atbR">
+					<ul style='width:925px;'>
+						
+						
+						
+						<li class="ltdbg selectStaion" style='width:'>
+							<div style="height:160px;" title="天木小区">
+					            <a class="thisSite1" href=""><b>1</b>天木小区站</a>
+								<a href="javascript:void(0)" class="O" style="display: none;" index='2' lonlat='HSIUWJXBAHCHWA' stationname='天木小区'>地图<img src="../../bus/detailv2/images/t1px.gif"></a>
+					        </div>
+					    </li>
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						<li>
+					        <div style="height:160px;" title="红旗小区">
+					            <a class="thisSite1" href="javascript:;"><b>2</b>红旗小区站</a>
+								<a href="javascript:void(0)" class="O" style="display: none;" index='2' lonlat='HSITBSUBAHCFII' stationname='红旗小区'>地图<img src="../../bus/detailv2/images/t1px.gif"></a>
+							</div>
+					    </li>
+						
+						
+						
+						
+						
+						
+						
+						<li>
+					        <div style="height:160px;" title="淮河路">
+					            <a class="thisSite1" href="javascript:;"><b>3</b>淮河路站</a>
+								<a href="javascript:void(0)" class="O" style="display: none;" index='2' lonlat='HSIRHTUBAHCDHD' stationname='淮河路'>地图<img src="../../bus/detailv2/images/t1px.gif"></a>
+							</div>
+					    </li>
+						
+						
+						
+						
+						
+						
+						
+						<li>
+					        <div style="height:160px;" title="辽河路">
+					            <a class="thisSite1" href="javascript:;"><b>4</b>辽河路站</a>
+								<a href="javascript:void(0)" class="O" style="display: none;" index='2' lonlat='HSIIACTBAHCCIB' stationname='辽河路'>地图<img src="../../bus/detailv2/images/t1px.gif"></a>
+							</div>
+					    </li>
+						
+						
+						
+						
+						
+						
+						
+						<li>
+					        <div style="height:160px;" title="辽河小区">
+					            <a class="thisSite1" href="javascript:;"><b>5</b>辽河小区站</a>
+								<a href="javascript:void(0)" class="O" style="display: none;" index='2' lonlat='HSIGSSXBAHBWUA' stationname='辽河小区'>地图<img src="../../bus/detailv2/images/t1px.gif"></a>
+							</div>
+					    </li>
+						
+						
+						
+						
+						
+						
+						
+						<li>
+					        <div style="height:160px;" title="黑龙江科技学院(嵩山校区)">
+					            <a class="thisSite1" href="javascript:;"><b>6</b>黑龙江科技学院…</a>
+								<a href="javascript:void(0)" class="O" style="display: none;" index='2' lonlat='HSIIBCXBAHBVWU' stationname='黑龙江科技学院(嵩山校区)'>地图<img src="../../bus/detailv2/images/t1px.gif"></a>
+							</div>
+					    </li>
+						
+						
+						
+						
+						
+						
+						
+						<li>
+					        <div style="height:160px;" title="哈工大第二学区">
+					            <a class="thisSite1" href="javascript:;"><b>7</b>哈工大第二学区站</a>
+								<a href="javascript:void(0)" class="O" style="display: none;" index='2' lonlat='HSIRCAVBAHBUTD' stationname='哈工大第二学区'>地图<img src="../../bus/detailv2/images/t1px.gif"></a>
+							</div>
+					    </li>
+						
+						
+						
+						
+						
+						
+						
+						<li>
+					        <div style="height:160px;" title="韩亚银行(市老龄委)">
+					            <a class="thisSite1" href="javascript:;"><b>8</b>韩亚银行(市老…</a>
+								<a href="javascript:void(0)" class="O" style="display: none;" index='2' lonlat='HSITHUVBAHBTGG' stationname='韩亚银行(市老龄委)'>地图<img src="../../bus/detailv2/images/t1px.gif"></a>
+							</div>
+					    </li>
+						
+						
+						
+						
+						
+						
+						
+						<li>
+					        <div style="height:160px;" title="汉水路">
+					            <a class="thisSite1" href="javascript:;"><b>9</b>汉水路站</a>
+								<a href="javascript:void(0)" class="O" style="display: none;" index='2' lonlat='HSIVIIWBAHBRCH' stationname='汉水路'>地图<img src="../../bus/detailv2/images/t1px.gif"></a>
+							</div>
+					    </li>
+						
+						
+						
+						
+						
+						
+						
+						<li>
+					        <div style="height:160px;" title="创业中心">
+					            <a class="thisSite1" href="javascript:;"><b>10</b>创业中心站</a>
+								<a href="javascript:void(0)" class="O" style="display: none;" index='2' lonlat='HSIWTWXBAHBHVA' stationname='创业中心'>地图<img src="../../bus/detailv2/images/t1px.gif"></a>
+							</div>
+					    </li>
+						
+						
+						
+						
+						
+						
+						
+						<li>
+					        <div style="height:160px;" title="市质检院">
+					            <a class="thisSite1" href="javascript:;"><b>11</b>市质检院站</a>
+								<a href="javascript:void(0)" class="O" style="display: none;" index='2' lonlat='HSJAGJXBAHBFWT' stationname='市质检院'>地图<img src="../../bus/detailv2/images/t1px.gif"></a>
+							</div>
+					    </li>
+						
+						
+						
+						
+						
+						
+						
+						<li>
+					        <div style="height:160px;" title="省妇儿中心">
+					            <a class="thisSite1" href="javascript:;"><b>12</b>省妇儿中心站</a>
+								<a href="javascript:void(0)" class="O" style="display: none;" index='2' lonlat='HSIVDTWBAHBDVF' stationname='省妇儿中心'>地图<img src="../../bus/detailv2/images/t1px.gif"></a>
+							</div>
+					    </li>
+						
+						
+						
+						
+						
+						
+						
+						<li>
+					        <div style="height:160px;" title="珠江路">
+					            <a class="thisSite1" href="javascript:;"><b>13</b>珠江路站</a>
+								<a href="javascript:void(0)" class="O" style="display: none;" index='2' lonlat='HSITDTUBAHBARD' stationname='珠江路'>地图<img src="../../bus/detailv2/images/t1px.gif"></a>
+							</div>
+					    </li>
+						
+						
+						
+						
+						
+						
+						
+						<li>
+					        <div style="height:160px;" title="天鹅饭店">
+					            <a class="thisSite1" href="javascript:;"><b>14</b>天鹅饭店站</a>
+								<a href="javascript:void(0)" class="O" style="display: none;" index='2' lonlat='HSIRJSXBAHAWFR' stationname='天鹅饭店'>地图<img src="../../bus/detailv2/images/t1px.gif"></a>
+							</div>
+					    </li>
+						
+						
+						
+						
+						
+						
+						
+						<li>
+					        <div style="height:160px;" title="省政府">
+					            <a class="thisSite1" href="7S16K_5wS.html"><b>15</b>省政府站</a>
+								<a href="javascript:void(0)" class="O" style="display: none;" index='2' lonlat='HSIHCRXBAHAWCJ' stationname='省政府'>地图<img src="../../bus/detailv2/images/t1px.gif"></a>
+							</div>
+					    </li>
+						
+						
+						
+						
+						
+						
+						
+						<li>
+					        <div style="height:160px;" title="文昌街">
+					            <a class="thisSite1" href="javascript:;"><b>16</b>文昌街站</a>
+								<a href="javascript:void(0)" class="O" style="display: none;" index='2' lonlat='HSICWHXBAHAVTA' stationname='文昌街'>地图<img src="../../bus/detailv2/images/t1px.gif"></a>
+							</div>
+					    </li>
+						
+						
+						
+						
+						
+						
+						
+						<li>
+					        <div style="height:160px;" title="工人文化宫">
+					            <a class="thisSite1" href="javascript:;"><b>17</b>工人文化宫站</a>
+								<a href="javascript:void(0)" class="O" style="display: none;" index='2' lonlat='HSHWGDXBAHAUHG' stationname='工人文化宫'>地图<img src="../../bus/detailv2/images/t1px.gif"></a>
+							</div>
+					    </li>
+						
+						
+						
+						
+						
+						
+						
+						<li>
+					        <div style="height:160px;" title="文明街">
+					            <a class="thisSite1" href="javascript:;"><b>18</b>文明街站</a>
+								<a href="javascript:void(0)" class="O" style="display: none;" index='2' lonlat='HSHVUWXBAHASEV' stationname='文明街'>地图<img src="../../bus/detailv2/images/t1px.gif"></a>
+							</div>
+					    </li>
+						
+						
+						
+						
+						
+						
+						
+						<li>
+					        <div style="height:160px;" title="市公共电车总公司">
+					            <a class="thisSite1" href="javascript:;"><b>19</b>市公共电车总公…</a>
+								<a href="javascript:void(0)" class="O" style="display: none;" index='2' lonlat='HSHUJDVBAHARUA' stationname='市公共电车总公司'>地图<img src="../../bus/detailv2/images/t1px.gif"></a>
+							</div>
+					    </li>
+						
+						
+						
+						
+						
+						
+						
+						<li>
+					        <div style="height:160px;" title="河沟街">
+					            <a class="thisSite1" href="javascript:;"><b>20</b>河沟街站</a>
+								<a href="javascript:void(0)" class="O" style="display: none;" index='2' lonlat='HSHRVDWBAHARDT' stationname='河沟街'>地图<img src="../../bus/detailv2/images/t1px.gif"></a>
+							</div>
+					    </li>
+						
+						
+						
+						
+						
+						
+						
+						<li>
+					        <div style="height:160px;" title="省博览中心">
+					            <a class="thisSite1" href="javascript:;"><b>21</b>省博览中心站</a>
+								<a href="javascript:void(0)" class="O" style="display: none;" index='2' lonlat='HSHJDCTBAHARJD' stationname='省博览中心'>地图<img src="../../bus/detailv2/images/t1px.gif"></a>
+							</div>
+					    </li>
+						
+						
+						
+						
+						
+						
+						
+						<li>
+					        <div style="height:160px;" title="哈铁路局">
+					            <a class="thisSite1" href="javascript:;"><b>22</b>哈铁路局站</a>
+								<a href="javascript:void(0)" class="O" style="display: none;" index='2' lonlat='HSHHDCTBAHAIIJ' stationname='哈铁路局'>地图<img src="../../bus/detailv2/images/t1px.gif"></a>
+							</div>
+					    </li>
+						
+						
+						
+						
+						
+						
+						
+						<li>
+					        <div style="height:160px;" title="哈工大">
+					            <a class="thisSite1" href="javascript:;"><b>23</b>哈工大站</a>
+								<a href="javascript:void(0)" class="O" style="display: none;" index='2' lonlat='HSHGWSXBAHAFWC' stationname='哈工大'>地图<img src="../../bus/detailv2/images/t1px.gif"></a>
+							</div>
+					    </li>
+						
+						
+						
+						
+						
+						
+						
+						<li>
+					        <div style="height:160px;" title="西大桥">
+					            <a class="thisSite1" href="javascript:;"><b>24</b>西大桥站</a>
+								<a href="javascript:void(0)" class="O" style="display: none;" index='2' lonlat='HSHGITUBAHAAFS' stationname='西大桥'>地图<img src="../../bus/detailv2/images/t1px.gif"></a>
+							</div>
+					    </li>
+						
+						
+						
+						
+						
+						
+						
+						<li>
+					        <div style="height:160px;" title="市骨伤科医院">
+					            <a class="thisSite1" href="javascript:;"><b>25</b>市骨伤科医院站</a>
+								<a href="javascript:void(0)" class="O" style="display: none;" index='2' lonlat='HSHGGEXBAGWUUS' stationname='市骨伤科医院'>地图<img src="../../bus/detailv2/images/t1px.gif"></a>
+							</div>
+					    </li>
+						
+						
+						
+						
+						
+						
+						
+						<li>
+					        <div style="height:160px;" title="三孔桥">
+					            <a class="thisSite1" href="javascript:;"><b>26</b>三孔桥站</a>
+								<a href="javascript:void(0)" class="O" style="display: none;" index='2' lonlat='HSHDVUXBAGWSWT' stationname='三孔桥'>地图<img src="../../bus/detailv2/images/t1px.gif"></a>
+							</div>
+					    </li>
+						
+						
+						
+						
+						
+						
+						
+						<li>
+					        <div style="height:160px;" title="哈商大(南学区)">
+					            <a class="thisSite1" href="5J85L65ad00e5DN5jc5Cw00f.html"><b>27</b>哈商大(南学区)站</a>
+								<a href="javascript:void(0)" class="O" style="display: none;" index='2' lonlat='HSHAFBXBAGWRVT' stationname='哈商大(南学区)'>地图<img src="../../bus/detailv2/images/t1px.gif"></a>
+							</div>
+					    </li>
+						
+						
+						
+						
+						
+						
+						
+						<li>
+					        <div style="height:160px;" title="市中心医院">
+					            <a class="thisSite1" href="javascript:;"><b>28</b>市中心医院站</a>
+								<a href="javascript:void(0)" class="O" style="display: none;" index='2' lonlat='HSGTEHXBAGWJHA' stationname='市中心医院'>地图<img src="../../bus/detailv2/images/t1px.gif"></a>
+							</div>
+					    </li>
+						
+						
+						
+						
+						
+						
+						
+						<li>
+					        <div style="height:160px;" title="建国公园">
+					            <a class="thisSite1" href="javascript:;"><b>29</b>建国公园站</a>
+								<a href="javascript:void(0)" class="O" style="display: none;" index='2' lonlat='HSGRRVXBAGWICW' stationname='建国公园'>地图<img src="../../bus/detailv2/images/t1px.gif"></a>
+							</div>
+					    </li>
+						
+						
+						
+						
+						
+						
+						
+						<li>
+					        <div style="height:160px;" title="市中医医院">
+					            <a class="thisSite1" href="javascript:;"><b>30</b>市中医医院站</a>
+								<a href="javascript:void(0)" class="O" style="display: none;" index='2' lonlat='HSGRUBXBAGWEGR' stationname='市中医医院'>地图<img src="../../bus/detailv2/images/t1px.gif"></a>
+							</div>
+					    </li>
+						
+						
+						
+						
+						
+						
+						
+						<li>
+					        <div style="height:160px;" title="顾乡">
+					            <a class="thisSite1" href="javascript:;"><b>31</b>顾乡站</a>
+								<a href="javascript:void(0)" class="O" style="display: none;" index='2' lonlat='HSGRAIXBAGVWJD' stationname='顾乡'>地图<img src="../../bus/detailv2/images/t1px.gif"></a>
+							</div>
+					    </li>
+						
+						
+						
+						
+						
+						
+						
+						<li>
+					        <div style="height:160px;" title="十四中学">
+					            <a class="thisSite1" href="javascript:;"><b>32</b>十四中学站</a>
+								<a href="javascript:void(0)" class="O" style="display: none;" index='2' lonlat='HSGJAEWBAGVRRH' stationname='十四中学'>地图<img src="../../bus/detailv2/images/t1px.gif"></a>
+							</div>
+					    </li>
+						
+						
+						
+						
+						
+						
+						
+						<li>
+					        <div style="height:160px;" title="武警指挥学校">
+					            <a class="thisSite1" href="javascript:;"><b>33</b>武警指挥学校站</a>
+								<a href="javascript:void(0)" class="O" style="display: none;" index='2' lonlat='HSGHWUXBAGVFVE' stationname='武警指挥学校'>地图<img src="../../bus/detailv2/images/t1px.gif"></a>
+							</div>
+					    </li>
+						
+						
+						
+						
+						
+						
+						
+						<li>
+					        <div style="height:160px;" title="省五院(织布厂)">
+					            <a class="thisSite1" href="7S14wK9PY00e7x75u35E200f.html"><b>34</b>省五院(织布厂)站</a>
+								<a href="javascript:void(0)" class="O" style="display: none;" index='2' lonlat='HSGHDSWBAGVCFG' stationname='省五院(织布厂)'>地图<img src="../../bus/detailv2/images/t1px.gif"></a>
+							</div>
+					    </li>
+						
+						
+						
+						
+						
+						
+						
+						<li>
+					        <div style="height:160px;" title="印刷机械厂">
+					            <a class="thisSite1" href="javascript:;"><b>35</b>印刷机械厂站</a>
+								<a href="javascript:void(0)" class="O" style="display: none;" index='2' lonlat='HSGGSJXBAGUWVR' stationname='印刷机械厂'>地图<img src="../../bus/detailv2/images/t1px.gif"></a>
+							</div>
+					    </li>
+						
+						
+						
+						
+						
+						
+						
+						<li>
+					        <div style="height:160px;" title="二砖厂">
+					            <a class="thisSite1" href="javascript:;"><b>36</b>二砖厂站</a>
+								<a href="javascript:void(0)" class="O" style="display: none;" index='2' lonlat='HSGGCUVBAGUUET' stationname='二砖厂'>地图<img src="../../bus/detailv2/images/t1px.gif"></a>
+							</div>
+					    </li>
+						
+						
+						
+						
+						
+						
+						<li class="rtdbg " style='width:'>
+					        <div style="height:160px;" title="丽江路">
+					            <a class="thisSite1" href="javascript:;"><b>37</b>丽江路站</a>
+								<a href="javascript:void(0)" class="O" style="display: none;" index='2' lonlat='HSGISIXBAGUUBW' stationname='丽江路'>地图<img src="../../bus/detailv2/images/t1px.gif"></a>
+							</div>
+					    </li>
+						
+						
+						
+						
+					</ul>
+				</div>
+				<div class="switchOther">
+					
+					<a href="javascript:void(0)">全部站点<img src="../../bus/detailv2/images/t1px.gif" class="" name="img_putover"></a>
+					
+				</div>
+				
+			</div>
+			
+			<script type="text/javascript" src="../../common/cxw/production/mm/static/yt_d/source/p.js"></script>
+			
+			
+			<div class="RSMapbox" style="top: 500px; display: none;" id="mapPanel">
+				
+				<div id="poiMap" style="width:300px; height:250px"></div>
+				<p class="mt10" id="p_showOnBigMap"><a class="close">&times;</a>在大地图上查看<a href="javascript:void(0);" id="curLineName" target="_blank"></a></p>
+			</div>
+			
+			
+			<script type="text/javascript" src="../../site/x/static/srh/source/k/resource/yob/o.js"></script>
+			<script type="text/javascript" src="../../production/id/resource/c/s-sev/source/fs.js"></script>
+				
+		</div>
+		
+		<!-- 右侧 -->
+		<div class="nRightBox">
+		
+			<script type="text/javascript" src="../../common/bwv-llxs/openjs/c/l.js"></script>
+			
+
+			<div class="mb10">
+			<script type="text/javascript" src="../../production/ezy_ooav_f_w.js"></script>
+			</div>
+			
+			<!-- 周边推荐功能块  --> 
+			<div class="roundBox mb10" style="zoom: 1;">
+				<h2 class="inline">周边推荐</h2>
+				<p class="tagA">
+					<a id="a_div3" href="javascript:toggle('div3')" title='天木小区附近好玩的'>休闲娱乐</a>
+					<a id="a_div2" href="javascript:toggle('div2')" title='天木小区附近购物商场'>购物商场</a>
+					<a id="a_div1" href="javascript:toggle('div1')" title='天木小区附近好吃的' class="onAt">餐饮美食</a>
+				</p>
+				<div id="div1" class="OLBox" style="display:block">
+					<ol>
+						
+		   				<li>
+							<b class="L1">1</b>
+							<a href="javascript:;" target="_blank">华旗美食汇</a>
+							<span>- 距1334米</span>
+						</li>
+		   				
+		   				<li>
+							<b class="L1">2</b>
+							<a href="javascript:;" target="_blank">江上人家巴蜀川菜·烤鱼</a>
+							<span>- 距29米</span>
+						</li>
+		   				
+		   				<li>
+							<b class="L1">3</b>
+							<a href="javascript:;" target="_blank">便宜坊石锅烤肉</a>
+							<span>- 距37米</span>
+						</li>
+		   				
+		   				<li>
+							<b class="L1">4</b>
+							<a href="javascript:;" target="_blank">河马韩国火炉烤肉</a>
+							<span>- 距38米</span>
+						</li>
+		   				
+		   				<li>
+							<b class="L1">5</b>
+							<a href="javascript:;" target="_blank">炭火楼东北传统炭火锅淮河路分店</a>
+							<span>- 距46米</span>
+						</li>
+		   				
+		   				<li>
+							<b class="L1">6</b>
+							<a href="javascript:;" target="_blank">唯爱餐厅</a>
+							<span>- 距52米</span>
+						</li>
+		   				
+					</ol>
+				</div> 
+				<div id="div2" class="OLBox" style="display:none">
+					<ol>
+						
+		   				<li>
+							<b class="L1">1</b>
+							<a href="javascript:;" target="_blank">红博会展购物广场</a>
+							<span>- 距1213米</span>
+						</li>
+		   				
+		   				<li>
+							<b class="L1">2</b>
+							<a href="javascript:;" target="_blank">艺汇家商业广场</a>
+							<span>- 距1470米</span>
+						</li>
+		   				
+		   				<li>
+							<b class="L1">3</b>
+							<a href="javascript:;" target="_blank">红旗百货超市</a>
+							<span>- 距460米</span>
+						</li>
+		   				
+		   				<li>
+							<b class="L1">4</b>
+							<a href="javascript:;" target="_blank">红博会展购物广场-东北门</a>
+							<span>- 距964米</span>
+						</li>
+		   				
+		   				<li>
+							<b class="L1">5</b>
+							<a href="javascript:;" target="_blank">友兼百货</a>
+							<span>- 距1060米</span>
+						</li>
+		   				
+		   				<li>
+							<b class="L1">6</b>
+							<a href="javascript:;" target="_blank">红博中央公园</a>
+							<span>- 距1138米</span>
+						</li>
+		   				
+					</ol>
+				</div>
+				<div id="div3" class="OLBox" style="display:none">
+					<ol>
+						
+		   				<li>
+							<b class="L1">1</b>
+							<a href="javascript:;" target="_blank">环球剧场</a>
+							<span>- 距1396米</span>
+						</li>
+		   				
+		   				<li>
+							<b class="L1">2</b>
+							<a href="javascript:;" target="_blank">时尚造型</a>
+							<span>- 距81米</span>
+						</li>
+		   				
+		   				<li>
+							<b class="L1">3</b>
+							<a href="javascript:;" target="_blank">水云轩休闲洗浴</a>
+							<span>- 距103米</span>
+						</li>
+		   				
+		   				<li>
+							<b class="L1">4</b>
+							<a href="javascript:;" target="_blank">美佳利发型设计</a>
+							<span>- 距117米</span>
+						</li>
+		   				
+		   				<li>
+							<b class="L1">5</b>
+							<a href="javascript:;" target="_blank">老八按摩院</a>
+							<span>- 距121米</span>
+						</li>
+		   				
+		   				<li>
+							<b class="L1">6</b>
+							<a href="javascript:;" target="_blank">鑫宝隆ＫＴＶ</a>
+							<span>- 距125米</span>
+						</li>
+		   				
+					</ol>
+				</div>
+			</div>
+			<script type="text/javascript" src="../../production/avukk-w/r/resource/b/openjs/e.js"></script>
+			<script type="text/javascript" src="../../production/gba/q/resource/qdaq-q.js"></script>
+			
+			
+			<!--资讯新闻功能块-->
+			<div class="newcont">
+				<div class="newcontBox">
+				 	<div class="title"><h2>哈尔滨公交新闻</h2></div>
+				 	<ul class="news">
+		   				
+		   				<li><a href="../news/142826.html" target="_blank" title="哈尔滨市曝光公交车不报站违规公交驾驶员和车"><i></i>哈尔滨市曝光公交车不报站违规公交驾驶…</a></li>
+		   				
+		   				<li><a href="../news/142825.html" target="_blank" title="哈尔滨市公交行业开展公交车不报站专项整治行"><i></i>哈尔滨市公交行业开展公交车不报站专项…</a></li>
+		   				
+		   				<li><a href="../news/142824.html" target="_blank" title="哈尔滨仿古公交候车亭厂家"><i></i>哈尔滨仿古公交候车亭厂家</a></li>
+		   				
+		   				<li><a href="../news/142823.html" target="_blank" title="哈尔滨有公交卡的人注意了！这些事儿，你应该"><i></i>哈尔滨有公交卡的人注意了！这些事儿，…</a></li>
+		   				
+		   				<li><a href="../news/142822.html" target="_blank" title="哈尔滨新增200台空调公交车将投用"><i></i>哈尔滨新增200台空调公交车将投用</a></li>
+		   				
+		   				<li><a href="../news/141440.html" target="_blank" title="哈尔滨城市通手机APP上线 公交卡充值不出门"><i></i>哈尔滨城市通手机APP上线 公交卡充值不出门</a></li>
+		   				
+		   				<li><a href="../news/141438.html" target="_blank" title="哈尔滨市高考考生持证免费乘公交"><i></i>哈尔滨市高考考生持证免费乘公交</a></li>
+		   				
+		   				<li><a href="../news/141437.html" target="_blank" title="阿森纳球迷包哈尔滨公交谢温格:13冠傲视群雄!"><i></i>阿森纳球迷包哈尔滨公交谢温格:13冠…</a></li>
+		   				
+		   				<li><a href="../news/141436.html" target="_blank" title="哈尔滨市70个惠民行动进行中 新建4座人行天桥"><i></i>哈尔滨市70个惠民行动进行中 新建4…</a></li>
+		   				
+		   				<li><a href="../news/141435.html" target="_blank" title="[黑龙江]高寒城市智能公交系统建设项目合同包《"><i></i>[黑龙江]高寒城市智能公交系统建设项…</a></li>
+		   				
+				 	</ul>
+				</div>
+			</div>
+			<div style=" margin-top: 10px; margin-bottom: 0px;">
+			<script type="text/javascript" src="../../production/avukk-w/r/resource/b/openjs/e.js"></script>
+
+			</div>
+			
+			<script type="text/javascript" src="../../production/gba/q/resource/qdaq-q.js"></script>
+			<script type="text/javascript" src="../../common/ytsi/l_c/static/pc_p.js"></script>
+
+			
+		</div>
+		
+		
+	</div>
+	<!-- 右侧 END -->
+
+	<div class="newHot">
+	    <h2>天木小区热门行程</h2>
+	    <div class="newcont">
+		    <div class="newcontBox">
+		        <div class="newHot_ul">
+		            <ul class="clearfix">
+		            	
+		            	
+	   					<li><a href="javascript:;" target="_blank">天木小区到农机校</a></li>
+	   					
+	   					<li><a href="javascript:;" target="_blank">天木小区到一面街</a></li>
+	   					
+	   					<li><a href="javascript:;" target="_blank">天木小区到拖拉机厂</a></li>
+	   					
+	   					<li><a href="javascript:;" target="_blank">天木小区到三环路与广信路交口</a></li>
+	   					
+	   					<li><a href="javascript:;" target="_blank">天木小区到自兴街</a></li>
+	   					
+	   					<li><a href="javascript:;" target="_blank">天木小区到松电新村</a></li>
+	   					
+	   					<li><a href="javascript:;" target="_blank">天木小区到后涉家屯</a></li>
+	   					
+	   					<li><a href="javascript:;" target="_blank">天木小区到省新承包装公司</a></li>
+	   					
+	   					<li><a href="javascript:;" target="_blank">天木小区到哈飞文化宫</a></li>
+	   					
+	   					<li><a href="javascript:;" target="_blank">天木小区到太古头道街</a></li>
+	   					
+	   					<li><a href="javascript:;" target="_blank">天木小区到华义</a></li>
+	   					
+	   					<li><a href="javascript:;" target="_blank">天木小区到油坊街</a></li>
+	   					
+	   					<li><a href="javascript:;" target="_blank">天木小区到东明</a></li>
+	   					
+	   					<li><a href="javascript:;" target="_blank">天木小区到文景街</a></li>
+	   					
+	   					<li><a href="javascript:;" target="_blank">天木小区到丽江路(群力第七大道路口)</a></li>
+	   					
+	   					<li><a href="javascript:;" target="_blank">天木小区到哈西客站东广场</a></li>
+	   					
+	   					
+	   					
+	   				</ul>
+		        </div>
+		    </div>
+	    </div>
+	    <br class="clear">
+	</div>
+	
+	<div class="newA">
+		<a target="_blank" href="../xianlu/index.html" title="哈尔滨公交线路查询">全部哈尔滨公交车线路列表</a>
+		<a target="_blank" href="index.html" title="哈尔滨公交站点查询">全部哈尔滨公交车站点列表</a>
+		<a target="_blank" href="../news.html" title="哈尔滨公交线路查询">哈尔滨公交新闻</a>
+	</div>
+
+	<div class="content newwrap">
+		<table width="" border="0">
+             	<tr>
+             		<td><script type="text/javascript" src="../../source/rm/production/l/resource/eus_u/common/ll.js"></script></td>
+             		<td><script type="text/javascript" src="../../source/rm/production/l/resource/eus_u/common/ll.js"></script></td>
+             	</tr>
+             	<tr>
+             		<td><script type="text/javascript" src="../../source/rm/production/l/resource/eus_u/common/ll.js"></script></td>
+             		<td><script type="text/javascript" src="../../source/rm/production/l/resource/eus_u/common/ll.js"></script></td>
+             	</tr>
+             	<tr>
+             		<td><script type="text/javascript" src="../../source/rm/production/l/resource/eus_u/common/ll.js"></script></td>
+             		<td><script type="text/javascript" src="../../source/rm/production/l/resource/eus_u/common/ll.js"></script></td>
+             	</tr>
+             	<tr>
+             		<td><script type="text/javascript" src="../../source/rm/production/l/resource/eus_u/common/ll.js"></script></td>
+             		<td><script type="text/javascript" src="../../source/rm/production/l/resource/eus_u/common/ll.js"></script></td>
+             	</tr>
+             	<tr>
+             		<td><script type="text/javascript" src="../../source/rm/production/l/resource/eus_u/common/ll.js"></script></td>
+             		<td><script type="text/javascript" src="../../source/rm/production/l/resource/eus_u/common/ll.js"></script></td>
+             	</tr>
+             	<tr>
+             		<td><script type="text/javascript" src="../../source/rm/production/l/resource/eus_u/common/ll.js"></script></td>
+             		<td><script type="text/javascript" src="../../source/rm/production/l/resource/eus_u/common/ll.js"></script></td>
+             	</tr>
+             	<tr>
+             		<td><script type="text/javascript" src="../../source/rm/production/l/resource/eus_u/common/ll.js"></script></td>
+             		<td><script type="text/javascript" src="../../source/rm/production/l/resource/eus_u/common/ll.js"></script></td>
+             	</tr>
+             	<tr>
+             		<td><script type="text/javascript" src="../../source/rm/production/l/resource/eus_u/common/ll.js"></script></td>
+             		<td><script type="text/javascript" src="../../source/rm/production/l/resource/eus_u/common/ll.js"></script></td>
+             	</tr>
+          </table>
+	</div>
+
+	<!--城市公交 开始-->
+	<div class="info" style="width:960px; margin:0 auto;">
+		
+<div class="busList">
+	<h3>全国城市公交列表</h3>
+	<a target="_blank" href="../../beijing/index.html">北京公交</a>
+  	<a target="_blank" href="../../shanghai/index.html">上海公交</a>
+  	<a target="_blank" href="../../chongqing/index.html">重庆公交</a>
+  	<a target="_blank" href="../../tianjin/index.html">天津公交</a>
+  	<a target="_blank" href="../../guangzhou/index.html">广州公交</a>
+  	<a target="_blank" href="../../shenzhen/index.html">深圳公交</a>
+  	<a target="_blank" href="../../taiyuan/index.html">太原公交</a>
+  	<a target="_blank" href="../../shenyang/index.html">沈阳公交</a>
+  	<a target="_blank" href="../../changchun/index.html">长春公交</a>
+  	<a target="_blank" href="../../jinan/index.html">济南公交</a>
+  	<a target="_blank" href="../../nanjing/index.html">南京公交</a>
+  	<a target="_blank" href="../../hangzhou/index.html">杭州公交</a>
+  	<a target="_blank" href="../../hefei/index.html">合肥公交</a>
+  	<a target="_blank" href="../../fuzhou1/index.html">福州公交</a>
+  	<a target="_blank" href="../../nanchang/index.html">南昌公交</a>
+  	<a target="_blank" href="../../zhengzhou/index.html">郑州公交</a>
+  	<a target="_blank" href="../../wuhan/index.html">武汉公交</a>
+  	<a target="_blank" href="../../changsha/index.html">长沙公交</a>
+  	<a target="_blank" href="../../haikou/index.html">海口公交</a>
+  	<a target="_blank" href="../../chengdu/index.html">成都公交</a>
+  	<a target="_blank" href="../../guiyang/index.html">贵阳公交</a>
+  	<a target="_blank" href="../../kunming/index.html">昆明公交</a>
+  	<a target="_blank" href="../../xian/index.html">西安公交</a>
+  	<a target="_blank" href="../../lanzhou/index.html">兰州公交</a>
+  	<a target="_blank" href="../../xining/index.html">西宁公交</a>
+  	<a target="_blank" href="../index1.html">哈尔滨公交</a>
+  	<a target="_blank" href="../../shijiazhuang/index.html">石家庄公交</a>
+  	<a target="_blank" href="../../wulumuqi/index.html">乌鲁木齐公交</a>
+  	<a target="_blank" href="../../huhehaote/index.html">呼和浩特公交</a>
+  	<a target="_blank" href="../../city/change/index.html">更多>></a>
+</div>
+		
+ 
+	</div>
+	<!--城市公交 结束-->
+	
+	
+<div class="footer">
+	<div class="container">
+		<p>
+			<a href="../../index.html" target="_blank">关于我们</a>
+			|
+			<a href="../../index.html" target="_blank">企业推广</a>
+			|
+			<a href="javascript:;" target="_blank" style="color:red">免费公交代码</a>
+			|
+			<a href="../../help/sitelist.html" target="_blank">分站列表</a>
+			|
+			<a href="../../link/index.html" target="_blank"> 友情链接</a>
+			|
+			<a href="../../index4.html" target="_blank"> 行政地图</a>
+		</p>
+		<p>
+			2019mapbar. 
+			<a href="javascript:;" target="_blank">[京ICP证070616号]</a>
+			<a href="javascript:;" target="_blank">[京ICP备08100418号]</a>
+		</p>
+	</div>
+</div>
+
+
+	
+	<script type="text/javascript">
+		function toggle(obj){	
+			$("#a_"+obj).addClass("onAt");
+			$("#a_"+obj).siblings().removeClass("onAt");
+			$("#"+obj).show();
+			$("#"+obj).siblings(".OLBox").hide();
+		}
+	</script>
+	
+	<script type="text/ecmascript" src="../../bus/detailv2/js/city.js"></script>
+	<script type="text/javascript" src="../../bus/detailv2/js/header.js"></script>
+    <script type="text/javascript" src="../../bus/detailv2/js/poiMap.js"></script> 
+	
+<!--统计代码--> 
+<script type="text/javascript">
+  var _hmt = _hmt || [];
+  (function() {
+	 var hm = document.createElement("script");
+	 hm.src = "//hm.baidu.com/hm.js?4f7e758e957dfb1e328a4cb7a250d6e7";
+	 var s = document.getElementsByTagName("script")[0]; 
+	 s.parentNode.insertBefore(hm, s);
+  })();
+</script>
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https') {
+        bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';        
+    }
+    else {
+        bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+    }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+	 
+</body>
+</html>

@@ -1,0 +1,84 @@
+.passStation {
+			background-image: url(../images/point.gif);
+			background-repeat: no-repeat;
+			background-position: -12px -1px;
+			width: 11px;
+			height: 11px;
+			overflow: hidden;
+		}
+		.endStation {
+		background-image: url(../images/icon.gif);
+		background-repeat: no-repeat;
+		background-position: -2px -746px;
+		width: 41px;
+		height: 27px;
+		font-weight: bold;
+		color: #FFF;
+		text-align: center;
+		line-height: 24px;}
+		.beginStation {
+		background-image: url(../images/icon.gif);
+		background-repeat: no-repeat;
+		background-position: -2px -684px;
+		width: 41px;
+		height: 27px;
+		font-weight: bold;
+		color: #FFF;
+		text-align: center;
+		line-height: 24px;
+		}
+		.onpassStation {
+			background-image: url(../images/point.gif);
+			background-repeat: no-repeat;
+			background-position: -1px -1px;
+			width: 11px;
+			height: 11px;
+			overflow: hidden;
+		}
+		.stationBox {
+		cursor: pointer;
+		overflow: hidden;
+		position: relative;
+		height: 29px;
+		background: url(../images/tipom_1.gif) no-repeat left 1px;
+		white-space: nowrap;
+		position: absolute;
+		}
+		.stationBox2 {
+		cursor: pointer;
+		overflow: hidden;
+		position: relative;
+		height: 29px;
+		background: url(../images/tipom_2.gif) no-repeat left 1px;
+		white-space: nowrap;
+		position: absolute;
+		}
+		.stationBox_right {
+		float: left;
+		height: 27px;
+		line-height: 22px;
+		margin-left: 16px;
+		_margin-left: 8px;
+		padding: 0 16px;
+		padding-right: 10px;
+		background: url(../images/tipom_1.gif) no-repeat right bottom;
+		}
+		.transIcon {
+		background: url(../images/icon.gif) no-repeat -56px -798px;
+		display: block;
+		height: 16px;
+		left: 10px;
+		position: absolute;
+		top: 4px;
+		width: 16px;
+		}
+		.allLines {
+		background: #FFFFFF;
+		border: 1px solid #000000;
+		margin: 5px;
+		padding: 5px;
+		padding: 1px 5px 3px 5px;
+		position: absolute;
+		right: 5px;
+		z-index: 1;
+		}

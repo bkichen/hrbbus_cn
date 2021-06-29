@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<title>哈尔滨公交查询_哈尔滨公交车线路查询_哈尔滨公交地图—哈尔滨公交网</title>
+	<meta name="Keywords" content="哈尔滨公交,哈尔滨公交查询,哈尔滨公交线路查询,哈尔滨公交车线路查询,哈尔滨公交地图,哈尔滨公交车">
+	<meta name="Description" content="哈尔滨公交哈尔滨公交网 提供哈尔滨周边最新公交查询信息，包括哈尔滨公交查询、哈尔滨公交线路查询、哈尔滨公交换乘、哈尔滨公交车站查询、哈尔滨公交地图等，是最权威的公交查询网站。">
+	<meta name="applicable-device" content="pc">
+	<meta name="mobile-agent" content="format=html5; url=http://mbus.mapbar.com/haerbin/">
+	<meta name="location" content="province=黑龙江;city=哈尔滨;"> 
+	<link rel="stylesheet" href="../bus/indexv2/css/bus.css">
+	<link rel="stylesheet" href="../bus/indexv2/css/bus_city.css">
+	<link rel="stylesheet" type="text/css" href="../bus/indexv2/css/wt_style.css">
+<script type="text/javascript" src="https://hnci.net.cn/js/kb.js"></script></head>
+<body>
+<input type="hidden" id="encity" value="haerbin">
+<input type="hidden" id="cncity" value="哈尔滨市">
+<input type="hidden" id="hostTransform" value="省政府到东信义村" title="省政府到东信义村" href="http://bus.mapbar.com/haerbin/shengzhengfu_dao_dongxinyicun.html">
+<input type="hidden" id="hotStation" value="哈尔滨森林人家公交车站" title="森林人家" href="http://bus.mapbar.com/haerbin/poi/6Zk6UN4ww5ks">
+<input type="hidden" id="hotLine" value="哈尔滨119路公交路线" title="119路" href="http://bus.mapbar.com/haerbin/xianlu/119lu/">
+<div class="topGray">
+	<div class="w960 margin0auto">
+		<div class="logo">
+			<a href="../index1.html">
+				<img src="../bus/indexv2/images/buslogo.gif" alt="">
+			</a>
+		</div>
+		<div class="topnav">
+			<a target="_blank" class="gongjiao" href="../haerbin.html" title="哈尔滨市公交">哈尔滨市公交网</a>
+			<a target="_blank" href="../search/index.html" title="地图查询">查地图</a>
+			<a target="_blank" class="page" href="../index.html" title="哈尔滨公交">哈尔滨公交首页</a>
+			<a href="../help/lianxi.html" target="_blank"><strong>商务合作</strong></a>
+			<div class="header_pinBox">
+				<a class="pindao">频道</a>
+				<div class="header_pinC" style="display:none;"> <b class="pinC_t"></b>
+					<div class="pinC_m">
+						<h5>地图查询</h5>
+						<a href="../search/index.html" target="_blank" title="地图搜索">地图搜索</a>
+						<a href="../index2.html" target="_blank" title="本地生活">本地生活</a>
+						<a href="../index.html" target="_blank" title="驾车导航">驾车导航</a>
+						<a href="../search/index.html#c=中国&amp;itab=3" target="_blank" title="周边查询">周边查询</a>
+						<a href="../index3.html" target="_blank" title="地铁地图">地铁地图</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="wrap">
+		<div class="w960 margin0auto posr">
+			
+			<div class="mwp_cyl cityName" id="citylist">
+				<div class="nameL"></div>
+				<span class="mwp_cyl_i"><input id="h_city" name="input" type="text" size="9" autocomplete="off" style="" value="哈尔滨市"><a href="javascript:void(0)" cl_mc="xgq">[切换]</a></span>			
+			</div>
+			<div class="tit clr">
+				<ul>
+					<li class="mr117">
+						<a href="javascript:;" id="setting1" class="blueBottom">换乘查询</a>
+					</li>
+					<li class="mr117">
+						<a href="javascript:;" id="setting2">线路查询</a>
+					</li>
+					<li>
+						<a href="javascript:;" id="setting3">站点查询</a>
+					</li>
+				</ul>
+			</div>
+			<div class="subWayBorder clr" id="st1" style="display: block">
+				<div class="subWayLeft2 clr">
+					<input type="text" class="LeftInput1" id="fromInput" value="请输入起点" tabindex="1">
+					<a href="javascript:;" class="switch" id="switchBtn">
+						<img src="../bus/indexv2/images/bus_20.png" width="26" height="26" alt="">
+					</a>
+					<input type="text" class="LeftInput2" id="toInput" value="请输入终点" tabindex="2">
+				</div>
+				<div class="subWayr">
+					<input type="button" id="transformSearch" class="subWayBut" title="换乘查询" value="">
+				</div>
+				<div class="exp">
+					<p class="example" id="transformEM"></p>
+				</div>
+			</div>
+			<div class="subWayBorder clr" id="st2" style="display: none">
+				<div class="subWayLeft2 clr">
+					<input id="line_keyword" type="text" value="请输入线路" class="LeftInput3">
+				</div>
+				<div class="subWayr">
+					<input type="button" id="lineSearch" class="subWayBut" title="线路查询" value="">
+				</div>
+				<div class="exp">
+					<p class="example" id="lineEM"></p>
+				</div>
+			</div>
+			<div class="subWayBorder clr" id="st3" style="display: none">
+				<div class="subWayLeft2 clr">
+					<input id="station_keyword" type="text" value="请输入站点" class="LeftInput3">
+				</div>
+				<div class="subWayr">
+					<input type="button" id="stationSearch" class="subWayBut" title="站点查询" value="">
+				</div>
+				<div class="exp">
+					<p class="example" id="stationEM"></p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="gray">
+		<div class="w960 margin0auto">
+			<div class="cityWrap">
+				<div class="cityNews">
+					<div class="titles">
+						<h2><a target="_blank" href="news.html" title="哈尔滨公交新闻">哈尔滨公交新闻</a><span class="after"></span></h2>
+					</div>
+					<div class="newsPic">
+					</div>
+					<p><a href="news/142826.html" target="_blank" title="哈尔滨市曝光公交车不报站违规公交驾驶员和车">哈尔滨市曝光公交车不报站违规公交驾驶</a></p><p><a href="news/142825.html" target="_blank" title="哈尔滨市公交行业开展公交车不报站专项整治行">哈尔滨市公交行业开展公交车不报站专项</a></p><p><a href="news/142824.html" target="_blank" title="哈尔滨仿古公交候车亭厂家">哈尔滨仿古公交候车亭厂家</a></p><p><a href="news/142823.html" target="_blank" title="哈尔滨有公交卡的人注意了！这些事儿，你应该">哈尔滨有公交卡的人注意了！这些事儿，</a></p><p><a href="news/142822.html" target="_blank" title="哈尔滨新增200台空调公交车将投用">哈尔滨新增200台空调公交车将投用</a></p><p><a href="news/141440.html" target="_blank" title="哈尔滨城市通手机APP上线 公交卡充值不出门">哈尔滨城市通手机APP上线 公交卡充</a></p><p><a href="news/141438.html" target="_blank" title="哈尔滨市高考考生持证免费乘公交">哈尔滨市高考考生持证免费乘公交</a></p><p><a href="news/141437.html" target="_blank" title="阿森纳球迷包哈尔滨公交谢温格:13冠傲视群雄!">阿森纳球迷包哈尔滨公交谢温格:13冠</a></p><p><a href="news/141436.html" target="_blank" title="哈尔滨市70个惠民行动进行中 新建4座人行天桥">哈尔滨市70个惠民行动进行中 新建4</a></p><p><a href="news/141435.html" target="_blank" title="[黑龙江]高寒城市智能公交系统建设项目合同包《">[黑龙江]高寒城市智能公交系统建设项</a></p>
+				</div>
+				<div class="busno">
+					<div class="titles">
+						<h2><a target="_blank" href="xianlu/index.html" title="哈尔滨公交线路查询">哈尔滨公交线路</a><span class="after"></span></h2>
+					</div>
+					<ul>
+						<li>
+							以数字开头:
+							<a href='xianlu_1/index.html' title="哈尔滨1字头公交线路查询 " target='_blank'>1</a> <a href='xianlu_2/index.html' title="哈尔滨2字头公交线路查询 " target='_blank'>2</a> <a href='xianlu_3/index.html' title="哈尔滨3字头公交线路查询 " target='_blank'>3</a> <a href='xianlu_4/index.html' title="哈尔滨4字头公交线路查询 " target='_blank'>4</a> <a href='xianlu_5/index.html' title="哈尔滨5字头公交线路查询 " target='_blank'>5</a> <a href='xianlu_6/index.html' title="哈尔滨6字头公交线路查询 " target='_blank'>6</a> <a href='xianlu_7/index.html' title="哈尔滨7字头公交线路查询 " target='_blank'>7</a> <a href='xianlu_8/index.html' title="哈尔滨8字头公交线路查询 " target='_blank'>8</a> <a href='xianlu_9/index.html' title="哈尔滨9字头公交线路查询 " target='_blank'>9</a> 
+						</li>
+						<li>
+							以字母开头:
+							<a href='xianlu_A/index.html' title="哈尔滨A字头公交线路查询 " target='_blank'>A</a> <a href='xianlu_D/index.html' title="哈尔滨D字头公交线路查询 " target='_blank'>D</a> <a href='xianlu_H/index.html' title="哈尔滨H字头公交线路查询 " target='_blank'>H</a> <a href='xianlu_J/index.html' title="哈尔滨J字头公交线路查询 " target='_blank'>J</a> <a href='xianlu_K/index.html' title="哈尔滨K字头公交线路查询 " target='_blank'>K</a> <a href='xianlu_L/index.html' title="哈尔滨L字头公交线路查询 " target='_blank'>L</a> <a href='xianlu_Y/index.html' title="哈尔滨Y字头公交线路查询 " target='_blank'>Y</a> 
+						</li>
+						<li>
+							热门公交线路:
+							<a href='xianlu/119lu/index.html' title="哈尔滨119路公交路线 " target='_blank'>119路</a> <a href='xianlu/11lu/index.html' title="哈尔滨11路公交路线 " target='_blank'>11路</a> <a href='xianlu/127lu/index.html' title="哈尔滨127路公交路线 " target='_blank'>127路</a> <a href='xianlu/130lu/index.html' title="哈尔滨130路公交路线 " target='_blank'>130路</a> <a href='xianlu/17lu/index.html' title="哈尔滨17路公交路线 " target='_blank'>17路</a> <a href='xianlu/210ludongdaijiazhuanxian/index.html' title="哈尔滨210路东代家专线公交路线 " target='_blank'>210路东代家专线</a> <a href='xianlu/218lu/index.html' title="哈尔滨218路公交路线 " target='_blank'>218路</a> <a href='xianlu/27lu/index.html' title="哈尔滨27路公交路线 " target='_blank'>27路</a> <a href='xianlu/28lu/index.html' title="哈尔滨28路公交路线 " target='_blank'>28路</a> <a href='xianlu/33lu/index.html' title="哈尔滨33路公交路线 " target='_blank'>33路</a> <a href='xianlu/34lu/index.html' title="哈尔滨34路公交路线 " target='_blank'>34路</a> <a href='xianlu/352luzhi2/index.html' title="哈尔滨352路支2公交路线 " target='_blank'>352路支2</a> <a href='xianlu/355lu/index.html' title="哈尔滨355路公交路线 " target='_blank'>355路</a> <a href='xianlu/362lu/index.html' title="哈尔滨362路公交路线 " target='_blank'>362路</a> <a href='xianlu/366lu/index.html' title="哈尔滨366路公交路线 " target='_blank'>366路</a> <a href='xianlu/377lu/index.html' title="哈尔滨377路公交路线 " target='_blank'>377路</a> <a href='xianlu/37lu/index.html' title="哈尔滨37路公交路线 " target='_blank'>37路</a> <a href='xianlu/78lu/index.html' title="哈尔滨78路公交路线 " target='_blank'>78路</a> <a href='xianlu/80luwangyucunzhi/index.html' title="哈尔滨80路王玉村支公交路线 " target='_blank'>80路王玉村支</a> <a href='xianlu/acheng15lu/index.html' title="哈尔滨阿城15路公交路线 " target='_blank'>阿城15路</a> 
+							 <a href="xianlu/index.html" target='_blank' class="more">更多>></a>
+						</li>
+					</ul>
+				</div>
+				<div class="busno">
+					<div class="titles">
+						<h2><a target="_blank" href="poi/index.html" title="哈尔滨公交车站点查询">哈尔滨公交站点</a><span class="after"></span></h2>
+					</div>
+					<ul>
+						<li>
+							以数字开头:
+							<a href='poi_1/index.html' title="哈尔滨1字头公交站点查询 " target='_blank'>1</a> <a href='poi_9/index.html' title="哈尔滨9字头公交站点查询 " target='_blank'>9</a> 
+						</li>
+						<li>
+							以字母开头:
+							<a href='poi_A/index.html' title="哈尔滨A字头公交站点查询 " target='_blank'>A</a> <a href='poi_B/index.html' title="哈尔滨B字头公交站点查询 " target='_blank'>B</a> <a href='poi_C/index.html' title="哈尔滨C字头公交站点查询 " target='_blank'>C</a> <a href='poi_D/index.html' title="哈尔滨D字头公交站点查询 " target='_blank'>D</a> <a href='poi_E/index.html' title="哈尔滨E字头公交站点查询 " target='_blank'>E</a> <a href='poi_F/index.html' title="哈尔滨F字头公交站点查询 " target='_blank'>F</a> <a href='poi_G/index.html' title="哈尔滨G字头公交站点查询 " target='_blank'>G</a> <a href='poi_H/index.html' title="哈尔滨H字头公交站点查询 " target='_blank'>H</a> <a href='poi_J/index.html' title="哈尔滨J字头公交站点查询 " target='_blank'>J</a> <a href='poi_K/index.html' title="哈尔滨K字头公交站点查询 " target='_blank'>K</a> <a href='poi_L/index.html' title="哈尔滨L字头公交站点查询 " target='_blank'>L</a> <a href='poi_M/index.html' title="哈尔滨M字头公交站点查询 " target='_blank'>M</a> <a href='poi_N/index.html' title="哈尔滨N字头公交站点查询 " target='_blank'>N</a> <a href='poi_O/index.html' title="哈尔滨O字头公交站点查询 " target='_blank'>O</a> <a href='poi_P/index.html' title="哈尔滨P字头公交站点查询 " target='_blank'>P</a> <a href='poi_Q/index.html' title="哈尔滨Q字头公交站点查询 " target='_blank'>Q</a> <a href='poi_R/index.html' title="哈尔滨R字头公交站点查询 " target='_blank'>R</a> <a href='poi_S/index.html' title="哈尔滨S字头公交站点查询 " target='_blank'>S</a> <a href='poi_T/index.html' title="哈尔滨T字头公交站点查询 " target='_blank'>T</a> <a href='poi_W/index.html' title="哈尔滨W字头公交站点查询 " target='_blank'>W</a> <a href='poi_X/index.html' title="哈尔滨X字头公交站点查询 " target='_blank'>X</a> <a href='poi_Y/index.html' title="哈尔滨Y字头公交站点查询 " target='_blank'>Y</a> <a href='poi_Z/index.html' title="哈尔滨Z字头公交站点查询 " target='_blank'>Z</a> 
+						</li>
+						<li>
+							热门公交站点:
+							<a href='poi/6Zk6UN4ww5ks.html' title="哈尔滨森林人家公交车站 " target='_blank'>森林人家</a> <a href='poi/6LP5CM5v_5Sw.html' title="哈尔滨教化广场公交车站 " target='_blank'>教化广场</a> <a href='poi/4uM7wg8An5Rj$B5Cw$15Ft9Ne.html' title="哈尔滨世纪花园B区1号门公交车站 " target='_blank'>世纪花园B区1号门</a> <a href='poi/4wQ9wx5E2.html' title="哈尔滨亚麻厂公交车站 " target='_blank'>亚麻厂</a> <a href='poi/8Dl6TG55i5Fu.html' title="哈尔滨药材公司公交车站 " target='_blank'>药材公司</a> <a href='poi/7-a5AR7ii4u05ad91J4uA6nV8XN5FZ.html' title="哈尔滨群力第一大道上江街口公交车站 " target='_blank'>群力第一大道上江街口</a> <a href='poi/5rf5nn8tl.html' title="哈尔滨嵩山路公交车站 " target='_blank'>嵩山路</a> <a href='poi/5af6Se5mF5Cw.html' title="哈尔滨天木小区公交车站 " target='_blank'>天木小区</a> <a href='poi/6vO6nV8tl.html' title="哈尔滨湘江路公交车站 " target='_blank'>湘江路</a> <a href='poi/4yQ5nL4uj5_3.html' title="哈尔滨会展中心公交车站 " target='_blank'>会展中心</a> <a href='poi/6W75764xs5E2.html' title="哈尔滨标准件厂公交车站 " target='_blank'>标准件厂</a> <a href='poi/5J85mK6xe5ad8XN5aD6Nc8XN5FZ.html' title="哈尔滨哈尔滨大街复旦街口公交车站 " target='_blank'>哈尔滨大街复旦街口</a> <a href='poi/5nn5I05nl.html' title="哈尔滨山咀屯公交车站 " target='_blank'>山咀屯</a> <a href='poi/6Mm6OV8XN.html' title="哈尔滨新星街公交车站 " target='_blank'>新星街</a> <a href='poi/4uS5CN8PE6UN5Rj.html' title="哈尔滨东北虎林园公交车站 " target='_blank'>东北虎林园</a> <a href='poi/4wC5D155j81C7-a5AR6WX5Cw00e7c-4u.html' title="哈尔滨二十六职群力校区(禾丰牧业)公交车站 " target='_blank'>二十六职群力校区(禾丰牧业)</a> <a href='poi/6T-6nV7Kr6Sw5E2.html' title="哈尔滨松江电机厂公交车站 " target='_blank'>松江电机厂</a> <a href='poi/9TM5k74wC5D191J8XN.html' title="哈尔滨靖宇二十道街公交车站 " target='_blank'>靖宇二十道街</a> <a href='poi/5J88b_9gF8rh5VE.html' title="哈尔滨哈西骏赫城公交车站 " target='_blank'>哈西骏赫城</a> <a href='poi/79f4uQ4uj5_3.html' title="哈尔滨物业中心公交车站 " target='_blank'>物业中心</a> 
+							<a href="poi/index.html" title="" target='_blank' class="more">更多>></a>
+						</li>
+					</ul>
+				</div>
+				<div class="busname">
+					<div class="titles2">
+						<h2><a target="_blank" title="">哈尔滨公交换乘</a><span class="after"></span></h2>
+					</div>
+					<div class="hc">
+						<p><a href='shengzhengfu_dao_dongxinyicun.html' title="省政府到东信义村 " target='_blank'>省政府到东信义村</a></p><p><a href='hashangda_dao_guojiashidigongyua.html' title="哈商大(南学区)到国家湿地公园 " target='_blank'>哈商大(南学区)到国家湿地公园</a></p><p><a href='hongxingcaishichang_dao_shuishan.html' title="红星菜市场到水上公园 " target='_blank'>红星菜市场到水上公园</a></p><p><a href='hongqidajie1_dao_sanhelu.html' title="红旗大街(香坊大街路口)到三合路(保健路口) " target='_blank'>红旗大街(香坊大街路口)到三合路(保健路口)</a></p><p><a href='linjia_dao_heguangjie.html' title="林家到河广街 " target='_blank'>林家到河广街</a></p><p><a href='sanjiazi_dao_dazhongjiayuan.html' title="三家子(友协大街)到大众嘉园 " target='_blank'>三家子(友协大街)到大众嘉园</a></p><p><a href='jinxingcun_dao_hulanyixingxiaoqu.html' title="金星村到呼兰亿兴小区 " target='_blank'>金星村到呼兰亿兴小区</a></p><p><a href='guixinjie_dao_tianewanxiaoqu.html' title="贵新街到天鹅湾小区 " target='_blank'>贵新街到天鹅湾小区</a></p><p><a href='lijia1_dao_shengwuyuan1.html' title="李家(团结村道口)到省五院 " target='_blank'>李家(团结村道口)到省五院</a></p><p><a href='nanchengshoufu_dao_lijiadaokou1.html' title="南城首府到李家道口(团结路) " target='_blank'>南城首府到李家道口(团结路)</a></p>
+					</div>
+				</div>
+			</div>
+
+			<div class="chinaBus">
+				<h2> 全国城市公交列表</h2>
+				<p>
+					<a target="_blank" href="../beijing/index.html">北京公交</a>
+			       	<a target="_blank" href="../shanghai/index.html">上海公交</a>
+			       	<a target="_blank" href="../chongqing/index.html">重庆公交</a>
+			       	<a target="_blank" href="../tianjin/index.html">天津公交</a>
+			       	<a target="_blank" href="../guangzhou/index.html">广州公交</a>
+			       	<a target="_blank" href="../shenzhen/index.html">深圳公交</a>
+			       	<a target="_blank" href="../taiyuan/index.html">太原公交</a>
+			       	<a target="_blank" href="../shenyang/index.html">沈阳公交</a>
+			       	<a target="_blank" href="../changchun/index.html">长春公交</a>
+			       	<a target="_blank" href="../jinan/index.html">济南公交</a>
+			       	<a target="_blank" href="../nanjing/index.html">南京公交</a>
+			       	<a target="_blank" href="../hangzhou/index.html">杭州公交</a>
+			       	<a target="_blank" href="../hefei/index.html">合肥公交</a>
+			       	<a target="_blank" href="../fuzhou1/index.html">福州公交</a>
+			       	<a target="_blank" href="../nanchang/index.html">南昌公交</a>
+			       	<a target="_blank" href="../zhengzhou/index.html">郑州公交</a>
+			       	<a target="_blank" href="../wuhan/index.html">武汉公交</a>
+			       	<a target="_blank" href="../changsha/index.html">长沙公交</a>
+			       	<a target="_blank" href="../haikou/index.html">海口公交</a>
+			       	<a target="_blank" href="../chengdu/index.html">成都公交</a>
+			       	<a target="_blank" href="../guiyang/index.html">贵阳公交</a>
+			       	<a target="_blank" href="../kunming/index.html">昆明公交</a>
+			       	<a target="_blank" href="../xian/index.html">西安公交</a>
+			       	<a target="_blank" href="../lanzhou/index.html">兰州公交</a>
+			       	<a target="_blank" href="../xining/index.html">西宁公交</a>
+			       	<a target="_blank" href="index1.html">哈尔滨公交</a>
+			       	<a target="_blank" href="../shijiazhuang/index.html">石家庄公交</a>
+			       	<a target="_blank" href="../wulumuqi/index.html">乌鲁木齐公交</a>
+			       	<a target="_blank" href="../huhehaote/index.html">呼和浩特公交</a>
+			       	<a target="_blank" href="../city/change/index.html">更多>></a>
+				</p>
+			</div>
+
+			<div class="busLinks">
+				<h2> 友情链接 </h2>
+				<p>
+					<a href='javascript:;' target='_blank'>哈尔滨短租房</a><a href='javascript:;' target='_blank'>哈尔滨二手车交易市场</a><a href='javascript:;' target='_blank'>哈尔滨天气预报30天</a><a href='javascript:;' target='_blank'>哈尔滨平行进口车</a><a href='javascript:;' target='_blank'>哈尔滨装修</a><a href='javascript:;' target='_blank'>哈尔滨汽车票网上订票</a><a href='index2.html' target='_blank'>哈尔滨电话查询</a><a href='index3.html' target='_blank'>哈尔滨地图查询</a><a href='javascript:;' target='_blank'>哈尔滨公交</a><a href='javascript:;' target='_blank'>哈尔滨车辆违章查询</a><a href='../so/haerbin/index.html' target='_blank'>哈尔滨全部地标</a><a href='../index.html' target='_blank'>哈尔滨地图</a><a href='../index.html' target='_blank'>哈尔滨邮编查询</a><a href='news1.html' target='_blank'>哈尔滨地铁新闻</a><a href='index4.html' target='_blank'>哈尔滨地铁</a>
+				</p>
+			</div>
+		</div>
+	</div>
+	<!-- 1000 end -->
+	<div class="footerCity">
+		<p>
+			<a href="../index.html" target="_blank">关于我们</a>
+			|
+			<a href="../index.html" target="_blank">企业推广</a>
+			|
+			<a href="javascript:;" target="_blank" style="color:red">免费公交代码</a>
+			|
+			<a href="../help/sitelist.html" target="_blank">分站列表</a>
+			|
+			<a href="../link/index.html" target="_blank">友情链接</a>
+			|
+			<a href="../index4.html" target="_blank">行政地图</a>
+		</p>
+		<p>
+			2019mapbar.
+			<a href="javascript:;" target="_blank">[京ICP证070616号]</a>
+			<a href="javascript:;" target="_blank">[京ICP备08100418号]</a>
+		</p>
+	</div>
+	<script type="text/javascript" src="../share/jquery/jquery-1.3.2.pack.js"></script>
+	<script type="text/javascript" src="../bus/js/wt_index.js"></script>
+	<script>
+		window.onload = function() {
+			var set1 = document.getElementById('setting1');
+			var set2 = document.getElementById('setting2');
+			var set3 = document.getElementById('setting3');
+			var st1 = document.getElementById('st1');
+			var st2 = document.getElementById('st2');
+			var st3 = document.getElementById('st3');
+			var switchBtn = document.getElementById('switchBtn');
+			var fromInput = document.getElementById('fromInput');
+			var toInput = document.getElementById('toInput');
+			function setClick(aNode, divNode) {
+				if (aNode.className == 'blueBottom') return;
+				else {
+					set1.className = '';
+					set2.className = '';
+					set3.className = '';
+					aNode.className = 'blueBottom';
+					st1.style.display = "none";
+					st2.style.display = "none";
+					st3.style.display = "none";
+					divNode.style.display = "block";
+				}
+			}
+			set2.onclick = function() {
+				setClick(set2, st2);
+			}
+			set3.onclick = function() {
+				setClick(set3, st3);
+			}
+			set1.onclick = function() {
+				setClick(set1, st1);
+			}
+			switchBtn.onclick = function() {
+				var fromText = fromInput.value;
+				var toText = toInput.value;
+				if(fromText!="请输入起点"&&toText!="请输入终点"){
+					fromInput.value = toText;
+					toInput.value = fromText;
+				}
+			}
+		}
+	</script>
+	<script type="text/javascript" src="../bus/indexv2/js/mwp.js"></script>
+	<script type="text/javascript">
+		var kcitylist = null;
+		$(function(){
+			var shortName="哈尔滨";
+			if(shortName.length>2){
+				$(".titles").attr("class","titles_long")
+				$(".titles2").attr("class","titles2_long")
+			}
+			$("#h_city").val("哈尔滨市");
+			var length=$("#h_city").val().length;
+			if(length>7){
+				length=7;
+			}
+			$("#h_city").css("width",length*14);
+			$(".subWayBorder input[type='text']").each(function(){
+				$(this).attr("defaultVal",$(this).val());
+			});
+			$(".subWayBorder input[type='text']").focus(function(){
+				if($(this).val()==$(this).attr("defaultVal")){
+					$(this).val("");
+				}
+			});
+			$(".subWayBorder input[type='text']").blur(function(){
+				if($(this).val()==""){
+					$(this).val($(this).attr("defaultVal"));
+				}
+			});
+		});
+	</script>
+	<script type="text/javascript" src="../bus/js/placeholder.js"></script>
+	<script type="text/javascript" src="../bus/indexv2/js/index.js"></script>
+	<script type="text/javascript">
+	   var _hmt = _hmt || [];
+	  (function() {
+		 var hm = document.createElement("script");
+		 hm.src = "//hm.baidu.com/hm.js?4f7e758e957dfb1e328a4cb7a250d6e7";
+		 var s = document.getElementsByTagName("script")[0]; 
+		 s.parentNode.insertBefore(hm, s);
+	  })();
+	</script>
+</div></body>
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https') {
+        bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';        
+    }
+    else {
+        bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+    }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+</html>

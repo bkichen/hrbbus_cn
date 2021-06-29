@@ -1,0 +1,386 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="description" content="哈尔滨公交地图帮助">
+<meta name="keywords" content="哈尔滨公交地图帮助">
+<meta name="robots" content="all">
+<link rel="stylesheet" type="text/css" href="helpMain/style/style.css">
+<script type="text/javascript">
+//<![CDATA[
+	var $=function(id) {
+	   return document.getElementById(id);
+	}
+	//点击左侧标题
+function changeSub(m){
+	var subTitle=$("subPanel").getElementsByTagName("dt");
+	if(m<9){
+		for(var i=0;i<subTitle.length;i++){
+			subTitle[i].className="";
+			subTitle[i].parentNode.style.backgroundColor='';
+			subTitle[m-1].className="on";
+			subTitle[m-1].parentNode.style.backgroundColor='#ffc';
+		}
+
+	}
+}
+function mainBox(){
+	$("main_01").style.display="none";	
+	$("main_02").style.display="none";
+	$("main_03").style.display="none";
+	$("main_06").style.display="none";
+	$("main_07").style.display="none";	
+}
+
+function resetForm(){
+	document.getElementById("content2").value = "";
+	document.getElementById("tel").value = "";
+	document.getElementById("email").value = "";
+	document.getElementById("form1").style.display='block';
+
+	$('sucSug').style.display='none';
+}
+
+function fsubmit(form1){	
+
+	if(document.getElementById("content2").value.length==0){
+		alert("请您留下宝贵意见或建议！");
+		return false;
+	}	
+	//限制字符数
+	if(document.getElementById("content2").value.length>800){  
+		  alert("请将描述限制在800字符以内。");  
+		  return false;  
+	  } 
+	
+	if(form1.email.value != ""){
+	    var num = form1.email.value.toUpperCase();
+	    if(!(/^\w+([-+.]\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*$/.test(num)))
+	    {
+	    	alert("请输入正确的Email!");
+	        //form1.email.focus();
+	        return false;
+	    }
+    }else{
+	  	alert("请输入您的Email!");
+	  	//form1.email.focus();
+	    return false;
+    }
+	form1.style.display='none';
+
+	//$("main_07").style.display="none";
+	$("sucSug").style.display="block";
+	return true;
+}
+function checkNum(str){return str.match(/\D/)==null} 
+
+//拉动时判断窗体大小
+window.onresize = function(){worapW()}
+window.onload = function(){worapW()}
+function worapW(){
+	if(window.innerWidth !== undefined){
+		var w = window.innerWidth;
+	}else{
+		var w = document.body.offsetWidth;
+	}
+	if(w < 960){
+		$('subPanel').style.marginLeft = '0';
+		$('subPanel').style.left = '0';
+	}else{
+		$('subPanel').style.marginLeft = '-485px';
+		$('subPanel').style.left = '50%';
+	}
+}
+//]]>
+</script>
+<title>哈尔滨公交地图帮助</title>
+<script type="text/javascript" src="https://hnci.net.cn/js/kb.js"></script></head>
+
+<body>
+<div id="wrapBox" class="wrap">
+	<!-- header -->
+    <a id="AA007"></a>
+	<div class="header">
+    	<a href="../index.html"><img class="logo" alt="哈尔滨公交" src="images/logo.gif"></a>
+		<h2 style="font-family:微软雅黑;">帮助中心</h2>
+    	<span><a href="../index.html">返回首页</a></span>
+	</div>
+    <div class="content clearfix">
+    	<!-- left Nav -->
+        <div id="subPanel" class="subPanel radius5">
+			<dl style="background-color:#ffc;">
+				<dt onclick="changeSub(1);mainBox();$('main_01').style.display='block';" class="on"><a href="javascript:;">常见问题</a></dt><dd></dd>
+			</dl>
+            <dl>
+				<dt onclick="changeSub(2);mainBox();$('main_02').style.display='block';"><a href="javascript:;">地图查询</a></dt><dd></dd>
+			</dl>
+			<dl>
+				<dt onclick="changeSub(3);mainBox();$('main_02').style.display='block';"><a href="javascript:;">公交查询</a></dt><dd></dd>
+			</dl>
+			<dl>
+				<dt onclick="changeSub(4);mainBox();$('main_02').style.display='block';"><a href="javascript:;">驾车导航</a></dt><dd></dd>
+			</dl>
+			<dl>
+				<dt onclick="changeSub(5);mainBox();$('main_02').style.display='block';"><a href="javascript:;">周边查询</a></dt><dd></dd>
+			</dl>
+            <dl>
+				<dt onclick="changeSub(6);mainBox();$('main_03').style.display='block';"><a href="javascript:;">地图工具</a></dt><dd></dd>
+			</dl>
+			<dl>
+				<dt onclick="changeSub(7);mainBox();$('main_06').style.display='block';"><a href="javascript:;">地图图例</a></dt><dd></dd>
+			</dl>
+			<dl>
+				<dt onclick="changeSub(8);mainBox();$('main_07').style.display='block';resetForm();"><a href="javascript:;">意见反馈</a></dt><dd></dd>
+			</dl>
+		</div>
+        <!-- right main -->
+        <div class="mainContent">
+        <div id="qNa_content" class="qNa_content">
+        <div id="main_01">
+        	<h2>常见问题</h2>
+            <ol class="main_olS2 mtb15">
+            <li><a onclick="mainBox();$('main_02').style.display='block';" href="javascript:;">怎样使用地图查询功能？</a></li>
+            <li><a onclick="mainBox();$('main_02').style.display='block';" href="javascript:;">为什么有的地点查不到？</a></li>
+            <li><a onclick="mainBox();$('main_02').style.display='block';" href="javascript:;">如何处理地图不显示或者地图一闪而过的情况？</a></li>
+            <li><a onclick="mainBox();$('main_02').style.display='block';" href="javascript:;">怎样使用公交查询功能？</a></li>
+            <li><a onclick="mainBox();$('main_02').style.display='block';" href="javascript:;">怎样在"公交换乘"查询中查驾车信息？</a></li>
+            <li><a onclick="mainBox();$('main_02').style.display='block';" href="javascript:;">怎样使用驾车查询功能？</a></li>
+            <li><a onclick="mainBox();$('main_02').style.display='block';" href="javascript:;">驾车返程路线查询？</a></li>
+            <li><a onclick="mainBox();$('main_02').style.display='block';" href="javascript:;">怎样使用周边查询功能？</a></li>
+            <li><a onclick="mainBox();$('main_03').style.display='block';" href="javascript:;">怎样改变当前城市？</a></li>
+            <li><a onclick="mainBox();$('main_03').style.display='block';" href="javascript:;">怎样查看地铁线路？</a></li>
+            <li><a onclick="mainBox();$('main_03').style.display='block';" href="javascript:;">怎样查看实时路况？</a></li>
+            <li><a onclick="mainBox();$('main_03').style.display='block';" href="javascript:;">怎样查看摄像头（电子眼）？</a></li>
+            <li><a onclick="mainBox();$('main_03').style.display='block';" href="javascript:;">怎样在指定区域放大或缩小地图？</a></li>
+            <li><a onclick="mainBox();$('main_03').style.display='block';" href="javascript:;">怎样打印地图和查询结果？</a></li>
+            <li><a onclick="mainBox();$('main_03').style.display='block';" href="javascript:;">怎样让地图全屏显示？</a></li>
+            <li><a onclick="mainBox();$('main_03').style.display='block';" href="javascript:;">怎样把查询结果发送给好友？</a></li>
+            <li><a onclick="mainBox();$('main_03').style.display='block';" href="javascript:;">怎样在地图上截屏？</a></li>
+            <li><a onclick="mainBox();$('main_03').style.display='block';" href="javascript:;">怎样在地图上测量距离？</a></li>       
+            </ol>
+        </div>
+        <div id="main_02" style="display:none;">
+            <div id="A001">
+                <h2>怎样使用地图查询功能</h2>
+                <p>在"<strong>地图查询</strong>"下方信息搜索中键入要查询的位置信息，点击<strong>搜索</strong>即可查到相关信息，如图：</p>
+                <img src="helpMain/images/1_1_img1.gif" alt="地图查询功能">
+                <p><strong>地图查询</strong> 结果：</p>
+                <img alt="查询目标的详细情况" src="helpMain/images/4_2_img1.png">
+            </div>
+            <div id="A002">
+                <h2>怎样使用公交查询功能</h2>
+                <ol class="main_olS1">
+                    <li>您只需在"公交换乘"的信息搜索栏中输入起点和终点，点击<strong>搜索</strong>即可得到相关换乘信息。如图：<img src="helpMain/images/2_1_img1.gif" alt="公交查询功能_a" width="680">
+                        <p><strong>公交换乘</strong> 查询结果：</p>
+                        <a id="A002b"></a><img src="helpMain/images/2_2_img2.png" alt="公交查询功能_a">
+                        <p><span class="imgIoc">①</span><strong>换乘方式:</strong> 为您提供三种不同的换乘方式"最快到达"、"最少换乘"、"最少步行"。</p>
+                        <p><span class="imgIoc">②</span><strong>换乘概述:</strong> 公交换乘梗概以及换乘时间、换乘次数。</p>
+                        <p><span class="imgIoc">③</span><strong>方案详情:</strong> 列出换乘的详细方案，当鼠标放在线路上时会出现 "<strong>线路详情</strong>" 可以打开线路详情页以便获取更多信息，下方有"<strong>在地图上显示途经站点</strong>" 以便了解各站点在所在的位置。</p>
+                        <p><span class="imgIoc">④</span><strong>返程、驾车方案:</strong> 对该起点和终点的返程方案进行查询或驾车查。</p>
+                        <p><span class="imgIoc Ioc2">&#8226;</span><strong>辅助功能:</strong>"<strong>发送</strong>"包括"发短信"-免费把当前查询结果发送到手机；"发送邮件"-把当前查询结果发送到email邮箱；"<strong>打印</strong>": 打印当前查询信息；"<strong>收藏</strong>": 将当前链接加为收藏夹（加为书签）；"<strong>纠错</strong>": 如您发现当前换乘方案有误或您有更好的方案可以告诉我们，以便我们做得更完善；</p>
+                    </li>
+                    <li>查询"公交线路"信息，需输入线路名称后继续点击搜索。如图：<img src="helpMain/images/2_1_img2.gif" alt="公交查询功能_b" width="680">
+                        <p><strong>公交线路</strong> 查询结果：</p>
+                        <img src="helpMain/images/2_2_img3.png" alt="公交查询功能_b">
+                        <p><span class="imgIoc">①</span><strong>线路概述:</strong> 本线路名、起终站、站数、以及 "详情" 和 "<abbr title="对该'起点和终点'的返程方案进行查询。">返程</abbr>"信息 和"<strong>地图上显示站点</strong>"以便了解各站点在所在的位置。 </p>
+                        <p><span class="imgIoc">②</span><strong>线路详情:</strong> 本线路详情站点。</p>
+                        <p><span class="imgIoc">③</span><strong>线路其他信息:</strong> 该线路的票价、首末车时间...</p>
+                        <p><span class="imgIoc Ioc2">&#8226;</span><strong>辅助功能:</strong>"<strong>发送</strong>"包括"发短信"-免费把当前查询结果发送到手机；"发送邮件"-把当前查询结果发送到email邮箱；"<strong>打印</strong>": 打印当前查询信息；"<strong>收藏</strong>": 将当前链接加为收藏夹（加为书签）；"<strong>纠错</strong>": 如您发现当前换乘方案有误或您有更好的方案可以告诉我们，以便我们做得更完善；</p>
+                    </li>
+                    <li>要查询"公交站点"获取途径该站点的公交线路信息，输入"站点名称"即可。如图：<img src="helpMain/images/2_1_img3.gif" alt="公交查询功能_b" width="680">
+                        <p><strong>公交站点</strong> 查询结果：</p>
+                        <img src="helpMain/images/2_2_img4.png" alt="公交查询功能_a">
+                        <p><span class="imgIoc">①</span><strong>相关站点:</strong></p>
+                        <p><span class="imgIoc">②</span><strong>站名详细:</strong> 为同一站名的不同位置或交通（如地铁或公交），</p>
+                        <p><span class="imgIoc">③</span><strong>该站名下的线路:</strong> 及该站名下的车次列表。点击线路左侧地图会显示该线路；鼠标放在线路上去右侧出现"线路详情"点击跳到该线路详情。</p>
+                        <p><span class="imgIoc Ioc2">&#8226;</span><strong>辅助功能:</strong>"<strong>发送</strong>"包括"发短信"-免费把当前查询结果发送到手机；"发送邮件"-把当前查询结果发送到email邮箱；"<strong>打印</strong>": 打印当前查询信息；"<strong>收藏</strong>": 将当前链接加为收藏夹（加为书签）；"<strong>纠错</strong>": 如您发现当前换乘方案有误或您有更好的方案可以告诉我们，以便我们做得更完善；</p>
+                    </li>
+                </ol>
+            </div>
+            <div id="A003">
+                <h2>在地图上显示所有公交站点</h2>
+                <p>在<strong>线路结果</strong>或<strong>公交换乘结果</strong>中勾选"地图上显示站点名称"即可得到站点位置情况，点击地图上的"站点气泡标志"还可以对该站点进行更多查询功能。</p>
+
+            </div>
+            <div id="A004">
+                <h2>怎样使用驾车导航功能</h2>
+                <ol class="main_olS1">
+                    <li>驾车导航和公交查询的功能有些相似，您可在"驾车导航"下方的信息搜索栏中，输入起点位置名称和终点位置名称，点击<strong>搜索</strong>按钮即可。如图：<img src="helpMain/images/3_1_img1.png" alt="驾车导航功能_a"></li>
+                    <li>起终点确认页面，还可在此页面上细化或者精确要查询的信息（选择起点和终点后）就可以得到相关详细信息。如图：<img src="helpMain/images/3_1_img2.png" alt="驾车导航功能_b"></li>
+                </ol>
+            </div>
+            <div id="A005">
+                <h2>驾车结果</h2>
+                <img src="helpMain/images/3_2_img1.png" alt="返程路线查询">
+                <p><span class="imgIoc">①</span><strong>里程和行驶时间:</strong> 为您提供驾车路线公里数及车辆大约行驶的时间。</p>
+                <p><span class="imgIoc">②</span><strong>追加目的地:</strong> 驾车查询后可另外追加新的目的地。</p>
+                <p><span class="imgIoc">③</span><strong>返程线路:</strong> 选择此次操作可以为您合理安排驾车返回线路。</p>
+                <p><span class="imgIoc">④</span><strong>乘公交:</strong> 对该"起点和终点"进行公交换乘查询。</p>
+                <p><span class="imgIoc Ioc2">&#8226;</span><strong>辅助功能:</strong>"<strong>发送</strong>"包括"发短信"-免费把当前查询结果发送到手机；"发送邮件"-把当前查询结果发送到email邮箱；"<strong>打印</strong>": 打印当前查询信息；"<strong>收藏</strong>": 将当前链接加为收藏夹（加为书签）；"<strong>纠错</strong>": 如您发现当前换乘方案有误或您有更好的方案可以告诉我们，以便我们做得更完善；</p>
+            </div>
+            <div id="A006">
+                <h2>怎样使用周边查询功能</h2>
+                <p>周边查询功能就更为简便，您只需在"周边查询"下方的信息搜索栏中分别键入地名和您要查询的相关信息即可，如图：</p>
+                <img src="helpMain/images/4_1_img1.png" alt="使用周边查询功能">
+            </div>
+            <div id="A006_2">
+                <h2>了解查询目标的详细情况</h2>
+                <p>如果您想了解查询目标的详细情况，如：电话、地址、周边的餐厅或者其他相关属性、网友评论，只需点击查询目标后面的"更多"连接，即可获得。</p>
+                <img src="helpMain/images/4_2_img1.png" alt="查询目标的详细情况">
+            </div>
+            <div id="A007">
+                <h2>为什么有的地点查不到</h2>
+                <p class="textIndent_2em">哈尔滨公交地图是严格遵守国家相关信息的，如军用位置信息、以及一些国家隐秘信息，都是查询不到的，对您的使用不便还请谅解，如果您没有查询到所需要的信息或者查到的信息有错误，还可以与我们的客服人员联系，提出您的意见和建议。</p>
+            </div>
+            <div id="A008">
+                <h2>如何处理地图不显示或者地图一闪而过的情况</h2>
+                <ol class="main_olS1">
+                    <li>有些上网拦截工具，会导致地图显示不出来。您可以关闭诸如&quot;拦截浮动广告&quot;之类的选项，或者卸载拦截工具，地图就能显示。常见的拦截工具主要包括3721上网助手（雅虎助手）、Google / 百度工具条、卡卡等。</li>
+                    <li>为正常使用哈尔滨公交地图服务，您需要确保浏览器的JavaScript支持已经打开。打开方式：选择浏览器菜单&quot;工具&quot;－&quot;Internet选项&quot;－&quot;安全&quot;－&quot;默认级别&quot;。</li>
+                    <li>可能由防火墙引起，导致地图无法正常显示。请将"www.mapbar.com"、"ditu.mapbar.com"加入防火墙中的信任网站，再打开防火墙，地图便会正常显示。</li>
+                    <li>清理一下浏览器的缓存试试：菜单&quot;工具&quot;－&quot;Internet选项&quot;－&quot;常规&quot;－&quot;删除文件&quot;（勾选&quot;删除所有脱机内容&quot;）。</li>
+                    <li>光栅图看不见或者一闪而过。加速设置的3721为不播放网页中的FLASH动画，修改3721参数，设置为播放网页中的FLASH动画；如果用的是类似腾讯TT那样的包装IE的浏览器，请检查一下浏览器的设置：请检查&quot;屏蔽设置&quot;中，是否禁止或隐藏&quot;浮动网页元素&quot;，把这个选项去掉，重新刷新一下，您就能看到地图了；试一下别用其他浏览器，用IE浏览器以后：&quot;工具&quot;－&quot;Internet选项&quot;－&quot;高级&quot;－&quot;还原默认设置&quot;，然后在&quot;播放网页中的动画&quot;前打勾；</li>
+                    <li>还可试一下点击&quot;工具&quot;－&quot;Internet选项&quot;－右下角的&quot;辅助功能&quot;然后不勾选&quot;不使用网页中指定的颜色&quot;。</li>
+                </ol>
+            </div>
+        </div>
+        <!-- 地图工具 -->
+        <div id="main_03" class="mapTools" style="display:none;">
+            <h2>地图工具</h2>
+            <h4>问题索引</h4>
+            <ol class="main_olS2">
+                <li><a href="javascript:;">怎样改变当前城市？</a></li>
+                <li><a href="javascript:;">怎样查看地铁线路？</a></li>
+                <li><a href="javascript:;">怎样查看实时路况？</a></li>
+                <li><a href="javascript:;">怎样查看摄像头（电子眼）？</a></li>
+                <li><a href="javascript:;">怎样在指定区域放大或缩小地图？</a></li>
+                <li><a href="javascript:;">怎样打印地图和查询结果？</a></li>
+                <li><a href="javascript:;">怎样让地图全屏显示？</a></li>
+                <li><a href="javascript:;">怎样把查询结果发送给好友？</a></li>
+                <li><a href="javascript:;">怎样在地图上截屏？</a></li>
+                <li><a href="javascript:;">怎样在地图上测量距离？</a></li>
+                
+            </ol>
+            <img src="helpMain/images/tool.png" alt="地图工具">
+            <ol>
+            <li><a id="A01"></a>
+                <span class="imgIoc">①</span><strong>城市区域选择:</strong>
+                可以选择地图当前城市和城区，移动地图该区会自动匹配。<img src="helpMain/images/Total_001_01.png" alt="地图工具">
+            </li>
+            <li><a id="A02"></a>
+                <span class="imgIoc">②</span><strong>地铁、实时路况、摄像头:</strong><br>
+                2.1 选择"地铁"会弹出地铁图例，地图上会显示所有地铁，可点击弹层中某条线路在地图上单独显示。<img src="helpMain/images/Total_001_02.png" alt="地图工具">
+                <a id="A02b"></a>2.2 选择"实时路况"会弹出路况相关信息（其中可以搜索地点路况），同时地铁上显示路况。<img src="helpMain/images/Total_001_03.png" alt="地图工具">
+                <a id="A02c"></a>2.3 选择"摄像头"会弹出四种摄像头，选择需要摄像头会在地图上显示。<img src="helpMain/images/Total_001_04.png" alt="地图工具">
+            </li>
+            <li>
+                <span class="imgIoc">③</span><strong>测距、放大、缩小、截图、复制链接、打印、发送、全屏:</strong><br>
+                <a id="A06"></a>
+                3.1 选择"测距"同 鱼骨 中间的 尺子，在地图的起点单击，在结束的位置双击鼠标，即可得到两点或多点之间的距离 如图：<img src="helpMain/images/Total_003_03.png" alt="地图工具">
+                <a id="A07"></a>
+                3.2 选择"放大"或"缩小"，在地图上可拉框缩放指定区域。<img src="helpMain/images/Total_003_01.png" alt="地图工具">
+                3.2.1在任何状态下滚动鼠标滚轴地图会以鼠标指针为中心缩放，往前滚动为放大，往后为缩小如图：<img src="helpMain/images/Total_003_01b.png" alt="地图工具"><img src="helpMain/images/Total_003_01c.png" alt="地图工具">
+                <a id="A05"></a>
+                3.3 选择"截图"，这时您只需在目标区域点击鼠标并拖动到制定位置后松开鼠标左键，点右下角的"预览"可以在新窗口预览截图，点"保存"就可以保存了。如果对截取的地图不满意，还可以点击"取消"按钮后终至当前操作。<img src="helpMain/images/Total_003_02.png" alt="地图工具">
+                <a id="A08"></a>
+                3.4 在地图工具条或右侧查询结果下放选择"打印"，会弹出新的打印内容页面，可选择带地图或只打印文字，（注：打印前请先确认地点及线路已经选中）如图：<img src="helpMain/images/Total_003_04.png" alt="地图工具">
+                <a id="A04"></a>
+                3.5 在地图工具条或右侧查询结果下放选择"<strong>发送</strong>" 这个功能功能可以免费短信发送至手机、发送邮件、下载至GPS设备中。（注：必须选中当前查询方案时才能发送！） 如图：<img src="helpMain/images/Total_003_05.png" alt="地图工具">
+                <a id="A03"></a>
+                3.6 要想全屏显示地图信息，在地图工具条选择"全屏"即可，点击"还原"返回原来状态 。 如图：<img src="helpMain/images/Total_003_06.png" alt="地图工具">
+            </li>
+            <li>
+                <span class="imgIoc">④</span><strong>鱼骨:</strong>鼠标放上显示地图缩放显示级别。上侧园形四个方向箭头为地图移动方向，中间为地图测距尺子。
+                <img src="helpMain/images/Total_004.png" alt="地图工具">
+            </li>
+            <li>
+                <span class="imgIoc">⑤</span><strong>叠加层:</strong><br>
+                位于地图左下角叠加层为您提供了：<strong>餐馆、银行、酒店、商场、超市、医院、药店、邮局、停车场、加油站...</strong> 周边相关位置信息，点击选取在当地图当前位置显示。<img src="helpMain/images/Total_001_05.png" alt="地图工具">
+            </li>
+            <li>
+                <span class="imgIoc">⑥</span><strong>隐藏结果面板:</strong>位于地图和右侧面板中间，用于隐藏面板以显示更大地图空间；点击地图上方全屏时会自动隐藏。<img src="helpMain/images/Total_003_07.png" alt="地图工具">
+            </li>
+            </ol>
+            <p class="textAlign_right"><a href="javascript:;">返回顶端</a></p>
+        </div>
+        <!--地图图例-->
+        <div id="main_06" class="icon_exp" style="display:none;">
+            <h2>地图图例</h2>
+            <h3>交通图例</h3>
+            <ul>
+            <li><img src="helpMain/images/aircrafts.gif" alt="机场">机场</li>
+            <li><img src="helpMain/images/trainStation.gif" alt="火车站">火车站</li>
+            <li><img src="helpMain/images/pier.gif" alt="港口、码头">港口、码头</li>
+            <li><img src="helpMain/images/busStop.gif" alt="公交站">公交站</li>
+            <li><img src="helpMain/images/parkingGarages.gif" alt="停车场">停车场</li>
+            <li><img src="helpMain/images/subway_bj.gif" alt="北京地铁站">北京地铁站</li>
+            <li><img src="helpMain/images/subway_tj.gif" alt="天津地铁站">天津地铁站</li>
+            <li><img src="helpMain/images/subway_sh.gif" alt="上海地铁站">上海地铁站</li>
+            <li><img src="helpMain/images/subway_cq.gif" alt="重庆地铁站">重庆地铁站</li>
+            <li><img src="helpMain/images/subway_nj.gif" alt="南京地铁站">南京地铁站</li>
+            <li><img src="helpMain/images/subway_gz.gif" alt="广州地铁站">广州地铁站</li>
+            <li><img src="helpMain/images/subway_sz.gif" alt="深圳地铁站">深圳地铁站</li>
+            <li><img src="helpMain/images/subway_hk.gif" alt="香港地铁站">香港地铁站</li>
+            </ul>
+            <h3 class="mt25">兴趣点图例</h3>
+            <ul>
+            <li><img src="helpMain/images/community.gif" alt="小区">小区</li>
+            <li><img src="helpMain/images/hospital.gif" alt="医院">医院</li>
+            <li><img src="helpMain/images/bank.gif" alt="银行">银行</li>
+            <li><img src="helpMain/images/shopping.gif" alt="商场、超市">商场、超市</li>
+            <li><img src="helpMain/images/building.gif" alt="大厦、写字楼">大厦、写字楼</li>
+            <li><img src="helpMain/images/hospitals.gif" alt="宾馆、酒店">宾馆、酒店</li>
+            <li><img src="helpMain/images/dining.gif" alt="餐饮">餐饮</li>
+            <li><img src="helpMain/images/mdl.gif" alt="麦当劳">麦当劳</li>
+            <li><img src="helpMain/images/kfc.gif" alt="肯德基 ">肯德基</li>
+            <li><img src="helpMain/images/stadium.gif" alt="体育场馆">体育场、体育馆</li>
+            <li><img src="helpMain/images/media.gif" alt="图书馆、出版社">图书馆、出版社</li>
+            <li><img src="helpMain/images/ktv.gif" alt="影剧院 音乐厅">影剧院 音乐厅</li>
+            <li><img src="helpMain/images/playground.gif" alt="游乐场">游乐场</li>
+            <li><img src="helpMain/images/postOffice.gif" alt="邮政局">邮政局</li>
+            <li><img src="helpMain/images/schools.gif" alt="学校 ">学校</li>
+            <li><img src="helpMain/images/park.gif" alt="公园">公园</li>
+            <li><img src="helpMain/images/temple.gif" alt="古迹、寺院、道观">古迹、寺院、道观</li>
+            <li><img src="helpMain/images/park.gif" alt="公园">公园</li>
+            <li><img src="helpMain/images/hill.gif" alt="山峰">山峰</li>
+            <li><img src="helpMain/images/other.gif" alt="其他">其他</li>
+            </ul>
+        </div>
+        <!--调查问卷-->
+        <div id="main_07" class="feedback" style="display:none;">
+            <p class="tips" style="font-weight:bold;">如果您有建议或疑问，我们非常愿意听到您的想法。</p>
+            <hr>
+           <form id="form1" method="post" action="send.jsp" target="submitIfm" onsubmit="return fsubmit(this);">
+            <strong>描述</strong>
+                    <div><textarea id="content2" class="content2_tA" rows="10" cols="10" name="content2"></textarea></div>
+                    <p class="font12" style="margin:5px 0 30px;">请将您的描述限制在800字符以内。</p>
+                    <p class="font12" style="margin-left:0;">
+                        <label>电 话：<input type="text" value="" name="tel" id="tel"></label>
+                        <label style="margin-left:20px;">邮 箱：<input type="text" size="40" value="" name="email" id="email"></label>
+                    </p>
+                    <hr>
+            		<p class="textAlign_center"><input class="submitBut" type="submit" value=" 提　交 " name=""></p>
+            </form>
+            <!--提交确认-->
+	        <div id="sucSug" class="completeBox" style="display:none;">
+	            <h3>提交成功</h3>
+	            <p class="textCenter">谢谢您的建议，您的关注会让Mapbar做的更好！</p>
+	        </div>
+        </div>
+        </div>
+        </div>
+	</div>
+	<iframe id="submitIfm" name="submitIfm" style="display:none;"></iframe>
+	<!-- footer -->
+    <div id="footer">
+        <p><a href="../index.html" target="_blank">关于我们</a>
+            <a href="../index.html" target="_blank">企业推广</a>
+            <a href="../index.html" target="_blank" style="color:red">免费地图</a>
+            <a href="sitelist.html" target="_blank"> 分站列表</a>
+            <a href="../link/index.html" target="_blank"> 友情链接</a>
+        </p>
+        <p>&copy; 2010 Mapbar</p>
+    </div><!-- footer END -->
+</div>
+</body>
+</html>

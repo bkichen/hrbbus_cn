@@ -1,0 +1,50 @@
+body{margin:0;padding:0;background:#fff;font:normal normal normal 12px Tahoma,Helvetica,Arial,sans-serif}div,form,p,img,ul,ol,li,dl{border:0;list-style:none;margin:0;padding:0;text-align:left}li{list-style-position:outside}a:link,a:visited,a:active{color:#06c;text-decoration:none}a:hover{color:#fff;background:#06c}h1,h2,h3,h4,h5,h6{font-size:14px;margin:0;padding:0}input,select,textarea{font-size:12px;font-family:Arial;line-height:15px}
+html,body{overflow:hidden;}
+.header{position:relative;height:55px;padding:10px 20px;border-top:3px solid #28d;z-index:99;}
+.header #logo{background:none;}
+.header .linkInfo{position:absolute;right:5px;top:2px;color:#d4d4d4;}
+.linkInfo a{padding:0 5px;}
+.linkInfo span{height:21px;display:inline-block;padding:0 6px;border:1px solid #ebf0f6;border-radius:3px;behavior:url(http://r.mapbar.com/www/traffic/style/style/ieHk/PIE/PIE.htc);line-height:21px;background:#f6f8fb;
+background-image:-webkit-gradient(linear,0 0,0 100%,from(#fff),to(#eef2f6));
+background:-moz-linear-gradient(top,#fff,#eef2f6);
+-pie-background:linear-gradient(#fff, #eef2f6);}
+.header span a{margin-right:8px;}
+.areaNav{position:absolute;right:10px;bottom:-2px;_bottom:-3px;z-index:99;}
+.areaNav li{width:95px;overflow:hidden;display:inline;float:left;height:30px;background:url(../images/traffic_bg.png) no-repeat 0 0;font-size:14px;line-height:30px;text-align:center;font-weight:bold;}
+
+.content{position:relative;margin:0 10px;}
+.keyBox{position:absolute;z-index:9999;top:1px;right:332px;padding:3px 5px;border:1px solid #bde;border-top:0;border-right:0;background:#EBF2FB; white-space:nowrap;}
+.keyBox *{vertical-align:middle;}
+.keyBox img{width:45px;height:25px;background:url(../images/traffic_bg.png) no-repeat 0 -31px;}
+.keyBox img.Ib{background-position:0 -57px;}
+.keyBox img.Ic{background-position:0 -83px;}
+.keyBox img.Id{background-position:0 -109px;}
+.areaBox{border:2px solid #c8d3f3;}
+.areaBox_t{padding:8px;}
+.areaBox_t a{display:inline-block;width:70px;height:20px;line-height:20px;text-align:center;font-size:14px;margin:2px;}
+.areaBox_t a.current{background:#06c;color:#fff;}
+.areaBox_b{padding-left:8px;height:22px;margin:1px;background:#b2bfe1;}
+.areaNav li a,.areaNav area,a.midArrow,a.midArrow_expand{blr:expression(this.onFocus=this.blur());-moz-user-select:none;outline-style:none}
+.listBox{position:relative;overflow:auto;margin-left:10px;}
+.inforB{margin-top:8px;padding:1px;border:2px solid #c8d3f3;}
+.inforB h2{position:relative;padding:5px 10px;background:#e1e8fa;border-bottom:1px solid #c8d3f3;color:#555;font-size:12px;}
+.inforB h2 a{position:absolute;overflow:hidden;right:6px;width:12px;height:12px;text-indent:-50px;background:url(../images/traffic_bg.png) no-repeat 0 -231px;}
+.inforB ul{margin:8px;overflow:hidden;zoom:1;}
+.inforB li{display:inline;line-height:1.8em;margin-right:8px;white-space:nowrap;float:left;}
+.inforB li a{white-space:nowrap;}
+.IB2,.IB2 h2{border-color:#68d;}
+.IB2 h2{background:#7a93e3;color:#fff;}
+.IB2 a{display:block;position:relative;padding:0 10px;line-height:1.7em;font-family:"宋体";zoom:1;}
+.IB2 a em{position:absolute;top:0;right:5px;font-style:normal;}
+.IB2 dt{margin:0 2px 5px;padding:5px 10px;color:#666;border-bottom:1px solid #c8d3f3;font-weight:bold;zoom:1;}
+.IB2 dd{margin:0;}
+#rightPanel{position:absolute;z-index:90;right:0;width:330px;border-bottom:2px solid #F4F4F4;}
+#leftPanel{border:1px solid #9ae;}
+a.midArrow,a.midArrow_expand,a.midArrow:hover,a.midArrow_expand:hover{overflow:hidden;position:absolute;z-index:99;top:40%;left:-11px;width:12px;height:20px;background:url(../images/traffic_bg.png) no-repeat 0 -136px;text-indent:-50px;}
+a.midArrow_expand{background-position:-13px -136px;}
+a.midArrow:hover{background-position:-26px -136px;background-color:transparent;}
+a.midArrow_expand:hover{background-position:-39px -136px;background-color:transparent;}
+
+#mapPanel{overflow:hidden;float:right;width:100%;height:100%;}
+.InfoPrompt{background:#fff url(../images/traffic_bg.png) no-repeat -18px -156px;margin:8px 0;padding-left:30px;color:gray;}
+#tranfic_time{color:#808080;}

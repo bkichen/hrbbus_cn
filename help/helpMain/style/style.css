@@ -1,0 +1,105 @@
+/*strict xhtml 1.0 - Main style sheet - liquid design 2008-06-25 Updated ZhangXL2010-09-06*/
+/*Author - QiaoXw made by 帮助中心2期*/
+
+/*初始值
+-------------------------------*/
+body{margin:0;padding:0;background:#fff;font:12px/1.5 '宋体',Arial,Helvetica,sans-serif;}
+div,form,p,img,ul,ol,li,dl{border:0;list-style:none;margin:0;padding:0;text-align:left;}
+li{list-style-position:outside;}
+a{color:#06c; }
+a:link,a:visited,a:active{text-decoration:underline;}
+a:hover{text-decoration:none;}
+h1,h2,h3,h4,h5,h6{font-size:14px;margin:0;padding:0;}
+input,select,textarea{font-size:12px;font-family:Arial;line-height:15px;}
+/* 全局 */
+abbr{border-bottom:1px dotted\a;cursor:help;}
+.clearfix:after{content:"";display:block;height:0;clear:both;visibility:hidden;}
+.clearfix{*zoom:1;}
+div,form,p,img,ul,ol,li,dl{line-height:150%;}
+dd{margin:0;}
+.radius5{-moz-border-radius:5px;-webkit-border-radius:5px;border-radius:5px;}
+.mt25{margin-top:25px;}
+.mtb15 li{margin:15px 0!important;}
+/* head */
+.header{font-size:14px;overflow:hidden;padding:5px 0 10px;_zoom:1;}
+.header img{float:left;margin:13px 15px 0 0;}
+.header h2{float:left;font-size:20px;margin-top:45px;}
+.header span{float:right;margin-top:52px;}
+/* content */
+.content{border-top:5px solid #e8ecf7;padding:10px 0;background:#fff;border-bottom:1px dotted #b4b4b4;margin-bottom:10px;}
+html,body{height:100%;overflow:hidden;padding:0;margin:0;}
+.wrap{height:100%;width:100%;overflow:auto;background:#fff;}
+.header,.content{width:960px;margin:0 auto;}
+/* main */
+.mainContent{margin-left:196px;border-left:1px solid #e8ecf7;padding-left:15px;min-height:520px;height:auto!important;height:520px;overflow:visible;margin-top:-10px;}
+.crumbs{height:27px;line-height:27px;padding-left:24px;background:#e8ecf7;margin-bottom:22px;}
+.crumbs a{color:#000!important;}
+.mainContent p{margin-bottom:10px;font:14px/1.7 '宋体',Arial;}
+.qNa_content{padding:0 20px;margin-bottom:22px;color:#555;font:14px/1.7 '宋体',Arial;}
+.qNa_content h2{margin-bottom:1em;padding:1em 0;border-bottom:1px solid #F5F5F5;color:#333;text-align:center;_zoon:1;}
+.qNa_content h4{margin:12px 0;}
+.qNa_content img{border:1px dotted #ddd;margin:18px auto 28px;display:block;}
+.textIndent_2em{color:#555;text-indent:2em;font:14px/1.7 '宋体',Arial;}
+.textAlign_right{text-align:right;}
+.main_olS1 li{list-style:outside decimal;margin:0 0 20px 25px;}
+.main_ulS1 li{list-style:outside disc;margin:0 0 10px 25px;}
+.icon_exp li{margin:5px 0 5px 1em;font-size:12px;}
+.icon_exp img{display:inline;margin:2px 8px 2px 0;border:0;vertical-align:bottom;}
+.feedback hr{border-color:#ccc;border-style:none none dashed;border-width:0 0 1px;height:1px;margin:20px auto;*margin:10px auto;}
+.feedback p{text-indent:2em;}
+.tips{background:#ffffe1;border:1px solid #ddd;font-size:14px;padding:10px 0;}
+.tips strong{color:#f60;}
+.titleP{font-size:14px;margin-bottom:25px;}
+.feedback{padding:1em 0;}
+.feedback li{font-size:14px;list-style:inside decimal;margin:5px 0;}
+.radioBox{margin-left:28px;}
+.radioBox div{display:block!important;color:#666;font-size:12px;margin:5px 0 15px 15px;}
+.radioBox div label{margin-right:10px;}
+.radioBox div input{vertical-align:middle;}
+.content2_tA{width:99%;}
+.font12{color:#555;font-size:12px;margin-top:-13px;margin-left:15px;
+text-indent:0!important;}
+.feedback h3{font-size:12px;margin:16px 0 0 14px;}
+.feedback ol li p{font-size:12px;text-indent:0;margin:10px 14px;}
+.textAlign_center{text-align:center;}
+.submitBut{font-size:14px;height:30px;width:120px;}
+.completeBox{background:#eee;border:1px solid #ccc;font-size:14px;height:80px;margin:10px auto 0;padding:20px;text-align:center;}
+.completeBox h3{color:red;margin:0;font-size:14px;}
+.completeBox p{text-align:center;margin:10px 30px;}
+.directSoft hr,.mapTools hr{border-color:#ccc;border-style:none none dashed;border-width:0 0 1px;height:1px;margin:20px auto;*margin:10px auto;}
+.directSoft h4{margin:0 0 12px;}
+.attPanel{background:#ffffe1;border:1px solid #ddd;padding:5px 24px;margin-top:10px;}
+/* sub */
+.subPanel{position:fixed;_position:absolute;top:130px;left:50%;z-index:99;margin-left:-485px;_margin-left:-490px;width:186px;_width:172px;border:1px solid #ddd;font-size:14px;
+-webkit-box-shadow:#ddd 2px 2px 3px;
+-moz-box-shadow:#ddd 2px 2px 2px;
+box-shadow:#ddd 2px 2px 2px;
+background:#fff;
+background:-webkit-gradient(linear, 0 0, 0 bottom, from(#fff), to(#eee));
+background:-moz-linear-gradient(180deg,#fff, #eee);
+background:linear-gradient(180deg,#fff, #eee);
+-pie-background:linear-gradient(180deg,#fff, #eee);
+behavior:url(https://www.mapbar.com/help/helpMain/PIE/PIE.htc);}
+.subPanel a{text-decoration:none!important;}
+.subPanel dl{padding:9px 0 9px 9px;border-bottom:1px dotted #b4b4b4;}
+.subPanel dt,.subPanel dt.on{_width:100%;padding-left:15px;background:url(../images/extend.gif) no-repeat left -17px;font-weight:bold;cursor:pointer;color:#06c;zoon:1;}
+.subPanel dt.on{background-position:0 5px;}
+.subPanel dt.on a{color:#000!important;}
+.subPanel dd{display:none;}
+.subPanel li{margin-bottom:5px;margin-left:15px;padding:2px 0 2px 17px;background:url(../images/extend.gif) no-repeat 3px -35px;font-size:13px;}
+.subPanel li.on{background:#ffa url(../images/extend.gif) no-repeat 3px -35px;}
+.subPanel li.on a{color:#000!important;text-decoration:none!important;}
+.subPanel li.on a:hover{color:#000!important;}
+/* footer */
+#footer{overflow:hidden;margin:15px auto;}
+#footer p{margin:10px auto;text-align:center;line-height:20px;color:#888; font:12px Arial;}
+#footer p a{margin:0 3px;background:#fff;color:#888;text-decoration:none;}
+/* 09_07_02 */
+.directSoft p{text-indent:2em;}
+.attPanel{padding:5px 0;}
+.main_olS2{margin:0 30px;}
+.main_olS2 li{margin:5px 0;font-size:14px;list-style:outside decimal;}
+.marginT25{margin-top:25px;}
+.uu{margin-left:2em;}
+.imgIoc{margin-right:.5em;color:red;font-weight:bold;}
+.Ioc2{position:relative;top:8px;margin-right:10px;color:#f4777d;font:35px/.3 Arial;}

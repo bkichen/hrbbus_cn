@@ -1,0 +1,84 @@
+.info{width: 960px; margin:0 auto;}
+.info ul {
+	width:100%;
+}
+.info ul.busInfo li {
+	position:relative;
+	float:left;
+	text-align:center;
+	width:226px;
+	padding:15px 7px;
+}
+.info ul.busInfo li h2,.info ul.busInfo li h2 .after {
+	background:rgb(236,236,236) url(../images/busbg.gif) no-repeat;
+	position:absolute;
+	display:block;
+	height:40px;
+	top:0;
+}
+.info ul.busInfo li h2 {
+	background-position:0 0;
+	left:0;
+	line-height:38px;
+	*line-height:40px;
+	margin-top:-26px;
+	padding-left:20px;
+	white-space:nowrap;
+}
+.info ul.busInfo li h2 .after {
+	background-position:0 -40px;
+	width:20px;
+	right:-20px;
+}
+.info ul.busInfo li p.newsPic {
+	text-align:center;
+}
+.info ul.busInfo li p.newsPic img {
+	width:80%;
+	padding-top:8px;
+}
+.info ul.busInfo li p a {
+	padding:0 2px;
+}
+.info ul.busInfo li.underline p a {
+	text-decoration:underline;
+}
+.info ul.busInfo li.underline p.num a {
+	padding:0 1px;
+}
+.info ul.busInfo li.newsL p {
+	white-space:nowrap;
+	overflow:hidden;
+	text-overflow:ellipsis;
+	max-width:220px;
+	*width:220px;
+}
+.info .busList {
+	clear:both;
+	padding:25px 0;
+	line-height:25px;
+}
+.info .busList h2 {
+	font-size:12px;
+	color: #666;
+font-weight: bolder;
+}
+.info .busList a {
+	padding-right:5px;
+	color: #8A8A8A;
+}
+.Partner .PartnerTit {
+	color:#666;
+	font-weight:bolder;
+	padding:5px 0;
+}
+.Partner .Partner_Ul {
+	
+}
+.Partner .Partner_Ul ul li {
+	padding:5px 0;
+}
+.Partner .Partner_Ul ul li  a {
+	padding-right:5px;
+	color: #8A8A8A;
+}

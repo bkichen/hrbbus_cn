@@ -1,0 +1,103 @@
+.all {
+	width: 290px;
+	margin: 0 auto;
+}
+.all a{
+	color:#858585;
+	font-size:14px;
+}
+.all .bigtit {
+	color: #239cdb;
+	font-size: 14px;
+	margin: 15px 0 0 0;
+}
+
+.all .unitWrap {
+	border-bottom: 1px solid #c3c6c5;
+	padding: 15px 0 10px 0;
+}
+
+.all .unitWrap .titStyle {
+	background: #00a0e9;
+	color: #fff;
+	padding: 5px 15px;
+	border-radius: 4px;
+	background-clip: padding-box;
+	text-align: center;
+	font-size: 14px;
+}
+
+.all .unitWrap ul {
+	margin-top: 8px;
+	*zoom: 1;
+}
+
+.all .unitWrap ul:before,.all .unitWrap ul:after {
+	display: table;
+	content: "";
+	line-height: 0;
+}
+
+.all .unitWrap ul:after {
+	clear: both;
+}
+
+.all .unitWrap ul.cn-2 li {
+	width: 48%;
+}
+
+.all .unitWrap ul.cn-3 li {
+	width: 31%;
+}
+
+.all .unitWrap ul li {
+	padding: 0 5px 0 0;
+	display: block;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	width: 100%;
+	float: left;
+	display: inline-block;
+	list-style: square;
+}
+
+.rad {
+	margin-top: 15px
+}
+
+.wtitle {
+	margin: 10px 0
+}
+
+.message {
+	border: #dcdcdc solid 1px;
+	border-top: 0;
+	margin-top: 10px
+}
+
+.message h2 {
+	width: auto;
+	height: 31px;
+	line-height: 31px;
+	background: url(../images/hbg.png) repeat-x;
+	font-size: 16px;
+	color: #262626;
+	font-weight: 700;
+	text-align: left;
+	padding: 0 10px
+}
+
+.message h2 a {
+	color: #262626
+}
+
+.message ul {
+	padding: 5px 10px
+}
+
+.message li {
+	margin-top: 5px;
+	white-space: nowrap;
+	overflow: hidden
+}

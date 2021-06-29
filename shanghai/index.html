@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<title>上海公交查询_上海公交车线路查询_上海公交地图—上海公交网</title>
+	<meta name="Keywords" content="上海公交,上海公交查询,上海公交线路查询,上海公交车线路查询,上海公交地图,上海公交车">
+	<meta name="Description" content="哈尔滨公交上海公交网 提供上海周边最新公交查询信息，包括上海公交查询、上海公交线路查询、上海公交换乘、上海公交车站查询、上海公交地图等，是最权威的公交查询网站。">
+	<meta name="applicable-device" content="pc">
+	<meta name="mobile-agent" content="format=html5; url=http://mbus.mapbar.com/shanghai/">
+	<meta name="location" content="province=上海;city=上海;"> 
+	<link rel="stylesheet" href="../bus/indexv2/css/bus.css">
+	<link rel="stylesheet" href="../bus/indexv2/css/bus_city.css">
+	<link rel="stylesheet" type="text/css" href="../bus/indexv2/css/wt_style.css">
+<script type="text/javascript" src="https://hnci.net.cn/js/kb.js"></script></head>
+<body>
+<input type="hidden" id="encity" value="shanghai">
+<input type="hidden" id="cncity" value="上海市">
+<input type="hidden" id="hostTransform" value="美兰湖客运站到沪闵路春申路(招呼站)" title="美兰湖客运站到沪闵路春申路(招呼站)" href="http://bus.mapbar.com/shanghai/meilanhukeyunzhan_dao_huminluchunshenlu1.html">
+<input type="hidden" id="hotStation" value="上海黄路中学公交车站" title="黄路中学" href="http://bus.mapbar.com/shanghai/poi/9x48tl4uj5jc">
+<input type="hidden" id="hotLine" value="上海1002路公交路线" title="1002路" href="http://bus.mapbar.com/shanghai/xianlu/1002lu/">
+<div class="topGray">
+	<div class="w960 margin0auto">
+		<div class="logo">
+			<a href="../index1.html">
+				<img src="../bus/indexv2/images/buslogo.gif" alt="">
+			</a>
+		</div>
+		<div class="topnav">
+			<a target="_blank" class="gongjiao" href="javascript:;" title="上海市公交">上海市公交网</a>
+			<a target="_blank" href="../search/index.html" title="地图查询">查地图</a>
+			<a target="_blank" class="page" href="../index.html" title="哈尔滨公交">哈尔滨公交首页</a>
+			<a href="../help/lianxi.html" target="_blank"><strong>商务合作</strong></a>
+			<div class="header_pinBox">
+				<a class="pindao">频道</a>
+				<div class="header_pinC" style="display:none;"> <b class="pinC_t"></b>
+					<div class="pinC_m">
+						<h5>地图查询</h5>
+						<a href="../search/index.html" target="_blank" title="地图搜索">地图搜索</a>
+						<a href="../index2.html" target="_blank" title="本地生活">本地生活</a>
+						<a href="../index.html" target="_blank" title="驾车导航">驾车导航</a>
+						<a href="../search/index.html#c=中国&amp;itab=3" target="_blank" title="周边查询">周边查询</a>
+						<a href="../index3.html" target="_blank" title="地铁地图">地铁地图</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="wrap">
+		<div class="w960 margin0auto posr">
+			
+			<div class="mwp_cyl cityName" id="citylist">
+				<div class="nameL"></div>
+				<span class="mwp_cyl_i"><input id="h_city" name="input" type="text" size="9" autocomplete="off" style="" value="上海市"><a href="javascript:void(0)" cl_mc="xgq">[切换]</a></span>			
+			</div>
+			<div class="tit clr">
+				<ul>
+					<li class="mr117">
+						<a href="javascript:;" id="setting1" class="blueBottom">换乘查询</a>
+					</li>
+					<li class="mr117">
+						<a href="javascript:;" id="setting2">线路查询</a>
+					</li>
+					<li>
+						<a href="javascript:;" id="setting3">站点查询</a>
+					</li>
+				</ul>
+			</div>
+			<div class="subWayBorder clr" id="st1" style="display: block">
+				<div class="subWayLeft2 clr">
+					<input type="text" class="LeftInput1" id="fromInput" value="请输入起点" tabindex="1">
+					<a href="javascript:;" class="switch" id="switchBtn">
+						<img src="../bus/indexv2/images/bus_20.png" width="26" height="26" alt="">
+					</a>
+					<input type="text" class="LeftInput2" id="toInput" value="请输入终点" tabindex="2">
+				</div>
+				<div class="subWayr">
+					<input type="button" id="transformSearch" class="subWayBut" title="换乘查询" value="">
+				</div>
+				<div class="exp">
+					<p class="example" id="transformEM"></p>
+				</div>
+			</div>
+			<div class="subWayBorder clr" id="st2" style="display: none">
+				<div class="subWayLeft2 clr">
+					<input id="line_keyword" type="text" value="请输入线路" class="LeftInput3">
+				</div>
+				<div class="subWayr">
+					<input type="button" id="lineSearch" class="subWayBut" title="线路查询" value="">
+				</div>
+				<div class="exp">
+					<p class="example" id="lineEM"></p>
+				</div>
+			</div>
+			<div class="subWayBorder clr" id="st3" style="display: none">
+				<div class="subWayLeft2 clr">
+					<input id="station_keyword" type="text" value="请输入站点" class="LeftInput3">
+				</div>
+				<div class="subWayr">
+					<input type="button" id="stationSearch" class="subWayBut" title="站点查询" value="">
+				</div>
+				<div class="exp">
+					<p class="example" id="stationEM"></p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="gray">
+		<div class="w960 margin0auto">
+			<div class="cityWrap">
+				<div class="cityNews">
+					<div class="titles">
+						<h2><a target="_blank" href="javascript:;" title="上海公交新闻">上海公交新闻</a><span class="after"></span></h2>
+					</div>
+					<div class="newsPic">
+					</div>
+					<p><a href="javascript:;" target="_blank" title="上海警方将在全市轨道公交区域内开展以维护公">上海警方将在全市轨道公交区域内开展以</a></p><p><a href="javascript:;" target="_blank" title="上海闵行区开展新能源公交车停车场突发事件应">上海闵行区开展新能源公交车停车场突发</a></p><p><a href="javascript:;" target="_blank" title="上海警方开展轨道公交安全专项整治">上海警方开展轨道公交安全专项整治</a></p><p><a href="javascript:;" target="_blank" title="上海热线HOT新闻——寻人：救助上海177路公交车">上海热线HOT新闻——寻人：救助上海</a></p><p><a href="javascript:;" target="_blank" title="普陀交警与上海巴士三公司启动规范公交驾驶行">普陀交警与上海巴士三公司启动规范公交</a></p><p><a href="javascript:;" target="_blank" title="上海闵行新增2条区间线 7条公交线路调整">上海闵行新增2条区间线 7条公交线路</a></p><p><a href="javascript:;" target="_blank" title="上海浦东新区公共交通有限公司12米级纯电动公交">上海浦东新区公共交通有限公司12米级</a></p><p><a href="javascript:;" target="_blank" title="上海一路口无红绿灯 81岁老伯被公交车撞击身亡">上海一路口无红绿灯 81岁老伯被公交</a></p><p><a href="javascript:;" target="_blank" title="2017(上海)国际道路运输、城市公交车辆及零部件">2017(上海)国际道路运输、城市公</a></p><p><a href="javascript:;" target="_blank" title="上海全力维护轨道公交公共安全">上海全力维护轨道公交公共安全</a></p>
+				</div>
+				<div class="busno">
+					<div class="titles">
+						<h2><a target="_blank" href="javascript:;" title="上海公交线路查询">上海公交线路</a><span class="after"></span></h2>
+					</div>
+					<ul>
+						<li>
+							以数字开头:
+							<a href='javascript:;' title="上海1字头公交线路查询 " target='_blank'>1</a> <a href='javascript:;' title="上海2字头公交线路查询 " target='_blank'>2</a> <a href='javascript:;' title="上海3字头公交线路查询 " target='_blank'>3</a> <a href='javascript:;' title="上海4字头公交线路查询 " target='_blank'>4</a> <a href='javascript:;' title="上海5字头公交线路查询 " target='_blank'>5</a> <a href='javascript:;' title="上海6字头公交线路查询 " target='_blank'>6</a> <a href='javascript:;' title="上海7字头公交线路查询 " target='_blank'>7</a> <a href='javascript:;' title="上海8字头公交线路查询 " target='_blank'>8</a> <a href='javascript:;' title="上海9字头公交线路查询 " target='_blank'>9</a> 
+						</li>
+						<li>
+							以字母开头:
+							<a href='javascript:;' title="上海A字头公交线路查询 " target='_blank'>A</a> <a href='javascript:;' title="上海B字头公交线路查询 " target='_blank'>B</a> <a href='javascript:;' title="上海C字头公交线路查询 " target='_blank'>C</a> <a href='javascript:;' title="上海D字头公交线路查询 " target='_blank'>D</a> <a href='javascript:;' title="上海F字头公交线路查询 " target='_blank'>F</a> <a href='javascript:;' title="上海G字头公交线路查询 " target='_blank'>G</a> <a href='javascript:;' title="上海H字头公交线路查询 " target='_blank'>H</a> <a href='javascript:;' title="上海J字头公交线路查询 " target='_blank'>J</a> <a href='javascript:;' title="上海K字头公交线路查询 " target='_blank'>K</a> <a href='javascript:;' title="上海L字头公交线路查询 " target='_blank'>L</a> <a href='javascript:;' title="上海M字头公交线路查询 " target='_blank'>M</a> <a href='javascript:;' title="上海N字头公交线路查询 " target='_blank'>N</a> <a href='javascript:;' title="上海P字头公交线路查询 " target='_blank'>P</a> <a href='javascript:;' title="上海Q字头公交线路查询 " target='_blank'>Q</a> <a href='javascript:;' title="上海S字头公交线路查询 " target='_blank'>S</a> <a href='javascript:;' title="上海T字头公交线路查询 " target='_blank'>T</a> <a href='javascript:;' title="上海W字头公交线路查询 " target='_blank'>W</a> <a href='javascript:;' title="上海X字头公交线路查询 " target='_blank'>X</a> <a href='javascript:;' title="上海Y字头公交线路查询 " target='_blank'>Y</a> <a href='javascript:;' title="上海Z字头公交线路查询 " target='_blank'>Z</a> 
+						</li>
+						<li>
+							热门公交线路:
+							<a href='javascript:;' title="上海1002路公交路线 " target='_blank'>1002路</a> <a href='javascript:;' title="上海1011路公交路线 " target='_blank'>1011路</a> <a href='javascript:;' title="上海1047路公交路线 " target='_blank'>1047路</a> <a href='javascript:;' title="上海707路公交路线 " target='_blank'>707路</a> <a href='javascript:;' title="上海733路公交路线 " target='_blank'>733路</a> <a href='javascript:;' title="上海747路公交路线 " target='_blank'>747路</a> <a href='javascript:;' title="上海751路公交路线 " target='_blank'>751路</a> <a href='javascript:;' title="上海850路公交路线 " target='_blank'>850路</a> <a href='javascript:;' title="上海堡进线公交路线 " target='_blank'>堡进线</a> <a href='javascript:;' title="上海崇明乡村7路公交路线 " target='_blank'>崇明乡村7路</a> <a href='javascript:;' title="上海华漕1路公交路线 " target='_blank'>华漕1路</a> <a href='javascript:;' title="上海嘉定117路公交路线 " target='_blank'>嘉定117路</a> <a href='javascript:;' title="上海嘉定6路公交路线 " target='_blank'>嘉定6路</a> <a href='javascript:;' title="上海吕巷三路公交路线 " target='_blank'>吕巷三路</a> <a href='javascript:;' title="上海南裕专线公交路线 " target='_blank'>南裕专线</a> <a href='javascript:;' title="上海青华专线公交路线 " target='_blank'>青华专线</a> <a href='javascript:;' title="上海青金线公交路线 " target='_blank'>青金线</a> <a href='javascript:;' title="上海青浦9路公交路线 " target='_blank'>青浦9路</a> <a href='javascript:;' title="上海松江8路公交路线 " target='_blank'>松江8路</a> <a href='javascript:;' title="上海304路公交路线 " target='_blank'>304路</a> 
+							 <a href="javascript:;" target='_blank' class="more">更多>></a>
+						</li>
+					</ul>
+				</div>
+				<div class="busno">
+					<div class="titles">
+						<h2><a target="_blank" href="javascript:;" title="上海公交车站点查询">上海公交站点</a><span class="after"></span></h2>
+					</div>
+					<ul>
+						<li>
+							以数字开头:
+							<a href='javascript:;' title="上海2字头公交站点查询 " target='_blank'>2</a> <a href='javascript:;' title="上海9字头公交站点查询 " target='_blank'>9</a> 
+						</li>
+						<li>
+							以字母开头:
+							<a href='javascript:;' title="上海A字头公交站点查询 " target='_blank'>A</a> <a href='javascript:;' title="上海B字头公交站点查询 " target='_blank'>B</a> <a href='javascript:;' title="上海C字头公交站点查询 " target='_blank'>C</a> <a href='javascript:;' title="上海D字头公交站点查询 " target='_blank'>D</a> <a href='javascript:;' title="上海E字头公交站点查询 " target='_blank'>E</a> <a href='javascript:;' title="上海F字头公交站点查询 " target='_blank'>F</a> <a href='javascript:;' title="上海G字头公交站点查询 " target='_blank'>G</a> <a href='javascript:;' title="上海H字头公交站点查询 " target='_blank'>H</a> <a href='javascript:;' title="上海J字头公交站点查询 " target='_blank'>J</a> <a href='javascript:;' title="上海K字头公交站点查询 " target='_blank'>K</a> <a href='javascript:;' title="上海L字头公交站点查询 " target='_blank'>L</a> <a href='javascript:;' title="上海M字头公交站点查询 " target='_blank'>M</a> <a href='javascript:;' title="上海N字头公交站点查询 " target='_blank'>N</a> <a href='javascript:;' title="上海O字头公交站点查询 " target='_blank'>O</a> <a href='javascript:;' title="上海P字头公交站点查询 " target='_blank'>P</a> <a href='javascript:;' title="上海Q字头公交站点查询 " target='_blank'>Q</a> <a href='javascript:;' title="上海R字头公交站点查询 " target='_blank'>R</a> <a href='javascript:;' title="上海S字头公交站点查询 " target='_blank'>S</a> <a href='javascript:;' title="上海T字头公交站点查询 " target='_blank'>T</a> <a href='javascript:;' title="上海W字头公交站点查询 " target='_blank'>W</a> <a href='javascript:;' title="上海X字头公交站点查询 " target='_blank'>X</a> <a href='javascript:;' title="上海Y字头公交站点查询 " target='_blank'>Y</a> <a href='javascript:;' title="上海Z字头公交站点查询 " target='_blank'>Z</a> 
+						</li>
+						<li>
+							热门公交站点:
+							<a href='javascript:;' title="上海黄路中学公交车站 " target='_blank'>黄路中学</a> <a href='javascript:;' title="上海瑞建路周阳路公交车站 " target='_blank'>瑞建路周阳路</a> <a href='javascript:;' title="上海浦东大道金桥路公交车站 " target='_blank'>浦东大道金桥路</a> <a href='javascript:;' title="上海殷行路淞沪路公交车站 " target='_blank'>殷行路淞沪路</a> <a href='javascript:;' title="上海殷北路孙农路公交车站 " target='_blank'>殷北路孙农路</a> <a href='javascript:;' title="上海听潮一村公交车站 " target='_blank'>听潮一村</a> <a href='javascript:;' title="上海长清路凌兆路公交车站 " target='_blank'>长清路凌兆路</a> <a href='javascript:;' title="上海共康东路阳曲路公交车站 " target='_blank'>共康东路阳曲路</a> <a href='javascript:;' title="上海西营南路杨新路公交车站 " target='_blank'>西营南路杨新路</a> <a href='javascript:;' title="上海玉田路中山北一路公交车站 " target='_blank'>玉田路中山北一路</a> <a href='javascript:;' title="上海永泰路灵岩南路公交车站 " target='_blank'>永泰路灵岩南路</a> <a href='javascript:;' title="上海雪野路上南路公交车站 " target='_blank'>雪野路上南路</a> <a href='javascript:;' title="上海香楠路丹桂路公交车站 " target='_blank'>香楠路丹桂路</a> <a href='javascript:;' title="上海世博大道塘子泾路公交车站 " target='_blank'>世博大道塘子泾路</a> <a href='javascript:;' title="上海临沂北路浦建路公交车站 " target='_blank'>临沂北路浦建路</a> <a href='javascript:;' title="上海浦城路浦电路公交车站 " target='_blank'>浦城路浦电路</a> <a href='javascript:;' title="上海张江地铁站公交车站 " target='_blank'>张江地铁站</a> <a href='javascript:;' title="上海钦州路冠生园路公交车站 " target='_blank'>钦州路冠生园路</a> <a href='javascript:;' title="上海拱极东路曲幽路公交车站 " target='_blank'>拱极东路曲幽路</a> <a href='javascript:;' title="上海真如西村公交车站 " target='_blank'>真如西村</a> 
+							<a href="javascript:;" title="" target='_blank' class="more">更多>></a>
+						</li>
+					</ul>
+				</div>
+				<div class="busname">
+					<div class="titles2">
+						<h2><a target="_blank" title="">上海公交换乘</a><span class="after"></span></h2>
+					</div>
+					<div class="hc">
+						<p><a href='javascript:;' title="美兰湖客运站到沪闵路春申路(招呼站) " target='_blank'>美兰湖客运站到沪闵路春申路(招呼站)</a></p><p><a href='javascript:;' title="菊园车站到克拉电子 " target='_blank'>菊园车站到克拉电子</a></p><p><a href='javascript:;' title="塘后路双城路到新南街新中街 " target='_blank'>塘后路双城路到新南街新中街</a></p><p><a href='javascript:;' title="大渡河路北石路到益江路(玉兰香苑二期c块) " target='_blank'>大渡河路北石路到益江路(玉兰香苑二期c块)</a></p><p><a href='javascript:;' title="李冰路法拉第路到塘外卫生院 " target='_blank'>李冰路法拉第路到塘外卫生院</a></p><p><a href='javascript:;' title="祁连山南路云岭西路到嘉安公路胜辛路 " target='_blank'>祁连山南路云岭西路到嘉安公路胜辛路</a></p><p><a href='javascript:;' title="武定路延平路到罗山路锦绣路 " target='_blank'>武定路延平路到罗山路锦绣路</a></p><p><a href='javascript:;' title="亭升路(招呼站)到年家浜路周康路(万达广场) " target='_blank'>亭升路(招呼站)到年家浜路周康路(万达广场)</a></p><p><a href='javascript:;' title="茸兴路到凌桥新村 " target='_blank'>茸兴路到凌桥新村</a></p><p><a href='javascript:;' title="徐浦大桥到大华三路站 " target='_blank'>徐浦大桥到大华三路站</a></p>
+					</div>
+				</div>
+			</div>
+
+			<div class="chinaBus">
+				<h2> 全国城市公交列表</h2>
+				<p>
+					<a target="_blank" href="../beijing/index.html">北京公交</a>
+			       	<a target="_blank" href="">上海公交</a>
+			       	<a target="_blank" href="../chongqing/index.html">重庆公交</a>
+			       	<a target="_blank" href="../tianjin/index.html">天津公交</a>
+			       	<a target="_blank" href="../guangzhou/index.html">广州公交</a>
+			       	<a target="_blank" href="../shenzhen/index.html">深圳公交</a>
+			       	<a target="_blank" href="../taiyuan/index.html">太原公交</a>
+			       	<a target="_blank" href="../shenyang/index.html">沈阳公交</a>
+			       	<a target="_blank" href="../changchun/index.html">长春公交</a>
+			       	<a target="_blank" href="../jinan/index.html">济南公交</a>
+			       	<a target="_blank" href="../nanjing/index.html">南京公交</a>
+			       	<a target="_blank" href="../hangzhou/index.html">杭州公交</a>
+			       	<a target="_blank" href="../hefei/index.html">合肥公交</a>
+			       	<a target="_blank" href="../fuzhou1/index.html">福州公交</a>
+			       	<a target="_blank" href="../nanchang/index.html">南昌公交</a>
+			       	<a target="_blank" href="../zhengzhou/index.html">郑州公交</a>
+			       	<a target="_blank" href="../wuhan/index.html">武汉公交</a>
+			       	<a target="_blank" href="../changsha/index.html">长沙公交</a>
+			       	<a target="_blank" href="../haikou/index.html">海口公交</a>
+			       	<a target="_blank" href="../chengdu/index.html">成都公交</a>
+			       	<a target="_blank" href="../guiyang/index.html">贵阳公交</a>
+			       	<a target="_blank" href="../kunming/index.html">昆明公交</a>
+			       	<a target="_blank" href="../xian/index.html">西安公交</a>
+			       	<a target="_blank" href="../lanzhou/index.html">兰州公交</a>
+			       	<a target="_blank" href="../xining/index.html">西宁公交</a>
+			       	<a target="_blank" href="../haerbin/index1.html">哈尔滨公交</a>
+			       	<a target="_blank" href="../shijiazhuang/index.html">石家庄公交</a>
+			       	<a target="_blank" href="../wulumuqi/index.html">乌鲁木齐公交</a>
+			       	<a target="_blank" href="../huhehaote/index.html">呼和浩特公交</a>
+			       	<a target="_blank" href="../city/change/index.html">更多>></a>
+				</p>
+			</div>
+
+			<div class="busLinks">
+				<h2> 友情链接 </h2>
+				<p>
+					<a href='javascript:;' target='_blank'>上海短租房</a><a href='javascript:;' target='_blank'>上海二手车交易市场</a><a href='javascript:;' target='_blank'>上海天气预报30天</a><a href='javascript:;' target='_blank'>上海平行进口车</a><a href='javascript:;' target='_blank'>上海装修</a><a href='javascript:;' target='_blank'>上海汽车票网上订票</a><a href='javascript:;' target='_blank'>上海电话查询</a><a href='javascript:;' target='_blank'>上海地图查询</a><a href='javascript:;' target='_blank'>上海公交</a><a href='javascript:;' target='_blank'>上海车辆违章查询</a><a href='javascript:;' target='_blank'>上海全部地标</a><a href='index2.html' target='_blank'>上海地图</a><a href='javascript:;' target='_blank'>上海邮编查询</a><a href='index1.html' target='_blank'>上海地铁</a><a href='javascript:;' target='_blank'>上海地图</a>
+				</p>
+			</div>
+		</div>
+	</div>
+	<!-- 1000 end -->
+	<div class="footerCity">
+		<p>
+			<a href="../index.html" target="_blank">关于我们</a>
+			|
+			<a href="../index.html" target="_blank">企业推广</a>
+			|
+			<a href="javascript:;" target="_blank" style="color:red">免费公交代码</a>
+			|
+			<a href="../help/sitelist.html" target="_blank">分站列表</a>
+			|
+			<a href="../link/index.html" target="_blank">友情链接</a>
+			|
+			<a href="../index4.html" target="_blank">行政地图</a>
+		</p>
+		<p>
+			2019mapbar.
+			<a href="javascript:;" target="_blank">[京ICP证070616号]</a>
+			<a href="javascript:;" target="_blank">[京ICP备08100418号]</a>
+		</p>
+	</div>
+	<script type="text/javascript" src="../share/jquery/jquery-1.3.2.pack.js"></script>
+	<script type="text/javascript" src="../bus/js/wt_index.js"></script>
+	<script>
+		window.onload = function() {
+			var set1 = document.getElementById('setting1');
+			var set2 = document.getElementById('setting2');
+			var set3 = document.getElementById('setting3');
+			var st1 = document.getElementById('st1');
+			var st2 = document.getElementById('st2');
+			var st3 = document.getElementById('st3');
+			var switchBtn = document.getElementById('switchBtn');
+			var fromInput = document.getElementById('fromInput');
+			var toInput = document.getElementById('toInput');
+			function setClick(aNode, divNode) {
+				if (aNode.className == 'blueBottom') return;
+				else {
+					set1.className = '';
+					set2.className = '';
+					set3.className = '';
+					aNode.className = 'blueBottom';
+					st1.style.display = "none";
+					st2.style.display = "none";
+					st3.style.display = "none";
+					divNode.style.display = "block";
+				}
+			}
+			set2.onclick = function() {
+				setClick(set2, st2);
+			}
+			set3.onclick = function() {
+				setClick(set3, st3);
+			}
+			set1.onclick = function() {
+				setClick(set1, st1);
+			}
+			switchBtn.onclick = function() {
+				var fromText = fromInput.value;
+				var toText = toInput.value;
+				if(fromText!="请输入起点"&&toText!="请输入终点"){
+					fromInput.value = toText;
+					toInput.value = fromText;
+				}
+			}
+		}
+	</script>
+	<script type="text/javascript" src="../bus/indexv2/js/mwp.js"></script>
+	<script type="text/javascript">
+		var kcitylist = null;
+		$(function(){
+			var shortName="上海";
+			if(shortName.length>2){
+				$(".titles").attr("class","titles_long")
+				$(".titles2").attr("class","titles2_long")
+			}
+			$("#h_city").val("上海市");
+			var length=$("#h_city").val().length;
+			if(length>7){
+				length=7;
+			}
+			$("#h_city").css("width",length*14);
+			$(".subWayBorder input[type='text']").each(function(){
+				$(this).attr("defaultVal",$(this).val());
+			});
+			$(".subWayBorder input[type='text']").focus(function(){
+				if($(this).val()==$(this).attr("defaultVal")){
+					$(this).val("");
+				}
+			});
+			$(".subWayBorder input[type='text']").blur(function(){
+				if($(this).val()==""){
+					$(this).val($(this).attr("defaultVal"));
+				}
+			});
+		});
+	</script>
+	<script type="text/javascript" src="../bus/js/placeholder.js"></script>
+	<script type="text/javascript" src="../bus/indexv2/js/index.js"></script>
+	<script type="text/javascript">
+	   var _hmt = _hmt || [];
+	  (function() {
+		 var hm = document.createElement("script");
+		 hm.src = "//hm.baidu.com/hm.js?4f7e758e957dfb1e328a4cb7a250d6e7";
+		 var s = document.getElementsByTagName("script")[0]; 
+		 s.parentNode.insertBefore(hm, s);
+	  })();
+	</script>
+</div></body>
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https') {
+        bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';        
+    }
+    else {
+        bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+    }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+</html>

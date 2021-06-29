@@ -1,0 +1,22 @@
+/*p2p修改专用*/
+
+.topAd {width: 960px;height: 90px;margin: 124px auto 0;}
+.nav2{font-size: 12px;padding-left: 18px;color: #333;line-height: 1;margin: 11px 0;}
+.nav2 a {color: #216fb3;}
+.poi-wrap {margin: 0 auto 18px;}
+.poi-wrap .poileft {width: 640px;margin-bottom: 15px;}
+.poi-wrap .poileft .poi-box .publicBox dl dd{width: 324px;}
+.leftAdB {width: 640px;	height: 100px;	margin: 18px auto 0;}
+.leftAdD {margin-bottom: 19px;}
+.poi-wrap .poiright .public{width: auto;}
+.poi-wrap .buspublic li{width: 146px;}
+.poi-wrap .other li{width: 82px;}
+.poi-wrap .poileft h2{margin-top: 11px;}
+.mapRoom {margin-bottom: 26px;}
+.mb {margin-bottom: 18px;}
+.adRoom{margin-bottom: 18px;white-space: nowrap;overflow: hidden;}
+.poi-wrap .imgAd{margin: 0 23px 0 0;*margin:0 27px 0 0;width: 300px;height: 250px;border: 1px solid #aeaeae;display: inline-block;*display: inline;*zoom:1;}
+.poi-wrap .poiright{width: 302px;margin-top: 10px;}
+.poi-wrap .poiright .left-ad{border: 1px solid #aeaeae;height: 250px;}
+.footAd{width: 960px;height: 90px;margin: 0 auto;padding-right:10px;}
+#adhide{top: 3px;right: 3px;}

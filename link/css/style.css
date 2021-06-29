@@ -1,0 +1,70 @@
+body						{margin:0;padding:0;background:#fff;font:normal normal normal 12px "Lucida Grande", Verdana, Lucida, Arial, Helvetica, "宋体",sans-serif;}
+div,form,p,img,ul,ol,li,
+dl,h1,h2,h3,h4,h5,h6		{border:0;list-style:none;margin:0;padding:0;text-align:left;}
+li							{list-style-position:outside;}
+a							{color:#00c; }
+a:link,a:visited,a:active	{text-decoration:underline;}
+a:hover						{text-decoration:none;}
+.clearHide					{clear:both;height:0;font-size:0;overflow:hidden;}
+input                      {cursor:pointer;}
+
+h1,h2,h3,h4,h5,h6{font-size:14px;}
+form *{font-size:12px; line-height:1.5em;}
+.inpButton{/*padding-top:0;*+padding-top:2px;*/height:22px;}
+
+.head{height:77px;width:790px;margin:0 auto;}
+.head *{font-size:14px;}
+.head span{float:right; margin-top:45px;}
+.head img{float:left;text-align:center;margin:15px 0px;}
+
+.TLeftBoxl{float:left;width:500px;height:auto;padding:20px 1.5em;}
+.TLeftBoxl label{font-weight:bold;}
+.TLeftBoxl div{padding-top:40px;}
+.TLeftBoxl div label{display:block;}
+.TRightBox {height:auto;padding-top:20px;}
+.TRightBox pre{line-height:1.5em;}
+
+#review{padding:3px;}
+#review img {vertical-align:middle;}
+.content02{width:789px;height:auto;padding:1px; margin:0 auto;text-align:center;border:1px solid #C2DDF2;clear:both;}
+.content02 talbe { height:30;}
+.content02 talbe td{text-align:right}
+h2.h2001,h2.h2002{height:25px;width:auto;line-height:25px;font-weight:bold;font-size:14px;padding:0 1.5em;margin:0; background:#CFE7F9;color:#054999;clear:both;}
+h2.h2002{height:27px;line-height:28px;background:#CFE7F9 url(../images/dian_bg.gif) repeat-x 0 1px;}
+h2.h2001 a,h2.h2002 a{float:right;}
+.mainBox,.mainBox2{margin:17px;}
+
+.mainBox2 a{font-size:14px; margin:0 4px;line-height:2em;}
+.mainBox img{margin:3px; border:1px solid #CFCFCF;}
+.mainBox img:hover{border:1px dotted red;}
+table.mainBox{margin:20px auto 5px; line-height:2.2em;}
+.mainBox th{text-align:right;border-bottom:1px solid #eee;}
+.mainBox td{text-align:left;padding-left:.5em;border-bottom:1px solid #eee;}
+.mainBox td input{width:250px;cursor:pointer;}
+.mainBox td span{color:#FF0000;padding:3px;}
+p.pBut{text-align:center;margin-bottom:20px;}
+p.pBut input{width:98px;margin:auto 5px;}
+p.pButleft{text-align:left;padding-left:70px;margin-bottom:20px;}
+p.pButleft input{width:88px;margin:auto 5px;}
+
+.banner{height:10px;width:100%;margin:0 auto;background-color:#084D9B}
+/*login*/
+p.pLogin{text-align:center;margin:180px 350px 180px 350px;border:1px solid #084D9B;}
+p.pLogin table td span{color:#FF0000;}
+
+/*menu*/
+.menu{font-size:12px;margin:3px;}
+table.mainTable{margin:20px auto 5px; line-height:2.2em;}
+.mainTable td{text-align:left;padding-left:.5em;border-bottom:1px solid #eee;}
+.ttable{border:1px solid #084D9B;margin:5px;padding:3px;}
+
+.mainBox3{padding:1.5em;}
+.mainBox3 h3{height:24px;padding-left:1em;background:#F1F4F6;line-height:24px;color:#555;}
+.mainBox3 table{margin:10px auto;}
+.mainBox3 table td{padding:5px; width:24%;}
+
+/*bottom*/
+.bottom{width:790px;height:51px;clear:both;text-align:center;margin:8px auto auto;}
+.bottom p{padding-top:5px;text-align:center;}
+.bottom p a{color:#3837E1;}
+.bottom .Copyright{color:#8B8BD4; font-weight:normal;}

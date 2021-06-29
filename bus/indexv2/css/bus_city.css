@@ -1,0 +1,252 @@
+/* city */
+
+.cityWrap {
+    border-bottom: 1px solid #cbcbcb;
+    margin: 40px 0 20px 0;
+    padding: 0 0 20px 0;
+    clear: both;
+    *overflow: hidden;
+    overflow: hidden;
+    zoom: 1;
+    _zoom: 1;
+}
+
+.cityWrap:after {
+    display: table;
+    content: "";
+}
+
+.cityNews {
+    width: 236px;
+    float: left;
+    margin: 0 18px 0 0;
+    _margin: 0 18px 0 0;
+}
+
+.cityNews .newsPic {
+    margin: 10px 0 0 0;
+}
+
+.cityNews .newsPic img {
+    width: 168px;
+    height: 120px;
+    overflow: hidden;
+}
+
+.cityNews p {
+    text-align: left;
+    line-height: 20px;
+    width: 236px;
+    height: 20px;
+    overflow: hidden;
+    color: #848484;
+    font-size: 12px;
+}
+
+.cityNews p a {
+    color: #848484;
+    font-size: 12px;
+}
+
+a.more:link,
+a.more:visited,
+a.more:hover {
+    color: #278df2;
+    font-size: 12px;
+}
+
+.busno {
+    width: 236px;
+    float: left;
+    margin: 0 18px 0 0;
+    _margin: 0 18px 0 0;
+}
+
+.busno ul {
+    margin: 10px 0 0 0;
+}
+
+.busno ul li {
+    text-align: left;
+    line-height: 20px;
+    width: 236px;
+    color: #848484;
+    font-size: 12px;
+}
+
+.busno ul li a {
+    color: #848484;
+    font-size: 12px;
+}
+
+.busname {
+    width: 186px;
+    float: left;
+    margin: 0;
+    _margin: 0;
+}
+
+.busname div.hc {
+    margin: 10px 0 0 0;
+}
+
+.busname div.hc p {
+    text-align: left;
+    line-height: 20px;
+    width: 186px;
+    height: 20px;
+    overflow: hidden;
+    color: #848484;
+    font-size: 12px;
+}
+
+.busname div.hc p a {
+    color: #848484;
+    font-size: 12px;
+}
+
+.chinaBus {
+    margin: 20px auto;
+}
+
+.chinaBus h2 {
+    color: #6d6d6d;
+    font-size: 16px;
+    margin: 0 0 5px 0;
+}
+
+.chinaBus p {
+    line-height: 25px;
+    clear: both;
+    *overflow: hidden;
+    overflow: hidden;
+    zoom: 1;
+    _zoom: 1;
+}
+
+.chinaBus p:after {
+    display: table;
+    content: "";
+}
+
+.chinaBus p a {
+    color: #979797;
+    font-size: 12px;
+    float: left;
+    padding: 0 8px 0 0;
+    white-space: nowrap;
+}
+
+.busLinks {
+    margin: 20px auto;
+}
+
+.busLinks h2 {
+    color: #6d6d6d;
+    font-size: 16px;
+    margin: 0 0 5px 0;
+}
+
+.busLinks p {
+    line-height: 25px;
+    clear: both;
+    *overflow: hidden;
+    overflow: hidden;
+    zoom: 1;
+    _zoom: 1;
+}
+
+.busLinks p:after {
+    display: table;
+    content: "";
+}
+
+.busLinks p a {
+    color: #979797;
+    font-size: 12px;
+    float: left;
+    padding: 0 8px 0 0;
+    white-space: nowrap;
+}
+
+.footerCity {
+    background: #ffffff;
+    padding: 20px 0;
+    font-size: 12px;
+    color: #8a8a8a;
+    text-align: center;
+    width: 100%;
+}
+
+.footerCity p {
+    text-align: center;
+    line-height: 22px;
+}
+
+.footerCity p a {
+    color: #8a8a8a;
+    font-size: 12px;
+}
+
+ .titles {
+  height: 35px;
+  line-height: 35px;
+  border-bottom: 1px solid #cbcbcb;
+  width: 236px;
+}
+.titles h2 {
+  font-size: 16px;
+  color: #979797;
+  height: 34px;
+  line-height: 34px;
+  border-bottom: 2px solid #278df2;
+  text-align: left;
+  padding: 0 0 0 3px;
+  width: 102px;
+}
+.titles_long {
+  height: 35px;
+  line-height: 35px;
+  border-bottom: 1px solid #cbcbcb;
+  width: 236px;
+}
+.titles_long h2 {
+  font-size: 16px;
+  color: #979797;
+  height: 34px;
+  line-height: 34px;
+  width: 236px;
+  text-align: left;
+  padding: 0 0 0 3px;
+  overflow: hidden;
+}
+.titles2 {
+  height: 35px;
+  line-height: 35px;
+  border-bottom: 1px solid #cbcbcb;
+  width: 186px;
+}
+.titles2 h2 {
+  font-size: 16px;
+  color: #979797;
+  height: 34px;
+  line-height: 34px;
+  padding: 0 0 0 3px;
+  border-bottom: 2px solid #278df2;
+  width: 102px;
+}
+.titles2_long {
+  height: 35px;
+  line-height: 35px;
+  border-bottom: 1px solid #cbcbcb;
+  width: 183px;
+}
+.titles2_long h2 {
+  font-size: 16px;
+  color: #979797;
+  height: 34px;
+  line-height: 34px;
+  padding: 0 0 0 3px;
+  width: 183px;
+  overflow: hidden;
+}

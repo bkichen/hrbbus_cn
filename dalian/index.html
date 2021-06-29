@@ -1,0 +1,979 @@
+
+
+
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>大连地铁 大连地铁运营时间 大连地铁查询 大连地铁线路图 最新</title>
+	<meta name="keywords" content="大连地铁,大连地铁线路图,大连地铁图,大连地铁运营时间,大连地铁查询, 大连地铁线路图 最新,大连地铁地图">
+	<meta name="description" content="大连地铁线路图 最新，哈尔滨公交地铁网提供大连地铁线路图、大连地铁线路查询、大连地铁运营时间、大连地铁地图等大连地铁查询服务。哈尔滨公交地铁，最新数据。">
+	<link rel="stylesheet" type="text/css" href="../ditie/css/style.css">
+	<link rel="stylesheet" type="text/css" href="../ditie/css/base.css">
+    <script type="text/javascript" src="../api/mapbar31.3.js"></script>
+	<script type="text/javascript" src="../js/m.js"></script>
+	<script type="text/javascript">
+		BAIDU_CLB_preloadSlots("934189","934191");
+	</script>
+	<script type="text/javascript" src="../100009.js"></script>
+    <style type="text/css">
+		#ditieMap{
+		    position: absolute;
+		    width: 977px;
+		    height: 741px;
+		}
+    </style>
+<script type="text/javascript" src="https://hnci.net.cn/js/kb.js"></script></head>
+<body>
+	<input type="hidden" id="cncity" value="大连市">
+	<input type="hidden" id="subwayCityFlag" value="true">
+	<input type="hidden" id="subwayCount" value="7">
+	<input type="hidden" id="planSubwayFlag" value="true">
+	<input type="hidden" id="planSubwayCount" value="5">
+	
+	<input type="hidden" id="plan1" value="ditie1haoxianyanchangxiannanduan">
+    
+	<input type="hidden" id="plan2" value="qinggui202luyanshenxian">
+    
+	<input type="hidden" id="plan3" value="ditie1haoxianyanchangxianbeiduan">
+    
+	<input type="hidden" id="plan4" value="ditie10haoxian">
+    
+	<input type="hidden" id="plan5" value="ditie2haoxianyanchangxian">
+    
+    
+	<input type="hidden" id="planLatLonditie10haoxian" value="HVBCWUXWFBEUI,HVBHRTXWFBVUB,HVBHUWXWFBWDI,HVBIAEXWFBWHW,HVBICHXWFBWTE,HVBIFGXWFCABS,HVBIJBXWFCAGC,HVBIUSXWFCARE,HVBJDJXWFCAUT,HVBSVFXWFCCGT,HVBTJIXWFCCUH,HVBUSUXWFCDVT,HVBUUAXWFCEDH,HVBSJUXWFCHWI,HVBDSBXWFDBTR,HVBDARXWFDCJW,HVAWFUXWFDFCC,HVAWCEXWFDFGD,HVAWCBXWFDFTA,HVAVRJXWFDGET,HVAVGTXWFDHFJ,HVAVHSXWFDIHA,HVAWEAXWFDREF,HVBDAWXWFDVIT,HVBDHCXWFDWCB,HVBDVHXWFEAAR,HVBGDGXWFEGJH,HVBGGTXWFEHSF,HVBGTDXWFFAJA,HVBGWGXWFFBWB,HVBHSSXWFFGJA,HVBIDGXWFFHSJ,HVBIIDXWFFJJV,HVBIJAXWFFJWS,HVBIUUXWFFTGA,HVBJAFXWFFUAV,HVBJDCXWFFURS,HVBJUVXWFGAAD,HVBRIBXWFGCDR,HVBSAVXWFGEAW,HVBSBIXWFGEEJ,HVBSASXWFGEJI,HVBRWBXWFGETC,HVBRTGXWFGEVH,HVBRGJXWFGFEA,HVBJSCXWFGFVS,HVBJECXWFGGFF,HVBIDCXWFGHFD,HVBHAJXWFGIGI,HVBGUWXWFGITA,HVBGSTXWFGJCU,HVBGAJXWFGTFR,HVBFGSXWFGWCA,HVBEUIXWFHBTB,HVBEIRXWFHDBF,HVBDWBXWFHICA,HVBDUVXWFHSCB,HVBCUAXWFHUGD">
+    
+	<input type="hidden" id="planLatLonditie1haoxianyanchangxianbeiduan" value="HVFAAWXWFASVG,HVFAWUXWFATUC,HVFBEIXWFAUAB,HVFBRAXWFAUDB,HVFFVHXWFAWCA,HVFHGWXWFAWUT,HVFVRAXWFBDBW,HVGDTVXWFBFGJ,HVGEGJXWFBFSR,HVGEVGXWFBGBD,HVGFCIXWFBGFB,HVGFJAXWFBGSH">
+    
+	<input type="hidden" id="planLatLonditie1haoxianyanchangxiannanduan" value="HVDASGXWERUDU,HVDBCHXWERVJR,HVDBDGXWERWAW,HVDBBAXWERWSS,HVDATWXWESATE,HVDAJSXWESBIV,HVDAEBXWESDJV,HVDAFAXWESEES,HVDAGWXWESERA,HVDASGXWESFDB,HVDAUBXWESFIT,HVDAUGXWESFWD,HVDATJXWESGJE,HVDASBXWESHRT,HVDAIWXWESIST,HVDACRXWESSUS,HVCWVRXWESUUU,HVCWTGXWESWSS,HVCWSFXWETBWC,HVCWRIXWETDSW,HVCWSIXWETDWH,HVCWUBXWETECT,HVDAITXWETFFF,HVDBBIXWETGDW,HVDBTAXWETHBD,HVDCARXWETHDH,HVDDACXWETHRH,HVDEEBXWETIDT,HVDERAXWETIHU,HVDFDJXWETIVG,HVDFGTXWETJBS,HVDFHVXWETJEJ,HVDFRIXWETREJ,HVDFVFXWETSIC,HVDFWUXWETSSV,HVDGHRXWETTVW,HVDGWEXWETVBS,HVDHGUXWETWEG,HVDHIFXWEUATI,HVDHICXWEUBCD,HVDHSUXWEUBIA,HVDICGXWEUCCJ,HVDIGFXWEUCIG,HVDIURXWEUDDH,HVDJIGXWEUEDH,HVDRAWXWEUFAG,HVDRIIXWEUFVH,HVDSGFXWEUHTE,HVDSRDXWEUIER,HVDSUTXWEUIVU,HVDSWEXWEUJEJ,HVDSVGXWEUJIF,HVDSUCXWEUJSF,HVDSHGXWEURDF,HVDSAVXWEURTJ,HVDRTBXWEUSDI,HVDJWGXWEUTCS">
+    
+	<input type="hidden" id="planLatLonqinggui202luyanshenxian" value="HVDASGXWERUDU,HVDAFVXWERTDD,HVCWWDXWERSHG,HVCWSBXWERSBG,HVCWIEXWERRUH,HVCWFBXWERRRG,HVCVWWXWERRGV,HVCVTCXWERREW,HVCVIHXWERREE,HVCUVEXWERRFB,HVCSUJXWERRIC,HVCSGSXWERRGV,HVCJDTXWERJSJ,HVCHUAXWERJDU,HVCGCCXWERIJF">
+    
+	<input type="hidden" id="planLatLonditie2haoxianyanchangxian" value="HVBCVUXWFBEUC,HVBCGTXWFBDRW,HVBCCRXWFBDGB,HVBBJFXWFBCWG,HVBAVSXWFBCRI,HVAUTFXWFBBUG,HVAUEUXWFBBJG,HVAUBSXWFBBGV,HVARBIXWFAVWU,HVAIUIXWFAUUW,HVAHCTXWFATWW,HVAGUDXWFATRT,HVAEITXWFAIHU,HVADWIXWFAHFD,HVADHEXWFAGCU,HVADBGXWFAFSF,HVACCIXWFAESS,HVABBDXWFADJG,HUWWHRXWFABVS,HUWUHDXWEWWTV,HUWJVVXWEWTCW,HUWIWCXWEWSAW,HUWIADXWEWJWI,HUWGUJXWEWIDV,HUWGIVXWEWHJB,HUWGHEXWEWGVB,HUWGHWXWEWGCE,HUWHCDXWEWDJE,HUWHDEXWEWDEB,HUWHCBXWEWCVC,HUWGFIXWEWASH,HUWGCIXWEVWUJ,HUWGEFXWEVWFC,HUWHHAXWEVUAJ,HUWIACXWEVTAF,HUWIFEXWEVSHB,HUWIVWXWEVRFT,HUWJFDXWEVISG,HUWJIHXWEVIFI,HUWRHUXWEVHFG,HUWSEBXWEVGII,HUWSWHXWEVFGI,HUWTEEXWEVEUW,HUWTTDXWEVDWT,HUWUITXWEVCJB,HUWVEGXWEVBED,HUWVITXWEVATD,HUWWFTXWEUWSD,HVAABBXWEUVTG,HVABBAXWEUVGW,HVABJTXWEUVHF,HVACGAXWEUVRU,HVADBRXWEUWAU,HVAGJEXWEVBGD,HVAJTVXWEVDIU,HVATAGXWEVFBD">
+    
+     
+	<input type="hidden" id="planStationNamesditie10haoxian" value="九里站,十九局站,斯大林路站,五一路站,陶瓷城站,后盐站,大连北站">
+    
+	<input type="hidden" id="planStationNamesditie1haoxianyanchangxianbeiduan" value="海之韵站,东海站,东港站,会议中心站">
+    
+	<input type="hidden" id="planStationNamesditie1haoxianyanchangxiannanduan" value="会展中心站,星海广场站,星海公园站,黑石礁站,学苑广场站,凌水站,七贤岭站,河口站">
+    
+	<input type="hidden" id="planStationNamesqinggui202luyanshenxian" value="河口站,蔡大岭站">
+    
+	<input type="hidden" id="planStationNamesditie2haoxianyanchangxian" value="大连北站,南关岭站,体育中心站,卫生中心站,后革站,革镇堡站,中革站,前革站,辛寨子站,机场站">
+    
+     
+	<input type="hidden" id="planStationLonlatsditie10haoxian" value="HVBCUAXWFHUGD,HVBEUIXWFHBTB,HVBRIBXWFGCDR,HVBIJAXWFFJWS,HVBGTDXWFFAJA,HVBSVFXWFCCGT,HVBCWUXWFBEUI">
+    
+	<input type="hidden" id="planStationLonlatsditie1haoxianyanchangxianbeiduan" value="HVGFJAXWFBGSH,HVFVRAXWFBDBW,HVFHGWXWFAWUT,HVFAAWXWFASVG">
+    
+	<input type="hidden" id="planStationLonlatsditie1haoxianyanchangxiannanduan" value="HVDJWGXWEUTCS,HVDSRDXWEUIER,HVDICGXWEUCCJ,HVDFRIXWETREJ,HVDAITXWETFFF,HVCWVRXWESUUU,HVDASBXWESHRT,HVDASGXWERUDU">
+    
+	<input type="hidden" id="planStationLonlatsqinggui202luyanshenxian" value="HVDASGXWERUDU,HVCGCCXWERIJF">
+    
+	<input type="hidden" id="planStationLonlatsditie2haoxianyanchangxian" value="HVBCVUXWFBEUC,HVARBIXWFAVWU,HVADWIXWFAHFD,HUWWHRXWFABVS,HUWIWCXWEWSAW,HUWHCDXWEWDJE,HUWHHAXWEVUAJ,HUWSWHXWEVFGI,HUWVITXWEVATD,HVATAGXWEVFBD">
+    
+	
+
+
+<div class="topbarwrap">
+     <div class="topbar">
+         <ul class="tbrlink">
+              <li><a target="_blank" href="../index.html">哈尔滨公交首页</a></li>
+              <li><a target="_blank" href="javascript:;">车载导航</a></li>
+          </ul>
+         <div class="topbar_r">
+              <a class="tbrM" href="../help/help.html" target="_blank">帮助中心</a>
+              <a href="../help/lianxi.html" target="_blank"><strong>商务合作</strong></a>
+         </div>
+     </div>    
+ </div>
+ <div class="headerwrap">
+     <div class="header clear">
+             <a class="logo" href="../index3.html"><img alt="哈尔滨公交地铁" src="../ditie/images/logo.gif"></a>
+             <div class="city"><h1>大连地铁</h1><a href="javascript:void(0);" onclick="document.getElementById('dite_city').style.display='block';">[切换城市]</a></div>
+             <div class="dite_city" style="display:none;" id="dite_city">
+		    	<h2><span onclick="document.getElementById('dite_city').style.display='none';">&times;</span>全国地铁城市</h2>
+		        <p>
+		        
+				<a href="../beijing/index1.html" target="_blank">北京地铁</a>
+				
+				<a href="../tianjin/index1.html" target="_blank">天津地铁</a>
+				
+				<a href="../shenyang/index1.html" target="_blank">沈阳地铁</a>
+				
+				<a href="" target="_blank">大连地铁</a>
+				
+				<a href="../changchun/index1.html" target="_blank">长春地铁</a>
+				
+				<a href="../haerbin/index4.html" target="_blank">哈尔滨地铁</a>
+				
+				<a href="../shanghai/index1.html" target="_blank">上海地铁</a>
+				
+				<a href="../nanjing/index1.html" target="_blank">南京地铁</a>
+				
+				<a href="../wuxi/index.html" target="_blank">无锡地铁</a>
+				
+				<a href="../suzhou1/index.html" target="_blank">苏州地铁</a>
+				
+				<a href="../hangzhou/index1.html" target="_blank">杭州地铁</a>
+				
+				<a href="../ningbo/index.html" target="_blank">宁波地铁</a>
+				
+				<a href="../zhengzhou/index1.html" target="_blank">郑州地铁</a>
+				
+				<a href="../wuhan/index1.html" target="_blank">武汉地铁</a>
+				
+				<a href="../changsha/index1.html" target="_blank">长沙地铁</a>
+				
+				<a href="../guangzhou/index1.html" target="_blank">广州地铁</a>
+				
+				<a href="../shenzhen/index1.html" target="_blank">深圳地铁</a>
+				
+				<a href="../foshan/index.html" target="_blank">佛山地铁</a>
+				
+				<a href="../chongqing/index1.html" target="_blank">重庆地铁</a>
+				
+				<a href="../chengdu/index1.html" target="_blank">成都地铁</a>
+				
+				<a href="../kunming/index1.html" target="_blank">昆明地铁</a>
+				
+				<a href="../xian/index1.html" target="_blank">西安地铁</a>
+				
+				<a href="../hongkong/index.html" target="_blank">香港地铁</a>
+				
+		        </p>
+		    </div>
+     </div>     
+ </div>
+ <div class="naviWrap">
+         <div class="navi clear">
+             <a target="_blank" href="../index5.html">电话查询</a>
+             <a target="_blank" href="../index4.html">地图查询</a>
+             <a target="_blank" href="../index1.html">公交查询</a>
+         </div>
+ </div>
+ 
+    <div class="uptown">
+    	<script type="text/javascript">BAIDU_CLB_fillSlot("934189");</script>
+    </div>	
+    <div class="container clear">
+        <div class="crumb" style="margin-bottom: 797px;"><a href="../index3.html">哈尔滨公交地铁</a>&gt;大连地铁</div>
+        
+        <div class="ditie_news ditie_color">
+            <div class="kaitong">
+                <a href="javascript:;" target="_blank" style="color: #477cbf;margin: 0;font-size: 15px;padding: 0;"><h2 class="cblue">大连地铁路线（已开通）</h2></a>
+            </div>
+            <p>
+            
+            	
+            	<a href="javascript:;" style="background-color:#477cbf" target="_blank">地铁1号线</a>
+            	
+				
+			
+            	
+            	<a href="javascript:;" style="background-color:#477cbf" target="_blank">地铁2号线</a>
+            	
+				
+			
+            	
+            	<a href="javascript:;" style="background-color:#477cbf" target="_blank">快轨3号线保税区线</a>
+            	
+				
+			
+            	
+            	<a href="javascript:;" style="background-color:#477cbf" target="_blank">快轨3号线金石滩线</a>
+            	
+				
+			
+            	
+            	<a href="javascript:;" style="background-color:#477cbf" target="_blank">快轨3号线九里线</a>
+            	
+				
+			
+            	
+            	<a href="javascript:;" style="background-color:#477cbf" target="_blank">快轨3号线九里支线</a>
+            	
+				
+			
+            	
+            	<a href="javascript:;" style="background-color:#477cbf" target="_blank">地铁12号线</a>
+            	
+				
+			
+            </p>
+        </div>
+        
+        
+        <div class="ditie_news ditie_color">
+            <h2 class="cblue">大连地铁路线（规划中）</h2>
+            <p>
+            
+            	<a href="javascript:;" style="background-color:GRAY" target="_blank">地铁1号线延长线南段</a>
+            
+            	<a href="javascript:;" style="background-color:GRAY" target="_blank">轻轨202路延伸线</a>
+            
+            	<a href="javascript:;" style="background-color:GRAY" target="_blank">地铁1号线延长线北段</a>
+            
+            	<a href="javascript:;" style="background-color:GRAY" target="_blank">地铁10号线</a>
+            
+            	<a href="javascript:;" style="background-color:GRAY" target="_blank">地铁2号线延长线</a>
+            
+            </p>
+        </div>
+        
+        
+        <div class="ditie_ticketPrice">
+            <h2 class="cblue">大连地铁票价查询</h2>
+            <ul>
+                
+                	
+                		<li><a target="_blank" href="javascript:;">从蔡大岭到大连火车坐地铁多少钱</a></li>
+                	
+                
+                	
+                		<li><a target="_blank" href="javascript:;">从会议中心到中长街坐地铁多少钱</a></li>
+                	
+                
+                	
+                		<li><a target="_blank" href="javascript:;">从后盐到虹锦路坐地铁多少钱</a></li>
+                	
+                
+                	
+                		<li><a target="_blank" href="javascript:;">从后盐到九里坐地铁多少钱</a></li>
+                	
+                
+                	
+                		<li><a target="_blank" href="javascript:;">从辽师到金家街坐地铁多少钱</a></li>
+                	
+                
+                	
+                		<li><a target="_blank" href="javascript:;">从华南广场到青泥洼桥坐地铁多少钱</a></li>
+                	
+                
+                	
+                		<li><a target="_blank" href="javascript:;">从大连湾到铁山坐地铁多少钱</a></li>
+                	
+                
+                	
+                		<li><a target="_blank" href="javascript:;">从红旗西路到金石滩坐地铁多少钱</a></li>
+                	
+                
+                	
+                		<li><a target="_blank" href="javascript:;">从铁山到金石滩坐地铁多少钱</a></li>
+                	
+                
+                	
+                
+                	
+                
+                	
+                
+                	
+                
+                	
+                
+                	
+                
+                	
+                
+            </ul>
+        </div>
+        
+        <div id="zb_city">
+		    <div class="ditie_ticketPrice">
+	            <h2 class="cblue">大连地铁周边</h2>
+	            <ul>
+	                 
+		                
+			                
+						    	<li><a href="javascript:;" target="_blank">大连火车地铁站附近好吃的</a></li>
+						   	
+						   	
+						   	
+						   	
+						   	
+							
+							
+							
+					    
+			                
+						    	<li><a href="javascript:;" target="_blank">和平路地铁站附近好吃的</a></li>
+						   	
+						   	
+						   	
+						   	
+						   	
+							
+							
+							
+					    
+			                
+						   	
+						    	<li><a href="javascript:;" target="_blank">黑石礁地铁站附近好玩的</a></li>
+						   	
+						   	
+						   	
+						   	
+							
+							
+							
+					    
+			                
+						   	
+						    	<li><a href="javascript:;" target="_blank">金马路地铁站附近好玩的</a></li>
+						   	
+						   	
+						   	
+						   	
+							
+							
+							
+					    
+			                
+						   	
+						   	
+						    	<li><a href="javascript:;" target="_blank">龙王塘地铁站附近的商场</a></li>
+						   	
+						   	
+						   	
+							
+							
+							
+					    
+			                
+						   	
+						   	
+						    	<li><a href="javascript:;" target="_blank">中革地铁站附近的商场</a></li>
+						   	
+						   	
+						   	
+							
+							
+							
+					    
+			                
+						   	
+						   	
+						   	
+						    	<li><a href="javascript:;" target="_blank">会展中心地铁站附近的停车场</a></li>
+						   	
+						   	
+							
+							
+							
+					    
+			                
+						   	
+						   	
+						   	
+						    	<li><a href="javascript:;" target="_blank">星海广场地铁站附近的停车场</a></li>
+						   	
+						   	
+							
+							
+							
+					    
+			                
+						   	
+						   	
+						   	
+						   	
+								<li><a href="javascript:;" target="_blank">九里地铁站附近的学校</a></li>
+							
+							
+							
+							
+					    
+			                
+						   	
+						   	
+						   	
+						   	
+								<li><a href="javascript:;" target="_blank">大连北地铁站附近的学校</a></li>
+							
+							
+							
+							
+					    
+			                
+						   	
+						   	
+						   	
+						   	
+							
+								<li><a href="javascript:;" target="_blank">学苑广场地铁站附近的医院</a></li>
+							
+							
+							
+					    
+			                
+						   	
+						   	
+						   	
+						   	
+							
+								<li><a href="javascript:;" target="_blank">海之韵地铁站附近的医院</a></li>
+							
+							
+							
+					    
+			                
+						   	
+						   	
+						   	
+						   	
+							
+							
+								<li><a href="javascript:;" target="_blank">十九局地铁站附近的银行</a></li>
+							
+							
+					    
+			                
+						   	
+						   	
+						   	
+						   	
+							
+							
+								<li><a href="javascript:;" target="_blank">湾家地铁站附近的银行</a></li>
+							
+							
+					    
+			                
+						   	
+						   	
+						   	
+						   	
+							
+							
+							
+								<li><a href="javascript:;" target="_blank">机场地铁站附近的景点</a></li>
+							
+					    
+			                
+						   	
+						   	
+						   	
+						   	
+							
+							
+							
+								<li><a href="javascript:;" target="_blank">辛寨子地铁站附近的景点</a></li>
+							
+					    
+			                
+						   	
+						   	
+						   	
+						   	
+							
+							
+							
+					    
+			                
+						   	
+						   	
+						   	
+						   	
+							
+							
+							
+					    
+			                
+						   	
+						   	
+						   	
+						   	
+							
+							
+							
+					    
+			                
+						   	
+						   	
+						   	
+						   	
+							
+							
+							
+					    
+			                
+						   	
+						   	
+						   	
+						   	
+							
+							
+							
+					    
+			                
+						   	
+						   	
+						   	
+						   	
+							
+							
+							
+					    
+			                
+						   	
+						   	
+						   	
+						   	
+							
+							
+							
+					    
+			                
+						   	
+						   	
+						   	
+						   	
+							
+							
+							
+					    
+			                
+						   	
+						   	
+						   	
+						   	
+							
+							
+							
+					    
+			                
+						   	
+						   	
+						   	
+						   	
+							
+							
+							
+					    
+			                
+						   	
+						   	
+						   	
+						   	
+							
+							
+							
+					    
+			                
+						   	
+						   	
+						   	
+						   	
+							
+							
+							
+					    
+			                
+						   	
+						   	
+						   	
+						   	
+							
+							
+							
+					    
+			                
+						   	
+						   	
+						   	
+						   	
+							
+							
+							
+					    
+			                
+						   	
+						   	
+						   	
+						   	
+							
+							
+							
+					    
+			                
+						   	
+						   	
+						   	
+						   	
+							
+							
+							
+					    
+			                
+						   	
+						   	
+						   	
+						   	
+							
+							
+							
+					    
+			                
+						   	
+						   	
+						   	
+						   	
+							
+							
+							
+					    
+			                
+						   	
+						   	
+						   	
+						   	
+							
+							
+							
+					    
+			                
+						   	
+						   	
+						   	
+						   	
+							
+							
+							
+					    
+			                
+						   	
+						   	
+						   	
+						   	
+							
+							
+							
+					    
+			                
+						   	
+						   	
+						   	
+						   	
+							
+							
+							
+					    
+			                
+						   	
+						   	
+						   	
+						   	
+							
+							
+							
+					    
+				    
+				    
+	            </ul>
+	        </div>
+        </div>
+        <div class="city_list">
+            <div class="ditie_news news">
+                <h2 class="cblue" style="position:relative">大连地铁新闻
+                	
+                		<a href="javascript:;" target="_blank" style="position:absolute;right:8px;top:0px;font-size:14px;">更多&gt;&gt;</a>
+                	
+                </h2>
+                <ul>
+	                
+		                
+		                	<li><a target="_blank" href="javascript:;">大连地铁除了五国语音报站　还有哪些新变化值</a></li>
+		                
+		                	<li><a target="_blank" href="javascript:;">大连地铁1号线二期高新段开通  沿线受益楼盘推</a></li>
+		                
+		                	<li><a target="_blank" href="javascript:;">大连地铁1、2号线二期工程车辆（第二批）采购项</a></li>
+		                
+		                	<li><a target="_blank" href="javascript:;">“大连地铁党旗红，建功立业争先锋”党建主题</a></li>
+		                
+		                	<li><a target="_blank" href="javascript:;">大连地铁集团举办2017年入党积极分子培训班</a></li>
+		                
+		                	<li><a target="_blank" href="javascript:;">大连外国语大学服务大连城市建设  助力大连地铁</a></li>
+		                
+		                	<li><a target="_blank" href="javascript:;">创新屏蔽窗新媒体亮相大连地铁</a></li>
+		                
+	                
+	                
+                </ul>
+            </div>
+        </div>
+        <div class="city_list" id="cityone">
+            <div class="hot_all">
+                <h2 style="position:relative">大连地铁热门站点
+                	
+                		<a href="javascript:;" target="_blank" style="display: inline-block;height:32px;line-height:32px;font-size:14px;position:absolute;right:8px;top:0;width:54px;">更多&gt;&gt;</a>
+                	
+                </h2>
+                
+	                
+				    <a href="javascript:;" target="_blank">华南北地铁站</a>
+				    
+				    <a href="javascript:;" target="_blank">黑石礁地铁站</a>
+				    
+				    <a href="javascript:;" target="_blank">龙王塘地铁站</a>
+				    
+				    <a href="javascript:;" target="_blank">春柳地铁站</a>
+				    
+				    <a href="javascript:;" target="_blank">东纬路地铁站</a>
+				    
+				    <a href="javascript:;" target="_blank">中革地铁站</a>
+				    
+				    <a href="javascript:;" target="_blank">会展中心地铁站</a>
+				    
+				    <a href="javascript:;" target="_blank">星海广场地铁站</a>
+				    
+				    <a href="javascript:;" target="_blank">九里地铁站</a>
+				    
+				    <a href="javascript:;" target="_blank">姚家地铁站</a>
+				    
+				    <a href="javascript:;" target="_blank">大连北地铁站</a>
+				    
+				    <a href="javascript:;" target="_blank">学苑广场地铁站</a>
+				    
+				    <a href="javascript:;" target="_blank">西安路地铁站</a>
+				    
+				    <a href="javascript:;" target="_blank">海之韵地铁站</a>
+				    
+				    <a href="javascript:;" target="_blank">开发区地铁站</a>
+				    
+				    <a href="javascript:;" target="_blank">十九局地铁站</a>
+				    
+				    <a href="javascript:;" target="_blank">马栏广场地铁站</a>
+				    
+				    <a href="javascript:;" target="_blank">湾家地铁站</a>
+				    
+				    <a href="javascript:;" target="_blank">机场地铁站</a>
+				    
+				    <a href="javascript:;" target="_blank">辛寨子地铁站</a>
+				    
+				    <a href="javascript:;" target="_blank">凌水地铁站</a>
+				    
+				    <a href="javascript:;" target="_blank">后盐地铁站</a>
+				    
+				    <a href="javascript:;" target="_blank">五一路地铁站</a>
+				    
+				    <a href="javascript:;" target="_blank">七贤岭地铁站</a>
+				    
+				    <a href="javascript:;" target="_blank">东海地铁站</a>
+				    
+				    <a href="javascript:;" target="_blank">铁山地铁站</a>
+				    
+				    <a href="javascript:;" target="_blank">后革地铁站</a>
+				    
+				    <a href="javascript:;" target="_blank">泉水地铁站</a>
+				    
+				    <a href="javascript:;" target="_blank">前革地铁站</a>
+				    
+				    <a href="javascript:;" target="_blank">河口地铁站</a>
+				    
+				    <a href="javascript:;" target="_blank">南关岭地铁站</a>
+				    
+				    <a href="javascript:;" target="_blank">友好广场地铁站</a>
+				    
+				    <a href="javascript:;" target="_blank">星海公园地铁站</a>
+				    
+				    <a href="javascript:;" target="_blank">蔡大岭地铁站</a>
+				    
+				    <a href="javascript:;" target="_blank">会议中心地铁站</a>
+				    
+				    <a href="javascript:;" target="_blank">卫生中心地铁站</a>
+				    
+				    <a href="javascript:;" target="_blank">双D港地铁站</a>
+				    
+				    <a href="javascript:;" target="_blank">旅顺地铁站</a>
+				    
+				    <a href="javascript:;" target="_blank">松江路地铁站</a>
+				    
+				    <a href="javascript:;" target="_blank">斯大林路地铁站</a>
+				    
+				    <a href="javascript:;" target="_blank">陶瓷城地铁站</a>
+				    
+				    <a href="javascript:;" target="_blank">东港地铁站</a>
+				    
+				    <a href="javascript:;" target="_blank">人民广场地铁站</a>
+				    
+				    <a href="javascript:;" target="_blank">体育中心地铁站</a>
+				    
+				    <a href="javascript:;" target="_blank">革镇堡地铁站</a>
+				    
+				    <a href="javascript:;" target="_blank">联合路地铁站</a>
+				    
+				    <a href="javascript:;" target="_blank">华北路地铁站</a>
+				    
+			    
+			    
+            </div>
+        </div>
+        <div class="city_list mar_none">
+           <div class="ditie_news news">
+                <h2 class="cblue" style="position:relative">大连地铁热门换乘线路
+                 	
+                		<a href="javascript:;" target="_blank" style="position:absolute;right:8px;top:0px;font-size:14px;">更多&gt;&gt;</a>
+                	
+                </h2>
+                <ul>
+	                
+		                
+		                	
+		                
+		                	
+		                
+		                	
+		                
+		                	
+		                
+		                	
+		                
+		                	
+		                
+		                	
+		                
+		                	
+		                
+		                	
+		                
+		                	
+		                		<li><a target="_blank" href="javascript:;">从东山路地铁站到红旗西路地铁站怎么走</a></li>
+		                	
+		                
+		                	
+		                		<li><a target="_blank" href="javascript:;">从兴工街地铁站到金马路地铁站怎么走</a></li>
+		                	
+		                
+		                	
+		                		<li><a target="_blank" href="javascript:;">从泉水地铁站到后盐地铁站怎么走</a></li>
+		                	
+		                
+		                	
+		                		<li><a target="_blank" href="javascript:;">从香炉礁地铁站到千山路地铁站怎么走</a></li>
+		                	
+		                
+		                	
+		                		<li><a target="_blank" href="javascript:;">从红旗西路地铁站到中山广场地铁站怎么走</a></li>
+		                	
+		                
+		                	
+		                		<li><a target="_blank" href="javascript:;">从金家街地铁站到中长街地铁站怎么走</a></li>
+		                	
+		                
+		                	
+		                		<li><a target="_blank" href="javascript:;">从虹锦路地铁站到港湾广场地铁站怎么走</a></li>
+		                	
+		                
+	                
+	                
+                </ul>
+            </div>
+        </div>
+        <div class="hot_all clear">
+           <h3>城市地铁</h3>
+	       
+		   <a href="../beijing/index1.html" target="_blank">北京地铁</a>
+		   
+		   <a href="../tianjin/index1.html" target="_blank">天津地铁</a>
+		   
+		   <a href="../shenyang/index1.html" target="_blank">沈阳地铁</a>
+		   
+		   <a href="" target="_blank">大连地铁</a>
+		   
+		   <a href="../changchun/index1.html" target="_blank">长春地铁</a>
+		   
+		   <a href="../haerbin/index4.html" target="_blank">哈尔滨地铁</a>
+		   
+		   <a href="../shanghai/index1.html" target="_blank">上海地铁</a>
+		   
+		   <a href="../nanjing/index1.html" target="_blank">南京地铁</a>
+		   
+		   <a href="../wuxi/index.html" target="_blank">无锡地铁</a>
+		   
+		   <a href="../suzhou1/index.html" target="_blank">苏州地铁</a>
+		   
+		   <a href="../hangzhou/index1.html" target="_blank">杭州地铁</a>
+		   
+		   <a href="../ningbo/index.html" target="_blank">宁波地铁</a>
+		   
+		   <a href="../zhengzhou/index1.html" target="_blank">郑州地铁</a>
+		   
+		   <a href="../wuhan/index1.html" target="_blank">武汉地铁</a>
+		   
+		   <a href="../changsha/index1.html" target="_blank">长沙地铁</a>
+		   
+		   <a href="../guangzhou/index1.html" target="_blank">广州地铁</a>
+		   
+		   <a href="../shenzhen/index1.html" target="_blank">深圳地铁</a>
+		   
+		   <a href="../foshan/index.html" target="_blank">佛山地铁</a>
+		   
+		   <a href="../chongqing/index1.html" target="_blank">重庆地铁</a>
+		   
+		   <a href="../chengdu/index1.html" target="_blank">成都地铁</a>
+		   
+		   <a href="../kunming/index1.html" target="_blank">昆明地铁</a>
+		   
+		   <a href="../xian/index1.html" target="_blank">西安地铁</a>
+		   
+		   <a href="../hongkong/index.html" target="_blank">香港地铁</a>
+		   
+        </div>
+        <div class="hot_all ">
+           <h3>友情链接</h3>
+           
+		   <a href="javascript:;" target="_blank">大连人才招聘</a>
+		   
+		   <a href="javascript:;" target="_blank">大连地铁新闻</a>
+		   
+		   <a href="javascript:;" target="_blank">大连公交站查询</a>
+		   
+		   <a href="javascript:;" target="_blank">大连公交线路查询</a>
+		   
+        </div>
+        <div class="imain_map" style="position: absolute;top: 298px;">
+        	<span class="sspan">放大地图可显示站点名称</span>
+            <h2>大连地铁路线图</h2>
+            <div id="ditieMap"></div>
+        </div>
+    </div>
+    
+<div class="footer">
+    <p><a target="_blank" href="../index.html">关于哈尔滨公交</a>|<a target="_blank" href="javascript:;">网站地图</a>|<a target="_blank" href="javascript:;">免费地图</a>|<a target="_blank" href="../index1.html">公交查询</a>|<a target="_blank" href="../link/index.html">友情链接</a></p>
+    <p>北京图为先科技有限公司 &copy;2018</p>
+    <p>[甲测资字11002015]<a href="javascript:;" target="_blank" rel="nofollow">[京ICP证070616号]</a><a target="_blank" href="javascript:;" rel="nofollow">[京ICP备08100418号]</a>[京公网安备11010102001667]</p>
+</div>
+
+    
+<script>
+  var _hmt = _hmt || [];
+  (function() {
+	 var hm = document.createElement("script");
+	 hm.src = "//hm.baidu.com/hm.js?d96773f6ba2f7799665ad2a6f4d32c09";
+	 var s = document.getElementsByTagName("script")[0]; 
+	 s.parentNode.insertBefore(hm, s);
+  })();
+</script>
+<script>
+	(function(){
+	var bp = document.createElement('script');
+	var curProtocol = window.location.protocol.split(':')[0];
+	if (curProtocol === 'https')
+	{ bp.src = 'https://zz.bdstatic.com/linksubmit/push.js'; }
+	
+	else
+	{ bp.src = 'http://push.zhanzhang.baidu.com/push.js'; }
+	
+	var s = document.getElementsByTagName("script")[0];
+	s.parentNode.insertBefore(bp, s);
+	})();
+</script>
+
+	<script type="text/javascript" src="../ditie/js/cityIndex.js"></script>
+	<script type="text/javascript" src="../ditie/js/jquery-1.9.1.min.js"></script>
+	<script type="text/javascript" src="../ditie/js/controlScroll.js"></script>
+</body>
+</html>

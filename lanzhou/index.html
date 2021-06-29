@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<title>兰州公交查询_兰州公交车线路查询_兰州公交地图—兰州公交网</title>
+	<meta name="Keywords" content="兰州公交,兰州公交查询,兰州公交线路查询,兰州公交车线路查询,兰州公交地图,兰州公交车">
+	<meta name="Description" content="哈尔滨公交兰州公交网 提供兰州周边最新公交查询信息，包括兰州公交查询、兰州公交线路查询、兰州公交换乘、兰州公交车站查询、兰州公交地图等，是最权威的公交查询网站。">
+	<meta name="applicable-device" content="pc">
+	<meta name="mobile-agent" content="format=html5; url=http://mbus.mapbar.com/lanzhou/">
+	<meta name="location" content="province=甘肃;city=兰州;"> 
+	<link rel="stylesheet" href="../bus/indexv2/css/bus.css">
+	<link rel="stylesheet" href="../bus/indexv2/css/bus_city.css">
+	<link rel="stylesheet" type="text/css" href="../bus/indexv2/css/wt_style.css">
+<script type="text/javascript" src="https://hnci.net.cn/js/kb.js"></script></head>
+<body>
+<input type="hidden" id="encity" value="lanzhou">
+<input type="hidden" id="cncity" value="兰州市">
+<input type="hidden" id="hostTransform" value="川底岗到火车站西路" title="川底岗到火车站西路" href="http://bus.mapbar.com/lanzhou/chuandigang_dao_huochezhanxilu.html">
+<input type="hidden" id="hotStation" value="兰州外国语高级中学公交车站" title="外国语高级中学" href="http://bus.mapbar.com/lanzhou/poi/5aM5Rz8lj9hO7wd4uj5jc">
+<input type="hidden" id="hotLine" value="兰州103路公交路线" title="103路" href="http://bus.mapbar.com/lanzhou/xianlu/103lu/">
+<div class="topGray">
+	<div class="w960 margin0auto">
+		<div class="logo">
+			<a href="../index1.html">
+				<img src="../bus/indexv2/images/buslogo.gif" alt="">
+			</a>
+		</div>
+		<div class="topnav">
+			<a target="_blank" class="gongjiao" href="javascript:;" title="兰州市公交">兰州市公交网</a>
+			<a target="_blank" href="../search/index.html" title="地图查询">查地图</a>
+			<a target="_blank" class="page" href="../index.html" title="哈尔滨公交">哈尔滨公交首页</a>
+			<a href="../help/lianxi.html" target="_blank"><strong>商务合作</strong></a>
+			<div class="header_pinBox">
+				<a class="pindao">频道</a>
+				<div class="header_pinC" style="display:none;"> <b class="pinC_t"></b>
+					<div class="pinC_m">
+						<h5>地图查询</h5>
+						<a href="../search/index.html" target="_blank" title="地图搜索">地图搜索</a>
+						<a href="../index2.html" target="_blank" title="本地生活">本地生活</a>
+						<a href="../index.html" target="_blank" title="驾车导航">驾车导航</a>
+						<a href="../search/index.html#c=中国&amp;itab=3" target="_blank" title="周边查询">周边查询</a>
+						<a href="../index3.html" target="_blank" title="地铁地图">地铁地图</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="wrap">
+		<div class="w960 margin0auto posr">
+			
+			<div class="mwp_cyl cityName" id="citylist">
+				<div class="nameL"></div>
+				<span class="mwp_cyl_i"><input id="h_city" name="input" type="text" size="9" autocomplete="off" style="" value="兰州市"><a href="javascript:void(0)" cl_mc="xgq">[切换]</a></span>			
+			</div>
+			<div class="tit clr">
+				<ul>
+					<li class="mr117">
+						<a href="javascript:;" id="setting1" class="blueBottom">换乘查询</a>
+					</li>
+					<li class="mr117">
+						<a href="javascript:;" id="setting2">线路查询</a>
+					</li>
+					<li>
+						<a href="javascript:;" id="setting3">站点查询</a>
+					</li>
+				</ul>
+			</div>
+			<div class="subWayBorder clr" id="st1" style="display: block">
+				<div class="subWayLeft2 clr">
+					<input type="text" class="LeftInput1" id="fromInput" value="请输入起点" tabindex="1">
+					<a href="javascript:;" class="switch" id="switchBtn">
+						<img src="../bus/indexv2/images/bus_20.png" width="26" height="26" alt="">
+					</a>
+					<input type="text" class="LeftInput2" id="toInput" value="请输入终点" tabindex="2">
+				</div>
+				<div class="subWayr">
+					<input type="button" id="transformSearch" class="subWayBut" title="换乘查询" value="">
+				</div>
+				<div class="exp">
+					<p class="example" id="transformEM"></p>
+				</div>
+			</div>
+			<div class="subWayBorder clr" id="st2" style="display: none">
+				<div class="subWayLeft2 clr">
+					<input id="line_keyword" type="text" value="请输入线路" class="LeftInput3">
+				</div>
+				<div class="subWayr">
+					<input type="button" id="lineSearch" class="subWayBut" title="线路查询" value="">
+				</div>
+				<div class="exp">
+					<p class="example" id="lineEM"></p>
+				</div>
+			</div>
+			<div class="subWayBorder clr" id="st3" style="display: none">
+				<div class="subWayLeft2 clr">
+					<input id="station_keyword" type="text" value="请输入站点" class="LeftInput3">
+				</div>
+				<div class="subWayr">
+					<input type="button" id="stationSearch" class="subWayBut" title="站点查询" value="">
+				</div>
+				<div class="exp">
+					<p class="example" id="stationEM"></p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="gray">
+		<div class="w960 margin0auto">
+			<div class="cityWrap">
+				<div class="cityNews">
+					<div class="titles">
+						<h2><a target="_blank" href="javascript:;" title="兰州公交新闻">兰州公交新闻</a><span class="after"></span></h2>
+					</div>
+					<div class="newsPic">
+					</div>
+					<p><a href="javascript:;" target="_blank" title="兰州“雨夜背送乘客”司机刘惠俊获评“诚信公">兰州“雨夜背送乘客”司机刘惠俊获评“</a></p><p><a href="javascript:;" target="_blank" title="7月1日起兰州新增403个电子监控点 同时公交车上">7月1日起兰州新增403个电子监控点</a></p><p><a href="javascript:;" target="_blank" title="兰州“最美公交司机”受表彰">兰州“最美公交司机”受表彰</a></p><p><a href="javascript:;" target="_blank" title="玉柴机器中标兰州公交503台发动机">玉柴机器中标兰州公交503台发动机</a></p><p><a href="javascript:;" target="_blank" title="[兰州零距离]暴雨中的感动：20路公交车刘师傅背">[兰州零距离]暴雨中的感动：20路公</a></p><p><a href="javascript:;" target="_blank" title="兰州：冒雨背乘客过积水 他是“最美公交司机”">兰州：冒雨背乘客过积水 他是“最美公</a></p><p><a href="javascript:;" target="_blank" title="兰州公交集团表彰刘惠俊 授予“诚信公交好职工">兰州公交集团表彰刘惠俊 授予“诚信公</a></p><p><a href="javascript:;" target="_blank" title="兰州最美公交司机传播温暖 弘扬新风（图）">兰州最美公交司机传播温暖 弘扬新风（</a></p><p><a href="javascript:;" target="_blank" title="多亏了兰州“最美公交司机” 丢失的背包找到了">多亏了兰州“最美公交司机” 丢失的背</a></p><p><a href="javascript:;" target="_blank" title="[每日新闻报]甘肃兰州：公交遇暴雨熄火 司机蹚">[每日新闻报]甘肃兰州：公交遇暴雨熄</a></p>
+				</div>
+				<div class="busno">
+					<div class="titles">
+						<h2><a target="_blank" href="javascript:;" title="兰州公交线路查询">兰州公交线路</a><span class="after"></span></h2>
+					</div>
+					<ul>
+						<li>
+							以数字开头:
+							<a href='javascript:;' title="兰州1字头公交线路查询 " target='_blank'>1</a> <a href='javascript:;' title="兰州2字头公交线路查询 " target='_blank'>2</a> <a href='javascript:;' title="兰州3字头公交线路查询 " target='_blank'>3</a> <a href='javascript:;' title="兰州4字头公交线路查询 " target='_blank'>4</a> <a href='javascript:;' title="兰州5字头公交线路查询 " target='_blank'>5</a> <a href='javascript:;' title="兰州6字头公交线路查询 " target='_blank'>6</a> <a href='javascript:;' title="兰州7字头公交线路查询 " target='_blank'>7</a> <a href='javascript:;' title="兰州8字头公交线路查询 " target='_blank'>8</a> <a href='javascript:;' title="兰州9字头公交线路查询 " target='_blank'>9</a> 
+						</li>
+						<li>
+							以字母开头:
+							<a href='javascript:;' title="兰州B字头公交线路查询 " target='_blank'>B</a> <a href='javascript:;' title="兰州T字头公交线路查询 " target='_blank'>T</a> <a href='javascript:;' title="兰州X字头公交线路查询 " target='_blank'>X</a> 
+						</li>
+						<li>
+							热门公交线路:
+							<a href='javascript:;' title="兰州103路公交路线 " target='_blank'>103路</a> <a href='javascript:;' title="兰州130路公交路线 " target='_blank'>130路</a> <a href='javascript:;' title="兰州138路公交路线 " target='_blank'>138路</a> <a href='javascript:;' title="兰州140路公交路线 " target='_blank'>140路</a> <a href='javascript:;' title="兰州155路公交路线 " target='_blank'>155路</a> <a href='javascript:;' title="兰州16路公交路线 " target='_blank'>16路</a> <a href='javascript:;' title="兰州22路公交路线 " target='_blank'>22路</a> <a href='javascript:;' title="兰州28路公交路线 " target='_blank'>28路</a> <a href='javascript:;' title="兰州302路公交路线 " target='_blank'>302路</a> <a href='javascript:;' title="兰州31路公交路线 " target='_blank'>31路</a> <a href='javascript:;' title="兰州42路公交路线 " target='_blank'>42路</a> <a href='javascript:;' title="兰州50路公交路线 " target='_blank'>50路</a> <a href='javascript:;' title="兰州52路公交路线 " target='_blank'>52路</a> <a href='javascript:;' title="兰州57路公交路线 " target='_blank'>57路</a> <a href='javascript:;' title="兰州58路公交路线 " target='_blank'>58路</a> <a href='javascript:;' title="兰州704路公交路线 " target='_blank'>704路</a> <a href='javascript:;' title="兰州7路公交路线 " target='_blank'>7路</a> <a href='javascript:;' title="兰州83路公交路线 " target='_blank'>83路</a> <a href='javascript:;' title="兰州8路公交路线 " target='_blank'>8路</a> 
+							 <a href="javascript:;" target='_blank' class="more">更多>></a>
+						</li>
+					</ul>
+				</div>
+				<div class="busno">
+					<div class="titles">
+						<h2><a target="_blank" href="javascript:;" title="兰州公交车站点查询">兰州公交站点</a><span class="after"></span></h2>
+					</div>
+					<ul>
+						<li>
+							以数字开头:
+							<a href='javascript:;' title="兰州9字头公交站点查询 " target='_blank'>9</a> 
+						</li>
+						<li>
+							以字母开头:
+							<a href='javascript:;' title="兰州A字头公交站点查询 " target='_blank'>A</a> <a href='javascript:;' title="兰州B字头公交站点查询 " target='_blank'>B</a> <a href='javascript:;' title="兰州C字头公交站点查询 " target='_blank'>C</a> <a href='javascript:;' title="兰州D字头公交站点查询 " target='_blank'>D</a> <a href='javascript:;' title="兰州E字头公交站点查询 " target='_blank'>E</a> <a href='javascript:;' title="兰州F字头公交站点查询 " target='_blank'>F</a> <a href='javascript:;' title="兰州G字头公交站点查询 " target='_blank'>G</a> <a href='javascript:;' title="兰州H字头公交站点查询 " target='_blank'>H</a> <a href='javascript:;' title="兰州J字头公交站点查询 " target='_blank'>J</a> <a href='javascript:;' title="兰州K字头公交站点查询 " target='_blank'>K</a> <a href='javascript:;' title="兰州L字头公交站点查询 " target='_blank'>L</a> <a href='javascript:;' title="兰州M字头公交站点查询 " target='_blank'>M</a> <a href='javascript:;' title="兰州N字头公交站点查询 " target='_blank'>N</a> <a href='javascript:;' title="兰州P字头公交站点查询 " target='_blank'>P</a> <a href='javascript:;' title="兰州Q字头公交站点查询 " target='_blank'>Q</a> <a href='javascript:;' title="兰州R字头公交站点查询 " target='_blank'>R</a> <a href='javascript:;' title="兰州S字头公交站点查询 " target='_blank'>S</a> <a href='javascript:;' title="兰州T字头公交站点查询 " target='_blank'>T</a> <a href='javascript:;' title="兰州W字头公交站点查询 " target='_blank'>W</a> <a href='javascript:;' title="兰州X字头公交站点查询 " target='_blank'>X</a> <a href='javascript:;' title="兰州Y字头公交站点查询 " target='_blank'>Y</a> <a href='javascript:;' title="兰州Z字头公交站点查询 " target='_blank'>Z</a> 
+						</li>
+						<li>
+							热门公交站点:
+							<a href='javascript:;' title="兰州外国语高级中学公交车站 " target='_blank'>外国语高级中学</a> <a href='javascript:;' title="兰州天居锦河丹堤(吴家湾)公交车站 " target='_blank'>天居锦河丹堤(吴家湾)</a> <a href='javascript:;' title="兰州伏羲宾馆公交车站 " target='_blank'>伏羲宾馆</a> <a href='javascript:;' title="兰州兰州水车博览园公交车站 " target='_blank'>兰州水车博览园</a> <a href='javascript:;' title="兰州红山幼儿园公交车站 " target='_blank'>红山幼儿园</a> <a href='javascript:;' title="兰州航天宾馆(永昌路南口)公交车站 " target='_blank'>航天宾馆(永昌路南口)</a> <a href='javascript:;' title="兰州七里河北街路口公交车站 " target='_blank'>七里河北街路口</a> <a href='javascript:;' title="兰州鲁家庄公交车站 " target='_blank'>鲁家庄</a> <a href='javascript:;' title="兰州材料南厂公交车站 " target='_blank'>材料南厂</a> <a href='javascript:;' title="兰州一马路公交车站 " target='_blank'>一马路</a> <a href='javascript:;' title="兰州瑞德摩尔(五里铺)公交车站 " target='_blank'>瑞德摩尔(五里铺)</a> <a href='javascript:;' title="兰州富星家居广场公交车站 " target='_blank'>富星家居广场</a> <a href='javascript:;' title="兰州五一五医院公交车站 " target='_blank'>五一五医院</a> <a href='javascript:;' title="兰州大名城D区公交车站 " target='_blank'>大名城D区</a> <a href='javascript:;' title="兰州甘肃石化技师学院(九州中学)公交车站 " target='_blank'>甘肃石化技师学院(九州中学)</a> <a href='javascript:;' title="兰州晏家坪公交车站 " target='_blank'>晏家坪</a> <a href='javascript:;' title="兰州兰炼医院公交车站 " target='_blank'>兰炼医院</a> <a href='javascript:;' title="兰州兰海高速管理所公交车站 " target='_blank'>兰海高速管理所</a> <a href='javascript:;' title="兰州甘南中路公交车站 " target='_blank'>甘南中路</a> <a href='javascript:;' title="兰州南河东路公交车站 " target='_blank'>南河东路</a> 
+							<a href="javascript:;" title="" target='_blank' class="more">更多>></a>
+						</li>
+					</ul>
+				</div>
+				<div class="busname">
+					<div class="titles2">
+						<h2><a target="_blank" title="">兰州公交换乘</a><span class="after"></span></h2>
+					</div>
+					<div class="hc">
+						<p><a href='javascript:;' title="川底岗到火车站西路 " target='_blank'>川底岗到火车站西路</a></p><p><a href='javascript:;' title="甘肃大宇学校到甸子街(兰大一院东岗院区) " target='_blank'>甘肃大宇学校到甸子街(兰大一院东岗院区)</a></p><p><a href='javascript:;' title="刘家堡广场到美伦广场 " target='_blank'>刘家堡广场到美伦广场</a></p><p><a href='javascript:;' title="高新创业中心到吴家园小区 " target='_blank'>高新创业中心到吴家园小区</a></p><p><a href='javascript:;' title="雁滩工业城到兰州二十七中 " target='_blank'>雁滩工业城到兰州二十七中</a></p><p><a href='javascript:;' title="省中医院到省档案馆 " target='_blank'>省中医院到省档案馆</a></p><p><a href='javascript:;' title="水站到水车园 " target='_blank'>水站到水车园</a></p><p><a href='javascript:;' title="银滩大桥到粮油市场 " target='_blank'>银滩大桥到粮油市场</a></p><p><a href='javascript:;' title="西固城到九洲城 " target='_blank'>西固城到九洲城</a></p><p><a href='javascript:;' title="商务厅到兰石家属院 " target='_blank'>商务厅到兰石家属院</a></p>
+					</div>
+				</div>
+			</div>
+
+			<div class="chinaBus">
+				<h2> 全国城市公交列表</h2>
+				<p>
+					<a target="_blank" href="../beijing/index.html">北京公交</a>
+			       	<a target="_blank" href="../shanghai/index.html">上海公交</a>
+			       	<a target="_blank" href="../chongqing/index.html">重庆公交</a>
+			       	<a target="_blank" href="../tianjin/index.html">天津公交</a>
+			       	<a target="_blank" href="../guangzhou/index.html">广州公交</a>
+			       	<a target="_blank" href="../shenzhen/index.html">深圳公交</a>
+			       	<a target="_blank" href="../taiyuan/index.html">太原公交</a>
+			       	<a target="_blank" href="../shenyang/index.html">沈阳公交</a>
+			       	<a target="_blank" href="../changchun/index.html">长春公交</a>
+			       	<a target="_blank" href="../jinan/index.html">济南公交</a>
+			       	<a target="_blank" href="../nanjing/index.html">南京公交</a>
+			       	<a target="_blank" href="../hangzhou/index.html">杭州公交</a>
+			       	<a target="_blank" href="../hefei/index.html">合肥公交</a>
+			       	<a target="_blank" href="../fuzhou1/index.html">福州公交</a>
+			       	<a target="_blank" href="../nanchang/index.html">南昌公交</a>
+			       	<a target="_blank" href="../zhengzhou/index.html">郑州公交</a>
+			       	<a target="_blank" href="../wuhan/index.html">武汉公交</a>
+			       	<a target="_blank" href="../changsha/index.html">长沙公交</a>
+			       	<a target="_blank" href="../haikou/index.html">海口公交</a>
+			       	<a target="_blank" href="../chengdu/index.html">成都公交</a>
+			       	<a target="_blank" href="../guiyang/index.html">贵阳公交</a>
+			       	<a target="_blank" href="../kunming/index.html">昆明公交</a>
+			       	<a target="_blank" href="../xian/index.html">西安公交</a>
+			       	<a target="_blank" href="">兰州公交</a>
+			       	<a target="_blank" href="../xining/index.html">西宁公交</a>
+			       	<a target="_blank" href="../haerbin/index1.html">哈尔滨公交</a>
+			       	<a target="_blank" href="../shijiazhuang/index.html">石家庄公交</a>
+			       	<a target="_blank" href="../wulumuqi/index.html">乌鲁木齐公交</a>
+			       	<a target="_blank" href="../huhehaote/index.html">呼和浩特公交</a>
+			       	<a target="_blank" href="../city/change/index.html">更多>></a>
+				</p>
+			</div>
+
+			<div class="busLinks">
+				<h2> 友情链接 </h2>
+				<p>
+					<a href='javascript:;' target='_blank'>兰州短租房</a><a href='javascript:;' target='_blank'>兰州二手车交易市场</a><a href='javascript:;' target='_blank'>兰州天气预报30天</a><a href='javascript:;' target='_blank'>兰州平行进口车</a><a href='javascript:;' target='_blank'>兰州装修</a><a href='javascript:;' target='_blank'>兰州汽车票网上订票</a><a href='javascript:;' target='_blank'>兰州电话查询</a><a href='javascript:;' target='_blank'>兰州地图查询</a><a href='javascript:;' target='_blank'>兰州公交</a><a href='javascript:;' target='_blank'>兰州车辆违章查询</a><a href='javascript:;' target='_blank'>兰州全部地标</a><a href='javascript:;' target='_blank'>兰州地图</a><a href='javascript:;' target='_blank'>兰州邮编查询</a>
+				</p>
+			</div>
+		</div>
+	</div>
+	<!-- 1000 end -->
+	<div class="footerCity">
+		<p>
+			<a href="../index.html" target="_blank">关于我们</a>
+			|
+			<a href="../index.html" target="_blank">企业推广</a>
+			|
+			<a href="javascript:;" target="_blank" style="color:red">免费公交代码</a>
+			|
+			<a href="../help/sitelist.html" target="_blank">分站列表</a>
+			|
+			<a href="../link/index.html" target="_blank">友情链接</a>
+			|
+			<a href="../index4.html" target="_blank">行政地图</a>
+		</p>
+		<p>
+			2019mapbar.
+			<a href="javascript:;" target="_blank">[京ICP证070616号]</a>
+			<a href="javascript:;" target="_blank">[京ICP备08100418号]</a>
+		</p>
+	</div>
+	<script type="text/javascript" src="../share/jquery/jquery-1.3.2.pack.js"></script>
+	<script type="text/javascript" src="../bus/js/wt_index.js"></script>
+	<script>
+		window.onload = function() {
+			var set1 = document.getElementById('setting1');
+			var set2 = document.getElementById('setting2');
+			var set3 = document.getElementById('setting3');
+			var st1 = document.getElementById('st1');
+			var st2 = document.getElementById('st2');
+			var st3 = document.getElementById('st3');
+			var switchBtn = document.getElementById('switchBtn');
+			var fromInput = document.getElementById('fromInput');
+			var toInput = document.getElementById('toInput');
+			function setClick(aNode, divNode) {
+				if (aNode.className == 'blueBottom') return;
+				else {
+					set1.className = '';
+					set2.className = '';
+					set3.className = '';
+					aNode.className = 'blueBottom';
+					st1.style.display = "none";
+					st2.style.display = "none";
+					st3.style.display = "none";
+					divNode.style.display = "block";
+				}
+			}
+			set2.onclick = function() {
+				setClick(set2, st2);
+			}
+			set3.onclick = function() {
+				setClick(set3, st3);
+			}
+			set1.onclick = function() {
+				setClick(set1, st1);
+			}
+			switchBtn.onclick = function() {
+				var fromText = fromInput.value;
+				var toText = toInput.value;
+				if(fromText!="请输入起点"&&toText!="请输入终点"){
+					fromInput.value = toText;
+					toInput.value = fromText;
+				}
+			}
+		}
+	</script>
+	<script type="text/javascript" src="../bus/indexv2/js/mwp.js"></script>
+	<script type="text/javascript">
+		var kcitylist = null;
+		$(function(){
+			var shortName="兰州";
+			if(shortName.length>2){
+				$(".titles").attr("class","titles_long")
+				$(".titles2").attr("class","titles2_long")
+			}
+			$("#h_city").val("兰州市");
+			var length=$("#h_city").val().length;
+			if(length>7){
+				length=7;
+			}
+			$("#h_city").css("width",length*14);
+			$(".subWayBorder input[type='text']").each(function(){
+				$(this).attr("defaultVal",$(this).val());
+			});
+			$(".subWayBorder input[type='text']").focus(function(){
+				if($(this).val()==$(this).attr("defaultVal")){
+					$(this).val("");
+				}
+			});
+			$(".subWayBorder input[type='text']").blur(function(){
+				if($(this).val()==""){
+					$(this).val($(this).attr("defaultVal"));
+				}
+			});
+		});
+	</script>
+	<script type="text/javascript" src="../bus/js/placeholder.js"></script>
+	<script type="text/javascript" src="../bus/indexv2/js/index.js"></script>
+	<script type="text/javascript">
+	   var _hmt = _hmt || [];
+	  (function() {
+		 var hm = document.createElement("script");
+		 hm.src = "//hm.baidu.com/hm.js?4f7e758e957dfb1e328a4cb7a250d6e7";
+		 var s = document.getElementsByTagName("script")[0]; 
+		 s.parentNode.insertBefore(hm, s);
+	  })();
+	</script>
+</div></body>
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https') {
+        bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';        
+    }
+    else {
+        bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+    }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+</html>

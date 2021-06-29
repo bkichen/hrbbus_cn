@@ -1,0 +1,158 @@
+/*strict xhtml 1.0 - Main style sheet - liquid design 2008-03-31*/
+/*Author - ZhangXilong made by bus.mapbar.com*/
+/*初始值
+-------------------------------*/
+body{margin:0;padding:0;background:#fff;font:normal normal normal 12px "Lucida Grande", Verdana, Lucida, Arial, Helvetica, "宋体",sans-serif;}
+div,form,p,img,ul,ol,li,
+dl,h1,h2,h3,h4,h5,h6{list-style:none;margin:0;padding:0;border:0;text-align:left;}
+a{color:#00c;}
+a:link,a:visited,a:active{text-decoration:none;}
+a:hover{text-decoration:none;color:red}
+.clearHide{overflow:hidden;clear:both;height:0;font-size:0;}
+/*主框结构及常用样式
+------------------------------*/
+h1,h2,h3,h4,h5,h6{font-size:14px;}
+input,select,textarea{font-size:12px;font-family:Arial;line-height:15px;}
+.textCenter{text-align:center;}
+.fontRed{color:red;}
+.font14{font-size:14px!important;}
+.wrapBus{position:relative;width:950px;min-height:450px;_height:450px;margin:auto;}
+.leftBox{position:relative;float:left;width:710px;height:auto;}
+.rightBox{position:relative;float:right;width:230px;height:auto;}
+.footer{clear:both;padding-top:10px;color:#848484;}
+.footer p,.footer a{margin:8px 2px;font-size:12px;color:#848484;text-align:center;text-decoration:none!important;}
+/* Top
+------------------------------*/
+.headerBus{position:relative;height:70px;width:945px;margin:0 auto 15px;_margin-bottom:23px;padding-top:5px;}
+.headerBus a,.headerBus area{blr:expression(this.onFocus=this.blur())}
+.headerBus :focus{-moz-outline-style:none;}
+.headerBus #logo{float:left;text-align:center;margin:-23px 20px 0 0;}
+.searchInputBox{height:auto;}
+.NavBar{height:25px;margin-bottom:5px;padding-left:126px;font-family:"宋体", Arial;}
+.NavBar a{float:left;width:55px;height:25px;line-height:25px;color:#339;text-align:center;text-decoration:none!important;}
+.NavBar span{float:left;margin-top:5px;*+margin-top:6px;}
+a.onDownA{width:55px;color:red;font-weight:bold;}
+.NavBarBus{position:absolute;border-top:2px solid #339;left:130px;width:290px;margin-top:2px;padding-left:112px;}
+.NavBarBus *{position:relative;top:5px;_top:11px;margin:0 10px;text-decoration:none!important;color:#339;}
+.NavBarBus span{margin:0;top:5px;_top:8px;}
+a.onDownAb{top:5px;_top:11px;width:82px;padding-top:8px;*+padding-top:10px;_padding-top:16px;background:url(../../detailv2/images/onMouseB2.gif) no-repeat 50% 0;color:red;font-weight:bold;}
+.form01{margin:auto;padding-left:130px;_padding-left:126px;color:#000;}
+.form01 input,.form01 span,.form01 img,.allLines input{vertical-align:middle;}
+.form01 img{margin-right:1px;}
+.input001,.input002,.input001b{width:263px;height:15px;padding:2px 4px 0;border:2px solid #234086;}
+.input001b{width:64px;margin-right:5px;border:2px solid #CE1728;}
+.input002{width:110px;}
+.but001{width:74px;height:21px;border:0;background:url(../../detailv2/images/bg_but2.gif) no-repeat;font-size:13px;line-height:21px;font-weight:bold;color:#fff;}
+/* 主体
+-----------------------------*/
+.wrapBus h2,.busList h1{background:#E5ECF9 none repeat scroll 0 50%;border-top:1px solid #3366CC;clear:both;font-size:14px;font-weight:normal;
+height:25px;line-height:26px;margin-left:0;text-indent:1em;width:auto;}
+.wrapBus h1 span,.wrapBus h2 span,.wrapBus h3 span{font-size:12px;font-weight:normal;position:absolute;right:10px;top:4px;}
+.wrapBus li h2{margin:10px auto;font-size:16px;font-family:"宋体";*+font-family:Arial,"宋体";}
+.mainBoxinfor{margin-top:25px;}
+.leftBox h1{font-size:18px;text-align:center;border-bottom:1px dotted #ccc;margin:0 0 10px 0;position:relative;}
+.leftBox h1 span img{margin-right:5px;position:relative;top:3px;}
+.leftBox h3{margin:10px 0;font-size:16px;text-indent:.5em;}
+.relatedBox{padding:5px 0 18px 10px;border-bottom:1px dotted #ccc;}
+.relatedBox p{margin:5px 0 0 0;font-weight:normal;}
+.siteBox{padding:3px 10px;}
+.siteBox a,.leftBox h3 a,.relatedBox p a{white-space:nowrap;line-height:1.8em;}
+.siteBox a{text-decoration:none!important;}
+.lineInfor{padding:3px 10px;margin-bottom:15px;background:#eee;line-height:1.7em;}
+.lineInfor2{padding:3px 10px;margin:10px 0;}
+.copyInfor{border-bottom:1px dotted #ccc;padding:10px 1em;text-align:right;}
+.leftBox h1 strong,.copyInfor a{color:red;}
+.tipInfor{background:#FFFFE1;border:1px solid #999;margin:15px 0;padding:8px 10px;color:#777; line-height:1.8em;}
+.tipInfor p{margin-top:10px;color:#000;}
+.tipInfor2{color:#777;font-size:14px;text-indent:2em;}
+.tipInfor3{color:#777;line-height:1.8em;}
+.tipInfor3 p{text-indent:2em;}
+.allLines{margin:10px 0;}
+.lineNumber{height:25px;line-height:25px;margin:20px 0 10px!important;position:relative;background:#eee;border-top:1px solid #999;}
+.corrections{text-align:right;margin:10px;}
+.recommended{padding-left:10px;line-height:1.8em;}
+.rightBox .mapBox{position:absolute;left:-10px;width:320px;height:250px;padding-left:9px;background:url(../../detailv2/images/ico_guidelines.gif) no-repeat 0 20%;}
+.tripInfor{margin:10px 0;background:#eee;}
+.tripInfor td{padding:3px 0 3px 15px;}
+ol.programme{margin:11px 0 0 42px;}
+ol.programme li{position:relative;border-bottom:1px dotted #eee; line-height:2.5em;}
+ol.programme li a{position:absolute;right:45px;top:1px;}
+.leftBox .SmallH1{margin:10px 0;border:0;font-size:12px;font-weight:normal;text-align:left;}
+.leftBox .SmallH1 span{position:absolute;right:10px;top:-3px;}
+.icoInfor{position:relative;margin:20px 0;}
+.leftBox .SmallH1 span img,.icoInfor img{margin-right:5px;position:relative;top:3px;}
+.programmeBox{padding:0 25px;}
+.programmeBox .INBox{padding:10px 25px 0;}
+.course h5{margin:10px 0;font-weight:normal;font-size:12px;}
+.course h5 span{margin-right:20px;color:#777;}
+.course h5 span a{font-size:14px;text-decoration:none;}
+.course .siteBox{padding-left:25px;}
+/*城市公交
+-------------------------------*/
+.busList h1{position:relative;margin:0;border-bottom:0;font-size:14px;font-weight:bold;text-align:left;}
+.busList span{font-size:12px; font-weight:bold;padding:4px;}
+.busList span a{margin:0 1px;padding:0 2px;font-size:14px;font-weight:bold;color:#36c;}
+.busList span a:hover{color:#fff;background:red;}
+.buslineInfo{overflow:hidden;_overflow:none;min-height:500px;_height:500px;padding:10px 15px;border:1px solid #E5EBF9;border-top:0;font-size:14px;}
+.buslineInfo li{width:50%; float:left;padding:4px 0; line-height:1.5em;font-size:14px;text-decoration:underline;color:#00c;}
+
+.cityListInfo{padding-top:15px;border:1px solid #E5EBF9;border-top:0;}
+.busList .rightBox h2{height:20px;line-height:20px;font-weight:bold;text-align:left;text-indent:65px;margin:0 auto 5px;border:0;background:url(../images/icon_001.gif) no-repeat 50px 3px;color:#039;}
+.busList .rightBox a{font-size:14px;display:block;}
+.busList .rightBox h1{text-align:center;}
+.busList .rightBox a{line-height:1.5em;text-indent:75px; text-decoration:none;}
+.busList .rightBox a img{margin-right:5px;}
+.busList .rightBox li a{line-height:1em;text-align:left; padding-left:25px!important;}
+.busList a.CF{background:#ff0000;color:#ffffff;text-decoration: none;}
+.busList a.BG{background:#E8E8E9!important;}
+.busList li.BG{background:#E8E8E9!important;}
+.OtherInfo a{text-indent:.7em;padding:2px 0;}/*background:url(../images/icon_02.gif) no-repeat 60px 50%;
+.busList .abg02{background:url(../images/icon_01.gif) no-repeat 60px 5px!important;}*/
+/*换乘方案主结构
+-------------------------------*/
+#leftPanel{background:pink;}
+#midPanel{position:absolute;cursor:pointer;background:#fff;}
+#rightPanel{position:absolute;right:5px;overflow:auto;width:350px;border:1px solid #7F9DB9;}
+/*左侧顶部导航栏
+-------------------------------*/
+.optionsBox{position:relative;height:25px;padding:0 5px;background:#E5ECF9;border-bottom:1px solid #36c;line-height:25px;}
+.optionsBox p{position:absolute;right:368px;}
+.optionsBox em{float:left;font-style:normal;}
+.optionsBox ul a{text-decoration:none!important;}
+.optionsBox ul li{float:left;margin:0 4px;}
+.optionsBox ul .liImg{position:relative;}
+.optionsBox ul li img{position:relative;margin-bottom:-4px;}
+.optionsBox dl{display:none;overflow:auto;position:absolute;top:24px;left:0;width:145px;height:165px;padding:2px;border:1px solid #0163A2; background:#fff; line-height:1.8em;}
+.optionsBox dl dd{margin-left:1em;}
+.titleSearch{position:absolute;top:0;right:30px;padding:0 10px;border:1px solid #36c;border-bottom:0;background:#fff;font-size:14px;font-weight:bold;}
+/*线路换乘
+-------------------------------*/
+#pointChoice{padding:10px;}
+#pointChoice label{display:block;margin-bottom:5px;color:green;font-size:14px;}
+#pointChoice select{width:100%;margin-bottom:10px;}
+.topInforBox{margin:0 20px;}
+.topInforBox .icoInfor{margin:10px 0;}
+.busLineResult{position:relative;padding:8px 0 8px 8px;}
+.busLineResult li{margin-bottom:1px;*+margin-bottom:0;}
+.swapTitle{width:325px;position:relative;z-index:3;background:#fff;cursor:pointer;}
+.swapTitle th,td.mailTD{width:65px;border:1px solid #E0E0E0;border-right:0;text-align:center;padding:5px 0;}
+td.mailTD{width:auto;border-left:0;border-right:0;text-align:left;}
+td.NoTD{width:60px;border:1px solid #E0E0E0;border-left:0;color:red;}
+td.icoTD,td.icoTD2,td.icoTD3{width:16px;border:1px solid #ccc;background:#E0E0E0;text-align:center;}
+td.icoTD2,td.icoTD3{background:#F9EDED;}
+td.icoTD3{border-bottom:1px solid #F9EDED;}
+.swapBox{display:none;position:relative;top:-2px;*+top:-3px;z-index:2;height:auto;padding:10px;background:#F9EDED;border:1px solid #ccc;}
+.swapBox table{margin:10px 0;background:#fff;border:1px solid #ccc;}
+.swapBox table th{width:30px;text-align:center;}
+.swapBox table td{padding:3px;line-height:1.8em;}
+.swapBox table td a{white-space:nowrap;}
+.swapBox .borderTop{border-top:1px solid #ccc;}
+.swapBox .borderBot{border-bottom:1px solid #ccc;}
+.BPInfor input{vertical-align:middle;}
+.BPInfor span{position:absolute;right:10px;_right:30px;}
+.BPInfor span img{position:relative;top:2px;}
+
+/*城市列表
+------------------------------*/
+#lessCityList,#moreChanel{position:absolute ;z-index:1000;width:100px;height:auto;border:1px solid #7F9DB9;background:#FFF;}
+#lessCityList a{margin: 3px 10px;width:90%;line-height:18px;height:18px;}

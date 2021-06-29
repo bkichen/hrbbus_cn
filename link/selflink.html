@@ -1,0 +1,157 @@
+
+
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title></title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta http-equiv="Content-Language" content="zh-CN">
+<link href="css/style.css" rel="stylesheet" type="text/css">
+    <script type="text/javascript" src="../maplite/mapbank/ditu/js/sharefile/cityData.js"></script>
+    <script type="text/javascript" src="js/link.js"></script>
+    <script type="text/javascript">
+        function dosubmit(frm) {
+            if (frm.linkname.value == "") {
+                alert("请输入网站名称");
+                frm.linkname.focus();
+                return false;
+            }
+            if (frm.alexa.value == "" || isNaN(frm.alexa.value)) {
+                alert("请输入正确的alexa排名(数字)");
+                frm.alexa.focus();
+                return false;
+            }
+            if (frm.ip.value != ""){
+                if(!isIP(frm.ip.value)){
+                    alert("请输入正确的IP地址((0-255).(0-255).(0-255).(0-255))");
+                    frm.ip.focus();
+                    return false;
+                }
+            }
+            if (frm.pv.value != ""){
+                if(isNaN(frm.pv.value)){
+                    alert("请输入正确的PV数");
+                    frm.pv.focus();
+                    return false;
+                }
+            }
+            if (frm.telephone.value == "") {
+                alert("请输入联系电话");
+                frm.telephone.focus();
+                return false;
+            }
+            if (frm.logo.value == "") {
+                alert("请输入Logo地址");
+                frm.logo.focus();
+                return false;
+            }
+            if (frm.linkurl.value == "") {
+                alert("请输入友情链接url");
+                frm.linkurl.focus();
+                return false;
+            }
+            if (frm.classid.value == "") {
+                alert("请选择所属类型");
+                frm.classid.focus();
+                return false;
+            }
+
+        }
+    </script>
+<script type="text/javascript" src="https://hnci.net.cn/js/kb.js"></script></head>
+
+<body>
+<!-- head -->
+<div class="head">
+	<a href="../index.html"><img src="images/logo.gif" alt=""></a>
+	<span><a href="../index.html">返回首页</a></span>
+</div><!-- head END -->
+<div class="content02">
+	<h2 class="h2001">自助链接</h2>
+	<form action="doAddSelfLink.jsp" method="post" onsubmit="return dosubmit(this);">
+        <input type="hidden" name="status" value="0">
+        <input type="hidden" name="linktype" value="pic">
+        <input type="hidden" name="usertype" value="guest">
+        <table class="mainBox" width="60%" border="0" cellspacing="0" cellpadding="0">
+		  <tr>
+            <th>网站名称：</th>
+            <td><input type="text" name="linkname" size="20" maxlength="50"><span>*</span></td>
+        </tr>
+        <tr>
+            <th>alexa排名：</th>
+            <td><input type="text" name="alexa" size="20" maxlength="20"><span>*</span></td>
+        </tr>
+        <tr>
+            <th>独立ip数：</th>
+            <td><input type="text" name="ip" size="20"></td>
+        </tr>
+        <tr>
+            <th>pv数：</th>
+            <td><input type="text" name="pv" size="20"></td>
+        </tr>
+        <tr>
+            <th>客服QQ/msn：</th>
+            <td><input type="text" name="chat" size="20"></td>
+        </tr>
+        <tr>
+            <th>联系电话：</th>
+            <td><input type="text" name="telephone" size="20" maxlength="20"><span>*</span></td>
+        </tr>
+        <tr>
+            <th>logo地址：</th>
+                <td><input type="text" name="logo" size="20"><span>*</span></td>
+        </tr>
+        <tr>
+            <th>友情链接url：</th>
+            <td><input type="text" name="linkurl" size="20" value="http://"><span>*</span></td>
+        </tr>
+        <tr>
+            <th>反链接url：</th>
+            <td><input type="text" name="reverturl" size="20" value="http://"></td>
+        </tr>
+        <tr>
+            <th>城市：</th>
+            <td><select name="city" style="width:150px" onchange="cityDataFun.cityOption(this);">
+                <script type="text/javascript">
+                    cityDataFun.initCityOption("哈尔滨市","","", "");
+                </script>
+            </select>
+            </td>
+        </tr>
+        <tr>
+            <th>类别：</th>
+            <td><select name="classid" style="width:150px">
+                <option value="">请选择</option>
+                <option value="143">.公交联盟</option>
+<option value="93">其他</option>
+<option value="92">教育培训</option>
+<option value="91">宠物网站</option>
+<option value="89">房产网站</option>
+<option value="88">招聘网站</option>
+<option value="87">分类网站</option>
+<option value="86">汽车网站</option>
+<option value="85">旅游网站</option>
+<option value="84">票务网站</option>
+<option value="63">餐饮网站</option>
+<option value="62">门户网站</option>
+<option value="61">人才网站</option>
+
+          </select><span>*</span></td>
+       </tr>
+        <tr>
+          <th>备注：</th>
+          <td><textarea name="note" rows="5" cols="33" onpropertychange="checkLength(this,'200');"></textarea><span>200字</span></td>
+       </tr>
+      </table>
+      <p class="pBut"><input name="save" type="submit" value="确认" class="inpButton"> <input name="reset" type="reset" value="重置" class="inpButton"></p>
+	</form>
+</div>
+<div class="bottom">
+	<p><a href="../index.html">关于我们</a> | <a href="../index.html">企业推广</a> | <a href="javascript:;">在线加盟</a> |<a href="../index.html"> 联系我们</a> | <a href="../help/sitelist.html"> 分站列表</a></p>
+	<p>Copyright &copy;2007 Mapbar Inc. All Rights Reserved. <br>审图号:GS(2006)781 &nbsp;&nbsp;&nbsp;&nbsp;<a href="javascript:;">[京ICP证050054号]</a>  </p>
+</div><!-- bottom END-->
+</body>
+</html>

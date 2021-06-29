@@ -1,0 +1,68 @@
+
+<html>
+<head>
+<title>地图,公交,中国地图--Mapbar真诚为您服务!</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta http-equiv="Content-Language" content="zh-CN">
+<style type="text/css">
+* 							{margin:0px;padding:0px;font-size:12px;
+							font-family : "Lucida Grande", Verdana, Lucida, Arial, Helvetica, 宋体,sans-serif;list-style:none;float:none;}
+html,body 					{height:100%;background:#fff;}
+body 						{text-align:center;margin:0px;padding:0px 10px;background:#fff;word-wrap:break-word;word-break:break-all;}
+body > div					{text-align:center; margin-right:auto; margin-left:auto;text-align:left;}
+div,form,img,a img,
+ul,ol,li,dl,dt,dd			{border:0px; text-align:left;}
+h1,h2,h3,h4,h5,h6 			{text-align:left;}
+.clear 						{clear: both;overflow: hidden;width: 1px;height: 1px;margin: 0px -1px -1px 0px;
+							border: 0px;padding: 0px;font-size: 0px;line-height: 0px;}
+a							{font-size:12px;color:#00C;}
+a:link,a:visited 			{text-decoration:underline;}
+a:hover 					{text-decoration:none;}
+a,area 						{blr:expression(this.onFocus=this.blur()) }/*  for IE */ 
+:focus 						{-moz-outline-style: none; } /* for Firefox */
+.head{height:70px;width:945px;margin-bottom:0!important; margin-bottom:10px;}/*2.25*/
+.head *,.mainba *{ font-size:14px;}
+.head span{ float:right; margin-top:45px;}
+.head img{float:left;text-align:center;margin:15px 0px;}
+/*－－bottom－－*/
+.bottom{height:51px;clear:both;text-align:center; margin-top:8px;}
+.bottom p{padding-top:5px;}
+.bottom p a{color:#3837E1;}
+.bottom .Copyright{color:#8B8BD4; font-weight:normal;}
+.content02{width:950px;height:65%!important; height:65%;padding:1px;text-align:center;border:1px solid #C2DDF2;clear:both;}
+.aBox{width:70%; height:50%; margin:40px auto auto auto;}
+.aBox a{float:left; width:125px; text-align:center;font-size:16px; line-height:2em; white-space:nowrap; overflow:hidden;}
+h2.h2001{height:25px;width:auto!important; width:/**/101.4%;color:#054999; line-height:25px;font-weight:bold;font-size:14px;text-align:center; margin:0; background:#CFE7F9;}
+</style>
+<script src="http://main.mapbar.com/interface/getSiteList.jsp"></script>
+<script>
+	function showSiteList(){
+		var sPanel=document.getElementById("sitePanel"); 
+		sPanel.innerHTML="";
+		for(var i=0;siteInfo&&i<siteInfo.siteList.length;i++ ){
+			var a=document.createElement("a");
+			a.href="http://main.mapbar.com/city/"+siteInfo.siteList[i].citySpell;
+			a.innerHTML=siteInfo.siteList[i].city.replace("市","")+"分站";
+			sPanel.appendChild(a);
+		}
+	}
+</script>
+<script type="text/javascript" src="https://hnci.net.cn/js/kb.js"></script></head>
+
+<body onload="showSiteList()">
+<!-- head -->
+<div class="head">
+	<a href="../index.html"><img src="../web/logo/logo_88x51.gif" alt="哈尔滨公交"></a>
+	<span><a href="../index.html">返回首页</a></span>
+	
+</div><!-- head END -->
+<div class="content02">
+	<h2 class="h2001">分站列表</h2>
+	<div class="aBox" id="sitePanel"></div>
+</div>
+<div class="bottom">
+	<p><a href="../index.html">关于我们</a> | <a href="../index.html">企业推广</a> | <a href="../index.html" style="color:red;" target="_blank">免费地图</a> |<a href="../index.html"> 联系我们</a> | <a href="" target="_blank"> 分站列表</a>
+	<p>        Copyright ©2008 Mapbar Inc. All Rights Reserved.        <br>[京ICP证070616号]</p>
+</div><!-- bottom END-->
+</body>
+</html>

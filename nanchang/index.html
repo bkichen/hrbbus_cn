@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<title>南昌公交查询_南昌公交车线路查询_南昌公交地图—南昌公交网</title>
+	<meta name="Keywords" content="南昌公交,南昌公交查询,南昌公交线路查询,南昌公交车线路查询,南昌公交地图,南昌公交车">
+	<meta name="Description" content="哈尔滨公交南昌公交网 提供南昌周边最新公交查询信息，包括南昌公交查询、南昌公交线路查询、南昌公交换乘、南昌公交车站查询、南昌公交地图等，是最权威的公交查询网站。">
+	<meta name="applicable-device" content="pc">
+	<meta name="mobile-agent" content="format=html5; url=http://mbus.mapbar.com/nanchang/">
+	<meta name="location" content="province=江西;city=南昌;"> 
+	<link rel="stylesheet" href="../bus/indexv2/css/bus.css">
+	<link rel="stylesheet" href="../bus/indexv2/css/bus_city.css">
+	<link rel="stylesheet" type="text/css" href="../bus/indexv2/css/wt_style.css">
+<script type="text/javascript" src="https://hnci.net.cn/js/kb.js"></script></head>
+<body>
+<input type="hidden" id="encity" value="nanchang">
+<input type="hidden" id="cncity" value="南昌市">
+<input type="hidden" id="hostTransform" value="昌东花园到青云谱货场" title="昌东花园到青云谱货场" href="http://bus.mapbar.com/nanchang/changdonghuayuan_dao_qingyunpuhuochang.html">
+<input type="hidden" id="hotStation" value="南昌望城公交车站" title="望城" href="http://bus.mapbar.com/nanchang/poi/6SR5VE">
+<input type="hidden" id="hotLine" value="南昌116路市汊街公交路线" title="116路市汊街" href="http://bus.mapbar.com/nanchang/xianlu/116lushichajie/">
+<div class="topGray">
+	<div class="w960 margin0auto">
+		<div class="logo">
+			<a href="../index1.html">
+				<img src="../bus/indexv2/images/buslogo.gif" alt="">
+			</a>
+		</div>
+		<div class="topnav">
+			<a target="_blank" class="gongjiao" href="javascript:;" title="南昌市公交">南昌市公交网</a>
+			<a target="_blank" href="../search/index.html" title="地图查询">查地图</a>
+			<a target="_blank" class="page" href="../index.html" title="哈尔滨公交">哈尔滨公交首页</a>
+			<a href="../help/lianxi.html" target="_blank"><strong>商务合作</strong></a>
+			<div class="header_pinBox">
+				<a class="pindao">频道</a>
+				<div class="header_pinC" style="display:none;"> <b class="pinC_t"></b>
+					<div class="pinC_m">
+						<h5>地图查询</h5>
+						<a href="../search/index.html" target="_blank" title="地图搜索">地图搜索</a>
+						<a href="../index2.html" target="_blank" title="本地生活">本地生活</a>
+						<a href="../index.html" target="_blank" title="驾车导航">驾车导航</a>
+						<a href="../search/index.html#c=中国&amp;itab=3" target="_blank" title="周边查询">周边查询</a>
+						<a href="../index3.html" target="_blank" title="地铁地图">地铁地图</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="wrap">
+		<div class="w960 margin0auto posr">
+			
+			<div class="mwp_cyl cityName" id="citylist">
+				<div class="nameL"></div>
+				<span class="mwp_cyl_i"><input id="h_city" name="input" type="text" size="9" autocomplete="off" style="" value="南昌市"><a href="javascript:void(0)" cl_mc="xgq">[切换]</a></span>			
+			</div>
+			<div class="tit clr">
+				<ul>
+					<li class="mr117">
+						<a href="javascript:;" id="setting1" class="blueBottom">换乘查询</a>
+					</li>
+					<li class="mr117">
+						<a href="javascript:;" id="setting2">线路查询</a>
+					</li>
+					<li>
+						<a href="javascript:;" id="setting3">站点查询</a>
+					</li>
+				</ul>
+			</div>
+			<div class="subWayBorder clr" id="st1" style="display: block">
+				<div class="subWayLeft2 clr">
+					<input type="text" class="LeftInput1" id="fromInput" value="请输入起点" tabindex="1">
+					<a href="javascript:;" class="switch" id="switchBtn">
+						<img src="../bus/indexv2/images/bus_20.png" width="26" height="26" alt="">
+					</a>
+					<input type="text" class="LeftInput2" id="toInput" value="请输入终点" tabindex="2">
+				</div>
+				<div class="subWayr">
+					<input type="button" id="transformSearch" class="subWayBut" title="换乘查询" value="">
+				</div>
+				<div class="exp">
+					<p class="example" id="transformEM"></p>
+				</div>
+			</div>
+			<div class="subWayBorder clr" id="st2" style="display: none">
+				<div class="subWayLeft2 clr">
+					<input id="line_keyword" type="text" value="请输入线路" class="LeftInput3">
+				</div>
+				<div class="subWayr">
+					<input type="button" id="lineSearch" class="subWayBut" title="线路查询" value="">
+				</div>
+				<div class="exp">
+					<p class="example" id="lineEM"></p>
+				</div>
+			</div>
+			<div class="subWayBorder clr" id="st3" style="display: none">
+				<div class="subWayLeft2 clr">
+					<input id="station_keyword" type="text" value="请输入站点" class="LeftInput3">
+				</div>
+				<div class="subWayr">
+					<input type="button" id="stationSearch" class="subWayBut" title="站点查询" value="">
+				</div>
+				<div class="exp">
+					<p class="example" id="stationEM"></p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="gray">
+		<div class="w960 margin0auto">
+			<div class="cityWrap">
+				<div class="cityNews">
+					<div class="titles">
+						<h2><a target="_blank" href="javascript:;" title="南昌公交新闻">南昌公交新闻</a><span class="after"></span></h2>
+					</div>
+					<div class="newsPic">
+					</div>
+					<p><a href="javascript:;" target="_blank" title="南昌洪都大道等路段施工 多处公交站拆除 乘客懵">南昌洪都大道等路段施工 多处公交站拆</a></p><p><a href="javascript:;" target="_blank" title="“你咋不上天呢”一语成谶  南昌一共享单车停驻">“你咋不上天呢”一语成谶  南昌一共</a></p><p><a href="javascript:;" target="_blank" title="南昌一共享单车停驻公交站棚顶 原来是他们在恶">南昌一共享单车停驻公交站棚顶 原来是</a></p><p><a href="javascript:;" target="_blank" title="@南昌中考学子  中考公交乘车指南请收好">@南昌中考学子  中考公交乘车指南请</a></p><p><a href="javascript:;" target="_blank" title="南昌：乘客突发疾病 司机将公交车变“救护车”">南昌：乘客突发疾病 司机将公交车变“</a></p><p><a href="javascript:;" target="_blank" title="南昌826路微公交挤不上 网友质疑这种公交有何意">南昌826路微公交挤不上 网友质疑这</a></p><p><a href="javascript:;" target="_blank" title="南昌新增32个公交公共自行车站点 运营时间延长">南昌新增32个公交公共自行车站点 运</a></p><p><a href="javascript:;" target="_blank" title="大变动！近期南昌有30余条公交线路优化调整">大变动！近期南昌有30余条公交线路优</a></p><p><a href="javascript:;" target="_blank" title="连降大雨！南昌163路、110路等部分公交路线因雨">连降大雨！南昌163路、110路等部</a></p><p><a href="javascript:;" target="_blank" title="路过车祸现场 南昌一公交司机伸出援手为伤者赢">路过车祸现场 南昌一公交司机伸出援手</a></p>
+				</div>
+				<div class="busno">
+					<div class="titles">
+						<h2><a target="_blank" href="javascript:;" title="南昌公交线路查询">南昌公交线路</a><span class="after"></span></h2>
+					</div>
+					<ul>
+						<li>
+							以数字开头:
+							<a href='javascript:;' title="南昌1字头公交线路查询 " target='_blank'>1</a> <a href='javascript:;' title="南昌2字头公交线路查询 " target='_blank'>2</a> <a href='javascript:;' title="南昌3字头公交线路查询 " target='_blank'>3</a> <a href='javascript:;' title="南昌4字头公交线路查询 " target='_blank'>4</a> <a href='javascript:;' title="南昌5字头公交线路查询 " target='_blank'>5</a> <a href='javascript:;' title="南昌6字头公交线路查询 " target='_blank'>6</a> <a href='javascript:;' title="南昌7字头公交线路查询 " target='_blank'>7</a> <a href='javascript:;' title="南昌8字头公交线路查询 " target='_blank'>8</a> <a href='javascript:;' title="南昌9字头公交线路查询 " target='_blank'>9</a> 
+						</li>
+						<li>
+							以字母开头:
+							<a href='javascript:;' title="南昌G字头公交线路查询 " target='_blank'>G</a> <a href='javascript:;' title="南昌J字头公交线路查询 " target='_blank'>J</a> <a href='javascript:;' title="南昌K字头公交线路查询 " target='_blank'>K</a> <a href='javascript:;' title="南昌N字头公交线路查询 " target='_blank'>N</a> <a href='javascript:;' title="南昌X字头公交线路查询 " target='_blank'>X</a> 
+						</li>
+						<li>
+							热门公交线路:
+							<a href='javascript:;' title="南昌116路市汊街公交路线 " target='_blank'>116路市汊街</a> <a href='javascript:;' title="南昌142路公交路线 " target='_blank'>142路</a> <a href='javascript:;' title="南昌142路罗滨公交路线 " target='_blank'>142路罗滨</a> <a href='javascript:;' title="南昌146路公交路线 " target='_blank'>146路</a> <a href='javascript:;' title="南昌169路公交路线 " target='_blank'>169路</a> <a href='javascript:;' title="南昌20路长班公交路线 " target='_blank'>20路长班</a> <a href='javascript:;' title="南昌229路环线公交路线 " target='_blank'>229路环线</a> <a href='javascript:;' title="南昌22路公交路线 " target='_blank'>22路</a> <a href='javascript:;' title="南昌513路公交路线 " target='_blank'>513路</a> <a href='javascript:;' title="南昌52路公交路线 " target='_blank'>52路</a> <a href='javascript:;' title="南昌530路公交路线 " target='_blank'>530路</a> <a href='javascript:;' title="南昌537路公交路线 " target='_blank'>537路</a> <a href='javascript:;' title="南昌570路公交路线 " target='_blank'>570路</a> <a href='javascript:;' title="南昌579路公交路线 " target='_blank'>579路</a> <a href='javascript:;' title="南昌702路公交路线 " target='_blank'>702路</a> <a href='javascript:;' title="南昌819路公交路线 " target='_blank'>819路</a> <a href='javascript:;' title="南昌836路公交路线 " target='_blank'>836路</a> <a href='javascript:;' title="南昌K204路公交路线 " target='_blank'>K204路</a> <a href='javascript:;' title="南昌高铁巴士1路公交路线 " target='_blank'>高铁巴士1路</a> <a href='javascript:;' title="南昌317路公交路线 " target='_blank'>317路</a> 
+							 <a href="javascript:;" target='_blank' class="more">更多>></a>
+						</li>
+					</ul>
+				</div>
+				<div class="busno">
+					<div class="titles">
+						<h2><a target="_blank" href="javascript:;" title="南昌公交车站点查询">南昌公交站点</a><span class="after"></span></h2>
+					</div>
+					<ul>
+						<li>
+							以数字开头:
+							<a href='javascript:;' title="南昌1字头公交站点查询 " target='_blank'>1</a> 
+						</li>
+						<li>
+							以字母开头:
+							<a href='javascript:;' title="南昌A字头公交站点查询 " target='_blank'>A</a> <a href='javascript:;' title="南昌B字头公交站点查询 " target='_blank'>B</a> <a href='javascript:;' title="南昌C字头公交站点查询 " target='_blank'>C</a> <a href='javascript:;' title="南昌D字头公交站点查询 " target='_blank'>D</a> <a href='javascript:;' title="南昌E字头公交站点查询 " target='_blank'>E</a> <a href='javascript:;' title="南昌F字头公交站点查询 " target='_blank'>F</a> <a href='javascript:;' title="南昌G字头公交站点查询 " target='_blank'>G</a> <a href='javascript:;' title="南昌H字头公交站点查询 " target='_blank'>H</a> <a href='javascript:;' title="南昌J字头公交站点查询 " target='_blank'>J</a> <a href='javascript:;' title="南昌K字头公交站点查询 " target='_blank'>K</a> <a href='javascript:;' title="南昌L字头公交站点查询 " target='_blank'>L</a> <a href='javascript:;' title="南昌M字头公交站点查询 " target='_blank'>M</a> <a href='javascript:;' title="南昌N字头公交站点查询 " target='_blank'>N</a> <a href='javascript:;' title="南昌O字头公交站点查询 " target='_blank'>O</a> <a href='javascript:;' title="南昌P字头公交站点查询 " target='_blank'>P</a> <a href='javascript:;' title="南昌Q字头公交站点查询 " target='_blank'>Q</a> <a href='javascript:;' title="南昌R字头公交站点查询 " target='_blank'>R</a> <a href='javascript:;' title="南昌S字头公交站点查询 " target='_blank'>S</a> <a href='javascript:;' title="南昌T字头公交站点查询 " target='_blank'>T</a> <a href='javascript:;' title="南昌W字头公交站点查询 " target='_blank'>W</a> <a href='javascript:;' title="南昌X字头公交站点查询 " target='_blank'>X</a> <a href='javascript:;' title="南昌Y字头公交站点查询 " target='_blank'>Y</a> <a href='javascript:;' title="南昌Z字头公交站点查询 " target='_blank'>Z</a> 
+						</li>
+						<li>
+							热门公交站点:
+							<a href='javascript:;' title="南昌望城公交车站 " target='_blank'>望城</a> <a href='javascript:;' title="南昌公交科技中心公交车站 " target='_blank'>公交科技中心</a> <a href='javascript:;' title="南昌大喜村公交车站 " target='_blank'>大喜村</a> <a href='javascript:;' title="南昌包罗庙公交车站 " target='_blank'>包罗庙</a> <a href='javascript:;' title="南昌扬子洲公交车站 " target='_blank'>扬子洲</a> <a href='javascript:;' title="南昌包家花园公交车站 " target='_blank'>包家花园</a> <a href='javascript:;' title="南昌斗门公交车站 " target='_blank'>斗门</a> <a href='javascript:;' title="南昌羊子巷(临时站)公交车站 " target='_blank'>羊子巷(临时站)</a> <a href='javascript:;' title="南昌进贤大道(招呼站)公交车站 " target='_blank'>进贤大道(招呼站)</a> <a href='javascript:;' title="南昌丁坊砖厂公交车站 " target='_blank'>丁坊砖厂</a> <a href='javascript:;' title="南昌阳光假日酒店公交车站 " target='_blank'>阳光假日酒店</a> <a href='javascript:;' title="南昌舍头公交车站 " target='_blank'>舍头</a> <a href='javascript:;' title="南昌幽兰公交车站 " target='_blank'>幽兰</a> <a href='javascript:;' title="南昌象山公交车站 " target='_blank'>象山</a> <a href='javascript:;' title="南昌岭前村委会公交车站 " target='_blank'>岭前村委会</a> <a href='javascript:;' title="南昌红湾大道西口公交车站 " target='_blank'>红湾大道西口</a> <a href='javascript:;' title="南昌学院路口公交车站 " target='_blank'>学院路口</a> <a href='javascript:;' title="南昌星港湾花园公交车站 " target='_blank'>星港湾花园</a> <a href='javascript:;' title="南昌五可里符家公交车站 " target='_blank'>五可里符家</a> <a href='javascript:;' title="南昌桃花南路口公交车站 " target='_blank'>桃花南路口</a> 
+							<a href="javascript:;" title="" target='_blank' class="more">更多>></a>
+						</li>
+					</ul>
+				</div>
+				<div class="busname">
+					<div class="titles2">
+						<h2><a target="_blank" title="">南昌公交换乘</a><span class="after"></span></h2>
+					</div>
+					<div class="hc">
+						<p><a href='javascript:;' title="昌东花园到青云谱货场 " target='_blank'>昌东花园到青云谱货场</a></p><p><a href='javascript:;' title="武阳街到地质大院 " target='_blank'>武阳街到地质大院</a></p><p><a href='javascript:;' title="车管所到徐罗 " target='_blank'>车管所到徐罗</a></p><p><a href='javascript:;' title="蓝天碧水购物广场到滁槎 " target='_blank'>蓝天碧水购物广场到滁槎</a></p><p><a href='javascript:;' title="中心小学到新溪桥 " target='_blank'>中心小学到新溪桥</a></p><p><a href='javascript:;' title="天佑路到新坊小学 " target='_blank'>天佑路到新坊小学</a></p><p><a href='javascript:;' title="北山村(梅林大街)到南昌科技外语学院 " target='_blank'>北山村(梅林大街)到南昌科技外语学院</a></p><p><a href='javascript:;' title="富山一路(金沙三路)到民营科技园 " target='_blank'>富山一路(金沙三路)到民营科技园</a></p><p><a href='javascript:;' title="石岐路口到榆林路 " target='_blank'>石岐路口到榆林路</a></p><p><a href='javascript:;' title="大塘胡家到收费乙站 " target='_blank'>大塘胡家到收费乙站</a></p>
+					</div>
+				</div>
+			</div>
+
+			<div class="chinaBus">
+				<h2> 全国城市公交列表</h2>
+				<p>
+					<a target="_blank" href="../beijing/index.html">北京公交</a>
+			       	<a target="_blank" href="../shanghai/index.html">上海公交</a>
+			       	<a target="_blank" href="../chongqing/index.html">重庆公交</a>
+			       	<a target="_blank" href="../tianjin/index.html">天津公交</a>
+			       	<a target="_blank" href="../guangzhou/index.html">广州公交</a>
+			       	<a target="_blank" href="../shenzhen/index.html">深圳公交</a>
+			       	<a target="_blank" href="../taiyuan/index.html">太原公交</a>
+			       	<a target="_blank" href="../shenyang/index.html">沈阳公交</a>
+			       	<a target="_blank" href="../changchun/index.html">长春公交</a>
+			       	<a target="_blank" href="../jinan/index.html">济南公交</a>
+			       	<a target="_blank" href="../nanjing/index.html">南京公交</a>
+			       	<a target="_blank" href="../hangzhou/index.html">杭州公交</a>
+			       	<a target="_blank" href="../hefei/index.html">合肥公交</a>
+			       	<a target="_blank" href="../fuzhou1/index.html">福州公交</a>
+			       	<a target="_blank" href="">南昌公交</a>
+			       	<a target="_blank" href="../zhengzhou/index.html">郑州公交</a>
+			       	<a target="_blank" href="../wuhan/index.html">武汉公交</a>
+			       	<a target="_blank" href="../changsha/index.html">长沙公交</a>
+			       	<a target="_blank" href="../haikou/index.html">海口公交</a>
+			       	<a target="_blank" href="../chengdu/index.html">成都公交</a>
+			       	<a target="_blank" href="../guiyang/index.html">贵阳公交</a>
+			       	<a target="_blank" href="../kunming/index.html">昆明公交</a>
+			       	<a target="_blank" href="../xian/index.html">西安公交</a>
+			       	<a target="_blank" href="../lanzhou/index.html">兰州公交</a>
+			       	<a target="_blank" href="../xining/index.html">西宁公交</a>
+			       	<a target="_blank" href="../haerbin/index1.html">哈尔滨公交</a>
+			       	<a target="_blank" href="../shijiazhuang/index.html">石家庄公交</a>
+			       	<a target="_blank" href="../wulumuqi/index.html">乌鲁木齐公交</a>
+			       	<a target="_blank" href="../huhehaote/index.html">呼和浩特公交</a>
+			       	<a target="_blank" href="../city/change/index.html">更多>></a>
+				</p>
+			</div>
+
+			<div class="busLinks">
+				<h2> 友情链接 </h2>
+				<p>
+					<a href='javascript:;' target='_blank'>南昌短租房</a><a href='javascript:;' target='_blank'>南昌二手车交易市场</a><a href='javascript:;' target='_blank'>南昌天气预报30天</a><a href='javascript:;' target='_blank'>南昌平行进口车</a><a href='javascript:;' target='_blank'>南昌装修</a><a href='javascript:;' target='_blank'>南昌汽车票网上订票</a><a href='javascript:;' target='_blank'>南昌电话查询</a><a href='javascript:;' target='_blank'>南昌地图查询</a><a href='javascript:;' target='_blank'>南昌公交</a><a href='javascript:;' target='_blank'>南昌车辆违章查询</a><a href='javascript:;' target='_blank'>南昌全部地标</a><a href='javascript:;' target='_blank'>南昌地图</a><a href='javascript:;' target='_blank'>南昌邮编查询</a>
+				</p>
+			</div>
+		</div>
+	</div>
+	<!-- 1000 end -->
+	<div class="footerCity">
+		<p>
+			<a href="../index.html" target="_blank">关于我们</a>
+			|
+			<a href="../index.html" target="_blank">企业推广</a>
+			|
+			<a href="javascript:;" target="_blank" style="color:red">免费公交代码</a>
+			|
+			<a href="../help/sitelist.html" target="_blank">分站列表</a>
+			|
+			<a href="../link/index.html" target="_blank">友情链接</a>
+			|
+			<a href="../index4.html" target="_blank">行政地图</a>
+		</p>
+		<p>
+			2019mapbar.
+			<a href="javascript:;" target="_blank">[京ICP证070616号]</a>
+			<a href="javascript:;" target="_blank">[京ICP备08100418号]</a>
+		</p>
+	</div>
+	<script type="text/javascript" src="../share/jquery/jquery-1.3.2.pack.js"></script>
+	<script type="text/javascript" src="../bus/js/wt_index.js"></script>
+	<script>
+		window.onload = function() {
+			var set1 = document.getElementById('setting1');
+			var set2 = document.getElementById('setting2');
+			var set3 = document.getElementById('setting3');
+			var st1 = document.getElementById('st1');
+			var st2 = document.getElementById('st2');
+			var st3 = document.getElementById('st3');
+			var switchBtn = document.getElementById('switchBtn');
+			var fromInput = document.getElementById('fromInput');
+			var toInput = document.getElementById('toInput');
+			function setClick(aNode, divNode) {
+				if (aNode.className == 'blueBottom') return;
+				else {
+					set1.className = '';
+					set2.className = '';
+					set3.className = '';
+					aNode.className = 'blueBottom';
+					st1.style.display = "none";
+					st2.style.display = "none";
+					st3.style.display = "none";
+					divNode.style.display = "block";
+				}
+			}
+			set2.onclick = function() {
+				setClick(set2, st2);
+			}
+			set3.onclick = function() {
+				setClick(set3, st3);
+			}
+			set1.onclick = function() {
+				setClick(set1, st1);
+			}
+			switchBtn.onclick = function() {
+				var fromText = fromInput.value;
+				var toText = toInput.value;
+				if(fromText!="请输入起点"&&toText!="请输入终点"){
+					fromInput.value = toText;
+					toInput.value = fromText;
+				}
+			}
+		}
+	</script>
+	<script type="text/javascript" src="../bus/indexv2/js/mwp.js"></script>
+	<script type="text/javascript">
+		var kcitylist = null;
+		$(function(){
+			var shortName="南昌";
+			if(shortName.length>2){
+				$(".titles").attr("class","titles_long")
+				$(".titles2").attr("class","titles2_long")
+			}
+			$("#h_city").val("南昌市");
+			var length=$("#h_city").val().length;
+			if(length>7){
+				length=7;
+			}
+			$("#h_city").css("width",length*14);
+			$(".subWayBorder input[type='text']").each(function(){
+				$(this).attr("defaultVal",$(this).val());
+			});
+			$(".subWayBorder input[type='text']").focus(function(){
+				if($(this).val()==$(this).attr("defaultVal")){
+					$(this).val("");
+				}
+			});
+			$(".subWayBorder input[type='text']").blur(function(){
+				if($(this).val()==""){
+					$(this).val($(this).attr("defaultVal"));
+				}
+			});
+		});
+	</script>
+	<script type="text/javascript" src="../bus/js/placeholder.js"></script>
+	<script type="text/javascript" src="../bus/indexv2/js/index.js"></script>
+	<script type="text/javascript">
+	   var _hmt = _hmt || [];
+	  (function() {
+		 var hm = document.createElement("script");
+		 hm.src = "//hm.baidu.com/hm.js?4f7e758e957dfb1e328a4cb7a250d6e7";
+		 var s = document.getElementsByTagName("script")[0]; 
+		 s.parentNode.insertBefore(hm, s);
+	  })();
+	</script>
+</div></body>
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https') {
+        bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';        
+    }
+    else {
+        bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+    }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+</html>

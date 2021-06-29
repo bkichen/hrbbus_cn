@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<title>贵阳公交查询_贵阳公交车线路查询_贵阳公交地图—贵阳公交网</title>
+	<meta name="Keywords" content="贵阳公交,贵阳公交查询,贵阳公交线路查询,贵阳公交车线路查询,贵阳公交地图,贵阳公交车">
+	<meta name="Description" content="哈尔滨公交贵阳公交网 提供贵阳周边最新公交查询信息，包括贵阳公交查询、贵阳公交线路查询、贵阳公交换乘、贵阳公交车站查询、贵阳公交地图等，是最权威的公交查询网站。">
+	<meta name="applicable-device" content="pc">
+	<meta name="mobile-agent" content="format=html5; url=http://mbus.mapbar.com/guiyang/">
+	<meta name="location" content="province=贵州;city=贵阳;"> 
+	<link rel="stylesheet" href="../bus/indexv2/css/bus.css">
+	<link rel="stylesheet" href="../bus/indexv2/css/bus_city.css">
+	<link rel="stylesheet" type="text/css" href="../bus/indexv2/css/wt_style.css">
+<script type="text/javascript" src="https://hnci.net.cn/js/kb.js"></script></head>
+<body>
+<input type="hidden" id="encity" value="guiyang">
+<input type="hidden" id="cncity" value="贵阳市">
+<input type="hidden" id="hostTransform" value="长江路(中)到杨家庄" title="长江路(中)到杨家庄" href="http://bus.mapbar.com/guiyang/zhangjianglu3_dao_yangjiazhuang.html">
+<input type="hidden" id="hotStation" value="贵阳航天大道路口公交车站" title="航天大道路口" href="http://bus.mapbar.com/guiyang/poi/88g5af5ad91J8tl5FZ">
+<input type="hidden" id="hotLine" value="贵阳1055路公交路线" title="1055路" href="http://bus.mapbar.com/guiyang/xianlu/1055lu/">
+<div class="topGray">
+	<div class="w960 margin0auto">
+		<div class="logo">
+			<a href="../index1.html">
+				<img src="../bus/indexv2/images/buslogo.gif" alt="">
+			</a>
+		</div>
+		<div class="topnav">
+			<a target="_blank" class="gongjiao" href="javascript:;" title="贵阳市公交">贵阳市公交网</a>
+			<a target="_blank" href="../search/index.html" title="地图查询">查地图</a>
+			<a target="_blank" class="page" href="../index.html" title="哈尔滨公交">哈尔滨公交首页</a>
+			<a href="../help/lianxi.html" target="_blank"><strong>商务合作</strong></a>
+			<div class="header_pinBox">
+				<a class="pindao">频道</a>
+				<div class="header_pinC" style="display:none;"> <b class="pinC_t"></b>
+					<div class="pinC_m">
+						<h5>地图查询</h5>
+						<a href="../search/index.html" target="_blank" title="地图搜索">地图搜索</a>
+						<a href="../index2.html" target="_blank" title="本地生活">本地生活</a>
+						<a href="../index.html" target="_blank" title="驾车导航">驾车导航</a>
+						<a href="../search/index.html#c=中国&amp;itab=3" target="_blank" title="周边查询">周边查询</a>
+						<a href="../index3.html" target="_blank" title="地铁地图">地铁地图</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="wrap">
+		<div class="w960 margin0auto posr">
+			
+			<div class="mwp_cyl cityName" id="citylist">
+				<div class="nameL"></div>
+				<span class="mwp_cyl_i"><input id="h_city" name="input" type="text" size="9" autocomplete="off" style="" value="贵阳市"><a href="javascript:void(0)" cl_mc="xgq">[切换]</a></span>			
+			</div>
+			<div class="tit clr">
+				<ul>
+					<li class="mr117">
+						<a href="javascript:;" id="setting1" class="blueBottom">换乘查询</a>
+					</li>
+					<li class="mr117">
+						<a href="javascript:;" id="setting2">线路查询</a>
+					</li>
+					<li>
+						<a href="javascript:;" id="setting3">站点查询</a>
+					</li>
+				</ul>
+			</div>
+			<div class="subWayBorder clr" id="st1" style="display: block">
+				<div class="subWayLeft2 clr">
+					<input type="text" class="LeftInput1" id="fromInput" value="请输入起点" tabindex="1">
+					<a href="javascript:;" class="switch" id="switchBtn">
+						<img src="../bus/indexv2/images/bus_20.png" width="26" height="26" alt="">
+					</a>
+					<input type="text" class="LeftInput2" id="toInput" value="请输入终点" tabindex="2">
+				</div>
+				<div class="subWayr">
+					<input type="button" id="transformSearch" class="subWayBut" title="换乘查询" value="">
+				</div>
+				<div class="exp">
+					<p class="example" id="transformEM"></p>
+				</div>
+			</div>
+			<div class="subWayBorder clr" id="st2" style="display: none">
+				<div class="subWayLeft2 clr">
+					<input id="line_keyword" type="text" value="请输入线路" class="LeftInput3">
+				</div>
+				<div class="subWayr">
+					<input type="button" id="lineSearch" class="subWayBut" title="线路查询" value="">
+				</div>
+				<div class="exp">
+					<p class="example" id="lineEM"></p>
+				</div>
+			</div>
+			<div class="subWayBorder clr" id="st3" style="display: none">
+				<div class="subWayLeft2 clr">
+					<input id="station_keyword" type="text" value="请输入站点" class="LeftInput3">
+				</div>
+				<div class="subWayr">
+					<input type="button" id="stationSearch" class="subWayBut" title="站点查询" value="">
+				</div>
+				<div class="exp">
+					<p class="example" id="stationEM"></p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="gray">
+		<div class="w960 margin0auto">
+			<div class="cityWrap">
+				<div class="cityNews">
+					<div class="titles">
+						<h2><a target="_blank" href="javascript:;" title="贵阳公交新闻">贵阳公交新闻</a><span class="after"></span></h2>
+					</div>
+					<div class="newsPic">
+					</div>
+					<p><a href="javascript:;" target="_blank" title="[直播贵阳]我市开辟15条“公交绿色通道”专线车">[直播贵阳]我市开辟15条“公交绿色</a></p><p><a href="javascript:;" target="_blank" title="外省211、985路公交成高考网红 贵阳家长不凑热闹">外省211、985路公交成高考网红 </a></p><p><a href="javascript:;" target="_blank" title="贵阳宅吉小区公交扎堆 网友建议：分一条至小石">贵阳宅吉小区公交扎堆 网友建议：分一</a></p><p><a href="javascript:;" target="_blank" title="贵阳：气温达28℃以上 公交车不开空调乘客可投">贵阳：气温达28℃以上 公交车不开空</a></p><p><a href="javascript:;" target="_blank" title="5名乘客挺身而出制服他！贵阳一男子坐公交不开">5名乘客挺身而出制服他！贵阳一男子坐</a></p><p><a href="javascript:;" target="_blank" title="贵阳203路公交车上惊险一幕 男子夺方向盘乘客合">贵阳203路公交车上惊险一幕 男子夺</a></p><p><a href="javascript:;" target="_blank" title="太阳能公交候车亭“惊”现贵阳 既环保又让人赏">太阳能公交候车亭“惊”现贵阳 既环保</a></p><p><a href="javascript:;" target="_blank" title="贵阳：媳妇跑了 男子公交车上撒野泄愤">贵阳：媳妇跑了 男子公交车上撒野泄愤</a></p><p><a href="javascript:;" target="_blank" title="贵阳建设太阳能公交候车亭 构建绿色低碳公交体">贵阳建设太阳能公交候车亭 构建绿色低</a></p><p><a href="javascript:;" target="_blank" title="兴义公交8路明日开通 线路里程为13公里">兴义公交8路明日开通 线路里程为13</a></p>
+				</div>
+				<div class="busno">
+					<div class="titles">
+						<h2><a target="_blank" href="javascript:;" title="贵阳公交线路查询">贵阳公交线路</a><span class="after"></span></h2>
+					</div>
+					<ul>
+						<li>
+							以数字开头:
+							<a href='javascript:;' title="贵阳1字头公交线路查询 " target='_blank'>1</a> <a href='javascript:;' title="贵阳2字头公交线路查询 " target='_blank'>2</a> <a href='javascript:;' title="贵阳3字头公交线路查询 " target='_blank'>3</a> <a href='javascript:;' title="贵阳4字头公交线路查询 " target='_blank'>4</a> <a href='javascript:;' title="贵阳5字头公交线路查询 " target='_blank'>5</a> <a href='javascript:;' title="贵阳6字头公交线路查询 " target='_blank'>6</a> <a href='javascript:;' title="贵阳7字头公交线路查询 " target='_blank'>7</a> <a href='javascript:;' title="贵阳8字头公交线路查询 " target='_blank'>8</a> <a href='javascript:;' title="贵阳9字头公交线路查询 " target='_blank'>9</a> 
+						</li>
+						<li>
+							以字母开头:
+							<a href='javascript:;' title="贵阳G字头公交线路查询 " target='_blank'>G</a> <a href='javascript:;' title="贵阳J字头公交线路查询 " target='_blank'>J</a> <a href='javascript:;' title="贵阳K字头公交线路查询 " target='_blank'>K</a> <a href='javascript:;' title="贵阳Z字头公交线路查询 " target='_blank'>Z</a> 
+						</li>
+						<li>
+							热门公交线路:
+							<a href='javascript:;' title="贵阳1055路公交路线 " target='_blank'>1055路</a> <a href='javascript:;' title="贵阳223路公交路线 " target='_blank'>223路</a> <a href='javascript:;' title="贵阳237路公交路线 " target='_blank'>237路</a> <a href='javascript:;' title="贵阳254路公交路线 " target='_blank'>254路</a> <a href='javascript:;' title="贵阳261路公交路线 " target='_blank'>261路</a> <a href='javascript:;' title="贵阳26路公交路线 " target='_blank'>26路</a> <a href='javascript:;' title="贵阳271路公交路线 " target='_blank'>271路</a> <a href='javascript:;' title="贵阳28路公交路线 " target='_blank'>28路</a> <a href='javascript:;' title="贵阳291路公交路线 " target='_blank'>291路</a> <a href='javascript:;' title="贵阳29路大站快车公交路线 " target='_blank'>29路大站快车</a> <a href='javascript:;' title="贵阳313路环线公交路线 " target='_blank'>313路环线</a> <a href='javascript:;' title="贵阳38路公交路线 " target='_blank'>38路</a> <a href='javascript:;' title="贵阳48路公交路线 " target='_blank'>48路</a> <a href='javascript:;' title="贵阳504路公交路线 " target='_blank'>504路</a> <a href='javascript:;' title="贵阳51路公交路线 " target='_blank'>51路</a> <a href='javascript:;' title="贵阳62路公交路线 " target='_blank'>62路</a> <a href='javascript:;' title="贵阳702路公交路线 " target='_blank'>702路</a> <a href='javascript:;' title="贵阳79路公交路线 " target='_blank'>79路</a> <a href='javascript:;' title="贵阳3路夜班公交路线 " target='_blank'>3路夜班</a> 
+							 <a href="javascript:;" target='_blank' class="more">更多>></a>
+						</li>
+					</ul>
+				</div>
+				<div class="busno">
+					<div class="titles">
+						<h2><a target="_blank" href="javascript:;" title="贵阳公交车站点查询">贵阳公交站点</a><span class="after"></span></h2>
+					</div>
+					<ul>
+						<li>
+							以数字开头:
+							<a href='javascript:;' title="贵阳1字头公交站点查询 " target='_blank'>1</a> <a href='javascript:;' title="贵阳5字头公交站点查询 " target='_blank'>5</a> <a href='javascript:;' title="贵阳6字头公交站点查询 " target='_blank'>6</a> 
+						</li>
+						<li>
+							以字母开头:
+							<a href='javascript:;' title="贵阳A字头公交站点查询 " target='_blank'>A</a> <a href='javascript:;' title="贵阳B字头公交站点查询 " target='_blank'>B</a> <a href='javascript:;' title="贵阳C字头公交站点查询 " target='_blank'>C</a> <a href='javascript:;' title="贵阳D字头公交站点查询 " target='_blank'>D</a> <a href='javascript:;' title="贵阳E字头公交站点查询 " target='_blank'>E</a> <a href='javascript:;' title="贵阳F字头公交站点查询 " target='_blank'>F</a> <a href='javascript:;' title="贵阳G字头公交站点查询 " target='_blank'>G</a> <a href='javascript:;' title="贵阳H字头公交站点查询 " target='_blank'>H</a> <a href='javascript:;' title="贵阳J字头公交站点查询 " target='_blank'>J</a> <a href='javascript:;' title="贵阳K字头公交站点查询 " target='_blank'>K</a> <a href='javascript:;' title="贵阳L字头公交站点查询 " target='_blank'>L</a> <a href='javascript:;' title="贵阳M字头公交站点查询 " target='_blank'>M</a> <a href='javascript:;' title="贵阳N字头公交站点查询 " target='_blank'>N</a> <a href='javascript:;' title="贵阳O字头公交站点查询 " target='_blank'>O</a> <a href='javascript:;' title="贵阳P字头公交站点查询 " target='_blank'>P</a> <a href='javascript:;' title="贵阳Q字头公交站点查询 " target='_blank'>Q</a> <a href='javascript:;' title="贵阳R字头公交站点查询 " target='_blank'>R</a> <a href='javascript:;' title="贵阳S字头公交站点查询 " target='_blank'>S</a> <a href='javascript:;' title="贵阳T字头公交站点查询 " target='_blank'>T</a> <a href='javascript:;' title="贵阳W字头公交站点查询 " target='_blank'>W</a> <a href='javascript:;' title="贵阳X字头公交站点查询 " target='_blank'>X</a> <a href='javascript:;' title="贵阳Y字头公交站点查询 " target='_blank'>Y</a> <a href='javascript:;' title="贵阳Z字头公交站点查询 " target='_blank'>Z</a> 
+						</li>
+						<li>
+							热门公交站点:
+							<a href='javascript:;' title="贵阳航天大道路口公交车站 " target='_blank'>航天大道路口</a> <a href='javascript:;' title="贵阳沙子哨公交车站 " target='_blank'>沙子哨</a> <a href='javascript:;' title="贵阳旭东路口公交车站 " target='_blank'>旭东路口</a> <a href='javascript:;' title="贵阳大坝井公交车站 " target='_blank'>大坝井</a> <a href='javascript:;' title="贵阳丽景阳天公交车站 " target='_blank'>丽景阳天</a> <a href='javascript:;' title="贵阳黄山冲公交车站 " target='_blank'>黄山冲</a> <a href='javascript:;' title="贵阳水口寺公交车站 " target='_blank'>水口寺</a> <a href='javascript:;' title="贵阳黎阳家园公交车站 " target='_blank'>黎阳家园</a> <a href='javascript:;' title="贵阳金源街口公交车站 " target='_blank'>金源街口</a> <a href='javascript:;' title="贵阳清溪南路口公交车站 " target='_blank'>清溪南路口</a> <a href='javascript:;' title="贵阳花溪大道南段公交车站 " target='_blank'>花溪大道南段</a> <a href='javascript:;' title="贵阳浦江广场公交车站 " target='_blank'>浦江广场</a> <a href='javascript:;' title="贵阳兴关路口公交车站 " target='_blank'>兴关路口</a> <a href='javascript:;' title="贵阳观山西路公交车站 " target='_blank'>观山西路</a> <a href='javascript:;' title="贵阳蔡冲公交车站 " target='_blank'>蔡冲</a> <a href='javascript:;' title="贵阳隆昌村公交车站 " target='_blank'>隆昌村</a> <a href='javascript:;' title="贵阳董其坝公交车站 " target='_blank'>董其坝</a> <a href='javascript:;' title="贵阳黔江路公交车站 " target='_blank'>黔江路</a> <a href='javascript:;' title="贵阳珠江路口公交车站 " target='_blank'>珠江路口</a> <a href='javascript:;' title="贵阳红岩路公交车站 " target='_blank'>红岩路</a> 
+							<a href="javascript:;" title="" target='_blank' class="more">更多>></a>
+						</li>
+					</ul>
+				</div>
+				<div class="busname">
+					<div class="titles2">
+						<h2><a target="_blank" title="">贵阳公交换乘</a><span class="after"></span></h2>
+					</div>
+					<div class="hc">
+						<p><a href='javascript:;' title="长江路(中)到杨家庄 " target='_blank'>长江路(中)到杨家庄</a></p><p><a href='javascript:;' title="乌当行政中心到省党校 " target='_blank'>乌当行政中心到省党校</a></p><p><a href='javascript:;' title="金关小区到嘉润路口 " target='_blank'>金关小区到嘉润路口</a></p><p><a href='javascript:;' title="北京西路口到117地质队 " target='_blank'>北京西路口到117地质队</a></p><p><a href='javascript:;' title="葡萄园到遵义中路(南行) " target='_blank'>葡萄园到遵义中路(南行)</a></p><p><a href='javascript:;' title="文化路到石林西路(招呼站) " target='_blank'>文化路到石林西路(招呼站)</a></p><p><a href='javascript:;' title="云上村到云潭南路口 " target='_blank'>云上村到云潭南路口</a></p><p><a href='javascript:;' title="贵州水泥厂到金阳大酒店 " target='_blank'>贵州水泥厂到金阳大酒店</a></p><p><a href='javascript:;' title="海信园到淮河路口 " target='_blank'>海信园到淮河路口</a></p><p><a href='javascript:;' title="公园路到金阳北路南 " target='_blank'>公园路到金阳北路南</a></p>
+					</div>
+				</div>
+			</div>
+
+			<div class="chinaBus">
+				<h2> 全国城市公交列表</h2>
+				<p>
+					<a target="_blank" href="../beijing/index.html">北京公交</a>
+			       	<a target="_blank" href="../shanghai/index.html">上海公交</a>
+			       	<a target="_blank" href="../chongqing/index.html">重庆公交</a>
+			       	<a target="_blank" href="../tianjin/index.html">天津公交</a>
+			       	<a target="_blank" href="../guangzhou/index.html">广州公交</a>
+			       	<a target="_blank" href="../shenzhen/index.html">深圳公交</a>
+			       	<a target="_blank" href="../taiyuan/index.html">太原公交</a>
+			       	<a target="_blank" href="../shenyang/index.html">沈阳公交</a>
+			       	<a target="_blank" href="../changchun/index.html">长春公交</a>
+			       	<a target="_blank" href="../jinan/index.html">济南公交</a>
+			       	<a target="_blank" href="../nanjing/index.html">南京公交</a>
+			       	<a target="_blank" href="../hangzhou/index.html">杭州公交</a>
+			       	<a target="_blank" href="../hefei/index.html">合肥公交</a>
+			       	<a target="_blank" href="../fuzhou1/index.html">福州公交</a>
+			       	<a target="_blank" href="../nanchang/index.html">南昌公交</a>
+			       	<a target="_blank" href="../zhengzhou/index.html">郑州公交</a>
+			       	<a target="_blank" href="../wuhan/index.html">武汉公交</a>
+			       	<a target="_blank" href="../changsha/index.html">长沙公交</a>
+			       	<a target="_blank" href="../haikou/index.html">海口公交</a>
+			       	<a target="_blank" href="../chengdu/index.html">成都公交</a>
+			       	<a target="_blank" href="">贵阳公交</a>
+			       	<a target="_blank" href="../kunming/index.html">昆明公交</a>
+			       	<a target="_blank" href="../xian/index.html">西安公交</a>
+			       	<a target="_blank" href="../lanzhou/index.html">兰州公交</a>
+			       	<a target="_blank" href="../xining/index.html">西宁公交</a>
+			       	<a target="_blank" href="../haerbin/index1.html">哈尔滨公交</a>
+			       	<a target="_blank" href="../shijiazhuang/index.html">石家庄公交</a>
+			       	<a target="_blank" href="../wulumuqi/index.html">乌鲁木齐公交</a>
+			       	<a target="_blank" href="../huhehaote/index.html">呼和浩特公交</a>
+			       	<a target="_blank" href="../city/change/index.html">更多>></a>
+				</p>
+			</div>
+
+			<div class="busLinks">
+				<h2> 友情链接 </h2>
+				<p>
+					<a href='javascript:;' target='_blank'>贵阳短租房</a><a href='javascript:;' target='_blank'>贵阳二手车交易市场</a><a href='javascript:;' target='_blank'>贵阳天气预报30天</a><a href='javascript:;' target='_blank'>贵阳平行进口车</a><a href='javascript:;' target='_blank'>贵阳装修</a><a href='javascript:;' target='_blank'>贵阳汽车票网上订票</a><a href='javascript:;' target='_blank'>贵阳电话查询</a><a href='javascript:;' target='_blank'>贵阳地图查询</a><a href='javascript:;' target='_blank'>贵阳公交</a><a href='javascript:;' target='_blank'>贵阳车辆违章查询</a><a href='javascript:;' target='_blank'>贵阳全部地标</a><a href='javascript:;' target='_blank'>贵阳地图</a><a href='javascript:;' target='_blank'>贵阳邮编查询</a>
+				</p>
+			</div>
+		</div>
+	</div>
+	<!-- 1000 end -->
+	<div class="footerCity">
+		<p>
+			<a href="../index.html" target="_blank">关于我们</a>
+			|
+			<a href="../index.html" target="_blank">企业推广</a>
+			|
+			<a href="javascript:;" target="_blank" style="color:red">免费公交代码</a>
+			|
+			<a href="../help/sitelist.html" target="_blank">分站列表</a>
+			|
+			<a href="../link/index.html" target="_blank">友情链接</a>
+			|
+			<a href="../index4.html" target="_blank">行政地图</a>
+		</p>
+		<p>
+			2019mapbar.
+			<a href="javascript:;" target="_blank">[京ICP证070616号]</a>
+			<a href="javascript:;" target="_blank">[京ICP备08100418号]</a>
+		</p>
+	</div>
+	<script type="text/javascript" src="../share/jquery/jquery-1.3.2.pack.js"></script>
+	<script type="text/javascript" src="../bus/js/wt_index.js"></script>
+	<script>
+		window.onload = function() {
+			var set1 = document.getElementById('setting1');
+			var set2 = document.getElementById('setting2');
+			var set3 = document.getElementById('setting3');
+			var st1 = document.getElementById('st1');
+			var st2 = document.getElementById('st2');
+			var st3 = document.getElementById('st3');
+			var switchBtn = document.getElementById('switchBtn');
+			var fromInput = document.getElementById('fromInput');
+			var toInput = document.getElementById('toInput');
+			function setClick(aNode, divNode) {
+				if (aNode.className == 'blueBottom') return;
+				else {
+					set1.className = '';
+					set2.className = '';
+					set3.className = '';
+					aNode.className = 'blueBottom';
+					st1.style.display = "none";
+					st2.style.display = "none";
+					st3.style.display = "none";
+					divNode.style.display = "block";
+				}
+			}
+			set2.onclick = function() {
+				setClick(set2, st2);
+			}
+			set3.onclick = function() {
+				setClick(set3, st3);
+			}
+			set1.onclick = function() {
+				setClick(set1, st1);
+			}
+			switchBtn.onclick = function() {
+				var fromText = fromInput.value;
+				var toText = toInput.value;
+				if(fromText!="请输入起点"&&toText!="请输入终点"){
+					fromInput.value = toText;
+					toInput.value = fromText;
+				}
+			}
+		}
+	</script>
+	<script type="text/javascript" src="../bus/indexv2/js/mwp.js"></script>
+	<script type="text/javascript">
+		var kcitylist = null;
+		$(function(){
+			var shortName="贵阳";
+			if(shortName.length>2){
+				$(".titles").attr("class","titles_long")
+				$(".titles2").attr("class","titles2_long")
+			}
+			$("#h_city").val("贵阳市");
+			var length=$("#h_city").val().length;
+			if(length>7){
+				length=7;
+			}
+			$("#h_city").css("width",length*14);
+			$(".subWayBorder input[type='text']").each(function(){
+				$(this).attr("defaultVal",$(this).val());
+			});
+			$(".subWayBorder input[type='text']").focus(function(){
+				if($(this).val()==$(this).attr("defaultVal")){
+					$(this).val("");
+				}
+			});
+			$(".subWayBorder input[type='text']").blur(function(){
+				if($(this).val()==""){
+					$(this).val($(this).attr("defaultVal"));
+				}
+			});
+		});
+	</script>
+	<script type="text/javascript" src="../bus/js/placeholder.js"></script>
+	<script type="text/javascript" src="../bus/indexv2/js/index.js"></script>
+	<script type="text/javascript">
+	   var _hmt = _hmt || [];
+	  (function() {
+		 var hm = document.createElement("script");
+		 hm.src = "//hm.baidu.com/hm.js?4f7e758e957dfb1e328a4cb7a250d6e7";
+		 var s = document.getElementsByTagName("script")[0]; 
+		 s.parentNode.insertBefore(hm, s);
+	  })();
+	</script>
+</div></body>
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https') {
+        bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';        
+    }
+    else {
+        bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+    }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+</html>

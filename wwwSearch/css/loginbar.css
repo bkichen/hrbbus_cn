@@ -1,0 +1,353 @@
+
+.clearfix:after {
+    content: "";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+
+.noBorder {
+    border: 0 !important;
+}
+
+.textAlign_center {
+    text-align: center;
+}
+
+em {
+    font-style: normal;
+}
+
+.ClearFloat {
+    overflow: hidden;
+    zoom: 1;
+    clear: both;
+}
+
+.hackbox {
+    overflow: hidden;
+    zoom: 1;
+    clear: both;
+    height: 1px;
+    line-height: 1px;
+    font-size: 1px;
+}
+
+.wrapper {
+    width: 980px;
+    margin: 0 auto;
+}
+
+.none {
+    display: none;
+}
+
+.loginbar {
+    height: 24px;
+    border-bottom: #e2e2e2 solid 1px;
+    background: #f8faf9;
+    background: -webkit-gradient(linear, 0 0, 0 bottom, from(#f8faf9), to(#ecedef));
+    background: -webkit-linear-gradient(#f8faf9, #ecedef);
+    background: -moz-linear-gradient(#f8faf9, #ecedef);
+    background: -ms-linear-gradient(#f8faf9, #ecedef);
+    background: -o-linear-gradient(#f8faf9, #ecedef);
+    background: linear-gradient(#f8faf9, #ecedef);
+    -pie-background: linear-gradient(#f8faf9, #ecedef);
+    width: 100%;
+}
+
+.loginbar nav {
+    line-height: 24px;
+    color: #666;
+    margin-left: -6px;
+    font-size: 12px;;
+}
+
+.loginbar nav a, .loginbar nav a:link, .loginbar nav a:visited, .loginbar nav a:hover, .loginbar nav a:active {
+    color: #666;
+    padding-left: 6px;
+    padding-right: 6px;
+    font-size: 12px;
+}
+
+.loginbar nav a:hover {
+    color: #004986;
+}
+
+.loginbar nav span {
+    margin-top: 3px;
+    margin-left: 4px;
+    line-height: 21px;
+    padding: 0 4px;
+    color: #666;
+    display: inline-block;
+    background: url(../../web/index/images/apiBg.png) no-repeat center center;
+    height: 21px;
+}
+
+.loginbar #headLink span {
+    float: left;
+    padding-left: 10px;
+}
+
+.loginbar #headLink {
+    float: left;
+}
+
+.loginbar figure {
+    float: right;
+    margin: 0;
+    line-height: 24px;
+    background: url(../../web/index/images/home_03.jpg) no-repeat 163px 6px;
+    padding-left: 15px;
+    color: #666;
+}
+
+figure.navMenu ul li a, figure.navMenu ul li a:visited {
+    display: block;
+    text-decoration: none;
+    color: #666;
+    height: 20px;
+    line-height: 24px;
+    overflow: hidden;
+    text-indent: 8px;
+    width: 71px;
+    border: #f1f3f4 solid 1px;
+    background: url(../../web/index/images/home_arr.gif) no-repeat 58px 8px;
+    border-bottom: none;
+    font-size: 12px;
+}
+
+figure.navMenu .navMenuLine {
+    clear: both;
+    border: none;
+    height: 1px;
+    line-height: 1px;
+    font-size: 1px;
+    background: #d9d9d9;
+    width: 193px;
+    margin-top: 8px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 0;
+}
+
+figure.navMenu ul {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+
+figure.navMenu ul li {
+    float: left;
+    position: relative;
+    z-index: 100;
+}
+
+figure.navMenu ul li.accreditation {
+    margin-right: 20px;
+    background: url(../../web/index/images/shrz.png) no-repeat 0px 3px;
+}
+
+figure.navMenu ul li ul {
+    display: none;
+}
+
+figure.navMenu ul li strong {
+    display: block;
+    color: #666;
+    padding-left: 17px;
+    padding-top: 13px;
+    padding-bottom: 3px;
+}
+
+figure.navMenu ul li:hover a {
+    border: #b5b5b5 solid 1px;
+    border-bottom: none;
+    color: #004986;
+    white-space: nowrap;
+    background: #fff url(../../web/index/images/home_arr_2.gif) no-repeat 58px 8px;
+
+}
+
+figure.navMenu ul li:hover ul {
+    display: block;
+    position: absolute;
+    top: 20px;
+    left: -150px;
+    padding-bottom: 13px;
+    width: 221px;
+    border: #b5b5b5 solid 1px;
+    border-top: none;
+    background: #fff url(../../web/index/images/home_54.jpg) no-repeat -150px top;
+}
+
+figure.navMenu ul li:hover ul li a {
+    float: left;
+    width: auto;
+    background: none;
+    padding-left: 17px;
+    text-indent: 0;
+    padding-right: 3px;
+    line-height: 22px;
+
+    border: none;
+    color: #666;
+}
+
+figure.navMenu ul li:hover ul li a:hover {
+    text-decoration: underline;
+}
+
+figure.navMenu ul li strong {
+    display: block;
+    color: #666;
+    padding-left: 17px;
+    padding-top: 13px;
+    padding-bottom: 3px;
+}
+
+figure.navMenu #headLink a, figure.navMenu #headLink a:link, figure.navMenu #headLink a:visited, figure.navMenu #headLink a:hover, figure.navMenu #headLink a:active {
+    border: none;
+    background: none;
+    width: auto;
+    float: left;
+    padding-top: 1px;
+    background: url(../../web/index/images/home_55.jpg) no-repeat right 7px;
+    padding-left: 0;
+    padding-right: 8px;
+    color: #cccccc;
+}
+
+figure.navMenu #headLink a:hover {
+    text-decoration: underline;
+    color: #004986;
+}
+
+figure.navMenu #headLink a.login_bar, figure.navMenu #headLink a.login_bar:link, figure.navMenu #headLink a.login_bar:visited, figure.navMenu #headLink a.login_bar:hover, figure.navMenu #headLink a.login_bar:active {
+    border: none;
+    background: none;
+    width: auto;
+    float: left;
+    padding-top: 1px;
+    background: url(../../web/index/images/home_55.jpg) no-repeat right 7px;
+    padding-left: 2px;
+    padding-right: 9px;
+    color: #666;
+    cursor: pointer;
+}
+
+figure.navMenu #headLink a.login_bar:hover {
+    text-decoration: underline;
+    color: #004986;
+}
+
+figure.navMenu a.login_bar, figure.navMenu a.login_bar:link, figure.navMenu a.login_bar:visited, figure.navMenu a.login_bar:hover, figure.navMenu a.login_bar:active {
+    border: none;
+    background: none;
+    width: auto;
+    float: left;
+    padding-top: 1px;
+    background: url(../../web/index/images/home_55.jpg) no-repeat right 7px;
+    padding-left: 2px;
+    padding-right: 9px;
+    color: #666;
+}
+
+figure.navMenu a.login_bar:hover {
+    text-decoration: underline;
+    color: #004986;
+}
+
+figure.navMenu li.accreditation a.login_bar, figure.navMenu li.accreditation a.login_bar:link, figure.navMenu li.accreditation a.login_bar:visited, figure.navMenu li.accreditation a.login_bar:hover, figure.navMenu li.accreditation a.login_bar:active {
+    padding-right: 15px;
+}
+
+/* 登录框*/
+.mwp_acc {
+    font-size: 12px;
+    width: 500px;
+    border: 2px solid #879BE0;
+    background: #FFF;
+    padding: 2px;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+}
+
+.mwp_acc_t {
+    height: 23px;
+    background: #AAB8E9;
+    background: -webkit-gradient(linear,0 0,0 100%,from(#96A7E4),to(#FFF));
+    background: -moz-linear-gradient(top,#96A7E4,#FFF);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#96A7E4',endColorstr='#FFFFFF');
+    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#96A7E4',endColorstr='#FFFFFF')";
+    border-radius: 3px;
+}
+
+
+
+.mwp_acc {
+    /*position: absolute;*/
+}
+
+.mwp_acc_t {
+    /*position: relative;*/
+
+}
+.mwp_acc_t a{
+    display: inline-block;
+    font-size: 0;
+    text-indent: -99999em;
+    color: transparent;
+    position: absolute;
+    right: 10px;
+    top: 20px;
+    
+
+}
+
+.mwp_acc_cb {
+
+    right: 8px;
+    margin-top: -6px;
+    width: 12px;
+    height: 12px;
+    background: url(../../web/3in1/imgs/wg_icons.png) no-repeat -164px -166px;
+}
+
+.mwp_acc h4 {
+    padding: 0 0 0 20px;
+    line-height: 25px;
+    font-size: 14px;
+    color: #3E3A39;
+}
+
+.mwp_acc_c {
+}
+
+.mwp_acc_l {
+    width: 230px;
+}
+
+.mwp_acc_l form {
+}
+
+.mwp_acc_l strong,.mwp_acc_l label {
+    color: #7E7B7A;
+}
+.mwp_acc_rl {
+    vertical-align: middle;
+    margin-top: -2px;
+    _margin-top: -4px;
+}
+
+.mwp_acc_login {
+    float: left;
+    overflow: hidden;
+    border: none;
+    text-indent: -100em;
+    *text-indent: 0;
+    *line-height: 100em;
+}

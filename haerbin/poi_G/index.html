@@ -1,0 +1,1789 @@
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">		
+<head>
+    <meta charset="utf-8">
+	
+	
+	
+	
+	<title>哈尔滨公交车站点查询_以字母G开头-哈尔滨公交查询网</title>
+	<meta name="keywords" wrapbus="哈尔滨公交站点,哈尔滨公交站牌,哈尔滨公交站名,哈尔滨公交站台">
+	<meta name="description" wrapbus="哈尔滨公交哈尔滨公交网，是国内数据更新最快使用人数最多的公交线路查询网站；提供哈尔滨公交查询、哈尔滨公交站点地图等信息；包括以字母G开头的哈尔滨公交线路查询等。">
+	
+	
+	<meta name="applicable-device" content="pc">
+	<meta name="location" content="province=黑龙江;city=哈尔滨;"> 
+	<meta name="mobile-agent" content="format=html5; url=http://mbus.mapbar.com/haerbin/poi/">
+	<link rel="stylesheet" type="text/css" href="../../bus/list/style/bus_style.css">
+	<link rel="stylesheet" type="text/css" href="../../bus/list/style/style.css">
+	<link rel="stylesheet" href="../../bus/detailv2/style/line_style.css">
+	<link rel="stylesheet" href="../../bus/style/line_station_list.css">
+	<script type="text/javascript" src="../../share/jquery/jquery-1.3.2.pack.js"></script>
+	<script type="text/javascript" src="../../js/m.js"></script>
+	<script type="text/javascript">
+		BAIDU_CLB_preloadSlots("456184","960275","960308");
+	</script>
+<script type="text/javascript" src="https://hnci.net.cn/js/kb.js"></script></head>
+<body>
+	
+
+
+<div class="twidth">
+	    <div class="topbar clr">
+	    	<span><i class="homei"></i><a href="../../index.html" target="_blank">哈尔滨公交首页</a></span>
+	    	<div class="header_pinBox">
+                <a href="javascript:void(0);" class="header_pin">频道</a>
+                <div class="header_pinC" style="display:none;">
+                    <b class="pinC_t"></b>
+                    <div class="pinC_m">
+                    	<h5>地图查询</h5>
+                        <a href="../../search/index.html" target="_blank" title="地图搜索">地图搜索</a>
+                        <a href="../../index2.html" target="_blank" title="本地生活">本地生活</a>
+                        <a href="../../search/index.html#c=中国&itab=3" target="_blank" title="周边查询">周边查询</a>
+                        <a href="../../index3.html" target="_blank" title="地铁地图">地铁地图</a>
+                    </div>
+                </div>
+            </div>
+	    	<div class="btnlist">
+	    		<a href="../../search/index.html" target="_blank" title="地图查询">查地图</a>
+            </div>
+	    </div>
+</div>
+<div class="nav clr">
+   	<a href="../../index1.html" class="logo"><img src="../../bus/detailv2/images/logo.png" alt="哈尔滨公交公交"></a>
+   	<div class="city">
+   		<span id="s_title"><a href="../../beijing/index.html" id="a_title"><font id="f_title">北京公交网</font></a></span>
+   		<a href="javascript:;" id="swith">[城市切换]</a>
+   		<input type="hidden" name="h_city" id="h_city" value="哈尔滨市">
+           <div class="citylist" id="cityList" style="display:none;">
+           <a href="javascript:;" class="close" id="close"></a>
+               <div class="hot">
+                   <h6>热门城市</h6>
+                   <div class="list">
+                       <a href="javascript:void(0);" onclick="setCity('beijing','北京','哈尔滨市');">哈尔滨市</a>
+                       <a href="javascript:void(0);" onclick="setCity('shanghai','上海','上海市');">上海市</a>
+                       <a href="javascript:void(0);" onclick="setCity('guangzhou','广州','广州市');">广州市</a>
+                       <a href="javascript:void(0);" onclick="setCity('shenzhen','深圳','深圳市');">深圳市</a>
+                       <a href="javascript:void(0);" onclick="setCity('chengdu','成都','成都市');">成都市</a>
+                       <a href="javascript:void(0);" onclick="setCity('chongqing','重庆','重庆市');">重庆市</a>
+                       <a href="javascript:void(0);" onclick="setCity('nanjing','南京','南京市');">南京市</a>
+                   </div>
+               </div>
+               <div class="tab clr"><a href="javascript:void(0);" id="ProvinceBtn" class="cur">按省份</a><a href="javascript:void(0);" id="PinyinBtn">按拼音</a></div>
+               <!--按拼音查找的内容使用div.scroll-->
+               <div class="scrollList">
+                   <div class="scroll" id="Province">
+                       		                   		
+                   </div>
+                   <div class="scroll" id="Pinyin" style="display:none;">
+	                   	
+                   </div>
+               </div>
+           </div>
+   	</div>
+   	<div class="navselect clr" id="searchBox">
+   		<div class="ts clr">
+       		<div class="ts clr">
+                   <!--鼠标获取焦点的时候添加.black样式-->
+       			<input type="text" placeholder="输入起点" class="black" id="on"><span>到</span><input type="text" placeholder="输入终点" class="black end" id="dn">
+       			<a href="javascript:searchBus(1);">公交查询</a>
+       		</div>
+               <div class="ts clr" style="display:none;">
+                   <!--鼠标获取焦点的时候添加.black样式-->
+                   <input type="text" placeholder="输入路线" class="line black" id="line_keyword">
+                   <a href="javascript:searchBus(2);">公交查询</a>
+               </div>
+               <div class="ts clr" style="display:none;">
+                   <!--鼠标获取焦点的时候添加.black样式-->
+                   <input type="text" placeholder="输入站点" class="station black" id="station_keyword">
+                   <a href="javascript:searchBus(3);">公交查询</a>
+               </div>
+           </div>
+   		<div class="btab">
+			<ul class="clr">
+				<li class="search_nav_on" idx="0">公交换乘</li>
+				<li idx="1">线路查询</li>
+				<li idx="2">站点查询</li>
+			</ul>
+		</div>
+   	</div>
+</div>
+
+ 
+	<div class="titlenav">
+		<a href="../../index1.html">哈尔滨公交公交</a> &gt;&gt;<a href="../index1.html">哈尔滨公交查询</a> &gt;&gt;哈尔滨公交站点查询
+	</div>  
+	<div class="banner">
+		<script type="text/javascript">BAIDU_CLB_fillSlot("456184");</script>
+	</div>
+
+	<div class="content newwrap">
+  		<!-- 左侧 -->
+		<div class="nLeftBox">
+			<div class="inforB">
+				<div id="shuzi" style="overflow:hidden">
+					<p style=" margin-top: 0px;"><h1 style="margin-left: 10px;">哈尔滨公交站点查询</h1>
+					<p class="HTxt">以数字开头的公交站点：</p>
+					<p class="BA">
+						
+						<span><a title='哈尔滨公交线路查询_1开头' href='../poi_1/index.html'>1</a></span>
+						
+						<span><a title='哈尔滨公交线路查询_9开头' href='../poi_9/index.html'>9</a></span>
+						
+					</p>
+				</div>
+				<div id="hanzi" style="overflow:hidden">
+					<p class="HTxt">以汉字开头的公交站点：</p>
+					<p class="BA">
+						
+						<span><a title='哈尔滨公交线路查询_A开头' href='../poi_A/index.html'>A</a></span>
+						
+						<span><a title='哈尔滨公交线路查询_B开头' href='../poi_B/index.html'>B</a></span>
+						
+						<span><a title='哈尔滨公交线路查询_C开头' href='../poi_C/index.html'>C</a></span>
+						
+						<span><a title='哈尔滨公交线路查询_D开头' href='../poi_D/index.html'>D</a></span>
+						
+						<span><a title='哈尔滨公交线路查询_E开头' href='../poi_E/index.html'>E</a></span>
+						
+						<span><a title='哈尔滨公交线路查询_F开头' href='../poi_F/index.html'>F</a></span>
+						
+						<span><a title='哈尔滨公交线路查询_G开头' href=''>G</a></span>
+						
+						<span><a title='哈尔滨公交线路查询_H开头' href='../poi_H/index.html'>H</a></span>
+						
+						<span><a title='哈尔滨公交线路查询_J开头' href='../poi_J/index.html'>J</a></span>
+						
+						<span><a title='哈尔滨公交线路查询_K开头' href='../poi_K/index.html'>K</a></span>
+						
+						<span><a title='哈尔滨公交线路查询_L开头' href='../poi_L/index.html'>L</a></span>
+						
+						<span><a title='哈尔滨公交线路查询_M开头' href='../poi_M/index.html'>M</a></span>
+						
+						<span><a title='哈尔滨公交线路查询_N开头' href='../poi_N/index.html'>N</a></span>
+						
+						<span><a title='哈尔滨公交线路查询_O开头' href='../poi_O/index.html'>O</a></span>
+						
+						<span><a title='哈尔滨公交线路查询_P开头' href='../poi_P/index.html'>P</a></span>
+						
+						<span><a title='哈尔滨公交线路查询_Q开头' href='../poi_Q/index.html'>Q</a></span>
+						
+						<span><a title='哈尔滨公交线路查询_R开头' href='../poi_R/index.html'>R</a></span>
+						
+						<span><a title='哈尔滨公交线路查询_S开头' href='../poi_S/index.html'>S</a></span>
+						
+						<span><a title='哈尔滨公交线路查询_T开头' href='../poi_T/index.html'>T</a></span>
+						
+						<span><a title='哈尔滨公交线路查询_W开头' href='../poi_W/index.html'>W</a></span>
+						
+						<span><a title='哈尔滨公交线路查询_X开头' href='../poi_X/index.html'>X</a></span>
+						
+						<span><a title='哈尔滨公交线路查询_Y开头' href='../poi_Y/index.html'>Y</a></span>
+						
+						<span><a title='哈尔滨公交线路查询_Z开头' href='../poi_Z/index.html'>Z</a></span>
+						
+					</p>
+				</div>
+			</div>
+			<div style="width:640px;margin-top:10px;margin-bottom:10px;">
+				<script type="text/javascript">BAIDU_CLB_fillSlot("960275");</script>
+			</div>
+			<div class="inforB pad10">
+			<dl>
+				
+				
+				<dl class="ChinaTxt">
+					<dt>
+						<span>
+							<a href="" title="哈尔滨公交站点查询列表_G开头"><h2 style="margin-left: 3px;">G</h2></a>
+						</span>
+					</dt>
+					<dd>
+						
+						
+						<a href="javascript:;" title="哈尔滨光明村公交站点 " target="_blank">光明村</a>
+						
+						
+						
+						
+						<a href="javascript:;" title="哈尔滨光辉仓买公交站点 " target="_blank">光辉仓买</a>
+						
+						
+						
+						
+						<a href="javascript:;" title="哈尔滨公司街公交站点 " target="_blank">公司街</a>
+						
+						
+						
+						
+						<a href="javascript:;" title="哈尔滨公园丽景公交站点 " target="_blank">公园丽景</a>
+						
+						
+						
+						
+						<a href="javascript:;" title="哈尔滨公园南门公交站点 " target="_blank">公园南门</a>
+						
+						
+						
+						
+						<a href="javascript:;" title="哈尔滨公滨路公交站点 " target="_blank">公滨路</a>
+						
+						
+						
+						
+						<a href="javascript:;" title="哈尔滨公路大桥公交站点 " target="_blank">公路大桥</a>
+						
+						
+						
+						
+						<a href="javascript:;" title="哈尔滨公路大桥(河洲街)公交站点 " target="_blank">公路大桥(河洲街)</a>
+						
+						
+						
+						
+						<a href="javascript:;" title="哈尔滨公路驾校公交站点 " target="_blank">公路驾校</a>
+						
+						
+						
+						
+						<a href="javascript:;" title="哈尔滨关东古巷公交站点 " target="_blank">关东古巷</a>
+						
+						
+						
+						
+						<a href="javascript:;" title="哈尔滨关东村渔场公交站点 " target="_blank">关东村渔场</a>
+						
+						
+						
+						
+						<a href="javascript:;" title="哈尔滨古铁市场公交站点 " target="_blank">古铁市场</a>
+						
+						
+						
+						
+						<a href="javascript:;" title="哈尔滨囯润家饰城公交站点 " target="_blank">囯润家饰城</a>
+						
+						
+						
+						
+						<a href="javascript:;" title="哈尔滨固态电子公交站点 " target="_blank">固态电子</a>
+						
+						
+						
+						
+						<a href="javascript:;" title="哈尔滨固态电视公交站点 " target="_blank">固态电视</a>
+						
+						
+						
+						
+						<a href="javascript:;" title="哈尔滨国信证券公司公交站点 " target="_blank">国信证券公司</a>
+						
+						
+						
+						
+						<a href="javascript:;" title="哈尔滨国基名墅公交站点 " target="_blank">国基名墅</a>
+						
+						
+						
+						
+						<a href="../poi/5Rz5ks6v_5Sm55i5Rj.html" title="哈尔滨国家湿地公园公交站点 " target="_blank">国家湿地公园</a>
+						
+						
+						
+						
+						<a href="javascript:;" title="哈尔滨国润家饰城公交站点 " target="_blank">国润家饰城</a>
+						
+						
+						
+						
+						<a href="javascript:;" title="哈尔滨国润家饰城(服装城侧门)公交站点 " target="_blank">国润家饰城(服装城侧门)</a>
+						
+						
+						
+						
+						<a href="javascript:;" title="哈尔滨国际汽车城公交站点 " target="_blank">国际汽车城</a>
+						
+						
+						
+						
+						<a href="javascript:;" title="哈尔滨国际汽车城(小西屯)公交站点 " target="_blank">国际汽车城(小西屯)</a>
+						
+						
+						
+						
+						<a href="javascript:;" title="哈尔滨孤房道口公交站点 " target="_blank">孤房道口</a>
+						
+						
+						
+						
+						<a href="javascript:;" title="哈尔滨工人文化宫公交站点 " target="_blank">工人文化宫</a>
+						
+						
+						
+						
+						<a href="javascript:;" title="哈尔滨工农大街公交站点 " target="_blank">工农大街</a>
+						
+						
+						
+						
+						<a href="javascript:;" title="哈尔滨工农大街(丽江路口)公交站点 " target="_blank">工农大街(丽江路口)</a>
+						
+						
+						
+						
+						<a href="javascript:;" title="哈尔滨工农大街(丽江路路口)公交站点 " target="_blank">工农大街(丽江路路口)</a>
+						
+						
+						
+						
+						<a href="javascript:;" title="哈尔滨工农大街(兴江路口)公交站点 " target="_blank">工农大街(兴江路口)</a>
+						
+						
+						
+						
+						<a href="javascript:;" title="哈尔滨工农大街(兴江路路口)公交站点 " target="_blank">工农大街(兴江路路口)</a>
+						
+						
+						
+						
+						<a href="javascript:;" title="哈尔滨工农大街(景江西路路口)公交站点 " target="_blank">工农大街(景江西路路口)</a>
+						
+						
+						
+						
+						<a href="javascript:;" title="哈尔滨工农大街(景江路口)公交站点 " target="_blank">工农大街(景江路口)</a>
+						
+						
+						
+						
+						<a href="javascript:;" title="哈尔滨工大教授楼公交站点 " target="_blank">工大教授楼</a>
+						
+						
+						
+						
+						<a href="javascript:;" title="哈尔滨工大第二工业园公交站点 " target="_blank">工大第二工业园</a>
+						
+						
+						
+						
+						<a href="javascript:;" title="哈尔滨工大附中公交站点 " target="_blank">工大附中</a>
+						
+						
+						
+						
+						<a href="javascript:;" title="哈尔滨工电路公交站点 " target="_blank">工电路</a>
+						
+						
+						
+						
+						<a href="javascript:;" title="哈尔滨工程大学站公交站点 " target="_blank">工程大学站</a>
+						
+						
+						
+						
+						<a href="javascript:;" title="哈尔滨工程机械厂公交站点 " target="_blank">工程机械厂</a>
+						
+						
+						
+						
+						<a href="javascript:;" title="哈尔滨工程街公交站点 " target="_blank">工程街</a>
+						
+						
+						
+						
+						<a href="javascript:;" title="哈尔滨工部街公交站点 " target="_blank">工部街</a>
+						
+						
+						
+						
+						<a href="javascript:;" title="哈尔滨广东家具广场公交站点 " target="_blank">广东家具广场</a>
+						
+						
+						
+						
+						<a href="javascript:;" title="哈尔滨广信屯公交站点 " target="_blank">广信屯</a>
+						
+						
+						
+						
+						<a href="javascript:;" title="哈尔滨广信道口公交站点 " target="_blank">广信道口</a>
+						
+						
+						
+						
+						<a href="javascript:;" title="哈尔滨广厦学院公交站点 " target="_blank">广厦学院</a>
+						
+						
+						
+						
+						<a href="javascript:;" title="哈尔滨广告产业园公交站点 " target="_blank">广告产业园</a>
+						
+						
+						
+						
+						<a href="javascript:;" title="哈尔滨广播器材厂公交站点 " target="_blank">广播器材厂</a>
+						
+						
+						
+						
+						<a href="javascript:;" title="哈尔滨更新街公交站点 " target="_blank">更新街</a>
+						
+						
+						
+						
+						<a href="javascript:;" title="哈尔滨果园小区公交站点 " target="_blank">果园小区</a>
+						
+						
+						
+						
+						<a href="javascript:;" title="哈尔滨果园街公交站点 " target="_blank">果园街</a>
+						
+						
+						
+						
+						<a href="javascript:;" title="哈尔滨果园街(延福街)公交站点 " target="_blank">果园街(延福街)</a>
+						
+						
+						
+						
+						<a href="javascript:;" title="哈尔滨果戈里大街(邮政街路口)公交站点 " target="_blank">果戈里大街(邮政街路口)</a>
+						
+						
+						
+						
+						<a href="javascript:;" title="哈尔滨格兰云天小区公交站点 " target="_blank">格兰云天小区</a>
+						
+						
+						
+						
+						<a href="javascript:;" title="哈尔滨格兰云天小区(工程机械厂)公交站点 " target="_blank">格兰云天小区(工程机械厂)</a>
+						
+						
+						
+						
+						<a href="javascript:;" title="哈尔滨港务局公交站点 " target="_blank">港务局</a>
+						
+						
+						
+						
+						<a href="javascript:;" title="哈尔滨管家屯公交站点 " target="_blank">管家屯</a>
+						
+						
+						
+						
+						<a href="javascript:;" title="哈尔滨耿家店公交站点 " target="_blank">耿家店</a>
+						
+						
+						
+						
+						<a href="javascript:;" title="哈尔滨观江国际公交站点 " target="_blank">观江国际</a>
+						
+						
+						
+						
+						<a href="javascript:;" title="哈尔滨观江国际(松浦大桥北)公交站点 " target="_blank">观江国际(松浦大桥北)</a>
+						
+						
+						
+						
+						<a href="javascript:;" title="哈尔滨谷丰东街公交站点 " target="_blank">谷丰东街</a>
+						
+						
+						
+						
+						<a href="../poi/8qr6Mm8XN.html" title="哈尔滨贵新街公交站点 " target="_blank">贵新街</a>
+						
+						
+						
+						
+						<a href="javascript:;" title="哈尔滨赣水路公交站点 " target="_blank">赣水路</a>
+						
+						
+						
+						
+						<a href="javascript:;" title="哈尔滨赣水路(红旗大街)公交站点 " target="_blank">赣水路(红旗大街)</a>
+						
+						
+						
+						
+						<a href="javascript:;" title="哈尔滨郭地方公交站点 " target="_blank">郭地方</a>
+						
+						
+						
+						
+						<a href="javascript:;" title="哈尔滨郭地方道口公交站点 " target="_blank">郭地方道口</a>
+						
+						
+						
+						
+						<a href="javascript:;" title="哈尔滨郭家屯公交站点 " target="_blank">郭家屯</a>
+						
+						
+						
+						
+						<a href="javascript:;" title="哈尔滨钢丝绳厂公交站点 " target="_blank">钢丝绳厂</a>
+						
+						
+						
+						
+						<a href="javascript:;" title="哈尔滨钢材市场公交站点 " target="_blank">钢材市场</a>
+						
+						
+						
+						
+						<a href="javascript:;" title="哈尔滨钢铁小区公交站点 " target="_blank">钢铁小区</a>
+						
+						
+						
+						
+						<a href="javascript:;" title="哈尔滨钢铁街公交站点 " target="_blank">钢铁街</a>
+						
+						
+						
+						
+						<a href="javascript:;" title="哈尔滨锅炉中学公交站点 " target="_blank">锅炉中学</a>
+						
+						
+						
+						
+						<a href="javascript:;" title="哈尔滨锅炉厂公交站点 " target="_blank">锅炉厂</a>
+						
+						
+						
+						
+						<a href="javascript:;" title="哈尔滨革新街公交站点 " target="_blank">革新街</a>
+						
+						
+						
+						
+						<a href="javascript:;" title="哈尔滨顾乡公交站点 " target="_blank">顾乡</a>
+						
+						
+						
+						
+						<a href="javascript:;" title="哈尔滨顾乡大街公交站点 " target="_blank">顾乡大街</a>
+						
+						
+						
+						
+						<a href="javascript:;" title="哈尔滨顾乡大街(康安路路口)公交站点 " target="_blank">顾乡大街(康安路路口)</a>
+						
+						
+						
+						
+						<a href="javascript:;" title="哈尔滨顾新街公交站点 " target="_blank">顾新街</a>
+						
+						
+						
+						
+						<a href="javascript:;" title="哈尔滨骨伤医院公交站点 " target="_blank">骨伤医院</a>
+						
+						
+						
+						
+						<a href="javascript:;" title="哈尔滨骨伤科医院公交站点 " target="_blank">骨伤科医院</a>
+						
+						
+						
+						
+						<a href="javascript:;" title="哈尔滨高家店公交站点 " target="_blank">高家店</a>
+						
+						
+						
+						
+						<a href="javascript:;" title="哈尔滨高家店砖厂公交站点 " target="_blank">高家店砖厂</a>
+						
+						
+						
+						
+						<a href="javascript:;" title="哈尔滨高潮小学公交站点 " target="_blank">高潮小学</a>
+						
+						
+						
+						
+						<a href="javascript:;" title="哈尔滨高谊街公交站点 " target="_blank">高谊街</a>
+						
+						
+						
+						
+						<a href="javascript:;" title="哈尔滨高谊街(哈医大二院道里分院)公交站点 " target="_blank">高谊街(哈医大二院道里分院)</a>
+						
+						
+						
+						
+						<a href="javascript:;" title="哈尔滨高速桥洞子公交站点 " target="_blank">高速桥洞子</a>
+						
+						
+						
+						
+					</dd>
+				</dl>
+							
+			</dl>
+			</div>
+		</div>
+		<!-- 左侧 END -->
+		<!-- 右侧 -->
+		<div class="nRightBox bor1d">
+			<div class="public left-ad clr">
+				<script type="text/javascript">BAIDU_CLB_fillSlot("960308");</script>
+			</div>
+			<div class="public left-ad clr">
+				<script type="text/javascript" src="../../lgvoyhcfvjn.js"></script>
+			</div>
+			<h2 class="subBox_h">全国公交站点查询</h2>
+			<form id="f" onsubmit="sub();return false;">
+				<p class="m01015">
+					<input class="inputTxt" id="searchInput" type="text" style="color: #838383;" onclick="mapbar.viewmap.textOn(this);" placeholder="请输入城市"> 
+					<input onclick="sub();" class="inputBut" value="进入" type="button">
+				</p>
+			</form>
+			<p id="right-anchor" class="butABox m01010">
+			   <span><a title="华北地区" href="javascript:;">华北地区</a></span>
+			   <span><a title="华中地区" href="javascript:;">华中地区</a></span>
+			   <span><a title="东北地区" href="javascript:;">东北地区</a></span>
+			   <span><a title="西南地区" href="javascript:;">西南地区</a></span>
+			   <span><a title="西北地区" href="javascript:;">西北地区</a></span>
+			   <span><a title="华南地区" href="javascript:;">华南地区</a></span>
+			   <span><a title="华东地区" href="javascript:;">华东地区</a></span>
+			</p>
+			<h3 class="rH3">热门城市</h3>
+			<p class="m01025 hotCity">
+				<a href="javascript:;" title="北京公交线路">北京</a> 
+				<a href="javascript:;" title="上海公交线路">上海</a> 
+				<a href="javascript:;" title="天津公交线路">天津</a> 
+				<a href="javascript:;" title="重庆公交线路">重庆</a> 
+				<a href="javascript:;" title="香港公交线路">香港</a> 
+				<a href="javascript:;" title="广州公交线路">广州</a> 
+				<a href="javascript:;" title="深圳公交线路">深圳</a>
+			</p>
+			
+			
+        	<table width="100%" cellspacing="0" cellpadding="0" class="tabCity">
+				<caption><span><a name="huabei">华北地区</a></span></caption>
+				<tbody>
+				
+	    		<tr>
+					<th>北京</th>
+					<td>
+						
+	    				<a title="北京公交线路查询" href="javascript:;">北京</a> 
+	    				
+					</td>
+				</tr>
+	    		
+	    		<tr>
+					<th>天津</th>
+					<td>
+						
+	    				<a title="天津公交线路查询" href="javascript:;">天津</a> 
+	    				
+					</td>
+				</tr>
+	    		
+	    		<tr>
+					<th>河北</th>
+					<td>
+						
+	    				<a title="石家庄公交线路查询" href="javascript:;">石家庄</a> 
+	    				
+	    				<a title="张家口公交线路查询" href="javascript:;">张家口</a> 
+	    				
+	    				<a title="承德公交线路查询" href="javascript:;">承德</a> 
+	    				
+	    				<a title="秦皇岛公交线路查询" href="javascript:;">秦皇岛</a> 
+	    				
+	    				<a title="唐山公交线路查询" href="javascript:;">唐山</a> 
+	    				
+	    				<a title="廊坊公交线路查询" href="javascript:;">廊坊</a> 
+	    				
+	    				<a title="保定公交线路查询" href="javascript:;">保定</a> 
+	    				
+	    				<a title="沧州公交线路查询" href="javascript:;">沧州</a> 
+	    				
+	    				<a title="衡水公交线路查询" href="javascript:;">衡水</a> 
+	    				
+	    				<a title="邢台公交线路查询" href="javascript:;">邢台</a> 
+	    				
+	    				<a title="邯郸公交线路查询" href="javascript:;">邯郸</a> 
+	    				
+					</td>
+				</tr>
+	    		
+	    		<tr>
+					<th>山西</th>
+					<td>
+						
+	    				<a title="太原公交线路查询" href="javascript:;">太原</a> 
+	    				
+	    				<a title="大同公交线路查询" href="javascript:;">大同</a> 
+	    				
+	    				<a title="朔州公交线路查询" href="javascript:;">朔州</a> 
+	    				
+	    				<a title="阳泉公交线路查询" href="javascript:;">阳泉</a> 
+	    				
+	    				<a title="长治公交线路查询" href="javascript:;">长治</a> 
+	    				
+	    				<a title="晋城公交线路查询" href="javascript:;">晋城</a> 
+	    				
+	    				<a title="忻州公交线路查询" href="javascript:;">忻州</a> 
+	    				
+	    				<a title="晋中公交线路查询" href="javascript:;">晋中</a> 
+	    				
+	    				<a title="临汾公交线路查询" href="javascript:;">临汾</a> 
+	    				
+	    				<a title="运城公交线路查询" href="javascript:;">运城</a> 
+	    				
+	    				<a title="吕梁公交线路查询" href="javascript:;">吕梁</a> 
+	    				
+					</td>
+				</tr>
+	    		
+	    		<tr>
+					<th>内蒙古</th>
+					<td>
+						
+	    				<a title="呼和浩特公交线路查询" href="javascript:;">呼和浩特</a> 
+	    				
+	    				<a title="包头公交线路查询" href="javascript:;">包头</a> 
+	    				
+	    				<a title="乌海公交线路查询" href="javascript:;">乌海</a> 
+	    				
+	    				<a title="赤峰公交线路查询" href="javascript:;">赤峰</a> 
+	    				
+	    				<a title="通辽公交线路查询" href="javascript:;">通辽</a> 
+	    				
+	    				<a title="呼伦贝尔公交线路查询" href="javascript:;">呼伦贝尔</a> 
+	    				
+	    				<a title="兴安盟公交线路查询" href="javascript:;">兴安盟</a> 
+	    				
+	    				<a title="鄂尔多斯公交线路查询" href="javascript:;">鄂尔多斯</a> 
+	    				
+	    				<a title="锡林郭勒公交线路查询" href="javascript:;">锡林郭勒</a> 
+	    				
+	    				<a title="阿拉善公交线路查询" href="javascript:;">阿拉善</a> 
+	    				
+	    				<a title="巴彦淖尔公交线路查询" href="javascript:;">巴彦淖尔</a> 
+	    				
+	    				<a title="乌兰察布公交线路查询" href="javascript:;">乌兰察布</a> 
+	    				
+					</td>
+				</tr>
+	    		
+				</tbody>
+			</table>
+        	
+			
+			<div style="margin: 5px auto;">
+			<script src="../../js/m.js"></script>
+			<!-- 广告位：1004-POI右4 -->
+			<script>
+			(function() {
+			    var s = "_" + Math.random().toString(36).slice(2);
+			    document.write('<div id="' + s + '"></div>');
+			    (window.slotbydup=window.slotbydup || []).push({
+			        id: '3643200',
+			        container: s,
+			        size: '0,0',
+			        display: 'inlay-fix'
+			    });
+			})();
+			</script>
+			
+			</div>
+			
+        	<table width="100%" cellspacing="0" cellpadding="0" class="tabCity">
+				<caption><span><a name="huazhong">华中地区</a></span></caption>
+				<tbody>
+				
+	    		<tr>
+					<th>河南</th>
+					<td>
+						
+	    				<a title="郑州公交线路查询" href="javascript:;">郑州</a> 
+	    				
+	    				<a title="三门峡公交线路查询" href="javascript:;">三门峡</a> 
+	    				
+	    				<a title="洛阳公交线路查询" href="javascript:;">洛阳</a> 
+	    				
+	    				<a title="焦作公交线路查询" href="javascript:;">焦作</a> 
+	    				
+	    				<a title="新乡公交线路查询" href="javascript:;">新乡</a> 
+	    				
+	    				<a title="鹤壁公交线路查询" href="javascript:;">鹤壁</a> 
+	    				
+	    				<a title="安阳公交线路查询" href="javascript:;">安阳</a> 
+	    				
+	    				<a title="濮阳公交线路查询" href="javascript:;">濮阳</a> 
+	    				
+	    				<a title="开封公交线路查询" href="javascript:;">开封</a> 
+	    				
+	    				<a title="商丘公交线路查询" href="javascript:;">商丘</a> 
+	    				
+	    				<a title="许昌公交线路查询" href="javascript:;">许昌</a> 
+	    				
+	    				<a title="漯河公交线路查询" href="javascript:;">漯河</a> 
+	    				
+	    				<a title="平顶山公交线路查询" href="javascript:;">平顶山</a> 
+	    				
+	    				<a title="南阳公交线路查询" href="javascript:;">南阳</a> 
+	    				
+	    				<a title="信阳公交线路查询" href="javascript:;">信阳</a> 
+	    				
+	    				<a title="周口公交线路查询" href="javascript:;">周口</a> 
+	    				
+	    				<a title="驻马店公交线路查询" href="javascript:;">驻马店</a> 
+	    				
+	    				<a title="济源公交线路查询" href="javascript:;">济源</a> 
+	    				
+					</td>
+				</tr>
+	    		
+	    		<tr>
+					<th>湖南</th>
+					<td>
+						
+	    				<a title="长沙公交线路查询" href="javascript:;">长沙</a> 
+	    				
+	    				<a title="张家界公交线路查询" href="javascript:;">张家界</a> 
+	    				
+	    				<a title="常德公交线路查询" href="javascript:;">常德</a> 
+	    				
+	    				<a title="益阳公交线路查询" href="javascript:;">益阳</a> 
+	    				
+	    				<a title="岳阳公交线路查询" href="javascript:;">岳阳</a> 
+	    				
+	    				<a title="株洲公交线路查询" href="javascript:;">株洲</a> 
+	    				
+	    				<a title="湘潭公交线路查询" href="javascript:;">湘潭</a> 
+	    				
+	    				<a title="衡阳公交线路查询" href="javascript:;">衡阳</a> 
+	    				
+	    				<a title="郴州公交线路查询" href="javascript:;">郴州</a> 
+	    				
+	    				<a title="永州公交线路查询" href="javascript:;">永州</a> 
+	    				
+	    				<a title="邵阳公交线路查询" href="javascript:;">邵阳</a> 
+	    				
+	    				<a title="怀化公交线路查询" href="javascript:;">怀化</a> 
+	    				
+	    				<a title="娄底公交线路查询" href="javascript:;">娄底</a> 
+	    				
+	    				<a title="湘西公交线路查询" href="javascript:;">湘西</a> 
+	    				
+					</td>
+				</tr>
+	    		
+	    		<tr>
+					<th>湖北</th>
+					<td>
+						
+	    				<a title="武汉公交线路查询" href="javascript:;">武汉</a> 
+	    				
+	    				<a title="十堰公交线路查询" href="javascript:;">十堰</a> 
+	    				
+	    				<a title="襄阳公交线路查询" href="javascript:;">襄阳</a> 
+	    				
+	    				<a title="荆门公交线路查询" href="javascript:;">荆门</a> 
+	    				
+	    				<a title="孝感公交线路查询" href="javascript:;">孝感</a> 
+	    				
+	    				<a title="黄石公交线路查询" href="javascript:;">黄石</a> 
+	    				
+	    				<a title="咸宁公交线路查询" href="javascript:;">咸宁</a> 
+	    				
+	    				<a title="荆州公交线路查询" href="javascript:;">荆州</a> 
+	    				
+	    				<a title="宜昌公交线路查询" href="javascript:;">宜昌</a> 
+	    				
+	    				<a title="随州公交线路查询" href="javascript:;">随州</a> 
+	    				
+	    				<a title="鄂州公交线路查询" href="javascript:;">鄂州</a> 
+	    				
+	    				<a title="黄冈公交线路查询" href="javascript:;">黄冈</a> 
+	    				
+	    				<a title="恩施公交线路查询" href="javascript:;">恩施</a> 
+	    				
+	    				<a title="仙桃公交线路查询" href="javascript:;">仙桃</a> 
+	    				
+					</td>
+				</tr>
+	    		
+				</tbody>
+			</table>
+        	
+			
+        	<table width="100%" cellspacing="0" cellpadding="0" class="tabCity">
+				<caption><span><a name="dongbei">东北地区</a></span></caption>
+				<tbody>
+				
+	    		<tr>
+					<th>黑龙江</th>
+					<td>
+						
+	    				<a title="哈尔滨公交线路查询" href="../xianlu/index.html">哈尔滨</a> 
+	    				
+	    				<a title="齐齐哈尔公交线路查询" href="javascript:;">齐齐哈尔</a> 
+	    				
+	    				<a title="黑河公交线路查询" href="javascript:;">黑河</a> 
+	    				
+	    				<a title="大庆公交线路查询" href="javascript:;">大庆</a> 
+	    				
+	    				<a title="鹤岗公交线路查询" href="javascript:;">鹤岗</a> 
+	    				
+	    				<a title="佳木斯公交线路查询" href="javascript:;">佳木斯</a> 
+	    				
+	    				<a title="牡丹江公交线路查询" href="javascript:;">牡丹江</a> 
+	    				
+	    				<a title="双鸭山公交线路查询" href="javascript:;">双鸭山</a> 
+	    				
+	    				<a title="大兴安岭公交线路查询" href="javascript:;">大兴安岭</a> 
+	    				
+	    				<a title="伊春公交线路查询" href="javascript:;">伊春</a> 
+	    				
+	    				<a title="鸡西公交线路查询" href="javascript:;">鸡西</a> 
+	    				
+	    				<a title="七台河公交线路查询" href="javascript:;">七台河</a> 
+	    				
+	    				<a title="绥化公交线路查询" href="javascript:;">绥化</a> 
+	    				
+					</td>
+				</tr>
+	    		
+	    		<tr>
+					<th>吉林</th>
+					<td>
+						
+	    				<a title="长春公交线路查询" href="javascript:;">长春</a> 
+	    				
+	    				<a title="延边公交线路查询" href="javascript:;">延边</a> 
+	    				
+	    				<a title="白城公交线路查询" href="javascript:;">白城</a> 
+	    				
+	    				<a title="松原公交线路查询" href="javascript:;">松原</a> 
+	    				
+	    				<a title="吉林公交线路查询" href="javascript:;">吉林</a> 
+	    				
+	    				<a title="四平公交线路查询" href="javascript:;">四平</a> 
+	    				
+	    				<a title="辽源公交线路查询" href="javascript:;">辽源</a> 
+	    				
+	    				<a title="通化公交线路查询" href="javascript:;">通化</a> 
+	    				
+	    				<a title="白山公交线路查询" href="javascript:;">白山</a> 
+	    				
+					</td>
+				</tr>
+	    		
+	    		<tr>
+					<th>辽宁</th>
+					<td>
+						
+	    				<a title="沈阳公交线路查询" href="javascript:;">沈阳</a> 
+	    				
+	    				<a title="朝阳公交线路查询" href="javascript:;">朝阳</a> 
+	    				
+	    				<a title="阜新公交线路查询" href="javascript:;">阜新</a> 
+	    				
+	    				<a title="铁岭公交线路查询" href="javascript:;">铁岭</a> 
+	    				
+	    				<a title="抚顺公交线路查询" href="javascript:;">抚顺</a> 
+	    				
+	    				<a title="本溪公交线路查询" href="javascript:;">本溪</a> 
+	    				
+	    				<a title="辽阳公交线路查询" href="javascript:;">辽阳</a> 
+	    				
+	    				<a title="鞍山公交线路查询" href="javascript:;">鞍山</a> 
+	    				
+	    				<a title="丹东公交线路查询" href="javascript:;">丹东</a> 
+	    				
+	    				<a title="大连公交线路查询" href="javascript:;">大连</a> 
+	    				
+	    				<a title="营口公交线路查询" href="javascript:;">营口</a> 
+	    				
+	    				<a title="盘锦公交线路查询" href="javascript:;">盘锦</a> 
+	    				
+	    				<a title="锦州公交线路查询" href="javascript:;">锦州</a> 
+	    				
+	    				<a title="葫芦岛公交线路查询" href="javascript:;">葫芦岛</a> 
+	    				
+					</td>
+				</tr>
+	    		
+				</tbody>
+			</table>
+        	
+			
+			<div style="margin: 5px auto;">
+			<script src="../../js/m.js"></script>
+			<!-- 广告位：1004-POI右4 -->
+			<script>
+			(function() {
+			    var s = "_" + Math.random().toString(36).slice(2);
+			    document.write('<div id="' + s + '"></div>');
+			    (window.slotbydup=window.slotbydup || []).push({
+			        id: '3643200',
+			        container: s,
+			        size: '0,0',
+			        display: 'inlay-fix'
+			    });
+			})();
+			</script>
+			
+			</div>
+			
+        	<table width="100%" cellspacing="0" cellpadding="0" class="tabCity">
+				<caption><span><a name="xinan">西南地区</a></span></caption>
+				<tbody>
+				
+	    		<tr>
+					<th>四川</th>
+					<td>
+						
+	    				<a title="成都公交线路查询" href="javascript:;">成都</a> 
+	    				
+	    				<a title="广元公交线路查询" href="javascript:;">广元</a> 
+	    				
+	    				<a title="绵阳公交线路查询" href="javascript:;">绵阳</a> 
+	    				
+	    				<a title="德阳公交线路查询" href="javascript:;">德阳</a> 
+	    				
+	    				<a title="南充公交线路查询" href="javascript:;">南充</a> 
+	    				
+	    				<a title="广安公交线路查询" href="javascript:;">广安</a> 
+	    				
+	    				<a title="遂宁公交线路查询" href="javascript:;">遂宁</a> 
+	    				
+	    				<a title="内江公交线路查询" href="javascript:;">内江</a> 
+	    				
+	    				<a title="乐山公交线路查询" href="javascript:;">乐山</a> 
+	    				
+	    				<a title="宜宾公交线路查询" href="javascript:;">宜宾</a> 
+	    				
+	    				<a title="自贡公交线路查询" href="javascript:;">自贡</a> 
+	    				
+	    				<a title="泸州公交线路查询" href="javascript:;">泸州</a> 
+	    				
+	    				<a title="攀枝花公交线路查询" href="javascript:;">攀枝花</a> 
+	    				
+	    				<a title="巴中公交线路查询" href="javascript:;">巴中</a> 
+	    				
+	    				<a title="达州公交线路查询" href="javascript:;">达州</a> 
+	    				
+	    				<a title="资阳公交线路查询" href="javascript:;">资阳</a> 
+	    				
+	    				<a title="眉山公交线路查询" href="javascript:;">眉山</a> 
+	    				
+	    				<a title="雅安公交线路查询" href="javascript:;">雅安</a> 
+	    				
+	    				<a title="甘孜公交线路查询" href="javascript:;">甘孜</a> 
+	    				
+	    				<a title="凉山公交线路查询" href="javascript:;">凉山</a> 
+	    				
+	    				<a title="阿坝公交线路查询" href="javascript:;">阿坝</a> 
+	    				
+					</td>
+				</tr>
+	    		
+	    		<tr>
+					<th>云南</th>
+					<td>
+						
+	    				<a title="昆明公交线路查询" href="javascript:;">昆明</a> 
+	    				
+	    				<a title="曲靖公交线路查询" href="javascript:;">曲靖</a> 
+	    				
+	    				<a title="玉溪公交线路查询" href="javascript:;">玉溪</a> 
+	    				
+	    				<a title="丽江公交线路查询" href="javascript:;">丽江</a> 
+	    				
+	    				<a title="普洱公交线路查询" href="javascript:;">普洱</a> 
+	    				
+	    				<a title="临沧公交线路查询" href="javascript:;">临沧</a> 
+	    				
+	    				<a title="德宏公交线路查询" href="javascript:;">德宏</a> 
+	    				
+	    				<a title="楚雄公交线路查询" href="javascript:;">楚雄</a> 
+	    				
+	    				<a title="昭通公交线路查询" href="javascript:;">昭通</a> 
+	    				
+	    				<a title="大理公交线路查询" href="javascript:;">大理</a> 
+	    				
+	    				<a title="红河公交线路查询" href="javascript:;">红河</a> 
+	    				
+	    				<a title="保山公交线路查询" href="javascript:;">保山</a> 
+	    				
+	    				<a title="文山公交线路查询" href="javascript:;">文山</a> 
+	    				
+	    				<a title="西双版纳公交线路查询" href="javascript:;">西双版纳</a> 
+	    				
+					</td>
+				</tr>
+	    		
+	    		<tr>
+					<th>重庆</th>
+					<td>
+						
+	    				<a title="重庆公交线路查询" href="javascript:;">重庆</a> 
+	    				
+					</td>
+				</tr>
+	    		
+	    		<tr>
+					<th>贵州</th>
+					<td>
+						
+	    				<a title="贵阳公交线路查询" href="javascript:;">贵阳</a> 
+	    				
+	    				<a title="六盘水公交线路查询" href="javascript:;">六盘水</a> 
+	    				
+	    				<a title="遵义公交线路查询" href="javascript:;">遵义</a> 
+	    				
+	    				<a title="安顺公交线路查询" href="javascript:;">安顺</a> 
+	    				
+	    				<a title="毕节公交线路查询" href="javascript:;">毕节</a> 
+	    				
+	    				<a title="黔东南公交线路查询" href="javascript:;">黔东南</a> 
+	    				
+	    				<a title="黔南公交线路查询" href="javascript:;">黔南</a> 
+	    				
+	    				<a title="黔西南公交线路查询" href="javascript:;">黔西南</a> 
+	    				
+	    				<a title="铜仁公交线路查询" href="javascript:;">铜仁</a> 
+	    				
+					</td>
+				</tr>
+	    		
+	    		<tr>
+					<th>西藏</th>
+					<td>
+						
+	    				<a title="拉萨公交线路查询" href="javascript:;">拉萨</a> 
+	    				
+	    				<a title="昌都公交线路查询" href="javascript:;">昌都</a> 
+	    				
+	    				<a title="日喀则公交线路查询" href="javascript:;">日喀则</a> 
+	    				
+					</td>
+				</tr>
+	    		
+				</tbody>
+			</table>
+        	
+			
+        	<table width="100%" cellspacing="0" cellpadding="0" class="tabCity">
+				<caption><span><a name="xibei">西北地区</a></span></caption>
+				<tbody>
+				
+	    		<tr>
+					<th>新疆</th>
+					<td>
+						
+	    				<a title="乌鲁木齐公交线路查询" href="javascript:;">乌鲁木齐</a> 
+	    				
+	    				<a title="昌吉公交线路查询" href="javascript:;">昌吉</a> 
+	    				
+	    				<a title="克拉玛依公交线路查询" href="javascript:;">克拉玛依</a> 
+	    				
+	    				<a title="吐鲁番公交线路查询" href="javascript:;">吐鲁番</a> 
+	    				
+	    				<a title="哈密公交线路查询" href="javascript:;">哈密</a> 
+	    				
+	    				<a title="伊犁公交线路查询" href="javascript:;">伊犁</a> 
+	    				
+	    				<a title="巴音郭楞公交线路查询" href="javascript:;">巴音郭楞</a> 
+	    				
+	    				<a title="和田公交线路查询" href="javascript:;">和田</a> 
+	    				
+	    				<a title="塔城公交线路查询" href="javascript:;">塔城</a> 
+	    				
+	    				<a title="阿克苏公交线路查询" href="javascript:;">阿克苏</a> 
+	    				
+	    				<a title="博尔塔拉公交线路查询" href="javascript:;">博尔塔拉</a> 
+	    				
+	    				<a title="克孜勒苏公交线路查询" href="javascript:;">克孜勒苏</a> 
+	    				
+	    				<a title="喀什公交线路查询" href="javascript:;">喀什</a> 
+	    				
+					</td>
+				</tr>
+	    		
+	    		<tr>
+					<th>陕西</th>
+					<td>
+						
+	    				<a title="西安公交线路查询" href="javascript:;">西安</a> 
+	    				
+	    				<a title="咸阳公交线路查询" href="javascript:;">咸阳</a> 
+	    				
+	    				<a title="渭南公交线路查询" href="javascript:;">渭南</a> 
+	    				
+	    				<a title="延安公交线路查询" href="javascript:;">延安</a> 
+	    				
+	    				<a title="宝鸡公交线路查询" href="javascript:;">宝鸡</a> 
+	    				
+	    				<a title="汉中公交线路查询" href="javascript:;">汉中</a> 
+	    				
+	    				<a title="铜川公交线路查询" href="javascript:;">铜川</a> 
+	    				
+	    				<a title="榆林公交线路查询" href="javascript:;">榆林</a> 
+	    				
+	    				<a title="商洛公交线路查询" href="javascript:;">商洛</a> 
+	    				
+	    				<a title="安康公交线路查询" href="javascript:;">安康</a> 
+	    				
+					</td>
+				</tr>
+	    		
+	    		<tr>
+					<th>甘肃</th>
+					<td>
+						
+	    				<a title="兰州公交线路查询" href="javascript:;">兰州</a> 
+	    				
+	    				<a title="酒泉公交线路查询" href="javascript:;">酒泉</a> 
+	    				
+	    				<a title="嘉峪关公交线路查询" href="javascript:;">嘉峪关</a> 
+	    				
+	    				<a title="张掖公交线路查询" href="javascript:;">张掖</a> 
+	    				
+	    				<a title="天水公交线路查询" href="javascript:;">天水</a> 
+	    				
+	    				<a title="白银公交线路查询" href="javascript:;">白银</a> 
+	    				
+	    				<a title="定西公交线路查询" href="javascript:;">定西</a> 
+	    				
+	    				<a title="金昌公交线路查询" href="javascript:;">金昌</a> 
+	    				
+	    				<a title="临夏公交线路查询" href="javascript:;">临夏</a> 
+	    				
+	    				<a title="平凉公交线路查询" href="javascript:;">平凉</a> 
+	    				
+	    				<a title="庆阳公交线路查询" href="javascript:;">庆阳</a> 
+	    				
+	    				<a title="武威公交线路查询" href="javascript:;">武威</a> 
+	    				
+					</td>
+				</tr>
+	    		
+	    		<tr>
+					<th>宁夏</th>
+					<td>
+						
+	    				<a title="银川公交线路查询" href="javascript:;">银川</a> 
+	    				
+	    				<a title="石嘴山公交线路查询" href="javascript:;">石嘴山</a> 
+	    				
+	    				<a title="固原公交线路查询" href="javascript:;">固原</a> 
+	    				
+	    				<a title="中卫公交线路查询" href="javascript:;">中卫</a> 
+	    				
+	    				<a title="吴忠公交线路查询" href="javascript:;">吴忠</a> 
+	    				
+					</td>
+				</tr>
+	    		
+	    		<tr>
+					<th>青海</th>
+					<td>
+						
+	    				<a title="西宁公交线路查询" href="javascript:;">西宁</a> 
+	    				
+	    				<a title="海西公交线路查询" href="javascript:;">海西</a> 
+	    				
+					</td>
+				</tr>
+	    		
+				</tbody>
+			</table>
+        	
+			
+			<div style="margin: 5px auto;">
+			<script src="../../js/m.js"></script>
+			<!-- 广告位：1004-POI右4 -->
+			<script>
+			(function() {
+			    var s = "_" + Math.random().toString(36).slice(2);
+			    document.write('<div id="' + s + '"></div>');
+			    (window.slotbydup=window.slotbydup || []).push({
+			        id: '3643200',
+			        container: s,
+			        size: '0,0',
+			        display: 'inlay-fix'
+			    });
+			})();
+			</script>
+			
+			</div>
+			
+        	<table width="100%" cellspacing="0" cellpadding="0" class="tabCity">
+				<caption><span><a name="huanan">华南地区</a></span></caption>
+				<tbody>
+				
+	    		<tr>
+					<th>特别行政</th>
+					<td>
+						
+	    				<a title="香港公交线路查询" href="javascript:;">香港</a> 
+	    				
+	    				<a title="澳门公交线路查询" href="javascript:;">澳门</a> 
+	    				
+					</td>
+				</tr>
+	    		
+	    		<tr>
+					<th>广东</th>
+					<td>
+						
+	    				<a title="广州公交线路查询" href="javascript:;">广州</a> 
+	    				
+	    				<a title="清远公交线路查询" href="javascript:;">清远</a> 
+	    				
+	    				<a title="韶关公交线路查询" href="javascript:;">韶关</a> 
+	    				
+	    				<a title="河源公交线路查询" href="javascript:;">河源</a> 
+	    				
+	    				<a title="梅州公交线路查询" href="javascript:;">梅州</a> 
+	    				
+	    				<a title="潮州公交线路查询" href="javascript:;">潮州</a> 
+	    				
+	    				<a title="汕头公交线路查询" href="javascript:;">汕头</a> 
+	    				
+	    				<a title="揭阳公交线路查询" href="javascript:;">揭阳</a> 
+	    				
+	    				<a title="汕尾公交线路查询" href="javascript:;">汕尾</a> 
+	    				
+	    				<a title="惠州公交线路查询" href="javascript:;">惠州</a> 
+	    				
+	    				<a title="东莞公交线路查询" href="javascript:;">东莞</a> 
+	    				
+	    				<a title="深圳公交线路查询" href="javascript:;">深圳</a> 
+	    				
+	    				<a title="珠海公交线路查询" href="javascript:;">珠海</a> 
+	    				
+	    				<a title="中山公交线路查询" href="javascript:;">中山</a> 
+	    				
+	    				<a title="江门公交线路查询" href="javascript:;">江门</a> 
+	    				
+	    				<a title="佛山公交线路查询" href="javascript:;">佛山</a> 
+	    				
+	    				<a title="肇庆公交线路查询" href="javascript:;">肇庆</a> 
+	    				
+	    				<a title="云浮公交线路查询" href="javascript:;">云浮</a> 
+	    				
+	    				<a title="阳江公交线路查询" href="javascript:;">阳江</a> 
+	    				
+	    				<a title="茂名公交线路查询" href="javascript:;">茂名</a> 
+	    				
+	    				<a title="湛江公交线路查询" href="javascript:;">湛江</a> 
+	    				
+					</td>
+				</tr>
+	    		
+	    		<tr>
+					<th>广西</th>
+					<td>
+						
+	    				<a title="南宁公交线路查询" href="javascript:;">南宁</a> 
+	    				
+	    				<a title="桂林公交线路查询" href="javascript:;">桂林</a> 
+	    				
+	    				<a title="百色公交线路查询" href="javascript:;">百色</a> 
+	    				
+	    				<a title="玉林公交线路查询" href="javascript:;">玉林</a> 
+	    				
+	    				<a title="钦州公交线路查询" href="javascript:;">钦州</a> 
+	    				
+	    				<a title="北海公交线路查询" href="javascript:;">北海</a> 
+	    				
+	    				<a title="梧州公交线路查询" href="javascript:;">梧州</a> 
+	    				
+	    				<a title="柳州公交线路查询" href="javascript:;">柳州</a> 
+	    				
+	    				<a title="河池公交线路查询" href="javascript:;">河池</a> 
+	    				
+	    				<a title="防城港公交线路查询" href="javascript:;">防城港</a> 
+	    				
+	    				<a title="贺州公交线路查询" href="javascript:;">贺州</a> 
+	    				
+	    				<a title="来宾公交线路查询" href="javascript:;">来宾</a> 
+	    				
+	    				<a title="崇左公交线路查询" href="javascript:;">崇左</a> 
+	    				
+	    				<a title="贵港公交线路查询" href="javascript:;">贵港</a> 
+	    				
+					</td>
+				</tr>
+	    		
+	    		<tr>
+					<th>海南</th>
+					<td>
+						
+	    				<a title="海口公交线路查询" href="javascript:;">海口</a> 
+	    				
+	    				<a title="三亚公交线路查询" href="javascript:;">三亚</a> 
+	    				
+					</td>
+				</tr>
+	    		
+				</tbody>
+			</table>
+        	
+			
+        	<table width="100%" cellspacing="0" cellpadding="0" class="tabCity">
+				<caption><span><a name="huadong">华东地区</a></span></caption>
+				<tbody>
+				
+	    		<tr>
+					<th>上海</th>
+					<td>
+						
+	    				<a title="上海公交线路查询" href="javascript:;">上海</a> 
+	    				
+					</td>
+				</tr>
+	    		
+	    		<tr>
+					<th>江苏</th>
+					<td>
+						
+	    				<a title="南京公交线路查询" href="javascript:;">南京</a> 
+	    				
+	    				<a title="徐州公交线路查询" href="javascript:;">徐州</a> 
+	    				
+	    				<a title="连云港公交线路查询" href="javascript:;">连云港</a> 
+	    				
+	    				<a title="盐城公交线路查询" href="javascript:;">盐城</a> 
+	    				
+	    				<a title="泰州公交线路查询" href="javascript:;">泰州</a> 
+	    				
+	    				<a title="镇江公交线路查询" href="javascript:;">镇江</a> 
+	    				
+	    				<a title="南通公交线路查询" href="javascript:;">南通</a> 
+	    				
+	    				<a title="常州公交线路查询" href="javascript:;">常州</a> 
+	    				
+	    				<a title="无锡公交线路查询" href="javascript:;">无锡</a> 
+	    				
+	    				<a title="苏州公交线路查询" href="javascript:;">苏州</a> 
+	    				
+	    				<a title="淮安公交线路查询" href="javascript:;">淮安</a> 
+	    				
+	    				<a title="宿迁公交线路查询" href="javascript:;">宿迁</a> 
+	    				
+	    				<a title="扬州公交线路查询" href="javascript:;">扬州</a> 
+	    				
+					</td>
+				</tr>
+	    		
+	    		<tr>
+					<th>浙江</th>
+					<td>
+						
+	    				<a title="杭州公交线路查询" href="javascript:;">杭州</a> 
+	    				
+	    				<a title="绍兴公交线路查询" href="javascript:;">绍兴</a> 
+	    				
+	    				<a title="宁波公交线路查询" href="javascript:;">宁波</a> 
+	    				
+	    				<a title="湖州公交线路查询" href="javascript:;">湖州</a> 
+	    				
+	    				<a title="嘉兴公交线路查询" href="javascript:;">嘉兴</a> 
+	    				
+	    				<a title="金华公交线路查询" href="javascript:;">金华</a> 
+	    				
+	    				<a title="丽水公交线路查询" href="javascript:;">丽水</a> 
+	    				
+	    				<a title="温州公交线路查询" href="javascript:;">温州</a> 
+	    				
+	    				<a title="台州公交线路查询" href="javascript:;">台州</a> 
+	    				
+	    				<a title="舟山公交线路查询" href="javascript:;">舟山</a> 
+	    				
+	    				<a title="衢州公交线路查询" href="javascript:;">衢州</a> 
+	    				
+					</td>
+				</tr>
+	    		
+	    		<tr>
+					<th>福建</th>
+					<td>
+						
+	    				<a title="福州公交线路查询" href="javascript:;">福州</a> 
+	    				
+	    				<a title="莆田公交线路查询" href="javascript:;">莆田</a> 
+	    				
+	    				<a title="南平公交线路查询" href="javascript:;">南平</a> 
+	    				
+	    				<a title="厦门公交线路查询" href="javascript:;">厦门</a> 
+	    				
+	    				<a title="泉州公交线路查询" href="javascript:;">泉州</a> 
+	    				
+	    				<a title="漳州公交线路查询" href="javascript:;">漳州</a> 
+	    				
+	    				<a title="三明公交线路查询" href="javascript:;">三明</a> 
+	    				
+	    				<a title="龙岩公交线路查询" href="javascript:;">龙岩</a> 
+	    				
+	    				<a title="宁德公交线路查询" href="javascript:;">宁德</a> 
+	    				
+					</td>
+				</tr>
+	    		
+	    		<tr>
+					<th>山东</th>
+					<td>
+						
+	    				<a title="济南公交线路查询" href="javascript:;">济南</a> 
+	    				
+	    				<a title="聊城公交线路查询" href="javascript:;">聊城</a> 
+	    				
+	    				<a title="烟台公交线路查询" href="javascript:;">烟台</a> 
+	    				
+	    				<a title="威海公交线路查询" href="javascript:;">威海</a> 
+	    				
+	    				<a title="青岛公交线路查询" href="javascript:;">青岛</a> 
+	    				
+	    				<a title="泰安公交线路查询" href="javascript:;">泰安</a> 
+	    				
+	    				<a title="济宁公交线路查询" href="javascript:;">济宁</a> 
+	    				
+	    				<a title="菏泽公交线路查询" href="javascript:;">菏泽</a> 
+	    				
+	    				<a title="临沂公交线路查询" href="javascript:;">临沂</a> 
+	    				
+	    				<a title="德州公交线路查询" href="javascript:;">德州</a> 
+	    				
+	    				<a title="淄博公交线路查询" href="javascript:;">淄博</a> 
+	    				
+	    				<a title="潍坊公交线路查询" href="javascript:;">潍坊</a> 
+	    				
+	    				<a title="日照公交线路查询" href="javascript:;">日照</a> 
+	    				
+	    				<a title="东营公交线路查询" href="javascript:;">东营</a> 
+	    				
+	    				<a title="滨州公交线路查询" href="javascript:;">滨州</a> 
+	    				
+	    				<a title="枣庄公交线路查询" href="javascript:;">枣庄</a> 
+	    				
+					</td>
+				</tr>
+	    		
+	    		<tr>
+					<th>江西</th>
+					<td>
+						
+	    				<a title="南昌公交线路查询" href="javascript:;">南昌</a> 
+	    				
+	    				<a title="九江公交线路查询" href="javascript:;">九江</a> 
+	    				
+	    				<a title="景德镇公交线路查询" href="javascript:;">景德镇</a> 
+	    				
+	    				<a title="上饶公交线路查询" href="javascript:;">上饶</a> 
+	    				
+	    				<a title="鹰潭公交线路查询" href="javascript:;">鹰潭</a> 
+	    				
+	    				<a title="宜春公交线路查询" href="javascript:;">宜春</a> 
+	    				
+	    				<a title="萍乡公交线路查询" href="javascript:;">萍乡</a> 
+	    				
+	    				<a title="赣州公交线路查询" href="javascript:;">赣州</a> 
+	    				
+	    				<a title="吉安公交线路查询" href="javascript:;">吉安</a> 
+	    				
+	    				<a title="抚州公交线路查询" href="javascript:;">抚州</a> 
+	    				
+	    				<a title="新余公交线路查询" href="javascript:;">新余</a> 
+	    				
+					</td>
+				</tr>
+	    		
+	    		<tr>
+					<th>安徽</th>
+					<td>
+						
+	    				<a title="合肥公交线路查询" href="javascript:;">合肥</a> 
+	    				
+	    				<a title="芜湖公交线路查询" href="javascript:;">芜湖</a> 
+	    				
+	    				<a title="黄山公交线路查询" href="javascript:;">黄山</a> 
+	    				
+	    				<a title="安庆公交线路查询" href="javascript:;">安庆</a> 
+	    				
+	    				<a title="蚌埠公交线路查询" href="javascript:;">蚌埠</a> 
+	    				
+	    				<a title="亳州公交线路查询" href="javascript:;">亳州</a> 
+	    				
+	    				<a title="池州公交线路查询" href="javascript:;">池州</a> 
+	    				
+	    				<a title="滁州公交线路查询" href="javascript:;">滁州</a> 
+	    				
+	    				<a title="阜阳公交线路查询" href="javascript:;">阜阳</a> 
+	    				
+	    				<a title="淮北公交线路查询" href="javascript:;">淮北</a> 
+	    				
+	    				<a title="六安公交线路查询" href="javascript:;">六安</a> 
+	    				
+	    				<a title="马鞍山公交线路查询" href="javascript:;">马鞍山</a> 
+	    				
+	    				<a title="宿州公交线路查询" href="javascript:;">宿州</a> 
+	    				
+	    				<a title="铜陵公交线路查询" href="javascript:;">铜陵</a> 
+	    				
+	    				<a title="宣城公交线路查询" href="javascript:;">宣城</a> 
+	    				
+	    				<a title="淮南公交线路查询" href="javascript:;">淮南</a> 
+	    				
+					</td>
+				</tr>
+	    		
+				</tbody>
+			</table>
+        	
+		</div>
+		<br class="clear">
+		<!-- 右侧 END -->
+	</div>
+
+	<div class="info">
+		
+<div class="busList">
+	<h3>全国城市公交列表</h3>
+	<a target="_blank" href="../../beijing/index.html">北京公交</a>
+  	<a target="_blank" href="../../shanghai/index.html">上海公交</a>
+  	<a target="_blank" href="../../chongqing/index.html">重庆公交</a>
+  	<a target="_blank" href="../../tianjin/index.html">天津公交</a>
+  	<a target="_blank" href="../../guangzhou/index.html">广州公交</a>
+  	<a target="_blank" href="../../shenzhen/index.html">深圳公交</a>
+  	<a target="_blank" href="../../taiyuan/index.html">太原公交</a>
+  	<a target="_blank" href="../../shenyang/index.html">沈阳公交</a>
+  	<a target="_blank" href="../../changchun/index.html">长春公交</a>
+  	<a target="_blank" href="../../jinan/index.html">济南公交</a>
+  	<a target="_blank" href="../../nanjing/index.html">南京公交</a>
+  	<a target="_blank" href="../../hangzhou/index.html">杭州公交</a>
+  	<a target="_blank" href="../../hefei/index.html">合肥公交</a>
+  	<a target="_blank" href="../../fuzhou1/index.html">福州公交</a>
+  	<a target="_blank" href="../../nanchang/index.html">南昌公交</a>
+  	<a target="_blank" href="../../zhengzhou/index.html">郑州公交</a>
+  	<a target="_blank" href="../../wuhan/index.html">武汉公交</a>
+  	<a target="_blank" href="../../changsha/index.html">长沙公交</a>
+  	<a target="_blank" href="../../haikou/index.html">海口公交</a>
+  	<a target="_blank" href="../../chengdu/index.html">成都公交</a>
+  	<a target="_blank" href="../../guiyang/index.html">贵阳公交</a>
+  	<a target="_blank" href="../../kunming/index.html">昆明公交</a>
+  	<a target="_blank" href="../../xian/index.html">西安公交</a>
+  	<a target="_blank" href="../../lanzhou/index.html">兰州公交</a>
+  	<a target="_blank" href="../../xining/index.html">西宁公交</a>
+  	<a target="_blank" href="../index1.html">哈尔滨公交</a>
+  	<a target="_blank" href="../../shijiazhuang/index.html">石家庄公交</a>
+  	<a target="_blank" href="../../wulumuqi/index.html">乌鲁木齐公交</a>
+  	<a target="_blank" href="../../huhehaote/index.html">呼和浩特公交</a>
+  	<a target="_blank" href="../../city/change/index.html">更多>></a>
+</div>
+		
+ 
+		<div style="width:960px; height:250px; margin:15px 0 20px 0;">
+          	<script type="text/javascript">
+				var cpro_id="u2411417";
+				(window["cproStyleApi"] = window["cproStyleApi"] || {})[cpro_id]={at:"3",rsi0:"960",rsi1:"250",pat:"6",tn:"baiduCustNativeAD",rss1:"#FFFFFF",conBW:"1",adp:"1",ptt:"0",titFF:"%E5%BE%AE%E8%BD%AF%E9%9B%85%E9%BB%91",titFS:"14",rss2:"#000000",titSU:"0",ptbg:"90",piw:"0",pih:"0",ptp:"0"}
+			</script>
+			<script src="../../js/m.js" type="text/javascript"></script>
+        </div>
+		<div class='Partner'>
+			<div class='PartnerTit'>友情链接</div>
+			<div id='friendLink' class='Partner_Ul'>
+				<ul>
+					<li>
+					<a href="../news1.html" target="_blank">哈尔滨地铁新闻</a>	
+					</li>
+				</ul>
+			</div>
+		</div>
+		
+	</div>
+	
+	
+<div class="footer">
+	<div class="container">
+		<p>
+			<a href="../../index.html" target="_blank">关于我们</a>
+			|
+			<a href="../../index.html" target="_blank">企业推广</a>
+			|
+			<a href="javascript:;" target="_blank" style="color:red">免费公交代码</a>
+			|
+			<a href="../../help/sitelist.html" target="_blank">分站列表</a>
+			|
+			<a href="../../link/index.html" target="_blank"> 友情链接</a>
+			|
+			<a href="../../index4.html" target="_blank"> 行政地图</a>
+		</p>
+		<p>
+			2019mapbar. 
+			<a href="javascript:;" target="_blank">[京ICP证070616号]</a>
+			<a href="javascript:;" target="_blank">[京ICP备08100418号]</a>
+		</p>
+	</div>
+</div>
+	
+	
+<!--统计代码--> 
+<script type="text/javascript">
+  var _hmt = _hmt || [];
+  (function() {
+	 var hm = document.createElement("script");
+	 hm.src = "//hm.baidu.com/hm.js?4f7e758e957dfb1e328a4cb7a250d6e7";
+	 var s = document.getElementsByTagName("script")[0]; 
+	 s.parentNode.insertBefore(hm, s);
+  })();
+</script>
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https') {
+        bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';        
+    }
+    else {
+        bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+    }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+	
+	<script type="text/javascript" src="../../bus/detailv2/js/city.js"></script>
+	<script type="text/javascript" src="../../web/city/cityDataWithBus.js"></script>
+	<script type="text/javascript" src="../../bus/list/js/mapbar.viewmap.js"></script>
+	<script type="text/javascript">
+	function checkNum(str){
+		if(str.match(/^[0-9]+$/)){
+			return true;
+		}
+		return false;
+	}
+	
+	function sub(){
+		var city = jQuery("#searchInput").val();
+		if(jQuery.trim(city) != "" && jQuery.trim(city) != "请输入城市") {
+			var cityObj = mapbar.viewmap.getByCity(jQuery.trim(city));
+			if(typeof cityObj != "undefined") {
+				location.href = "/" + cityObj.esname + "/poi/";
+				return false;
+			} else {
+				alert("城市名称填写错误");
+				jQuery("#searchInput").focus();
+				return false;
+			}
+		} else {
+			alert("请输入城市");
+			jQuery("#searchInput").focus();
+			return false;
+		}
+	}
+	</script>
+</body>
+</html>
